@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Installation of new aaXML version
+AA_PATH=/var/www/s2a
+
+# Take the name and split from end eg XXX.7.zip
+#if [[ $1 =~ '([[:alpha:]-]*)\.([[:digit:]]*)\.zip' ]] 
+if [[ $1 =~ 'xml\.([[:digit:]]*)\.zip' ]] 
+then
+    ZIP_NAME=${BASH_REMATCH[0]}
+    ZIP_NR=${BASH_REMATCH[1]}
+else
+    exit 
+fi
+
+# Logs from the previous run
+rm $AA_PATH/active_agenda/s2alog/*
+
+# XML from the previous run and mod 0.8.3 as the precondition
+rm -r $AA_PATH/active_agenda/generated/*
+cp -r  $AA_PATH/util/mod $AA_PATH/active_agenda/generated
+
+# New XML
+rm -r $AA_PATH/active_agenda/xml
+mv $ZIP_NAME $AA_PATH/active_agenda/xml.zip
+unzip $AA_PATH/active_agenda/xml.zip -d $AA_PATH/active_agenda
+mv $AA_PATH/active_agenda/xml.$ZIP_NR $AA_PATH/active_agenda/xml
+rm $AA_PATH/active_agenda/Navigation.xml
+mv $AA_PATH/active_agenda/xml/Navigation.xml $AA_PATH/active_agenda/Navigation.xml 
+
+# Clean up!
+rm $AA_PATH/active_agenda/xml.zip

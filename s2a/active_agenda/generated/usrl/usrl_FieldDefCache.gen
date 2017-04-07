@@ -1,0 +1,38 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $gFieldDefs['usrl'] = unserialize('a:13:{s:7:"EntryID";a:3:{i:0;s:14:"`usrl`.EntryID";i:1;s:25:"`usrl`.EntryID AS EntryID";i:2;a:0:{}}s:8:"PersonID";a:3:{i:0;s:15:"`usrl`.PersonID";i:1;s:27:"`usrl`.PersonID AS PersonID";i:2;a:0:{}}s:11:"EventTypeID";a:3:{i:0;s:18:"`usrl`.EventTypeID";i:1;s:33:"`usrl`.EventTypeID AS EventTypeID";i:2;a:0:{}}s:16:"EventDescription";a:3:{i:0;s:23:"`usrl`.EventDescription";i:1;s:43:"`usrl`.EventDescription AS EventDescription";i:2;a:0:{}}s:8:"EventURL";a:3:{i:0;s:15:"`usrl`.EventURL";i:1;s:27:"`usrl`.EventURL AS EventURL";i:2;a:0:{}}s:8:"RemoteIP";a:3:{i:0;s:15:"`usrl`.RemoteIP";i:1;s:27:"`usrl`.RemoteIP AS RemoteIP";i:2;a:0:{}}s:8:"_ModDate";a:3:{i:0;s:15:"`usrl`._ModDate";i:1;s:85:"DATE_FORMAT(`usrl`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";i:2;a:0:{}}s:6:"Person";a:3:{i:0;s:18:"`ppl1`.DisplayName";i:1;s:28:"`ppl1`.DisplayName AS Person";i:2;a:1:{s:4:"ppl1";s:73:"LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`usrl`.PersonID = `ppl1`.PersonID )";}}s:9:"EventType";a:3:{i:0;s:18:"`cod1`.Description";i:1;s:31:"`cod1`.Description AS EventType";i:2;a:1:{s:4:"cod1";s:109:"LEFT OUTER JOIN `cod` AS cod1 
+   ON (`usrl`.EventTypeID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'302\')";}}s:6:"_ModBy";a:3:{i:0;s:13:"`usrl`._ModBy";i:1;s:23:"`usrl`._ModBy AS _ModBy";i:2;a:0:{}}s:8:"_Deleted";a:3:{i:0;s:15:"`usrl`._Deleted";i:1;s:27:"`usrl`._Deleted AS _Deleted";i:2;a:0:{}}s:14:"_TransactionID";a:3:{i:0;s:21:"`usrl`._TransactionID";i:1;s:39:"`usrl`._TransactionID AS _TransactionID";i:2;a:0:{}}s:10:"_ModByName";a:3:{i:0;s:18:"`ppl2`.DisplayName";i:1;s:32:"`ppl2`.DisplayName AS _ModByName";i:2;a:1:{s:4:"ppl2";s:71:"LEFT OUTER JOIN `ppl` AS ppl2 
+   ON (`usrl`._ModBy = `ppl2`.PersonID )";}}}');
+?>

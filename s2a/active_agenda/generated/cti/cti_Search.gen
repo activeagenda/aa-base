@@ -1,0 +1,163 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+
+//list of objects containing the field information
+$fields = unserialize('a:3:{s:9:"CountryID";O:10:"ComboField":31:{s:9:"listField";s:7:"Country";s:12:"foreignTable";s:3:"ctr";s:10:"foreignKey";s:9:"CountryID";s:12:"foreignField";s:7:"Country";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:223:"SELECT 
+`ctr`.CountryID AS ID, NULLIF(CONCAT(IFNULL( CAST( `ctr`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name FROM `ctr`
+WHERE ctr._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:220:"SELECT 
+`ctr`.CountryID AS ID, NULLIF(CONCAT(IFNULL( CAST( `ctr`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name FROM `ctr`
+
+WHERE `ctr`.CountryID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:1:{s:7:"StateID";a:1:{s:4:"name";s:7:"StateID";}}s:8:"moduleID";s:3:"cti";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:58:"Country|The internationally recognized name of the country";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"CountryID";}s:7:"StateID";O:10:"ComboField":31:{s:9:"listField";s:5:"State";s:12:"foreignTable";s:3:"sta";s:10:"foreignKey";s:7:"StateID";s:12:"foreignField";s:5:"State";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:246:"SELECT 
+`sta`.StateID AS ID, NULLIF(CONCAT(IFNULL( CAST( `sta`.StateName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `sta`.StateAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name, `sta`.CountryID AS ParentID FROM `sta`
+WHERE sta._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:241:"SELECT 
+`sta`.StateID AS ID, NULLIF(CONCAT(IFNULL( CAST( `sta`.StateName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `sta`.StateAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name, `sta`.CountryID AS ParentID FROM `sta`
+
+WHERE `sta`.StateID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";s:9:"CountryID";s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"cti";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:71:"State|A combined field used to associate this state with another record";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"StateID";}s:10:"CountyName";O:9:"EditField":18:{s:4:"size";s:2:"30";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"County Name|The name of the county or equivalent geographic zone";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"CountyName";}}');
+
+
+/**ownerField**/
+
+//phrases for field names, in field order (note: phrases are used in search filter)
+$phrases = array(
+   'CountryID' => gettext("Country|The internationally recognized name of the country"),
+   'StateID' => gettext("State|A combined field used to associate this state with another record"),
+   'CountyName' => gettext("County Name|The name of the county or equivalent geographic zone")
+   );
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+
+
+$pageTitle = gettext("Counties");
+$screenPhrase = gettext("Search");
+global $SQLBaseModuleID;
+$SQLBaseModuleID = $ModuleID;
+
+$search = $_SESSION['Search_'.$ModuleID];
+
+if(empty($_POST['Search']) && empty($_POST['Chart'])){
+    $data = $search->postData;
+} else {
+    $data = $_POST;
+}
+
+//populate data array with posted values
+foreach($data as $fieldName=>$value){
+    if(isset($_POST[$fieldName])){
+        $data[$fieldName] = $_POST[$fieldName];
+    }
+}
+
+
+//if the form was posted
+if((!empty($_POST['Search'])) || (!empty($_POST['Chart']))){
+
+
+    //List fields (used for generating the complete SQL search statement):
+    $listFields = unserialize('a:4:{i:0;s:8:"CountyID";i:1;s:7:"Country";i:2;s:5:"State";i:3;s:10:"CountyName";}');
+
+
+
+    //link fields (fields that provide a URL, and not necessarily displayed
+    //as a separate column in the list screen
+    $linkFields = array(
+
+      );
+
+
+
+    //create a Search definition object
+    $search = new Search(
+        $ModuleID,
+        $listFields,
+        $fields,
+        $_POST
+    );
+
+
+    //then post it to the Search session object.
+    $_SESSION['Search_'.$ModuleID] = $search;
+
+
+    //redirect depending on what submit buton was pressed by the user.
+    if(!empty($_POST['Search'])){
+
+        $RedirectTo = "list.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+        
+
+    } else {
+
+        //handle "Chart" (TO DO)
+        $RedirectTo = "charts.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+
+    }
+
+}
+
+//moved down from above
+$qs = MakeQS($qsArgs);
+
+//links for rendering the form
+$targetlink = "search.php?$qs";
+$cancellink = "list.php?$qs";
+
+$tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Counties"));
+$tabs['Search'] = Array("", gettext("Search"));
+
+ob_start();
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->searchRender($data, $phrases);
+    }
+}
+ob_end_clean();
+
+$content = renderSearchForm($content, $targetlink, null, $ModuleID);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+// $content .= debug_r($search->postData, "postData");
+
+?>

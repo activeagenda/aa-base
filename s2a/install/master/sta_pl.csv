@@ -1,0 +1,17 @@
+StateID, StateName, StateAbbreviation, CountryID
+1,dolnośląskie,PL-DS.,165
+2,kujawsko-pomorskie,PL-KP,165
+3,lubelskie,PL-LU,165
+4,lubuskie,PL-LB,165
+5,łódzkie,PL-LD,165
+6,małopolskie,PL-MA,165
+7,mazowieckie,PL-MZ,165
+8,opolskie,PL-OP,165
+9,podkarpackie,PL-PK,165
+10,podlaskie,PL-PD,165
+11,pomorskie,PL-PM,165
+12,śląskie,PL-SL,165
+13,świętokrzyskie,PL-SK,165
+14,warmińsko-mazurskie,PL-WN,165
+15,wielkopolskie,PL-WP,165
+16,zachodniopomorskie,PL-ZP,165

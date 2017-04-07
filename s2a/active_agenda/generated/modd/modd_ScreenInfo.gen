@@ -1,0 +1,44 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //edit screens
+    $editScreens = 's:1760:"<h2>Form Screen</h2><p><i>Edit summary information about a module dependency</i></p><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>ViewField</td><td>name: ModuleDependencyID
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to associate module dependencies with dependent modules</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Module Name</td><td>ViewField</td><td>name: Module
+</td></tr><tr><td colspan="3"><i>The name of the dependent module</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Dependent Module</td><td>ViewField</td><td>name: Dependency
+</td></tr><tr><td colspan="3"><i>The name of the dependent module</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Foreign</td><td>ViewField</td><td>name: ForeignDependency
+</td></tr><tr><td colspan="3"><i>Whether this is a foreign dependency</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Remote</td><td>ViewField</td><td>name: RemoteDependency
+</td></tr><tr><td colspan="3"><i>Whether this is a remote dependency</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Sub Module</td><td>ViewField</td><td>name: SubModDependency
+</td></tr><tr><td colspan="3"><i>Whether this is a sub-module dependency</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Type List</td><td>ViewField</td><td>name: ModuleListType
+</td></tr><tr><td colspan="3"><i>Whether this module is used to populate \'type\' lists used by other modules to define a record</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+";';
+
+?>

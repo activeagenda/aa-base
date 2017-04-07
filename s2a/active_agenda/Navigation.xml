@@ -1,0 +1,176 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="NavigationViewer.xsl"?>
+<!--
+LICENSE NOTE:
+
+Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+
+Unless explicitly acquired and licensed from Licensor under another license, the
+contents of this file are subject to the Reciprocal Public License ("RPL")
+Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+or use this file in either source code or executable form, except in compliance
+with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+Active Agenda Inc. at http://www.activeagenda.net/license.
+
+All software distributed under the RPL is provided strictly on an "AS IS" basis,
+WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+NON-INFRINGEMENT. See the RPL for specific language governing rights and
+limitations under the RPL.
+
+author         Dan Zahlis <dzahlis@activeagenda.net>
+author         Mattias Thorslund <mthorslund@activeagenda.net>
+copyright      2003-2009 Active Agenda Inc.
+license        http://www.activeagenda.net/license
+
+
+Navigation.xml
+
+This file contains the structural definition of links and category items for the navigation tree.
+The hierarchy of the items inside the Navigation element are to be represented by the system
+as a navigation tree.
+
+The navigation tree can be rendered in many ways - that is not encoded in this document. Therefore,
+this document can be used to render an expandable/collapsible tree view using JavaScript, or
+plain HTML (though multi-frame layouts will need some scripting to open more than one page
+with a single click), or any other technology that might render a navigation tree.
+
+This allows us or a customer to change the look-and-feel of the navigation tree on a per-site basis.
+Each site will have its own Navigation.xml file, allowing per-site customization of the order or visibility
+of the various items in the navigation tree.
+
+The system will check a user's permissions before displaying a link in the navigation tree that is
+displayed to the user.
+
+
+Types of elements:
+
+<Navigation>
+    This is the root element - all other items must be contain within this element.
+</Navigation>
+
+<InternalLink>
+    This defines a custom link to any page within the site. By default, it does not open a new browser.
+
+    The value of primary and secondary targets should include the relative path only (no "http://",
+    and no "www.sitename.com"). It should only consist of the script to be run and any values passed.
+    For scripting platform independence, the file extension is not required (it will be added by the
+    system if not present). Therefore, the following is valid: "page?a=1&amp;b=2".
+    Note that ampersands need to be escaped as "&amp;".
+
+    Attributes:
+	- primary
+	    The primary target of the link. In the no-frame layout, this is the only link that will be opened.
+	    In the multi-frame layout, this target will be opened in the frame referred to by the 'frame'
+	    attribute. (required)
+	- secondary
+	    A secondary link target. In the multi-frame layout, this is the page that will be loaded
+	    in the frame not referred to in the 'frame' attribute. Will not be loaded in the no-frame layout.
+	    (optional - when not present, the frame not referred to by 'frame' will remain as is)
+	- frame
+	    What frame to load the primary target into. Can be"upper", "lower", or "replace". The
+	    "replace" value will abandon the frame-set and load the primary target directly in the
+	    browser - this is mainly useful in the "logout" link. (optional; defaults to "upper")
+	- expand
+	    Used in multi-frame layouts only. Can be either "upper", "lower", or "both". (optional;
+	    defaults to "both")
+	- phrase
+	    The phrase that should be displayed in the link. (required)
+	- newbrowser
+	    If "true", the link will open a new browser. (optional; defaults to "false")
+</InternalLink>
+
+<ExternalLink>
+    This defines a link to anywhere on the Web. Opens a new browser by default.
+    The target value must include the site name ("www.sitename.com") but the protocol
+    is optional; it defaults to "http://".
+
+    Attributes:
+	- target
+	    The target of the link.
+	- phrase
+	    The phrase that should be displayed in the link.
+</ExternalLink>
+
+<ModuleLink>
+    This is a shorter and more concise way of defining an internal link to a module.
+    It takes the module ID of a module and uses it to create the proper links. By
+    default, it will open the module's Search screen in the upper frame and the
+    List screen in the lower frame. In a non-frame layout, the List screen is displayed.
+
+    Attributes:
+	- moduleID
+	    The module ID code for the module. (required)
+	- phrase
+	    The phrase to be displayed in the link. (optional - will use moduleID to look up the
+	    name of the module if not present)
+</ModuleLink>
+
+<Category>
+    This is a non-link item, that serves to group a number of other items.
+
+    Attributes:
+	- phrase
+	    The phrase that should be displayed. (required)
+</Category>
+
+Any of these elements can take any number of sub-elements, which means that the sub-elments
+will be displayed one level deeper in the hierarchy, below the containing elements.
+-->
+<Navigation>
+	<Category phrase="">
+		<Category phrase="Global">
+			<Category phrase="Modules|Manage associated information throughout the application">
+				<ModuleLink moduleID="act" phrase="Actions|View, enter, assign, and track actions throughout the organization"/>
+				<ModuleLink moduleID="att" phrase="Attachments|View files attached to records throughout the application or attach new files"/>
+				<ModuleLink moduleID="cos" phrase="Costs|View costs associated with records throughout the application or add new costs">
+					<ModuleLink moduleID="cost" phrase="Cost Types|Add, view or edit cost of risk types"/>
+				</ModuleLink>
+				<ExternalLink target="activeagenda.net/discussions/" phrase="Discussions (External)|Participate in Active Agenda's global discussion boards"/>
+				<ModuleLink moduleID="lnk" phrase="Links|View Internet links associated with records throughout the application"/>
+				<ModuleLink moduleID="nts" phrase="Notes|View the notes attached to records throughout the application or create new notes"/>
+				<ModuleLink moduleID="ntf" phrase="Notifications|View the notification requirements established throughout the application or assign new notification requirements"/>
+			</Category>
+			<Category phrase="Views|View information across the enterprise">
+				<ModuleLink moduleID="dat" phrase="Dates|View the assignment of dates with related records throughout the application"/>
+				<Category phrase="People|View information associated with people across the enterprise">
+					<ModuleLink moduleID="acc" phrase="Accountabilities|View the accountability assignments of human resources made throughout the application"/>
+					<ModuleLink moduleID="inv" phrase="Involvement|View the involvement of people inside and outside the organization"/>
+				</Category>
+			</Category>
+		</Category>
+		<ModuleLink moduleID="org" phrase="Organizations|Add, view, or edit organizations"/>
+		<ModuleLink moduleID="ppl" phrase="People|Manage information associated with people"/>
+		<Category phrase="Administration|Add, view, or edit administrative utilities">
+			<Category phrase="Application|View summary information about this software application">
+				<ModuleLink moduleID="codt" phrase="Codes"/>
+				<Category phrase="Localities|Add, view, or edit information about localities used throughout the application">
+					<ModuleLink moduleID="cti" phrase="Counties|Add, view, or edit the list of counties used throughout the application"/>
+					<ModuleLink moduleID="ctr" phrase="Countries|Add, view, or edit the list of countries used throughout the application"/>
+					<ModuleLink moduleID="sta" phrase="States|Add, view, or edit the list of states used throughout the application"/>
+				</Category>
+				<ModuleLink moduleID="mod" phrase="Modules|A list of the modules within the application"/>
+				<Category phrase="Notifications">
+					<ModuleLink moduleID="modnr" phrase="Notification Recipients|View or modify module notification list recipients"/>
+				</Category>
+				<ModuleLink moduleID="spt" phrase="Support Documentation|Add, view, or edit module support documentation">
+                    <ModuleLink moduleID="spts" phrase="Sections|Add, view, or edit module support documentation sections"/>
+                </ModuleLink>
+				<InternalLink primary="themeVisualizer" phrase="Theme Visualizer"/>
+                <InternalLink primary="logs" phrase="Error Log"/>
+			</Category>
+			<ModuleLink moduleID="usr" phrase="Users">
+                <Category phrase="View|View or edit established permissions">
+                    <ModuleLink moduleID="usrl" phrase="Entry Log|View user entry log"/>
+                    <ModuleLink moduleID="usrp" phrase="Permissions|View permissions"/>
+                    <ModuleLink moduleID="usrpo" phrase="Permitted Organizations|View permitted organizations"/>
+                </Category>
+			</ModuleLink>
+            <ModuleLink moduleID="usrg" phrase="User Groups"/>
+		</Category>
+        <InternalLink primary="myPassword" phrase="Change Your Password"/>
+        <InternalLink primary="myPreferences" phrase="Change Your Preferences"/>
+        <InternalLink primary="logout" phrase="Log out"/>
+	</Category>
+</Navigation>

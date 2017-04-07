@@ -1,0 +1,406 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+/**CUSTOM_CODE|classdef**/
+
+//list of objects containing the field information
+$fields = unserialize('a:7:{s:6:"NoteID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:111:"Note ID|An automatically assigned number used to track notes associated with records throughout the application";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"NoteID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:26:"DisplayRelatedModuleRecord";O:9:"ViewField":21:{s:9:"linkField";s:24:"DisplayRelatedRecordLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:113:"Related Record|A combined field used to display the related module name and what record, if any, it is related to";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:26:"DisplayRelatedModuleRecord";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:24:"RelatedRecordDescription";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:133:"Record Description|A description of the related record based on a combination of field values assigned from within the related module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:24:"RelatedRecordDescription";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:5:"Title";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:45:"Title|A concise title that describes the note";s:8:"dataType";s:4:"text";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:5:"Title";}s:10:"NoteDetail";O:9:"MemoField":19:{s:4:"rows";s:2:"10";s:4:"cols";s:2:"75";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Note|A note to be associated with a record";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"NoteDetail";s:14:"conditionField";N;s:14:"conditionValue";N;}s:8:"NoteDate";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Note Date|Automatic entry of the date the note was entered into the system";s:8:"dataType";s:8:"datetime";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"NoteDate";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:6:"Author";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:84:"Author|Automatic entry of the name of the person entering or last modifying the note";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Author";s:10:"needsReGet";b:0;s:11:"formatField";N;}}');
+
+$hasEditableFields = true;
+
+
+$skipSaveFields = unserialize('a:5:{i:0;s:6:"NoteID";i:1;s:26:"DisplayRelatedModuleRecord";i:2;s:24:"RelatedRecordDescription";i:3;s:8:"NoteDate";i:4;s:6:"Author";}');
+
+
+$singularRecordName = gettext("Note");
+
+//field value array
+$data = array(
+'NoteID' => '',
+         'DisplayRelatedModuleRecord' => '',
+         'RelatedRecordDescription' => '',
+         'Title' => '',
+         'NoteDetail' => '',
+         'NoteDate' => '',
+         'Author' => ''
+);
+
+if(empty($_POST)){
+    //pre-populate fields with URL values
+    if(0 === $recordID){
+        foreach($data as $fieldName=>$value){
+            if(isset($_GET[$fieldName])){
+                $data[$fieldName] = $_GET[$fieldName];
+            }
+        }
+    }
+} else {
+    foreach($data as $fieldName=>$value){
+        if(isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        }
+    }
+}
+
+//list of grids
+   $grids = array();
+
+
+/**guidanceGrid**/
+
+$PKField = 'NoteID';
+
+$ownerField = 'OwnerOrganizationID';
+
+
+/**disbleGlobalModules**/
+
+//handle any posted grid form
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+$nextScreen = "";
+$nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+$form_enctype = '';
+
+/**CUSTOM_CODE|init**/
+
+$getSQL = "SELECT 
+   `nts`.NoteID AS NoteID,
+   IF(`nts`.RelatedModuleID = 'mod', NULLIF(CONCAT('internal:global.php?mdl=',IFNULL( CAST( IF(`nts`.RelatedModuleID = 'mod', `mod2`.ModuleID, `nts`.RelatedModuleID) AS CHAR ),''),'&','rid=list','&','gmd=nts'),'internal:global.php?mdl=&rid=list&gmd=nts'), CONCAT('internal:view.php?mdl=',`nts`.RelatedModuleID,'&rid=',`nts`.RelatedRecordID)) AS DisplayRelatedRecordLink,
+   IF(`nts`.RelatedModuleID = 'mod', NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),''),' (general)'),' (general)'), NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),''),' (ID Rekordu: ',IFNULL( CAST( `nts`.RelatedRecordID AS CHAR ),''),')'),' (ID Rekordu: )')) AS DisplayRelatedModuleRecord,
+   `rdc1`.Value AS RelatedRecordDescription,
+   `nts`.Title AS Title,
+   `nts`.NoteDetail AS NoteDetail,
+   DATE_FORMAT(`nts_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS NoteDate,
+   `ppl1`.DisplayName AS Author,
+   NULLIF(CONCAT('Notatka z ',IFNULL( CAST( `mod1`.Name AS CHAR ),''),' zatytu','łowana: ',IFNULL( CAST( `nts`.Title AS CHAR ),''),' | ',IFNULL( CAST( DATE_FORMAT(`nts_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS CHAR ),'')),'Notatka z  zatytułowana:  | ') AS RecordLabel,
+   `rdc1`.OrganizationID AS OwnerOrganizationID
+FROM `nts`
+   LEFT OUTER JOIN `mod` AS mod2 
+   ON (`nts`.RelatedRecordID = `mod2`.RecordID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`nts`.RelatedModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`nts`.RelatedModuleID = rdc1.ModuleID AND `nts`.RelatedRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN (
+            SELECT
+                `nts_l`.NoteID,
+                `nts_l`._ModDate AS createDate,
+                `nts_l`._ModBy AS createBy
+            FROM `nts_l`
+            INNER JOIN (
+                SELECT
+                    NoteID,
+                    MIN(_RecordID) AS MinRecordID
+                FROM `nts_l`
+                GROUP BY NoteID) as `nts_min`
+            ON `nts_l`._RecordID = `nts_min`.MinRecordID
+            ) AS nts_l
+            ON (`nts`.NoteID = nts_l.NoteID)
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`nts_l`.createBy = `ppl1`.PersonID )
+WHERE nts._Deleted = 0
+   AND `nts`.NoteID = '/**RecordID**/'
+";
+
+$getSQL = TranslateLocalDateSQLFormats($getSQL);
+
+if(!empty($_POST['CloneForm'])){
+    $recordID = 0;
+}
+
+
+$screenPhrase = gettext("Form|Edit summary information about a note");
+
+/*populates screen messages differently depending on whether the record exists in db or not*/
+if($recordID != 0) {
+    $existing = true;
+
+    $pageTitle = gettext("Note");
+
+    /**CUSTOM_CODE|before_get**/
+
+    //retrieve record
+    /**SQL|GET_BEGIN**/
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+    /**SQL|GET_END**/
+
+    switch (count($r)){
+    case 0:
+        trigger_error(gettext("This record does not exist, or could not be found.|Record not found."), E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error(gettext("More than one record was found."), E_USER_WARNING);
+        break;
+    }
+
+    //populate data array, combining POSTed data with DB record:
+    //POST data takes precedence
+    foreach($r[0] as $fieldName=>$dbValue){
+        //(checking for gridnum avoids interference with any posted edit grid)
+        if (empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        } else {
+            $data[$fieldName] = $dbValue;
+        }
+    }
+
+
+    /**CUSTOM_CODE|get**/
+} else {
+    //inserting a record
+    $existing = false;
+    $pageTitle = gettext("Notes");
+    /**CUSTOM_CODE|new**/
+}
+
+//check if user has permission to edit record
+$allowEdit = $User->CheckEditScreenPermission();
+//if not, it terminates and display error msg.
+
+//phrases for field names, in field order
+$phrases = array(
+   'NoteID' => gettext("Note ID|An automatically assigned number used to track notes associated with records throughout the application"),
+   'DisplayRelatedModuleRecord' => gettext("Related Record|A combined field used to display the related module name and what record, if any, it is related to"),
+   'RelatedRecordDescription' => gettext("Record Description|A description of the related record based on a combination of field values assigned from within the related module"),
+   'Title' => gettext("Title|A concise title that describes the note"),
+   'NoteDetail' => gettext("Note|A note to be associated with a record"),
+   'NoteDate' => gettext("Note Date|Automatic entry of the date the note was entered into the system"),
+   'Author' => gettext("Author|Automatic entry of the name of the person entering or last modifying the note")
+   );
+
+
+//if the form was posted by clicking the Save button
+if(!empty($_POST['Save'])){
+    /**DB_SAVE_BEGIN**/
+
+    /**CUSTOM_CODE|save**/
+
+    //validate submitted data:
+    $vMsgs = "";
+    $vMsg = Validate($data['Title'], ShortPhrase($phrases['Title']), 'notEmpty', 'text');
+            if($vMsg != ''){
+                $vMsgs .= $vMsg;
+                $fields['Title']->invalid = TRUE;
+            }
+
+
+    if(0 != strlen($vMsgs)){
+        //prepend a general error message
+        $vMsgs = gettext("The record has not been saved, because:")."\n".$vMsgs;
+        $vMsgs = nl2br($vMsgs);
+
+        //return error messages
+        $messages[] = array('e', $vMsgs);
+
+    } else {
+//START   	    
+	    $data['Title'] = Normalize($data['Title'], 'notEmpty');
+			
+//END
+        /**CUSTOM_CODE|check_deleted_row_exists**/
+
+        $dh = GetDataHandler($ModuleID);
+//        $recordID = $dh->saveRow($data, $recordID, $skipSaveFields);
+        $dbRecordID = $dh->saveRow($_POST, $recordID, $skipSaveFields);
+
+        if(false === $dbRecordID){
+            $errmsg = gettext("The record has not been saved, because:");
+            foreach($dh->errmsg as $err => $id){
+                $errmsg .= "\n".$err;
+            }
+            $errmsg = nl2br($errmsg);
+            $messages[] = array('e', $errmsg);
+        } else {
+            $recordID = $dbRecordID;
+        }
+
+        //recreate $nextlink b/c of new record ID when inserting
+        $inserted = false;
+        if(!$existing){
+            $qsArgs['rid'] = $recordID; //pass both to tabs and other links
+            $tabsQSargs = $qsArgs;
+            unset($tabsQSargs['scr']);
+            //$tabsQSargs['rid'] = $recordID;
+            $tabsQS = MakeQS($tabsQSargs);
+            $nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+            if(empty($_POST['KeepNew'])){
+                $existing = true;
+            } else {
+                $recordID = 0;
+            }
+            $inserted = true;
+        }
+    }
+
+    /**CUSTOM_CODE|save_end**/
+    /**DB_SAVE_END**/
+
+    if(empty($_POST['KeepNew'])){
+        if(count($messages) == 0){
+            /**RE-GET_BEGIN**/
+            //only executed on screens that need it: have ViewField with Update, or Calculated/Summary fields
+            $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+            dbErrorCheck($r);
+            if(count($r) > 0) {
+                foreach($r[0] as $fieldName=>$dbValue){
+                    //(checking for gridnum avoids interference with any posted edit grid)
+                    if(empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+                        $data[$fieldName] = $_POST[$fieldName];
+                    } else {
+                        $data[$fieldName] = $dbValue;
+                    }
+                }
+            } else {
+                $messages[] = array('e', gettext("Error: Empty query result."));
+            }
+            /**RE-GET_END**/
+        }
+    } else {
+        foreach($data as $fieldName => $fieldValue){
+            $data[$fieldName] = '';
+        }
+    }
+
+    //note: assumes all messages up til this point were errors
+    if (count($messages) == 0){
+        //add success message
+        if ($inserted){
+            $messages[] = array('m', gettext("The record was added successfully."));
+        } else {
+            $messages[] = array('m', gettext("The record was updated successfully."));
+        }
+    }
+}
+/**SQL|DELETE_BEGIN**/
+if(!empty($_POST['Delete'])){
+
+    $dh = GetDataHandler($ModuleID);
+    $result = $dh->deleteRow($recordID);
+
+    $deletelink = "list.php?$tabsQS";
+
+    //redirect to list screen
+    header("Location:" . $deletelink);
+    exit;
+}
+/**SQL|DELETE_END**/
+
+/**CUSTOM_CODE|after_save**/
+
+
+if(!empty($_POST['KeepNew'])){
+    unset($qsArgs['rid']); //ensures next submit will cause a new record
+}
+
+$qs = MakeQS($qsArgs);
+
+//List tab
+$tabs['List'] = Array("list.php?$tabsQS", gettext("List|View the list of Notes"));
+
+//target for FORMs
+$targetlink = "edit.php?$qs";
+
+$cloneAsNew = false;
+$keepAddNew = false;
+
+//formatting that depends on whether the record exists or not
+if($existing){
+    //delete button only appears on the first EditScreen.
+    $deletelink = 'view.php?$tabsQS&delete=1';
+    $cancellink = "view.php?$tabsQS";
+
+    /**clone_as_new**/
+
+          $tabs['View'] = array( "view.php?scr=View&amp;$tabsQS", gettext("View|View summary information about").' '.gettext("a Note") );
+      $tabs['Form'] = array( "", gettext("Form|Edit summary information about a note") );
+
+
+} else {
+    $deletelink = '';
+    $cancellink = "list.php?$tabsQS";
+
+    /**keep_add_new**/
+
+          $tabs['Form'] = array( "", gettext("New Note") );
+
+}
+
+/**CUSTOM_CODE|form**/
+
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->render($data, $phrases);
+    }
+}
+
+$formProps = array(
+    'is_main_form'       => true,
+    'delete_button'      => strlen($deletelink) > 0,
+    'cancel_link'        => $cancellink,
+    'next_screen'        => $nextScreen,
+    'form_enctype'       => $form_enctype,
+    'module_id'          => $ModuleID,
+    'render_buttons'     => $hasEditableFields,
+    'clone'              => $cloneAsNew,
+    'keep_add_new'       => $keepAddNew,
+    'single_record_name' => $singularRecordName
+);
+
+$content = renderForm2($content, $targetlink, $formProps);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+/**CUSTOM_CODE|after_form**/
+
+//display edit grids here
+foreach($grids as $gridID => $grid){
+   $content .= $grid->render('edit.php', $qsArgs);
+}
+
+
+/**CUSTOM_CODE|after_grids**/
+
+   $recordLabelField = '';
+    if(isset($data['RecordLabel'])) {
+    $recordLabelField = $data['RecordLabel'];
+    }
+?>

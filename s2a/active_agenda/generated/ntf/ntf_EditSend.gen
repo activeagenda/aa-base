@@ -1,0 +1,370 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+/**CUSTOM_CODE|classdef**/
+
+//list of objects containing the field information
+$fields = unserialize('a:12:{s:14:"NotificationID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:70:"Record ID|An automatically assigned number used to track notifications";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"NotificationID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"RelatedModule";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:62:"Module|The name of the module associated with the notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"RelatedModule";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"RelatedRecord";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:83:"Record Description|A description of the record that is being sent as a notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"RelatedRecord";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Sender";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:43:"Sender|The person who sent the notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Sender";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"Subject";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:52:"Subject|The subject line for the  notification email";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Subject";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"Message";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Message|An additional message in the notification email";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Message";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"XMLAttached";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:80:"Attach XML Data?|Whether to attach a machine-readable data file with the message";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"XMLAttached";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Status";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:45:"Status|The current status of the notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Status";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"SentDate";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:58:"Sent Date|The time and date when the notification was sent";s:8:"dataType";s:8:"datetime";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"SentDate";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"StatusID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"StatusID";}s:15:"RelatedModuleID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:15:"RelatedModuleID";}s:15:"RelatedRecordID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:15:"RelatedRecordID";}}');
+
+$hasEditableFields = false;
+
+
+$skipSaveFields = unserialize('a:12:{i:0;s:14:"NotificationID";i:1;s:13:"RelatedModule";i:2;s:13:"RelatedRecord";i:3;s:6:"Sender";i:4;s:7:"Subject";i:5;s:7:"Message";i:6;s:11:"XMLAttached";i:7;s:6:"Status";i:8;s:8:"SentDate";i:9;s:8:"StatusID";i:10;s:15:"RelatedModuleID";i:11;s:15:"RelatedRecordID";}');
+
+
+$singularRecordName = gettext("Notification");
+
+//field value array
+$data = array(
+'NotificationID' => '',
+         'RelatedModule' => '',
+         'RelatedRecord' => '',
+         'Sender' => '',
+         'Subject' => '',
+         'Message' => '',
+         'XMLAttached' => '',
+         'Status' => '',
+         'SentDate' => '',
+         'StatusID' => '',
+         'RelatedModuleID' => '',
+         'RelatedRecordID' => ''
+);
+
+if(empty($_POST)){
+    //pre-populate fields with URL values
+    if(0 === $recordID){
+        foreach($data as $fieldName=>$value){
+            if(isset($_GET[$fieldName])){
+                $data[$fieldName] = $_GET[$fieldName];
+            }
+        }
+    }
+} else {
+    foreach($data as $fieldName=>$value){
+        if(isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        }
+    }
+}
+
+//list of grids
+   $grids = array();
+   $grids[1] = unserialize('O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:0;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:4:"ntfr";s:6:"phrase";s:23:"Notification Recipients";s:6:"number";i:1;s:6:"Fields";a:3:{s:23:"NotificationRecipientID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:70:"Record ID|An automatically assigned number used to track notifications";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"ntfr";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:23:"NotificationRecipientID";}s:9:"Recipient";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Person ID|The person who is the recipient of the notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"ntfr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"Recipient";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Status";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:45:"Status|The current status of the notification";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"ntfr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Status";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:110:"SELECT 
+    count(*) 
+FROM `ntfr`
+   
+WHERE ntfr._Deleted = 0
+   AND `ntfr`.NotificationID = \'/**RecordID**/\'
+";s:7:"listSQL";s:400:"SELECT 
+   `ntfr`.NotificationRecipientID AS NotificationRecipientID,
+`ppl1`.DisplayName AS Recipient,
+`cod1`.Description AS Status
+FROM `ntfr`
+LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`ntfr`.RecipientID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`ntfr`.StatusID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'32\')
+WHERE ntfr._Deleted = 0
+AND `ntfr`.NotificationID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:14:"NotificationID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:0:{}s:10:"fieldTypes";a:3:{s:23:"NotificationRecipientID";s:3:"int";s:9:"Recipient";N;s:6:"Status";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:3:{s:23:"NotificationRecipientID";s:5:"right";s:9:"Recipient";s:4:"left";s:6:"Status";s:4:"left";}}');
+
+
+/**guidanceGrid**/
+
+$PKField = 'NotificationID';
+
+$ownerField = 'OrganizationID';
+
+
+/**disbleGlobalModules**/
+
+//handle any posted grid form
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+$nextScreen = "";
+$nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+$form_enctype = '';
+
+$disableGlobalModules = true;
+
+
+$getSQL = "SELECT 
+   `ntf`.NotificationID AS NotificationID,
+   `mod1`.Name AS RelatedModule,
+   `rdc1`.Value AS RelatedRecord,
+   `ppl1`.DisplayName AS Sender,
+   `ntf`.Subject AS Subject,
+   `ntf`.Message AS Message,
+   `ntf`.XMLAttached AS XMLAttached,
+   `cod1`.Description AS Status,
+   DATE_FORMAT(`ntf`.SentDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS SentDate,
+   `ntf`.StatusID AS StatusID,
+   `ntf`.RelatedModuleID AS RelatedModuleID,
+   `ntf`.RelatedRecordID AS RelatedRecordID,
+   NULLIF(CONCAT(IFNULL(`mod1`.Name,''),' | ',IFNULL(`ntf`.RelatedRecordID,'')),' | ') AS RecordLabel,
+   `rdc1`.OrganizationID AS OrganizationID
+FROM `ntf`
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`ntf`.RelatedModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`ntf`.RelatedModuleID = rdc1.ModuleID AND `ntf`.RelatedRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`ntf`.SenderID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`ntf`.StatusID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = '32')
+WHERE ntf._Deleted = 0
+   AND `ntf`.NotificationID = '/**RecordID**/'
+";
+
+$getSQL = TranslateLocalDateSQLFormats($getSQL);
+
+if(!empty($_POST['CloneForm'])){
+    $recordID = 0;
+}
+
+
+$screenPhrase = gettext("Send|Confim the sending of this notification");
+
+/*populates screen messages differently depending on whether the record exists in db or not*/
+if($recordID != 0) {
+    $existing = true;
+
+    $pageTitle = gettext("Notification");
+
+    /**CUSTOM_CODE|before_get**/
+
+    //retrieve record
+    /**SQL|GET_BEGIN**/
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+    /**SQL|GET_END**/
+
+    switch (count($r)){
+    case 0:
+        trigger_error(gettext("This record does not exist, or could not be found.|Record not found."), E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error(gettext("More than one record was found."), E_USER_WARNING);
+        break;
+    }
+
+    //populate data array, combining POSTed data with DB record:
+    //POST data takes precedence
+    foreach($r[0] as $fieldName=>$dbValue){
+        //(checking for gridnum avoids interference with any posted edit grid)
+        if (empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        } else {
+            $data[$fieldName] = $dbValue;
+        }
+    }
+
+
+    include_once APP_INCLUDE_PATH . '/ntfCheckStatus.php';
+
+} else {
+    //inserting a record
+    $existing = false;
+    $pageTitle = gettext("Notifications");
+    /**CUSTOM_CODE|new**/
+}
+
+//check if user has permission to edit record
+$allowEdit = $User->CheckEditScreenPermission();
+//if not, it terminates and display error msg.
+
+//phrases for field names, in field order
+$phrases = array(
+   'NotificationID' => gettext("Record ID|An automatically assigned number used to track notifications"),
+   'RelatedModule' => gettext("Module|The name of the module associated with the notification"),
+   'RelatedRecord' => gettext("Record Description|A description of the record that is being sent as a notification"),
+   'Sender' => gettext("Sender|The person who sent the notification"),
+   'Subject' => gettext("Subject|The subject line for the  notification email"),
+   'Message' => gettext("Message|An additional message in the notification email"),
+   'XMLAttached' => gettext("Attach XML Data?|Whether to attach a machine-readable data file with the message"),
+   'Status' => gettext("Status|The current status of the notification"),
+   'SentDate' => gettext("Sent Date|The time and date when the notification was sent"),
+   'StatusID' => gettext("Status|The current status of the notification"),
+   'RelatedModuleID' => gettext("Module|The name of the module associated with the notification"),
+   'RelatedRecordID' => gettext("Record|The record that is being sent as a notification")
+   );
+
+
+//if the form was posted by clicking the Save button
+if(!empty($_POST['Save'])){
+    
+
+    if(empty($_POST['KeepNew'])){
+        if(count($messages) == 0){
+            /**-remove_begin-**/
+            //only executed on screens that need it: have ViewField with Update, or Calculated/Summary fields
+            $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+            dbErrorCheck($r);
+            if(count($r) > 0) {
+                foreach($r[0] as $fieldName=>$dbValue){
+                    //(checking for gridnum avoids interference with any posted edit grid)
+                    if(empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+                        $data[$fieldName] = $_POST[$fieldName];
+                    } else {
+                        $data[$fieldName] = $dbValue;
+                    }
+                }
+            } else {
+                $messages[] = array('e', gettext("Error: Empty query result."));
+            }
+            /**-remove_end-**/
+        }
+    } else {
+        foreach($data as $fieldName => $fieldValue){
+            $data[$fieldName] = '';
+        }
+    }
+
+    //note: assumes all messages up til this point were errors
+    if (count($messages) == 0){
+        //add success message
+        if ($inserted){
+            $messages[] = array('m', gettext("The record was added successfully."));
+        } else {
+            $messages[] = array('m', gettext("The record was updated successfully."));
+        }
+    }
+}
+/**SQL|DELETE_BEGIN**/
+if(!empty($_POST['Delete'])){
+
+    $dh = GetDataHandler($ModuleID);
+    $result = $dh->deleteRow($recordID);
+
+    $deletelink = "list.php?$tabsQS";
+
+    //redirect to list screen
+    header("Location:" . $deletelink);
+    exit;
+}
+/**SQL|DELETE_END**/
+
+include_once APP_INCLUDE_PATH . '/ntfHandleSend.php';
+
+
+
+if(!empty($_POST['KeepNew'])){
+    unset($qsArgs['rid']); //ensures next submit will cause a new record
+}
+
+$qs = MakeQS($qsArgs);
+
+//List tab
+$tabs['List'] = Array("list.php?$tabsQS", gettext("List|View the list of Notifications"));
+
+//target for FORMs
+$targetlink = "edit.php?$qs";
+
+$cloneAsNew = false;
+$keepAddNew = false;
+
+//formatting that depends on whether the record exists or not
+if($existing){
+    //delete button only appears on the first EditScreen.
+    $deletelink = '';
+    $cancellink = "view.php?$tabsQS";
+
+    /**clone_as_new**/
+
+          $tabs['View'] = array( "view.php?scr=View&amp;$tabsQS", gettext("View|View summary information about").' '.gettext("a Notification") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit summary information about a notification requirement") );
+      $tabs['Recipients'] = array( "edit.php?scr=Recipients&amp;$tabsQS", gettext("Recipients|Modify the selected recipients for this notification") );
+      $tabs['Send'] = array( "", gettext("Send|Confim the sending of this notification") );
+
+
+} else {
+    $deletelink = '';
+    $cancellink = "list.php?$tabsQS";
+
+    /**keep_add_new**/
+
+          $tabs['Send'] = array( "", gettext("New Notification") );
+
+}
+
+/**CUSTOM_CODE|form**/
+
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->render($data, $phrases);
+    }
+}
+
+$formProps = array(
+    /**is_main_form**/
+    'delete_button'      => strlen($deletelink) > 0,
+    'cancel_link'        => $cancellink,
+    'next_screen'        => $nextScreen,
+    'form_enctype'       => $form_enctype,
+    'module_id'          => $ModuleID,
+    'render_buttons'     => $hasEditableFields,
+    'clone'              => $cloneAsNew,
+    'keep_add_new'       => $keepAddNew,
+    'single_record_name' => $singularRecordName
+);
+
+$content = renderForm2($content, $targetlink, $formProps);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+include_once APP_INCLUDE_PATH . '/ntfSendForm.php';
+
+
+//display edit grids here
+foreach($grids as $gridID => $grid){
+   $content .= $grid->render('edit.php', $qsArgs);
+}
+
+
+/**CUSTOM_CODE|after_grids**/
+
+   $recordLabelField = '';
+    if(isset($data['RecordLabel'])) {
+    $recordLabelField = $data['RecordLabel'];
+    }
+?>

@@ -1,0 +1,11 @@
+#!/bin/bash
+# Adding users from ppl 
+
+mysql --user=root --password=swords activeagenda -e  " \
+INSERT IGNORE INTO usr( PersonID, DefaultOrganizationID, Username, Password, IsAdmin, RequireNewPassword, LangID ) \
+SELECT PersonID, OrganizationID, UsernameTemplate,  'deWXPGF7bukuM', 0, 1, 5 FROM ppl \
+WHERE PersonID BETWEEN $1 AND $2 and _Deleted=0;
+INSERT IGNORE INTO usrpo( PersonID, OrganizationID ) \
+SELECT PersonID, OrganizationID FROM ppl \
+WHERE PersonID BETWEEN $1 AND $2 and _Deleted=0;"
+

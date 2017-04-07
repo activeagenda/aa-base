@@ -1,0 +1,47 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //list fields, serialized
+    $fieldHeaders = array(
+        'RecordID' => gettext("Record ID|An automatically assigned ID for internal purposes (primary key)"),
+        'PatchName' => gettext("Patch Name|A unique name assigned to each patch"),
+        'Description' => gettext("Description|A description of the patch"),
+        'ReleaseVersion' => gettext("Release Version|The release version that this patch applies to"),
+        'AppliedStatusID' => gettext("Applied Status|The status of this patch: Not Applied, Applied, Not Required")
+    );
+
+    $fieldTypes = unserialize('a:5:{s:8:"RecordID";s:3:"int";s:9:"PatchName";s:11:"varchar(25)";s:11:"Description";s:4:"text";s:14:"ReleaseVersion";s:11:"varchar(10)";s:15:"AppliedStatusID";s:3:"int";}');
+    $listFields = unserialize('a:5:{i:0;s:8:"RecordID";i:1;s:9:"PatchName";i:2;s:11:"Description";i:3;s:14:"ReleaseVersion";i:4;s:15:"AppliedStatusID";}');
+    $linkFields = unserialize('a:0:{}');
+    $fieldAlign = unserialize('a:5:{s:8:"RecordID";s:6:"center";s:9:"PatchName";s:4:"left";s:11:"Description";s:4:"left";s:14:"ReleaseVersion";s:4:"left";s:15:"AppliedStatusID";s:5:"right";}');
+
+?>

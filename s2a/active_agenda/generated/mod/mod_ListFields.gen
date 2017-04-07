@@ -1,0 +1,54 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //list fields, serialized
+    $fieldHeaders = array(
+        'RecordID' => gettext("Record ID"),
+        'ModuleID' => gettext("Module ID"),
+        'InternalLink' => gettext("Internal Link|A link to the List screen of that module"),
+        'Name' => gettext("Module Name"),
+        'GlobalDiscussionAddress' => gettext("Forum"),
+        'ModuleDependencies' => gettext("Modules"),
+        'CodeDependencies' => gettext("Codes"),
+        'StandAlone' => gettext("Stand Alone"),
+        'SubModule' => gettext("Sub Module"),
+        'Association' => gettext("Association"),
+        'Global' => gettext("Global"),
+        'Remote' => gettext("Remote")
+    );
+
+    $fieldTypes = unserialize('a:12:{s:8:"RecordID";s:3:"int";s:8:"ModuleID";s:10:"varchar(5)";s:12:"InternalLink";s:4:"text";s:4:"Name";s:12:"varchar(128)";s:23:"GlobalDiscussionAddress";s:11:"varchar(50)";s:18:"ModuleDependencies";s:3:"int";s:16:"CodeDependencies";s:3:"int";s:10:"StandAlone";s:4:"bool";s:9:"SubModule";s:4:"bool";s:11:"Association";s:4:"bool";s:6:"Global";s:4:"bool";s:6:"Remote";s:4:"bool";}');
+    $listFields = unserialize('a:12:{i:0;s:8:"RecordID";i:1;s:8:"ModuleID";i:2;s:12:"InternalLink";i:3;s:4:"Name";i:4;s:23:"GlobalDiscussionAddress";i:5;s:18:"ModuleDependencies";i:6;s:16:"CodeDependencies";i:7;s:10:"StandAlone";i:8;s:9:"SubModule";i:9;s:11:"Association";i:10;s:6:"Global";i:11;s:6:"Remote";}');
+    $linkFields = unserialize('a:1:{s:4:"Name";s:12:"InternalLink";}');
+    $fieldAlign = unserialize('a:12:{s:8:"RecordID";s:6:"center";s:8:"ModuleID";s:4:"left";s:12:"InternalLink";s:4:"hide";s:4:"Name";s:4:"left";s:23:"GlobalDiscussionAddress";s:6:"center";s:18:"ModuleDependencies";s:6:"center";s:16:"CodeDependencies";s:6:"center";s:10:"StandAlone";s:6:"center";s:9:"SubModule";s:6:"center";s:11:"Association";s:6:"center";s:6:"Global";s:6:"center";s:6:"Remote";s:6:"center";}');
+
+?>

@@ -1,0 +1,62 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+     //XML exports
+     $exportReport = unserialize('O:6:"Report":20:{s:10:"moduleName";s:17:"Support Documents";s:8:"datasets";a:0:{}s:4:"SQLs";a:2:{s:8:"spt_spts";s:499:"SELECT 
+`spts`.SupportDocumentID AS SupportDocumentID,
+`spts`.SupportDocumentSectionID AS SupportDocumentSectionID,
+`spts`.Title AS Title,
+`spts`.SectionText AS SectionText,
+`spts`.SortOrder AS SortOrder,
+`spts`.Protected AS Protected,
+`spts`.Display AS Display,
+`spts`.SectionID AS SectionID
+FROM 
+ `spts`
+INNER JOIN `spt` AS spt_p
+    ON (`spts`._Deleted = 0 
+AND `spt_p`.SupportDocumentID = `spts`.SupportDocumentID)
+
+WHERE spt_p._Deleted = 0 AND spt_p.SupportDocumentID = \'/**ReportRecordID**/\'
+";s:3:"spt";s:392:"SELECT 
+`spt`.SupportDocumentID AS SupportDocumentID,
+`spt`.ModuleID AS ModuleID,
+`spt`.LocalDocumentationStatusID AS LocalDocumentationStatusID,
+`spt`.WikiArticle AS WikiArticle,
+`spt`.WikiArticleStatusID AS WikiArticleStatusID,
+`spt`.WikiGuide AS WikiGuide,
+`spt`.WikiGuideStatusID AS WikiGuideStatusID
+FROM 
+ `spt`
+WHERE spt._Deleted = 0 AND spt.SupportDocumentID = \'/**ReportRecordID**/\'
+";}s:15:"reportLocations";a:0:{}s:10:"reportPage";N;s:13:"displayFormat";s:11:"html-linear";s:8:"isLoaded";b:0;s:4:"mode";N;s:13:"groupByFields";a:0:{}s:8:"moduleID";s:3:"spt";s:4:"name";s:9:"XmlExport";s:5:"title";s:10:"XML Export";s:11:"hierarchyID";s:3:"spt";s:8:"localKey";s:17:"SupportDocumentID";s:6:"fields";a:7:{s:17:"SupportDocumentID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:17:"SupportDocumentID";s:9:"summarize";N;s:9:"invisible";b:1;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:17:"SupportDocumentID";s:8:"moduleID";s:3:"spt";}s:8:"ModuleID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:8:"ModuleID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:10:"varchar(5)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Module ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"ModuleID";s:8:"moduleID";s:3:"spt";}s:26:"LocalDocumentationStatusID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:26:"LocalDocumentationStatusID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:12:"Local Status";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:26:"LocalDocumentationStatusID";s:8:"moduleID";s:3:"spt";}s:11:"WikiArticle";O:11:"ReportField":24:{s:15:"moduleFieldName";s:11:"WikiArticle";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:12:"varchar(128)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:18:"Implementation URL";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:11:"WikiArticle";s:8:"moduleID";s:3:"spt";}s:19:"WikiArticleStatusID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:19:"WikiArticleStatusID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:26:"Implementation Wiki Status";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:19:"WikiArticleStatusID";s:8:"moduleID";s:3:"spt";}s:9:"WikiGuide";O:11:"ReportField":24:{s:15:"moduleFieldName";s:9:"WikiGuide";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:12:"varchar(128)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:14:"User Guide URL";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:9:"WikiGuide";s:8:"moduleID";s:3:"spt";}s:17:"WikiGuideStatusID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:17:"WikiGuideStatusID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:22:"User Guide Wiki Status";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:17:"WikiGuideStatusID";s:8:"moduleID";s:3:"spt";}}s:13:"orderByFields";a:0:{}s:10:"subReports";a:1:{s:4:"spts";O:9:"SubReport":13:{s:9:"parentKey";s:17:"SupportDocumentID";s:10:"conditions";a:1:{s:17:"SupportDocumentID";s:21:"[*SupportDocumentID*]";}s:11:"headerField";N;s:8:"moduleID";s:4:"spts";s:4:"name";s:8:"Sub_spts";s:5:"title";s:8:"Sub_spts";s:11:"hierarchyID";s:8:"spt_spts";s:8:"localKey";s:17:"SupportDocumentID";s:6:"fields";a:8:{s:17:"SupportDocumentID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:17:"SupportDocumentID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:19:"Support Document ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:17:"SupportDocumentID";s:8:"moduleID";s:4:"spts";}s:24:"SupportDocumentSectionID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:24:"SupportDocumentSectionID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:24:"SupportDocumentSectionID";s:8:"moduleID";s:4:"spts";}s:5:"Title";O:11:"ReportField":24:{s:15:"moduleFieldName";s:5:"Title";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:11:"varchar(50)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:13:"Section Title";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:5:"Title";s:8:"moduleID";s:4:"spts";}s:11:"SectionText";O:11:"ReportField":24:{s:15:"moduleFieldName";s:11:"SectionText";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:4:"text";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:21:"Support Document Text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:11:"SectionText";s:8:"moduleID";s:4:"spts";}s:9:"SortOrder";O:11:"ReportField":24:{s:15:"moduleFieldName";s:9:"SortOrder";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:10:"Sort Order";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:9:"SortOrder";s:8:"moduleID";s:4:"spts";}s:9:"Protected";O:11:"ReportField":24:{s:15:"moduleFieldName";s:9:"Protected";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:4:"bool";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Protected";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:9:"Protected";s:8:"moduleID";s:4:"spts";}s:7:"Display";O:11:"ReportField":24:{s:15:"moduleFieldName";s:7:"Display";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:4:"bool";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:7:"Display";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:7:"Display";s:8:"moduleID";s:4:"spts";}s:9:"SectionID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:9:"SectionID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:11:"varchar(25)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:10:"Section ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:9:"SectionID";s:8:"moduleID";s:4:"spts";}}s:13:"orderByFields";a:0:{}s:10:"subReports";a:0:{}s:18:"singularRecordName";s:16:"Document Section";s:8:"distinct";b:0;}}s:18:"singularRecordName";s:16:"Support Document";s:8:"distinct";b:0;s:10:"maxRecords";i:1;}');
+?>

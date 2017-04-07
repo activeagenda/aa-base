@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $dataHandler = unserialize('O:11:"DataHandler":19:{s:8:"moduleID";s:5:"modrp";s:8:"PKFields";a:1:{i:0;s:14:"ModuleReportID";}s:11:"tableFields";a:11:{s:14:"ModuleReportID";s:3:"int";s:8:"ModuleID";s:10:"varchar(5)";s:4:"Name";s:11:"varchar(50)";s:5:"Title";s:11:"varchar(50)";s:13:"LocationLevel";s:11:"varchar(10)";s:13:"LocationGroup";s:11:"varchar(20)";s:6:"Format";s:11:"varchar(15)";s:8:"_ModDate";s:8:"datetime";s:6:"_ModBy";s:3:"int";s:8:"_Deleted";s:4:"bool";s:14:"_TransactionID";s:6:"bigint";}s:12:"remoteFields";a:0:{}s:20:"remoteFieldAliasKeys";a:0:{}s:16:"resolvableFields";a:0:{}s:17:"uniquenessIndexes";a:0:{}s:13:"autoIncrement";s:1:"1";s:19:"relatedRecordFields";a:0:{}s:16:"useRemoteIDCheck";b:0;s:19:"originatingModuleID";N;s:13:"ownerOrgField";s:0:"";s:8:"dbValues";a:0:{}s:13:"PKFieldValues";a:0:{}s:24:"relatedRecordFieldValues";a:0:{}s:6:"errmsg";N;s:8:"_selects";a:11:{s:14:"ModuleReportID";s:40:"`modrp`.ModuleReportID AS ModuleReportID";s:8:"ModuleID";s:28:"`modrp`.ModuleID AS ModuleID";s:4:"Name";s:20:"`modrp`.Name AS Name";s:5:"Title";s:22:"`modrp`.Title AS Title";s:13:"LocationLevel";s:38:"`modrp`.LocationLevel AS LocationLevel";s:13:"LocationGroup";s:38:"`modrp`.LocationGroup AS LocationGroup";s:6:"Format";s:24:"`modrp`.Format AS Format";s:8:"_ModDate";s:86:"DATE_FORMAT(`modrp`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";s:6:"_ModBy";s:24:"`modrp`._ModBy AS _ModBy";s:8:"_Deleted";s:28:"`modrp`._Deleted AS _Deleted";s:14:"_TransactionID";s:40:"`modrp`._TransactionID AS _TransactionID";}s:6:"_joins";a:0:{}s:11:"isPopulated";b:0;}');
+?>

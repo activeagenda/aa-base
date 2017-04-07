@@ -1,0 +1,128 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $gFieldDefs['act'] = unserialize('a:52:{s:8:"ActionID";a:3:{i:0;s:14:"`act`.ActionID";i:1;s:26:"`act`.ActionID AS ActionID";i:2;a:0:{}}s:15:"RelatedModuleID";a:3:{i:0;s:21:"`act`.RelatedModuleID";i:1;s:40:"`act`.RelatedModuleID AS RelatedModuleID";i:2;a:0:{}}s:15:"RelatedRecordID";a:3:{i:0;s:21:"`act`.RelatedRecordID";i:1;s:40:"`act`.RelatedRecordID AS RelatedRecordID";i:2;a:0:{}}s:5:"Title";a:3:{i:0;s:11:"`act`.Title";i:1;s:20:"`act`.Title AS Title";i:2;a:0:{}}s:14:"ActionRequired";a:3:{i:0;s:20:"`act`.ActionRequired";i:1;s:38:"`act`.ActionRequired AS ActionRequired";i:2;a:0:{}}s:14:"OrganizationID";a:3:{i:0;s:20:"`act`.OrganizationID";i:1;s:38:"`act`.OrganizationID AS OrganizationID";i:2;a:0:{}}s:19:"PersonAccountableID";a:3:{i:0;s:25:"`act`.PersonAccountableID";i:1;s:48:"`act`.PersonAccountableID AS PersonAccountableID";i:2;a:0:{}}s:9:"BeginDate";a:3:{i:0;s:15:"`act`.BeginDate";i:1;s:78:"DATE_FORMAT(`act`.BeginDate, GET_FORMAT(DATE,/*localDate*/\'ISO\')) AS BeginDate";i:2;a:0:{}}s:14:"ActionStatusID";a:3:{i:0;s:20:"`act`.ActionStatusID";i:1;s:38:"`act`.ActionStatusID AS ActionStatusID";i:2;a:0:{}}s:10:"Corrective";a:3:{i:0;s:16:"`act`.Corrective";i:1;s:30:"`act`.Corrective AS Corrective";i:2;a:0:{}}s:13:"RelatedModule";a:3:{i:0;s:11:"`mod1`.Name";i:1;s:28:"`mod1`.Name AS RelatedModule";i:2;a:1:{s:4:"mod1";s:79:"LEFT OUTER JOIN `mod` AS mod1 
+   ON (`act`.RelatedModuleID = `mod1`.ModuleID )";}}s:13:"IsModuleLevel";a:3:{i:0;s:29:"`act`.RelatedModuleID = \'mod\'";i:1;s:46:"`act`.RelatedModuleID = \'mod\' AS IsModuleLevel";i:2;a:0:{}}s:22:"DisplayRelatedRecordID";a:3:{i:0;s:64:"IF(`act`.RelatedModuleID = \'mod\', \'list\', `act`.RelatedRecordID)";i:1;s:90:"IF(`act`.RelatedModuleID = \'mod\', \'list\', `act`.RelatedRecordID) AS DisplayRelatedRecordID";i:2;a:0:{}}s:26:"ModuleLevelRelatedModuleID";a:3:{i:0;s:15:"`mod2`.ModuleID";i:1;s:45:"`mod2`.ModuleID AS ModuleLevelRelatedModuleID";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:22:"DisplayRelatedModuleID";a:3:{i:0;s:73:"IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID)";i:1;s:99:"IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID) AS DisplayRelatedModuleID";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:24:"ModuleLevelRelatedModule";a:3:{i:0;s:11:"`mod2`.Name";i:1;s:39:"`mod2`.Name AS ModuleLevelRelatedModule";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:20:"DisplayRelatedModule";a:3:{i:0;s:59:"IF(`act`.RelatedModuleID = \'mod\', `mod2`.Name, `mod1`.Name)";i:1;s:83:"IF(`act`.RelatedModuleID = \'mod\', `mod2`.Name, `mod1`.Name) AS DisplayRelatedModule";i:2;a:2:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";s:4:"mod1";s:79:"LEFT OUTER JOIN `mod` AS mod1 
+   ON (`act`.RelatedModuleID = `mod1`.ModuleID )";}}s:30:"ModuleLevelRelatedModuleRecord";a:3:{i:0;s:81:"NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),\'\'),\' (general)\'),\' (general)\')";i:1;s:115:"NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),\'\'),\' (general)\'),\' (general)\') AS ModuleLevelRelatedModuleRecord";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:26:"DisplayRelatedModuleRecord";a:3:{i:0;s:262:"IF(`act`.RelatedModuleID = \'mod\', NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),\'\'),\' (general)\'),\' (general)\'), NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' (ID Rekordu: \',IFNULL( CAST( `act`.RelatedRecordID AS CHAR ),\'\'),\')\'),\' (ID Rekordu: )\'))";i:1;s:292:"IF(`act`.RelatedModuleID = \'mod\', NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),\'\'),\' (general)\'),\' (general)\'), NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' (ID Rekordu: \',IFNULL( CAST( `act`.RelatedRecordID AS CHAR ),\'\'),\')\'),\' (ID Rekordu: )\')) AS DisplayRelatedModuleRecord";i:2;a:2:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";s:4:"mod1";s:79:"LEFT OUTER JOIN `mod` AS mod1 
+   ON (`act`.RelatedModuleID = `mod1`.ModuleID )";}}s:28:"ModuleLevelRelatedRecordLink";a:3:{i:0;s:217:"NULLIF(CONCAT(\'internal:global.php?mdl=\',IFNULL( CAST( IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID) AS CHAR ),\'\'),\'&\',\'rid=list\',\'&\',\'gmd=act\'),\'internal:global.php?mdl=&rid=list&gmd=act\')";i:1;s:249:"NULLIF(CONCAT(\'internal:global.php?mdl=\',IFNULL( CAST( IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID) AS CHAR ),\'\'),\'&\',\'rid=list\',\'&\',\'gmd=act\'),\'internal:global.php?mdl=&rid=list&gmd=act\') AS ModuleLevelRelatedRecordLink";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:24:"DisplayRelatedRecordLink";a:3:{i:0;s:338:"IF(`act`.RelatedModuleID = \'mod\', NULLIF(CONCAT(\'internal:global.php?mdl=\',IFNULL( CAST( IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID) AS CHAR ),\'\'),\'&\',\'rid=list\',\'&\',\'gmd=act\'),\'internal:global.php?mdl=&rid=list&gmd=act\'), CONCAT(\'internal:view.php?mdl=\',`act`.RelatedModuleID,\'&rid=\',`act`.RelatedRecordID))";i:1;s:366:"IF(`act`.RelatedModuleID = \'mod\', NULLIF(CONCAT(\'internal:global.php?mdl=\',IFNULL( CAST( IF(`act`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `act`.RelatedModuleID) AS CHAR ),\'\'),\'&\',\'rid=list\',\'&\',\'gmd=act\'),\'internal:global.php?mdl=&rid=list&gmd=act\'), CONCAT(\'internal:view.php?mdl=\',`act`.RelatedModuleID,\'&rid=\',`act`.RelatedRecordID)) AS DisplayRelatedRecordLink";i:2;a:1:{s:4:"mod2";s:79:"LEFT OUTER JOIN `mod` AS mod2 
+   ON (`act`.RelatedRecordID = `mod2`.RecordID )";}}s:24:"RelatedRecordDescription";a:3:{i:0;s:12:"`rdc1`.Value";i:1;s:40:"`rdc1`.Value AS RelatedRecordDescription";i:2;a:1:{s:4:"rdc1";s:115:"LEFT OUTER JOIN `rdc` AS rdc1 ON (`act`.RelatedModuleID = rdc1.ModuleID AND `act`.RelatedRecordID =  rdc1.RecordID)";}}s:12:"Organization";a:3:{i:0;s:11:"`org1`.Name";i:1;s:27:"`org1`.Name AS Organization";i:2;a:1:{s:4:"org1";s:84:"LEFT OUTER JOIN `org` AS org1 
+   ON (`act`.OrganizationID = `org1`.OrganizationID )";}}s:17:"PersonAccountable";a:3:{i:0;s:18:"`ppl1`.DisplayName";i:1;s:39:"`ppl1`.DisplayName AS PersonAccountable";i:2;a:1:{s:4:"ppl1";s:83:"LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`act`.PersonAccountableID = `ppl1`.PersonID )";}}s:9:"EntryDate";a:3:{i:0;s:76:"DATE_FORMAT(`act_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\'))";i:1;s:89:"DATE_FORMAT(`act_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS EntryDate";i:2;a:1:{s:5:"act_l";s:534:"LEFT OUTER JOIN (
+            SELECT
+                `act_l`.ActionID,
+                `act_l`._ModDate AS createDate,
+                `act_l`._ModBy AS createBy
+            FROM `act_l`
+            INNER JOIN (
+                SELECT
+                    ActionID,
+                    MIN(_RecordID) AS MinRecordID
+                FROM `act_l`
+                GROUP BY ActionID) as `act_min`
+            ON `act_l`._RecordID = `act_min`.MinRecordID
+            ) AS act_l
+            ON (`act`.ActionID = act_l.ActionID)";}}s:12:"AssignedDate";a:3:{i:0;s:68:"DATE_FORMAT(`dat1`.RelatedDate, GET_FORMAT(DATE,/*localDate*/\'ISO\'))";i:1;s:84:"DATE_FORMAT(`dat1`.RelatedDate, GET_FORMAT(DATE,/*localDate*/\'ISO\')) AS AssignedDate";i:2;a:1:{s:4:"dat1";s:186:"LEFT OUTER JOIN `dat` AS dat1 
+    ON (`act`.ActionID = `dat1`.SourceRecordID 
+     AND `dat1`.SourceModuleID = \'act\'
+     AND `dat1`._Deleted = 0
+     AND `dat1`.DateDescriptorID = \'2\')";}}s:7:"DueDate";a:3:{i:0;s:68:"DATE_FORMAT(`dat2`.RelatedDate, GET_FORMAT(DATE,/*localDate*/\'ISO\'))";i:1;s:79:"DATE_FORMAT(`dat2`.RelatedDate, GET_FORMAT(DATE,/*localDate*/\'ISO\')) AS DueDate";i:2;a:1:{s:4:"dat2";s:186:"LEFT OUTER JOIN `dat` AS dat2 
+    ON (`act`.ActionID = `dat2`.SourceRecordID 
+     AND `dat2`.SourceModuleID = \'act\'
+     AND `dat2`._Deleted = 0
+     AND `dat2`.DateDescriptorID = \'1\')";}}s:13:"DaysRemaining";a:3:{i:0;s:35:"DATEDIFF(`dat2`.RelatedDate, NOW())";i:1;s:52:"DATEDIFF(`dat2`.RelatedDate, NOW()) AS DaysRemaining";i:2;a:1:{s:4:"dat2";s:186:"LEFT OUTER JOIN `dat` AS dat2 
+    ON (`act`.ActionID = `dat2`.SourceRecordID 
+     AND `dat2`.SourceModuleID = \'act\'
+     AND `dat2`._Deleted = 0
+     AND `dat2`.DateDescriptorID = \'1\')";}}s:13:"DueDateFormat";a:3:{i:0;s:83:"CASE WHEN (IFNULL(DATEDIFF(`dat2`.RelatedDate, NOW()),0) < 0) THEN \'od\' ELSE \'\' END";i:1;s:100:"CASE WHEN (IFNULL(DATEDIFF(`dat2`.RelatedDate, NOW()),0) < 0) THEN \'od\' ELSE \'\' END AS DueDateFormat";i:2;a:1:{s:4:"dat2";s:186:"LEFT OUTER JOIN `dat` AS dat2 
+    ON (`act`.ActionID = `dat2`.SourceRecordID 
+     AND `dat2`.SourceModuleID = \'act\'
+     AND `dat2`._Deleted = 0
+     AND `dat2`.DateDescriptorID = \'1\')";}}s:14:"CompletionDate";a:3:{i:0;s:76:"DATE_FORMAT(`dat3`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\'))";i:1;s:94:"DATE_FORMAT(`dat3`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CompletionDate";i:2;a:1:{s:4:"dat3";s:186:"LEFT OUTER JOIN `dat` AS dat3 
+    ON (`act`.ActionID = `dat3`.SourceRecordID 
+     AND `dat3`.SourceModuleID = \'act\'
+     AND `dat3`._Deleted = 0
+     AND `dat3`.DateDescriptorID = \'3\')";}}s:10:"StartDelay";a:3:{i:0;s:45:"DATEDIFF(`act`.BeginDate, `dat1`.RelatedDate)";i:1;s:59:"DATEDIFF(`act`.BeginDate, `dat1`.RelatedDate) AS StartDelay";i:2;a:1:{s:4:"dat1";s:186:"LEFT OUTER JOIN `dat` AS dat1 
+    ON (`act`.ActionID = `dat1`.SourceRecordID 
+     AND `dat1`.SourceModuleID = \'act\'
+     AND `dat1`._Deleted = 0
+     AND `dat1`.DateDescriptorID = \'2\')";}}s:15:"CompletionDelay";a:3:{i:0;s:204:"CONCAT(FLOOR((UNIX_TIMESTAMP(`dat3`.RelatedDate)-UNIX_TIMESTAMP(`dat1`.RelatedDate))/86400), \'x24h + \', ROUND(MOD((UNIX_TIMESTAMP(`dat3`.RelatedDate)-UNIX_TIMESTAMP(`dat1`.RelatedDate)),86400)/3600), \'h\')";i:1;s:223:"CONCAT(FLOOR((UNIX_TIMESTAMP(`dat3`.RelatedDate)-UNIX_TIMESTAMP(`dat1`.RelatedDate))/86400), \'x24h + \', ROUND(MOD((UNIX_TIMESTAMP(`dat3`.RelatedDate)-UNIX_TIMESTAMP(`dat1`.RelatedDate)),86400)/3600), \'h\') AS CompletionDelay";i:2;a:2:{s:4:"dat3";s:186:"LEFT OUTER JOIN `dat` AS dat3 
+    ON (`act`.ActionID = `dat3`.SourceRecordID 
+     AND `dat3`.SourceModuleID = \'act\'
+     AND `dat3`._Deleted = 0
+     AND `dat3`.DateDescriptorID = \'3\')";s:4:"dat1";s:186:"LEFT OUTER JOIN `dat` AS dat1 
+    ON (`act`.ActionID = `dat1`.SourceRecordID 
+     AND `dat1`.SourceModuleID = \'act\'
+     AND `dat1`._Deleted = 0
+     AND `dat1`.DateDescriptorID = \'2\')";}}s:12:"AssignedByID";a:3:{i:0;s:23:"`inv1`.PersonInvolvedID";i:1;s:39:"`inv1`.PersonInvolvedID AS AssignedByID";i:2;a:1:{s:4:"inv1";s:193:"LEFT OUTER JOIN `inv` AS inv1 
+    ON (`act`.ActionID = `inv1`.SourceRecordID 
+     AND `inv1`.SourceModuleID = \'act\'
+     AND `inv1`._Deleted = 0
+     AND `inv1`.InvolvementDescriptorID = \'4\')";}}s:10:"AssignedBy";a:3:{i:0;s:18:"`ppl2`.DisplayName";i:1;s:32:"`ppl2`.DisplayName AS AssignedBy";i:2;a:2:{s:4:"inv1";s:193:"LEFT OUTER JOIN `inv` AS inv1 
+    ON (`act`.ActionID = `inv1`.SourceRecordID 
+     AND `inv1`.SourceModuleID = \'act\'
+     AND `inv1`._Deleted = 0
+     AND `inv1`.InvolvementDescriptorID = \'4\')";s:4:"ppl2";s:81:"LEFT OUTER JOIN `ppl` AS ppl2 
+   ON (`inv1`.PersonInvolvedID = `ppl2`.PersonID )";}}s:12:"ActionStatus";a:3:{i:0;s:18:"`cod1`.Description";i:1;s:34:"`cod1`.Description AS ActionStatus";i:2;a:1:{s:4:"cod1";s:111:"LEFT OUTER JOIN `cod` AS cod1 
+   ON (`act`.ActionStatusID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'261\')";}}s:17:"SMCParentModuleID";a:3:{i:0;s:15:"`smc1`.ModuleID";i:1;s:36:"`smc1`.ModuleID AS SMCParentModuleID";i:2;a:1:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";}}s:17:"SMCParentRecordID";a:3:{i:0;s:15:"`smc1`.RecordID";i:1;s:36:"`smc1`.RecordID AS SMCParentRecordID";i:2;a:1:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";}}s:11:"SubModuleID";a:3:{i:0;s:18:"`smc1`.SubModuleID";i:1;s:33:"`smc1`.SubModuleID AS SubModuleID";i:2;a:1:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";}}s:11:"SubRecordID";a:3:{i:0;s:18:"`smc1`.SubRecordID";i:1;s:33:"`smc1`.SubRecordID AS SubRecordID";i:2;a:1:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";}}s:9:"SubModule";a:3:{i:0;s:11:"`mod3`.Name";i:1;s:24:"`mod3`.Name AS SubModule";i:2;a:2:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";s:4:"mod3";s:76:"LEFT OUTER JOIN `mod` AS mod3 
+   ON (`smc1`.SubModuleID = `mod3`.ModuleID )";}}s:9:"SubRecord";a:3:{i:0;s:12:"`rdc2`.Value";i:1;s:25:"`rdc2`.Value AS SubRecord";i:2;a:2:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";s:4:"rdc2";s:109:"LEFT OUTER JOIN `rdc` AS rdc2 ON (`smc1`.SubModuleID = rdc2.ModuleID AND `smc1`.SubRecordID =  rdc2.RecordID)";}}s:17:"RelatedRecordLink";a:3:{i:0;s:84:"CONCAT(\'internal:view.php?mdl=\',`act`.RelatedModuleID,\'&rid=\',`act`.RelatedRecordID)";i:1;s:105:"CONCAT(\'internal:view.php?mdl=\',`act`.RelatedModuleID,\'&rid=\',`act`.RelatedRecordID) AS RelatedRecordLink";i:2;a:0:{}}s:19:"RelatedModuleRecord";a:3:{i:0;s:144:"NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' (ID Rekordu: \',IFNULL( CAST( `act`.RelatedRecordID AS CHAR ),\'\'),\')\'),\' (ID Rekordu: )\')";i:1;s:167:"NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' (ID Rekordu: \',IFNULL( CAST( `act`.RelatedRecordID AS CHAR ),\'\'),\')\'),\' (ID Rekordu: )\') AS RelatedModuleRecord";i:2;a:1:{s:4:"mod1";s:79:"LEFT OUTER JOIN `mod` AS mod1 
+   ON (`act`.RelatedModuleID = `mod1`.ModuleID )";}}s:20:"SubRecordDescription";a:3:{i:0;s:110:"NULLIF(CONCAT(IFNULL( CAST( `mod3`.Name AS CHAR ),\'\'),\'  | \',IFNULL( CAST( `rdc2`.Value AS CHAR ),\'\')),\'  | \')";i:1;s:134:"NULLIF(CONCAT(IFNULL( CAST( `mod3`.Name AS CHAR ),\'\'),\'  | \',IFNULL( CAST( `rdc2`.Value AS CHAR ),\'\')),\'  | \') AS SubRecordDescription";i:2;a:3:{s:4:"smc1";s:132:"LEFT OUTER JOIN `smc` AS smc1 
+   ON (`act`.RelatedRecordID = `smc1`.SubRecordID 
+     AND `act`.RelatedRecordID = smc1.SubModuleID)";s:4:"rdc2";s:109:"LEFT OUTER JOIN `rdc` AS rdc2 ON (`smc1`.SubModuleID = rdc2.ModuleID AND `smc1`.SubRecordID =  rdc2.RecordID)";s:4:"mod3";s:76:"LEFT OUTER JOIN `mod` AS mod3 
+   ON (`smc1`.SubModuleID = `mod3`.ModuleID )";}}s:11:"RecordLabel";a:3:{i:0;s:206:"NULLIF(CONCAT(IFNULL( CAST( `org1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `act`.Title AS CHAR ),\'\'),\' | \',IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `rdc1`.Value AS CHAR ),\'\')),\' |  |  | \')";i:1;s:221:"NULLIF(CONCAT(IFNULL( CAST( `org1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `act`.Title AS CHAR ),\'\'),\' | \',IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `rdc1`.Value AS CHAR ),\'\')),\' |  |  | \') AS RecordLabel";i:2;a:3:{s:4:"rdc1";s:115:"LEFT OUTER JOIN `rdc` AS rdc1 ON (`act`.RelatedModuleID = rdc1.ModuleID AND `act`.RelatedRecordID =  rdc1.RecordID)";s:4:"mod1";s:79:"LEFT OUTER JOIN `mod` AS mod1 
+   ON (`act`.RelatedModuleID = `mod1`.ModuleID )";s:4:"org1";s:84:"LEFT OUTER JOIN `org` AS org1 
+   ON (`act`.OrganizationID = `org1`.OrganizationID )";}}s:14:"StartDelayCalc";a:3:{i:0;s:105:"NULLIF(CONCAT(IFNULL( CAST( DATEDIFF(`act`.BeginDate, `dat1`.RelatedDate) AS CHAR ),\'\'),\' Days\'),\' Days\')";i:1;s:123:"NULLIF(CONCAT(IFNULL( CAST( DATEDIFF(`act`.BeginDate, `dat1`.RelatedDate) AS CHAR ),\'\'),\' Days\'),\' Days\') AS StartDelayCalc";i:2;a:1:{s:4:"dat1";s:186:"LEFT OUTER JOIN `dat` AS dat1 
+    ON (`act`.ActionID = `dat1`.SourceRecordID 
+     AND `dat1`.SourceModuleID = \'act\'
+     AND `dat1`._Deleted = 0
+     AND `dat1`.DateDescriptorID = \'2\')";}}s:6:"Action";a:3:{i:0;s:58:"NULLIF(CONCAT(IFNULL( CAST( `act`.Title AS CHAR ),\'\')),\'\')";i:1;s:68:"NULLIF(CONCAT(IFNULL( CAST( `act`.Title AS CHAR ),\'\')),\'\') AS Action";i:2;a:0:{}}s:8:"_ModDate";a:3:{i:0;s:14:"`act`._ModDate";i:1;s:84:"DATE_FORMAT(`act`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";i:2;a:0:{}}s:6:"_ModBy";a:3:{i:0;s:12:"`act`._ModBy";i:1;s:22:"`act`._ModBy AS _ModBy";i:2;a:0:{}}s:8:"_Deleted";a:3:{i:0;s:14:"`act`._Deleted";i:1;s:26:"`act`._Deleted AS _Deleted";i:2;a:0:{}}s:14:"_TransactionID";a:3:{i:0;s:20:"`act`._TransactionID";i:1;s:38:"`act`._TransactionID AS _TransactionID";i:2;a:0:{}}s:10:"_ModByName";a:3:{i:0;s:18:"`ppl3`.DisplayName";i:1;s:32:"`ppl3`.DisplayName AS _ModByName";i:2;a:1:{s:4:"ppl3";s:70:"LEFT OUTER JOIN `ppl` AS ppl3 
+   ON (`act`._ModBy = `ppl3`.PersonID )";}}}');
+?>

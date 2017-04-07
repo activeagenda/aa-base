@@ -1,0 +1,71 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //edit screens
+    $editScreens = 's:3555:"<h2>Form Screen</h2><p><i>The screen used to edit module support documentation</i></p><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>ViewField</td><td>name: SupportDocumentID
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track support documents</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Module ID</td><td>ViewField</td><td>name: ModuleID
+</td></tr><tr><td colspan="3"><i>The module ID of the module this document is intended to support</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Module Name</td><td>ViewField</td><td>name: Module
+</td></tr><tr><td colspan="3"><i>The name of the module this document is intended to support</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Local Status</td><td>CodeComboField</td><td>name: LocalDocumentationStatusID
+findMode: text
+</td></tr><tr><td colspan="3"><i>Development status of the local support documentation</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Implementation URL</td><td>EditField</td><td>name: WikiArticle
+size: 75
+maxLength: 128
+</td></tr><tr><td colspan="3"><i>The Internet address of the Wiki page corresponding with the module\'s implementation support guide</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Implementation Wiki Status</td><td>CodeComboField</td><td>name: WikiArticleStatusID
+findMode: text
+</td></tr><tr><td colspan="3"><i>Development status of the implementation support documentation Wiki on the Internet</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">User Guide URL</td><td>EditField</td><td>name: WikiGuide
+size: 75
+maxLength: 128
+</td></tr><tr><td colspan="3"><i>The Internet address of the Wiki page corresponding with the module\'s user guide\'</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">User Guide Wiki Status</td><td>CodeComboField</td><td>name: WikiGuideStatusID
+findMode: text
+</td></tr><tr><td colspan="3"><i>Development status of the user guide Wiki on the Internet</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+<h2>Sections Screen</h2><p><i>The screen to edit sections of the documentation</i></p>
+<h3>Sections Grid</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>InvisibleField</td><td>name: SupportDocumentSectionID
+formName: spts
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track support documents</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Section Title</td><td>EditField</td><td>name: Title
+size: 30
+maxlength: 50
+sample: Claims Administration - Claims Adjuster
+formName: spts
+</td></tr><tr><td colspan="3"><i>The title of the Support Document Section</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Support Document Text</td><td>MemoField</td><td>name: SectionText
+rows: 25
+cols: 80
+sample: Mattias Thorslund
+formName: spts
+</td></tr><tr><td colspan="3"><i>The text of the Support Document Section</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Sort Order</td><td>EditField</td><td>name: SortOrder
+size: 5
+maxlength: 5
+formName: spts
+</td></tr><tr><td colspan="3"><i>A numeric sort order</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+</table>
+";';
+
+?>

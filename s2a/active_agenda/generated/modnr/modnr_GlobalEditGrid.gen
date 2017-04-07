@@ -1,0 +1,164 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $editGrid = unserialize('O:8:"EditGrid":40:{s:10:"getFormSQL";s:400:"SELECT 
+   `modnr`.NotificationRecipientID AS NotificationRecipientID,
+   `org1`.Name AS Organization,
+   `modnr`.OrganizationID AS OrganizationID,
+   `modnr`.RecipientID AS RecipientID,
+   `modnr`.Details AS Details
+FROM `modnr`
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`modnr`.OrganizationID = `org1`.OrganizationID )
+WHERE modnr._Deleted = 0
+   AND `modnr`.NotificationRecipientID = \'/**RowID**/\'
+";s:9:"getRowSQL";s:863:"SELECT 
+   `modnr`.NotificationRecipientID AS NotificationRecipientID,
+   `ppl1`.DisplayName AS Recipient,
+   `org1`.Name AS Organization,
+   NULLIF(CONCAT(IFNULL(`ppl1`.WorkPhone,\'\'),\', ext. \',IFNULL(`ppl1`.WorkExtension,\'\'),\' (work)\',\'<br />\',IFNULL(`ppl1`.MobilePhone,\'\'),\' (mobile)\',\'<br />\',IFNULL(`ppl1`.WorkFax,\'\'),\' (fax)\',\' <br /><a href=\\"mailto:\',IFNULL(`ppl1`.WorkEmail,\'\'),\'\\">\',IFNULL(`ppl1`.WorkEmail,\'\'),\'</a>\'),\', ext.  (work)<br /> (mobile)<br /> (fax) <br /><a href=\\\\\\"mailto:\\\\\\"></a>\') AS ContactCard,
+   `modnr`.Details AS Details,
+   `modnr`.OrganizationID AS OrganizationID
+FROM `modnr`
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`modnr`.RecipientID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`modnr`.OrganizationID = `org1`.OrganizationID )
+WHERE modnr._Deleted = 0
+   AND `modnr`.NotificationRecipientID = \'/**RowID**/\'
+";s:12:"remoteFields";N;s:11:"hasGridForm";b:1;s:10:"FormFields";a:4:{s:23:"NotificationRecipientID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:82:"Record ID|An automatically assigned number used to track notification requirements";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:23:"NotificationRecipientID";}s:14:"OrganizationID";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:385:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY orgListOption, Name, ID;";s:6:"getSQL";s:372:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:5:"modnr";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:233:"Organization|Name of the organization associated with the notification requirements. Individuals from the same organization, or many different organizations, may be added to the notification list of this organization for this module.";s:8:"dataType";s:3:"int";s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"OrganizationID";}s:11:"RecipientID";O:16:"PersonComboField":34:{s:8:"orgField";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:385:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY orgListOption, Name, ID;";s:6:"getSQL";s:372:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Organization|Name of organization associated with the individual";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:15:"RecipientID_org";}s:9:"listField";N;s:12:"foreignTable";s:3:"ppl";s:10:"foreignKey";s:8:"PersonID";s:12:"foreignField";s:11:"DisplayName";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:109:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+WHERE ppl._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:105:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+
+WHERE `ppl`.PersonID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:1:{s:11:"ContactCard";a:1:{s:4:"name";s:11:"ContactCard";}}s:8:"moduleID";s:5:"modnr";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`ppl`.OrganizationID IN (%s)";s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:60:"Recipient|The name of the individual that should be notified";s:8:"dataType";s:3:"int";s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"RecipientID";s:14:"conditionField";N;s:14:"conditionValue";N;}s:7:"Details";O:9:"MemoField":19:{s:4:"rows";s:1:"5";s:4:"cols";s:2:"75";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:83:"Recipient Notification Details|Details associated with the notification requirement";s:8:"dataType";s:4:"text";s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Details";s:14:"conditionField";N;s:14:"conditionValue";N;}}s:10:"selectedID";N;s:7:"encType";s:0:"";s:16:"IDTranslationSQL";s:0:"";s:20:"listExtendedConditon";s:0:"";s:7:"PKField";s:23:"NotificationRecipientID";s:19:"showGlobalSMRecords";b:0;s:13:"orderByFields";a:0:{}s:18:"dataCollectionForm";b:0;s:15:"parentGetFields";a:0:{}s:20:"parentSelectSQLOnNew";N;s:15:"getFormSQLOnNew";N;s:17:"getRowSQLOnDelete";N;s:14:"allowAddRecord";b:1;s:8:"moduleID";s:5:"modnr";s:6:"phrase";s:23:"Notification Recipients";s:6:"number";i:1;s:6:"Fields";a:5:{s:23:"NotificationRecipientID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:82:"Record ID|An automatically assigned number used to track notification requirements";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:23:"NotificationRecipientID";}s:9:"Recipient";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:60:"Recipient|The name of the individual that should be notified";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"Recipient";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:233:"Organization|Name of the organization associated with the notification requirements. Individuals from the same organization, or many different organizations, may be added to the notification list of this organization for this module.";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"ContactCard";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:81:"Contact Card|A combined field used to group basic contact information of a person";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"ContactCard";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"Details";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:83:"Recipient Notification Details|Details associated with the notification requirement";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"modnr";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Details";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:121:"SELECT 
+    count(*) 
+FROM `modnr`
+   
+WHERE modnr._Deleted = 0
+   AND `modnr`.RelatedModuleID = \'/**DynamicModuleID**/\'
+";s:7:"listSQL";s:845:"SELECT 
+   `modnr`.NotificationRecipientID AS NotificationRecipientID,
+`modnr`.OrganizationID AS OrganizationID,
+`ppl1`.DisplayName AS Recipient,
+`org1`.Name AS Organization,
+NULLIF(CONCAT(IFNULL(`ppl1`.WorkPhone,\'\'),\', ext. \',IFNULL(`ppl1`.WorkExtension,\'\'),\' (work)\',\'<br />\',IFNULL(`ppl1`.MobilePhone,\'\'),\' (mobile)\',\'<br />\',IFNULL(`ppl1`.WorkFax,\'\'),\' (fax)\',\' <br /><a href=\\"mailto:\',IFNULL(`ppl1`.WorkEmail,\'\'),\'\\">\',IFNULL(`ppl1`.WorkEmail,\'\'),\'</a>\'),\', ext.  (work)<br /> (mobile)<br /> (fax) <br /><a href=\\\\\\"mailto:\\\\\\"></a>\') AS ContactCard,
+`modnr`.Details AS Details
+FROM `modnr`
+LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`modnr`.RecipientID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`modnr`.OrganizationID = `org1`.OrganizationID )
+WHERE modnr._Deleted = 0
+AND `modnr`.RelatedModuleID = \'/**DynamicModuleID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:0:"";s:9:"parentKey";N;s:8:"PKFields";a:1:{i:0;s:23:"NotificationRecipientID";}s:13:"formatOptions";a:0:{}s:10:"fieldTypes";a:5:{s:23:"NotificationRecipientID";s:3:"int";s:9:"Recipient";N;s:12:"Organization";N;s:11:"ContactCard";N;s:7:"Details";s:4:"text";}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"conditions";a:1:{s:15:"RelatedModuleID";s:21:"/**DynamicModuleID**/";}s:16:"isGlobalEditGrid";b:1;s:19:"hasNoParentRecordID";b:1;s:10:"fieldAlign";a:5:{s:23:"NotificationRecipientID";s:5:"right";s:9:"Recipient";s:4:"left";s:12:"Organization";s:4:"left";s:11:"ContactCard";s:7:"justify";s:7:"Details";s:7:"justify";}s:9:"insertSQL";s:289:"INSERT INTO `modnr` (
+   NotificationRecipientID,
+   RelatedModuleID,
+   OrganizationID,
+   RecipientID,
+   Details,
+   _ModDate,
+   _ModBy
+) VALUES (
+   /**RecordID**/,
+   \'/**DynamicModuleID**/\',
+   \'[*OrganizationID*]\',
+   \'[*RecipientID*]\',
+   \'[*Details*]\',
+   NOW(),
+   [**UserID**])";s:9:"updateSQL";s:224:"UPDATE `modnr`
+SET
+   OrganizationID = \'[*OrganizationID*]\',
+    RecipientID = \'[*RecipientID*]\',
+    Details = \'[*Details*]\',
+    _ModDate = NOW(),
+    _ModBy = [**UserID**]
+WHERE
+   NotificationRecipientID=\'/**RecordID**/\'";s:9:"deleteSQL";s:130:"UPDATE `modnr`
+   SET
+      _Deleted = 1,
+_ModBy = [**UserID**],
+_ModDate = NOW()
+
+WHERE
+   NotificationRecipientID=/**RecordID**/";s:6:"logSQL";s:291:"INSERT INTO `modnr_l` (
+   NotificationRecipientID,
+   RelatedModuleID,
+   OrganizationID,
+   RecipientID,
+   Details,
+   _ModDate,
+   _ModBy
+) VALUES (
+   /**RecordID**/,
+   \'/**DynamicModuleID**/\',
+   \'[*OrganizationID*]\',
+   \'[*RecipientID*]\',
+   \'[*Details*]\',
+   NOW(),
+   [**UserID**])";}');
+    $gridPluralName = 'Module Notification Recipients';
+?>

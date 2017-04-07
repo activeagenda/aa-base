@@ -1,0 +1,58 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $dataCollection = unserialize('a:1:{s:4:"Form";a:2:{s:6:"phrase";s:84:"Form|Edit summary information about a glossary term used throughout the organization";s:6:"fields";a:7:{s:14:"OrganizationID";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:271:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 1
+ELSE 2 END AS orgListOption FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY orgListOption, Name, ID;";s:6:"getSQL";s:258:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 1
+ELSE 2 END AS orgListOption FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"glo";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:141:"Organization|The name of the organization introducing the glossary term and associated definition to assist with organizational communication";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"OrganizationID";}s:19:"PersonAccountableID";O:16:"PersonComboField":34:{s:8:"orgField";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:108:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:110:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Organization|Name of organization associated with the individual";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:23:"PersonAccountableID_org";}s:9:"listField";N;s:12:"foreignTable";s:3:"ppl";s:10:"foreignKey";s:8:"PersonID";s:12:"foreignField";s:11:"DisplayName";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:109:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+WHERE ppl._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:105:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+
+WHERE `ppl`.PersonID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"glo";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`ppl`.OrganizationID IN (%s)";s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:89:"Person Accountable|The individual assigned primary accountability for the assigned action";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:19:"PersonAccountableID";s:14:"conditionField";N;s:14:"conditionValue";N;}s:12:"GlossaryItem";O:9:"EditField":18:{s:4:"size";s:2:"75";s:9:"maxLength";s:2:"75";s:5:"align";s:4:"left";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Glossary Item|The term, title, or phrase to be included as a glossary item";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"GlossaryItem";}s:10:"Definition";O:9:"MemoField":19:{s:4:"rows";s:1:"5";s:4:"cols";s:2:"75";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:86:"Definition|The definition of the glossary item as it is uesd throughout the enterprise";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Definition";s:14:"conditionField";N;s:14:"conditionValue";N;}s:11:"GlossaryURL";O:9:"EditField":18:{s:4:"size";s:2:"75";s:9:"maxLength";s:2:"75";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:85:"Uniform Resource Locator|The internet address of a useful glossary or definition page";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"GlossaryURL";}s:9:"Protected";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:123:"Protected|Protect these changes from being automatically overwritten while importing glossary records from another database";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"Protected";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:3:"glo";}s:7:"Display";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:66:"Display|Display this glossary item within the application glossary";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Display";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:3:"glo";}}}}');
+?>

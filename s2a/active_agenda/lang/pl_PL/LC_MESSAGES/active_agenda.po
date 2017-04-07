@@ -1,0 +1,3793 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AA base\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-28 15:23+0200\n"
+"PO-Revision-Date: 2009-07-16 16:08+0100\n"
+"Last-Translator: jezzy <jerzy.wachowiak@wp.pl>\n"
+"Language-Team: Active Agenda <a@b.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: AA\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-06-20 16:01-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: jezzy <jerzy.wachowiak@wp.pl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Polish\n"
+
+msgid "Specific Involvement"
+msgstr "Sposób Uczestnictwa"
+
+msgid "User Guide Wiki By Status"
+msgstr " Wiki Przewodnika Użytkownika po Statusie"
+
+msgid "People By Home Country"
+msgstr "Osoby po Powiatu Dom"
+
+msgid "Organizations By Reinsurer"
+msgstr "Organizacje po Reasekuracji"
+
+msgid "Accountabilities By Source"
+msgstr "Odpowiedzialności według Źródła"
+
+msgid "Training"
+msgstr "Traning"
+
+msgid "Data Collection"
+msgstr "Zbieranie danych"
+
+msgid "Dates By Module"
+msgstr "Daty po Modułach"
+
+msgid "People By Postal Code"
+msgstr "Osoby po Kodach Pocztowych"
+
+msgid "People By Home City"
+msgstr "Osoby po Miejscowości Dom"
+
+msgid "Module Dependencies By Remote Dependency"
+msgstr "Zależności Modułów po Zależnościach Zdalnych"
+
+msgid "Dates By Descriptor"
+msgstr "Daty po Opisującym"
+
+msgid "Incurred Costs By Year"
+msgstr "Powstałe Koszty po Latach"
+
+msgid "Organizations By Supplier"
+msgstr "Organizacje po Dostawcach"
+
+msgid "Organizational Learning"
+msgstr "Nauczanie w Organizacji"
+
+msgid "Permissions By Module"
+msgstr "Prawa po Modułach"
+
+msgid "Accountabilities By Accountability Status"
+msgstr "Odpowiedzielaności po Statusie Odpowiedzialności"
+
+msgid "Costs By Category"
+msgstr "Koszty po Kategoriach"
+
+msgid "Permissions By Person"
+msgstr "Prawa po Osobach"
+
+msgid "Organizations By Waste Transporter"
+msgstr "Oragnizacje po Dostawcach Wody"
+
+msgid "Incurred Costs By Month"
+msgstr "Powstałe Koszty po Miesiącach"
+
+msgid "Entries By Month"
+msgstr "Wprowadzenie po Miesiącach"
+
+msgid "People By Home State"
+msgstr "Osoby po Województwie Dom"
+
+msgid "Costs By Type"
+msgstr "Koszty po Typach"
+
+msgid "Actions By Author"
+msgstr "Działania po Autorach"
+
+msgid "Involvement By Organization"
+msgstr "Uczestnictwo po Organizacjach"
+
+msgid "Incurred Costs By Quarter"
+msgstr "Powstałe Koszty po Kwartałach"
+
+msgid "Organizations By Direction Organization"
+msgstr "Organizacje po Organizacjach Dyrektyw"
+
+msgid "Frequently Asked Questions"
+msgstr "Częstow Zadawane Pytania (FAQ)"
+
+msgid "Organizations By Manufacturer"
+msgstr "Organizacje po Wytwórcach"
+
+msgid "Organizations By Accrediting Body"
+msgstr "Organizacje po Ciałach akredytujących"
+
+msgid "Dates by Year"
+msgstr "Daty po Latach"
+
+msgid "Organizations By Category"
+msgstr "Organizacje po Kategoriach"
+
+msgid "Actions By Organization"
+msgstr "Działania po Organizacjach"
+
+msgid "Entries By Day"
+msgstr "Wprowadzenia po Dniach"
+
+msgid "Permissions By Group"
+msgstr "Prawa po Grupach"
+
+msgid "Actions By Person Assigning"
+msgstr "Działania po Osobach Przydzielających"
+
+msgid "Local Support Documentation By Status"
+msgstr "Lokalna Dokumentacja wspierająca po Statusach"
+
+msgid "Barriers to success"
+msgstr "Bariery do sukcesu"
+
+msgid "Code Dependencies By Module"
+msgstr "Zależności słowników po Modułach"
+
+msgid "Organizations By Law Firm"
+msgstr "Organizacje po Firmach prawniczych"
+
+msgid "Module Dependencies By Foreign Dependency"
+msgstr "Zależności Modułów po Zależnościach Obcych"
+
+msgid "Incurred Costs By Day"
+msgstr "Powstałe koszty po Dniach"
+
+msgid "Organizations By Customer"
+msgstr "Organizacje po Klientach"
+
+msgid "Entries By Person"
+msgstr "Wprowadzenia po Osobach"
+
+msgid "Accountabilities By Organization"
+msgstr "Odpowiedzialności po Organizacjach"
+
+msgid "Dates by Quarter"
+msgstr "Daty po Kwartałach"
+
+msgid "Notes By Module"
+msgstr "Notatki po Modułach"
+
+msgid "Accountabilities By Person Accountable"
+msgstr "Odpowiedzialności po Osobie odpowiedzialnej"
+
+msgid "Costs By Person Accountable"
+msgstr "Koszty po Osobie odpowiedzialnej"
+
+msgid "Organizations By Policy Organization"
+msgstr "Organizacje po Organizacji polityki"
+
+msgid "Entries By IP Address"
+msgstr "Wprowadzenia po Adresie IP"
+
+msgid "Organizations By Parent Organization"
+msgstr "Organizacje po Organizcji Rodzic"
+
+msgid "Actions By Module"
+msgstr "Działania po Modułach"
+
+msgid "Code Dependencies By Module ID"
+msgstr "Zależności słowników po ID Modułu"
+
+msgid "Permissions By View Permission"
+msgstr "Prawa po Prawie Wglądu"
+
+msgid "Organizations By Disposal Facility"
+msgstr "Organizacje po Instytucjach oczyszczania"
+
+msgid "Module Dependencies By Module ID"
+msgstr "Zależności Modułów po ID Modułu"
+
+msgid "Dates by Week"
+msgstr "Daty po Tygodniach"
+
+msgid "Dates by Month"
+msgstr "Daty po Miesiącach"
+
+msgid "Links By Organization"
+msgstr "Linki po Organizcjach"
+
+msgid "Module Dependencies By Module"
+msgstr "Zależności modułów po Modułach"
+
+msgid "Module Dependencies By Dependent Module ID"
+msgstr "Zależności modułów po ID zaleznego modułu"
+
+msgid "Specific Accountability"
+msgstr "Właściwe Odpoiedzialność"
+
+msgid "Organizations By Contractor"
+msgstr "Organizacje po Zamawiającym"
+
+msgid "Entries By Year"
+msgstr "Wprowadzenia po Latach"
+
+msgid "Organizations By Standards Provider"
+msgstr "Organizacje po Dostawcach standardów"
+
+msgid "Costs By Module"
+msgstr "Koszty po Modułach"
+
+msgid "Costs By Organization"
+msgstr "Koszty po Organizacjach"
+
+msgid "Module Dependencies By Dependent Module"
+msgstr "Zależności modułów po Modułach zależnych"
+
+msgid "Actions By Corrective Nature"
+msgstr "Działania po Charakterze naprawczym"
+
+msgid "Actions By Status"
+msgstr "Działania po Statusach"
+
+msgid "Permissions By Organization"
+msgstr "Prawa po Organizacjach"
+
+msgid "Applying Knowledge"
+msgstr "Zastosowanie wiedzy"
+
+msgid "Data Input"
+msgstr "Wprowadzanie danych"
+
+msgid "Association Modules"
+msgstr "Moduły Powiązane"
+
+msgid "Organizations By State"
+msgstr "Oragnizacje po Województwie"
+
+msgid "Stand Alone Modules"
+msgstr "Moduły Samodzielne"
+
+msgid "Organizations By Government Agency"
+msgstr "Organizacje po Agencji rządowej"
+
+msgid "Links By Module"
+msgstr "Linki po Modułach"
+
+msgid "Code Dependencies By Code Type"
+msgstr "Zależnosci słowników po Typach słowników"
+
+msgid "Code Dependencies By Code ID"
+msgstr "Zależnosci słowników po ID słowników"
+
+msgid "Organizational Information"
+msgstr "Informacja organizacyjna"
+
+msgid "Involvement By Source"
+msgstr "Uczestnictow po Źródłach"
+
+msgid "Sub-Modules"
+msgstr "Podmoduły"
+
+msgid "Organizations By Insurance Carrier"
+msgstr "Organizacje po Ubezpieczycielu"
+
+msgid "Remote Modules"
+msgstr "Moduły Zdalne"
+
+msgid "Costs By Person Modifying"
+msgstr "Koszty po Osobie modyfikującej"
+
+msgid "Involvement By Status"
+msgstr "Uczestnictwo po Statusie"
+
+msgid "People By Home County"
+msgstr "Osoby po Powiat Dom"
+
+msgid "Incurred Costs By Week"
+msgstr "Powstałe koszty po Tygodniu"
+
+msgid "Implementation Wiki By Status"
+msgstr "WIki wdrożenia po Statusie"
+
+msgid "Costs By Risk Imperative"
+msgstr "Koszty po Imperatywy ryzyka"
+
+msgid "Permissions By Edit Permission"
+msgstr "Prawa po Prawach edycji"
+
+msgid "Organizations By SIC"
+msgstr "Organizacje po SIC"
+
+msgid "Global Modules"
+msgstr "Moduły Ogólne"
+
+msgid "Involvement By Person Involved"
+msgstr "Uczestnictwo po Osobach uczestniczących"
+
+msgid "Entries By Quarter"
+msgstr "Wprowadzenia po Kwartałach"
+
+msgid "Actions By Person Accountable"
+msgstr "Działania po Osobach odpowiedzialnych"
+
+msgid "Common Practices and Alternatives"
+msgstr "Popularne praktyki"
+
+msgid "Dates By Organization"
+msgstr "Daty po Organizacji"
+
+msgid "Organizations By Insurance Broker"
+msgstr "Organizacje po Brokerze ubezpieczeniowym"
+
+msgid "Attachments By Module"
+msgstr "Załączniki po Modułach"
+
+msgid "People Elements"
+msgstr "Element ludzki"
+
+msgid "Entries By Week"
+msgstr "Wprowadzenia po Tygodniach"
+
+msgid "Organizations By Medical Provider"
+msgstr "Organizacje po Usługodawcach medycznych"
+
+msgid "Implementation"
+msgstr "Implementacja"
+
+msgid "Module Dependencies By Sub Module Dependency"
+msgstr "Zależności modułów po Zależnościach podmodułów"
+
+msgid "People By Organization"
+msgstr "Osoby po Organizacjach"
+
+msgid "Introduction"
+msgstr "Wprowadzenie"
+
+msgid "Module"
+msgstr "Moduł"
+
+msgid "Direction|Associate organizational direction with the module"
+msgstr "Dyrektywa|Połącz dyrektywę organizacyjną z modułem"
+
+msgid "Error: Empty query result."
+msgstr "Błąd: Pusty wyniki zapytania"
+
+msgid "Modules"
+msgstr "Moduły"
+
+msgid "Module ID|A unique character ID assigned to each module of the application. Character ID's consist of between three and five characters. Main module ID's typically contain three characters and sub-modules contain four to five characters"
+msgstr "ID Modułu|Unikalny znakowy ID przydzielany każdemu modułowi. ID składa się z od trzech do pięciu znaków. ID modułów głównych składa się z trzech znaków a podmoduł z czterech lub pięciu znaków"
+
+msgid "Module Name|The name of the module"
+msgstr "Nazwa Modułu|Nazwa danego modułu"
+
+msgid "Module Description|A detailed description of the purpose of the module"
+msgstr "Opis Modułu|Szczegółowy opis celu modułu"
+
+msgid "Global Discussion ID|The ID assigned to the global discussion forum most relevant to this module"
+msgstr "ID Ogólnej Dyskusji|ID przydzielone jest do ogólnego forum dyskusyjnego dla modułu "
+
+msgid "Local Discussion ID|The ID assigned to the local discussion forum most relevant to this module"
+msgstr "ID Lokalnej Dyskusji|ID przydzielone do lokalnego forum dyskusyjnego dla modułu"
+
+msgid "Stand Alone|Whether this module is a stand alone module"
+msgstr "Samodzielny|Czy dany moduł jest modułem samodzielnym"
+
+msgid "Sub Module|Whether this module is a sub module of another module"
+msgstr "Podmoduł|Czy dany moduł jest podmodułem innego modułu"
+
+msgid "Association|Whether this module is an association module which is used to associate many modules of different types"
+msgstr "Stowarzyszenie|Czy dany moduł jest modułem stowarzyszającym moduły różnych typów"
+
+msgid "Global|Whether this module is a global module which is available from within all other modules"
+msgstr "Ogólny|Czy dany moduł jest modułem ogólnym dostępnym z wszystkich modułów"
+
+msgid "Remote|Whether this module is a remote module, i.e. pointed to by RemoteFields from other modules"
+msgstr "Zdalny|Czy dany moduł jest modułem zdalnym"
+
+msgid "Module Status|A short description of the technical implementation status of the module"
+msgstr "Status Modułu|Krótki charakterystyka statusu implementacji"
+
+msgid "Module Dependencies|A calculated field representing the total number of modules dependent upon this module"
+msgstr "Zależności Modułu|Pole wyliczane pokazujące całkowitą liczbę modułów zależnych od danego modułu"
+
+msgid "Code Dependencies|A calculated field representing the total number of codes the module is dependent upon"
+msgstr "Zależności Słowników|Pole wyliczane pokazujące całkowitą liczbę słowników od których zależny jest dany moduł"
+
+msgid "Process Dependencies|Risk management process elements that depend on this module"
+msgstr "Zależności Procesowe|Elementy procesu zarządzania ryzykiem zależne od danego modułu"
+
+msgid "Type List|Whether this module is used to populate 'type' lists used by other modules to define a record"
+msgstr "Listy Typów|Czy dany moduł jest wykorzystywany do zasilania list typów w innych modułach do definicji rekordów"
+
+msgid "Guidance Type|Whether this 'type' module is used to enable the provision of guidance"
+msgstr "Typ Wytycznych|Czy dany modułów 'typów' jest wykorzystywany do pobierania wytycznych"
+
+msgid "Implementation Planning|Whether this module should be included within the list of modules for implementation planning purposes."
+msgstr "Planowanie Implementacji|Czy dany moduł powinien być włączony do listy modułów do celów planowania implementacji"
+
+msgid "The record has not been saved, because:"
+msgstr "Rekord nie został zapamiętany ponieważ:"
+
+msgid "The record was added successfully."
+msgstr "Rekord został dodany z powodzeniem."
+
+msgid "The record was updated successfully."
+msgstr "Rekord został zaktualizowany z powodzeniem."
+
+msgid "List|View the list of Modules"
+msgstr "Lista|Widok listy Modułów"
+
+msgid "View|View summary information about"
+msgstr "Rekord|Widok informacji o"
+
+msgid "a Module"
+msgstr "Moduł"
+
+msgid "Form|The screen used to edit summary information about modules"
+msgstr "Formularz|Ekran do edycji informacji o modułach"
+
+msgid "Issues|Associate issue reports with the module"
+msgstr "Problemy|Wiązanie raportu o problemach z modułem"
+
+msgid "Gap Analysis|Associate gap analysis criteria with the module"
+msgstr "Analiza Gap|Wiązanie kryterii analizy gap z modułem"
+
+msgid "Process Elements|Associate risk management process elements with the module"
+msgstr "Elementy Procesu|Wiązanie elementów procesu zarządzania ryzykiem z modułem"
+
+msgid "Reports|View reports available for the module"
+msgstr "Raporty|Widok raportów dostępnych dla modułu"
+
+msgid "New Module"
+msgstr "Nowy Moduł"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "No Add New|To add a new Module you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Moduł musisz przejść do modułu rodzica"
+
+msgid "Search|The screen used to search summary information about modules"
+msgstr "Wyszukiwanie|Ekran do przeszukiwania informacji o modułach"
+
+msgid "Charts"
+msgstr "Wykresy"
+
+msgid "Record ID"
+msgstr "ID Rekordu"
+
+msgid "Module ID"
+msgstr "ID Modułu"
+
+msgid "Module Name"
+msgstr "Nazwa Modułu"
+
+msgid "Forum"
+msgstr "Forum"
+
+msgid "Codes"
+msgstr "Słowniki"
+
+msgid "Stand Alone"
+msgstr "Samodzielny"
+
+msgid "Sub Module"
+msgstr "Podmoduł"
+
+msgid "Association"
+msgstr "Powiązanie"
+
+msgid "Global"
+msgstr "Ogólne"
+
+msgid "Remote"
+msgstr "Zdalny"
+
+msgid "The request returned no data. Please try a different search."
+msgstr "Zapytanie nie zwróciło żadnych danych. Spróbuj innego zapytania."
+
+msgid "Search Filter Conditions"
+msgstr "Filtr Wyszukiwania"
+
+msgid "This is your default search for this module."
+msgstr "To jest Twoje domyślne wyszukiwanie dla tego modułu."
+
+msgid "Make this my Default Filter for this module"
+msgstr "Zapamiętaj Filtr Wyszukiwania"
+
+msgid "Clear Search Filter (removing conditions)"
+msgstr "Wyczyść Filtr Wyszukiwania"
+
+msgid "Download as Comma-separated Values (flat file)"
+msgstr "Pobierz jako plik CSV"
+
+msgid "CSV"
+msgstr "Plik CSV"
+
+msgid "Download as an XML file"
+msgstr "Pobierz jako plik XML"
+
+msgid "XML"
+msgstr "Plik XML"
+
+msgid "Download as a spreadsheet file"
+msgstr "Pobierz jako arkusz kalkulacyjny"
+
+msgid "Spreadsheet"
+msgstr "Arkusz kalkulacyjny"
+
+msgid "Download as PDF file"
+msgstr "Pobierz jako plik PDF"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "Internal Link|A link to the List screen of that module"
+msgstr "Link Wewnętrzny|Link do ekranu Lista danego modułu"
+
+msgid "Allow Add|Whether this module allows users to add new records directly. If the module does not allow records to be added directly, the data must be added indirectly through a related module edit grid"
+msgstr "Wolno Dodawać|Czy dany moduł zezwala użytkownikom na bezpośrednie dodawania rekordów. Jeżeli nie wolno to dane muszą być dodawane pośrednio w module związanym"
+
+msgid "Data Form|Whether this module includes a blank data form"
+msgstr "Formularz Danych|Czy dany moduł zawiera pusty wzorzec formularza danych"
+
+msgid "Master Data|Whether the default data entered into the related table should be included during module distribution"
+msgstr "Dane Master|Czy dane wprowadzone do związanej tabeli mają być włączone do dystrybucji"
+
+msgid "Add New|Whether this module includes a short name to be used on the Add New tab"
+msgstr "Dodaj Nowy|Czy dany moduł zawiera krótką nazwę używaną w zakładce Dodaj Nowy"
+
+msgid "Extending Module|Whether this module extends the functionality of another module"
+msgstr "Moduł Rozszerzający|Czy dany moduł rozszerza funkcjonalność innego modułu"
+
+msgid "Has Global Modules|Whether this module uses the global modules"
+msgstr "Posiada Moduły Ogólne|Czy dany moduł wykorzystuje moduły ogólne"
+
+msgid "Revision Author|The author of the XML specification file used to generate the module"
+msgstr "Autor Rewizji|Autor pliku XML użytego do wygenerowania modułu"
+
+msgid "Revision Number|A number that was automatically assigned by the software versioning system when the revision was made"
+msgstr "Numer Rewizji|Numer przydzielony przez system kontroli wersji pliku XML"
+
+msgid "Revision Date|The revision date of the XML specification file used to generate the module"
+msgstr "Data Rewizji|Data rewizji pliku XML użytego do wygenerowania modułu"
+
+msgid "Search"
+msgstr "  Wyszukaj  "
+
+msgid "Charts|View charts"
+msgstr "Wykresy|Widok wykresów"
+
+msgid "Record ID|A unique ID for internal database purposes (primary key)"
+msgstr "ID Rekordu|Unikalny ID do wewnętrznego użytku w bazie danych"
+
+msgid "Last Parsed|Most recent date and time when the module was parsed"
+msgstr "Ostatnio Przetworzony|Data i czas ostatniego przetworzenia kodu modułu"
+
+msgid "Modified On"
+msgstr "Zmodyfikowany"
+
+msgid "View|The screen used to view summary information about modules"
+msgstr "Rekord|Ekran do wyświetlania informacji o modułach"
+
+msgid "Audit Trail"
+msgstr "Zapisy Audytu"
+
+msgid "Module Attributes"
+msgstr "Atrybuty Modułu"
+
+msgid "Associations"
+msgstr "Powiązania"
+
+msgid "Module Dependencies"
+msgstr "Zależności Modułu"
+
+msgid "No Add New|To add a new Module Dependency you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Zależność Modułu przejdź do modułu rodzica"
+
+msgid "Search|Search module dependencies"
+msgstr "Wyszukiwanie|Przeszukiwanie zależności modułu"
+
+msgid "Dependent Module"
+msgstr "Moduł Zależny"
+
+msgid "Dependency"
+msgstr "Zależność"
+
+msgid "Foreign"
+msgstr "Obcy"
+
+msgid "Sub-Module"
+msgstr "Podmoduł"
+
+msgid "Record ID|An automatically assigned number used to associate module dependencies with dependent modules"
+msgstr "ID Rekordu|Automatycznie przydzielany numer do powiązania modułu z modułami zależnymi"
+
+msgid "Module Name|The name of the dependent module"
+msgstr "Nazwa Modułu|Nazwa modułu zależnego"
+
+msgid "Dependent Module|The name of the dependent module"
+msgstr "Moduł Zależny|Nazwa modułu zależnego"
+
+msgid "Foreign|Whether this is a foreign dependency"
+msgstr "Obca|Czy jest to zależność obca"
+
+msgid "Remote|Whether this is a remote dependency"
+msgstr "Zdalna|Czy jest to zależność zdalna"
+
+msgid "Sub Module|Whether this is a sub-module dependency"
+msgstr "Podmoduł|Czy jest to zależność typu podmoduł"
+
+msgid "Module ID|The name of the dependent module"
+msgstr "ID Modułu|Nazwa modułu zależnego"
+
+msgid "Dependent Module ID|The name of the module dependency"
+msgstr "ID Modułu Zależnego|Nazwa zależności modułu"
+
+msgid "List|View the list of Module Dependencies"
+msgstr "Lista|Widok listy Zależności Modułów"
+
+msgid "a Module Dependency"
+msgstr "Zależność Modułu"
+
+msgid "Form|Edit summary information about a module dependency"
+msgstr "Formularz|Edycja informacji o zależności modułu"
+
+msgid "Module Dependency"
+msgstr "Zależnośc Modułu"
+
+msgid "View|View summary information about a module dependency"
+msgstr "Rekord|Widok informacji o zależnościach modułów"
+
+msgid "New Module Dependency"
+msgstr "Nowa Zależność Modułu"
+
+msgid "Module Reports"
+msgstr "Raporty Modułów"
+
+msgid "No Add New|To add a new Module Report you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy raport modułu musisz przejść do modułu rodzica"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Title"
+msgstr "Tytuł"
+
+msgid "Location Level"
+msgstr "Poziom Lokalizacji"
+
+msgid "Location Group"
+msgstr "Grupa Lokalizacji"
+
+msgid "Format"
+msgstr "Format"
+
+msgid "Transactions"
+msgstr "Transakcje"
+
+msgid "No Add New|To add a new Transaction you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Transakcję musisz przejść do modułu rodzica"
+
+msgid "Transaction ID"
+msgstr "ID Transakcji"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "User"
+msgstr "Użytkownik"
+
+msgid "Transaction ID|An automatically assigned ID for internal purposes (primary key)"
+msgstr "ID Transakcji|Automatycznie przydzielane ID do celów wewnętrznych"
+
+msgid "Transaction Date|The date and time when the transaction occurred"
+msgstr "Data Transakcji|Data i czas zajścia transakcji"
+
+msgid "Person|The user who committed the transaction."
+msgstr "Osoba|Osoba która wykonała tranzakcję"
+
+msgid "List|View the list of Transactions"
+msgstr "Lista|Widok listy Transakcji"
+
+msgid "a Transaction"
+msgstr "Transakcja"
+
+msgid "Transaction"
+msgstr "Transakcja"
+
+msgid "View|View a transaction"
+msgstr "Rekord|Widok tranzakcji"
+
+msgid "Transaction Records"
+msgstr "Rekord Transakcji"
+
+msgid "No Add New|To add a new Transaction Record you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Rekord Transakcji musisz przejść do modułu rodzica"
+
+msgid "Transaction Record ID|An automatically assigned ID for internal purposes (primary key)"
+msgstr "ID Rekordu Transakcji|Automatycznie przydzielane ID do celów wewnętrznych"
+
+msgid "Transaction ID|An automatically assigned ID for internal purposes"
+msgstr "ID Transakcji|Automatycznie przydzielane ID do celów wewnętrznych"
+
+msgid "Related Module|The name or title of the module which is associated with the record"
+msgstr "Moduł Powiązany|Nazwa lub tytuł modułu powiązanego z rekordem"
+
+msgid "Related Record ID|The unique ID of the related record within the related module"
+msgstr "ID Modułu Związanego|Unikalne ID związanego rekordu w związanym module"
+
+msgid "Record Description|A description of the related record based on a combination of field values assigned from within the related module"
+msgstr "Opis Rekordu|Opis związanego rekordu bazujący na kombinacji wartości pól w związanym module"
+
+msgid "Indirect|Whether this record was updated because of changes in a different module (by a remote field relationship)"
+msgstr "Pośrednio|Czy dany rekord został zaktualizowany w wyniku zmian w innym module"
+
+msgid "Action Type ID|The type of action taken: Insert, Update, Delete"
+msgstr "ID Typu Działania|Typ podjętego działania: Wprowadzanie, Aktualizacja, Usuwanie"
+
+msgid "Related Record Link|An internal link to the related record."
+msgstr "Link Związanego Rekordu|Wewnętrzny link do związanego rekordu"
+
+msgid "Record Description Cache"
+msgstr "Kesz Opisu Rekordu"
+
+msgid "Search|Search records"
+msgstr "Wyszukiwanie|Przeszukiwanie rekordów"
+
+msgid "No Add New|You cannot add a new Cache Record because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie ożesz do dodać nowego rekordu kesza ponieważ nie masz do tego uprawnienień"
+
+msgid "Source Module"
+msgstr "Moduł Źródłowy"
+
+msgid "Record Description"
+msgstr "Opis Rekordu"
+
+msgid "Organization"
+msgstr "Organizacja"
+
+msgid "Module ID|The module ID of the cached item"
+msgstr "ID Modułu|ID modułu skeszowanej pozycji"
+
+msgid "OrganizationID|The Owner Organization ID of the referenced record."
+msgstr "ID Organizacji|ID Organizacji Właściciela wskazanego rekordu"
+
+msgid "List|View the list of Cache Records"
+msgstr "Lista|Widok Listy Skeszowanych Rekordów"
+
+msgid "Record Link|An internal link to the related record."
+msgstr "Link Rekordu|Wewnętrzny Link do związanego rekordu"
+
+msgid "Organizations"
+msgstr "Organizacje"
+
+msgid "Add New|Add a new Organization"
+msgstr "Dodaj Nowy|Dodaj nową Organizację"
+
+msgid "Search|Search organizations"
+msgstr "Wyszukiwanie|Przeszukiwanie organizacji"
+
+msgid "Blank Form"
+msgstr "Blankiet"
+
+msgid "No Add New|You cannot add a new Organization because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowej Organizacji ponieważ nie masz do tego uprawnień"
+
+msgid "Participant"
+msgstr "Uczestnik"
+
+msgid "Internal"
+msgstr "Wewnętrzny"
+
+msgid "Record ID|Numerical ID to identify the organization within this application"
+msgstr "ID Rekordu|Numeryczny ID do identyfikacji organizacji w systemie"
+
+msgid "Name|Name used to identify the organization"
+msgstr "Nazwa|Nazwa używana do identyfikacji organizacji"
+
+msgid "DBA|An alternative name the organization is 'doing business as' if different from the primary name listed"
+msgstr "Alias Organizacji|Alternatywna nazwa organizacji jeżeli jest wykorzystywana"
+
+msgid "Short Name|A short name used to identify the organization"
+msgstr "Nazwa Skrócona|Nazwa skrócona wykorzystywana do identyfikacji organizacji"
+
+msgid "Description|Text description of the organization"
+msgstr "Opis|Tekst opisujący organizację"
+
+msgid "Mission|The stated mission of the organization"
+msgstr "Misja|Deklarowana misja organizacji"
+
+msgid "URL|Uniform resource locator of the organization which is usually the organization's home page"
+msgstr "URL|URL organizacji"
+
+msgid "Parent Organization|The next higher level of an organization on a heirachy"
+msgstr "Organizacja Rodzic|Organizacja poziom wyżej w hierarchii"
+
+msgid "Address|A combined field used to describe the organization address when associating it with other records"
+msgstr "Adres|Pole łączone użytkowane od opisu organizacji przy łączeniu z innymi rekordami"
+
+msgid "Additional Address|Additional address information"
+msgstr "Adres Dodatkowy|Dodatkowa informacja adresowa"
+
+msgid "Phone|Main telephone number of the organization"
+msgstr "Telefon|Główny numer telefonu organizacji"
+
+msgid "Fax|Main fax telephone number of the organization"
+msgstr "Faks|Główny numer faksu organizacji"
+
+msgid "Email|Main organizational Email address used by the organization to correspond with those outside the organization"
+msgstr "Email|Główny adres mailowy organizacji"
+
+msgid "S.I.C.|The Standard Industry Classification assigned to the organization by the US Census Bureau"
+msgstr "REGON|Numer statystyczny REGON organizacji"
+
+msgid "Participant|Whether this organization is a participant in this installation of Active Agenda.  If this box is checked, the organization will be available within all drop down lists where the organization field listType='allParticipants'. Users of the application can add organizations to the lists by checking this box but listTypes can only be modified from within the specification file for the application prior to the application being parsed. In other words, listTypes are determined by programmers while the list of participants is controlled by this field, by application users"
+msgstr "Uczestnik|Czy dana organizacja jest uczestnikiem tej instalacji systemu. Jeżeli checkbox jest odznaczony to ta organizacja będzie dostępna we wszystkich listach rozwijanych gdzie typ pola organizacji jest 'allParticipants'"
+
+msgid "Internal|Whether this organization is internal to the main organization of this installation of Active Agenda."
+msgstr "Wewnętrzna|Czy organizacja jest wewnętrzna względem organizacji głównej tej instalacji systemu"
+
+msgid "Policy Organization|The organization responsible for issuing policy expectations to the organization. The organization selected will automatically populate the Policy Organization field within modules which rely on the sharing of policy expectations"
+msgstr "Organizacja Polityki|Organizacja odpowiedzialna za kształtowanie polityki działania danej organizacji.Uumożliwia dobór właściwych wartości w innych polach"
+
+msgid "Direction Organization|The organization providing direction to the organization. The organization selected will automatically filter module specific direction provided throughout the application"
+msgstr "Organizacja Wytycznych|Organizacja wydająca wytyczne dla danej organizacji. Umożliwia dobór właściwych wartości w innych polach"
+
+msgid "Contractor|Check this box if this organization is a Contractor. Identifying this organization as a contractor will result in the organization being listed in contractor specific list boxes throughout this software application"
+msgstr "Kontraktor|Odznacz ten checkbox, jeżeli organizacja jest Kontraktorem, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Customer|Check this box if this organization is a customer of the company.  Identifying this organization as a customer will result in the organization being listed in list boxes within the loss modules"
+msgstr "Klient|Odznacz ten checkbox, jeżeli organizacja jest klientem organizacji, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Manufacturer|Check this box if this organization is a manufacturer. Identifying this organization as a manufacturer will result in the organization being listed in manufacturer specific list boxes throughout this software application"
+msgstr "Wytwórca|Odznacz ten checkbox, jeżeli organizacja jest wytwórcą, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Supplier|Check this box if this organization is a supplier. Identifying this organization as a supplier will result in the organization being listed in supplier specific list boxes throughout this software application"
+msgstr "Dostawca|Odznacz ten checkbox, jeżeli organizacja jest dostawcą, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Insurance Broker|Check this box if this organization is an insurance broker. Identifying this organization as an insurance broker will result in the organization being listed in insurance broker specific list boxes throughout this software application"
+msgstr "Broker Ubezpieczeniowy|Odznacz ten checkbox, jeżeli organizacja jest brokerem ubezpieczeniowym, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Insurance Carrier|Check this box if this organization is an insurance carrier. Identifying this organization as an insurance carrier will result in the organization being listed in insurance carrier specific list boxes throughout this software application"
+msgstr "Ubezpieczyciel|Odznacz ten checkbox, jeżeli organizacja jest ubezpieczycielem, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Reinsurance Company|Check this box if this organization is a reinsurance company. Identifying this organization as a reinsurance company will result in the organization being listed in reinsurance company specific list boxes throughout this software application"
+msgstr "Firma Reasekuracyjna|Odznacz ten checkbox, jeżeli organizacja jest firmą reasekuracyjną, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Medical Provider|Check this box if this organization is a medical provider. Identifying this organization as a medical provider will result in the organization being listed in medical provider specific list boxes throughout this software application"
+msgstr "Dostawca Usług Zdrowotnych|Odznacz ten checkbox jeżeli organizacja jest dostawcą usług zdrowotnych aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Law Firm|Check this box if this organization is a law firm. Identifying this organization as a law firm will result in the organization being listed in law firm specific list boxes throughout this software application"
+msgstr "Firma Prawnicza|Odznacz ten checkbox jeżeli organizacja jest firmą prawniczą aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Standards Provider|Check this box if this organization is a standards provider. Identifying this organization as a standards provider will result in the organization being listed in standards provider specific list boxes throughout this software application"
+msgstr "Dostawca Standardów|Odznacz ten checkbox jeżeli organizacja jest dostawcą standardów aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Accrediting Body|Check this box if this organization grants accreditation for meeting specific performance requirements"
+msgstr "Ciało Akredytujące|Odznacz ten checkbox, jeżeli organizacja jest ciałem akredytującym, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Disposal Facility|Check this box if this organization is a waste disposal facility. Identifying this organization as a waste disposal facility will result in the organization being listed in waste disposal facility specific list boxes throughout this software application"
+msgstr "Zakład Oczyszczania|Odznacz ten checkbox, jeżeli organizacja jest zakładem oczyszczania, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Waste Transporter|Check this box if this organization is a waste transporter. Identifying this organization as a waste transporter will result in the organization being listed in waste transporter specific list boxes throughout this software application"
+msgstr "Przewoźnik Odpadków|Odznacz ten checkbox, jeżeli organizacja jest przewoźnikiem odpadków, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Government Agency|Check this box if this organization is a government agency. Identifying this organization as a government agency will result in the organization being listed in government agency specific list boxes throughout this software application"
+msgstr "Agencja Rządowa|Odznacz ten checkbox, jeżeli organizacja jest agencją rządową, aby umożliwić dobór właściwych wartości w innych polach"
+
+msgid "Address|Physical street address of the organization"
+msgstr "Adres|Adres ulicy i budynku organizacji"
+
+msgid "Country|The internationally recognized name of the country"
+msgstr "Państwo|Nazwa państwa"
+
+msgid "State|A combined field used to associate this state with another record"
+msgstr "Województwo|Pole łączone do powiązania województwa z innymi rekordami"
+
+msgid "County|A combined field used to associate this county with another record"
+msgstr "Powiat|Pole łączone do powiązania powiatu z innymi rekordami"
+
+msgid "City|The name of the city where this organization is located"
+msgstr "Miejscowość|Nazwa lokalizacji głównej organizacji"
+
+msgid "Postal Code|Numerical postal code used to direct physical mail"
+msgstr "Kod Pocztowy|Numeryczny kod pocztowy"
+
+msgid "Agency Level|The heirarchial level of the agency from an international perspective"
+msgstr "Poziom Agencji|Poziom agencji z perspektywy międzynarodowej"
+
+msgid "List|View the list of Organizations"
+msgstr "Lista|Widok listy organizacji"
+
+msgid "an Organization"
+msgstr "Organizacja"
+
+msgid "Form|Edit summary information about an organization"
+msgstr "Formularz|Edycja informacji o organizacji"
+
+msgid "Hierarchy|Associate application defaults with an organization"
+msgstr "Hierarchia|Wiązanie wartości domyślnych systemu z organizacją"
+
+msgid "Characteristics|Associate special characteristics with the organization"
+msgstr "Charakterystyki|Stowarzysz charakterystyki z organizacją"
+
+msgid "People|Associate people with an organization"
+msgstr "Osoby|Wiązanie osoby z organizacją"
+
+msgid "View|View summary information about an organization"
+msgstr "Rekord|Widok informacji o organizacji"
+
+msgid "Characteristics"
+msgstr "Charakterystyki"
+
+msgid "New Organization"
+msgstr "Nowa Organizacja"
+
+msgid "Country|A combined field used to associate this country with another record"
+msgstr "Państwo|Pole łączone do powiązania państwa z innymi rekordami"
+
+msgid "People"
+msgstr "Osoby"
+
+msgid "Add New|Add a new Person"
+msgstr "Dodaj Nowy|Dodaj nową Osobę"
+
+msgid "Search|Search people"
+msgstr "Wyszukiwanie|Przeszukiwanie osób"
+
+msgid "No Add New|You cannot add a new Person because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nową Osobę bo nie masz do tego uprawnień"
+
+msgid "Last Name"
+msgstr "Nazwisko"
+
+msgid "First Name"
+msgstr "Imię"
+
+msgid "Display Name"
+msgstr "Wyświetlane Nazwisko"
+
+msgid "Work Phone"
+msgstr "Telefon Praca"
+
+msgid "Work Email"
+msgstr "Email Praca"
+
+msgid "Person ID|A unique, automatically assigned, number used to track people associated with the organization"
+msgstr "ID Osoby|Unikalny automatycznie przydzielany numer do śledzenia osób powiązanych z organizacją"
+
+msgid "Organization|Name of organization associated with the individual"
+msgstr "Organizacja|Nazwa organizacji powiązanej z osobą"
+
+msgid "Display Name|Commonly used name of an individual used to identify a person. This name may vary from a person's given name"
+msgstr "Wyświetlane Nazwisko|Popularnie używane nazwisko do identyfikacji danej osoby. Może być różne od oficjalnego nazwiska"
+
+msgid "Last Name|Family Name of an individual"
+msgstr "Nazwisko|Nawisko danej osoby"
+
+msgid "First Name|Given Name of an individual"
+msgstr "Imię|Imię danej osoby"
+
+msgid "Username|The user's login name"
+msgstr "Login|Login użytkownika"
+
+msgid "Work Address|Physical street address where the person can be located at work"
+msgstr "Adres Praca|Adres ulicy i budynku gdzie osoba pracuje"
+
+msgid "Work Phone|Telephone number of the individual at their place of work with a lable to identify the number"
+msgstr "Telefon Praca|Numer telefoniczny osoby w pracy"
+
+msgid "Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com. If you have the client software, you can click on the link to start a conversation."
+msgstr "Skype|Nazwa używana w Skype. Jeżeli oprogramowanie jest zainstalowana to można wykonać bezpośrednio rozmowę"
+
+msgid "Work Fax|Facsimile telephone number of the individual at work"
+msgstr "Faks Praca|Numer faksu osoby w pracy"
+
+msgid "Home Address|Physical street address where the person can be located at home"
+msgstr "Adres Dom|Nazwa ulicy i budynku domu osoby"
+
+msgid "Home Phone|Telephone number of the individual at home"
+msgstr "Telefon Dom|Numer telefonu domowego osoby"
+
+msgid "Home Fax|Facsimile telephone number of the individual at home"
+msgstr "Faks Dom|Numer faksu domowego osoby"
+
+msgid "Mobile Phone|Mobile telephone number of the individual"
+msgstr "Komórka|Numer telefonu komórkowego osoby"
+
+msgid "Mobile Phone Address|Mobile telephone address for receiving text messages"
+msgstr "Komórka Dodatkowa|Numer telefoniczny dodatkowej komórki"
+
+msgid "Work Email|Email address used by the individual at work"
+msgstr "Email Praca|Adres mailowy osoby w pracy"
+
+msgid "Home Email|Email address used by the individual at home"
+msgstr "Email Dom|Prywatny adres mailowy osoby"
+
+msgid "Pager Number|Telephone number used to page the individual"
+msgstr "Pager|Numer pagera osoby"
+
+msgid "Pager PIN|Personal Identification Number used in association with an individual's pager"
+msgstr "PIN Pagera|PIN pagera danej osoby"
+
+msgid "Home County|A combined field used to associate this county with another record"
+msgstr "Powiat Dom|Pole łączone do powiązania powiatu z innymi rekordami"
+
+msgid "Work County|A combined field used to associate this county with another record"
+msgstr "Powiat Praca|Pole łączone do powiązania powiatu z innymi werszami"
+
+msgid "Middle Name|Middle Name or initial of an individual"
+msgstr "Drugie Imię|Drugie imię danej osoby"
+
+msgid "Work Address|First physical street address of the location where the individual works"
+msgstr "Adres Praca|Pierwsza nazwa ulicy i budynku pracy danej osoby"
+
+msgid "Work Address|Second physical street address where the individual works; such as, suite number or p.o. box"
+msgstr "Adres Praca|Druga nazwa ulicy i budynku pracy danej osoby"
+
+msgid "Work Country|A combined field used to associate this country with another record"
+msgstr "Państwo Praca|Pole łączone to powiązania z innymi rekordami"
+
+msgid "Work State|A combined field used to associate this state with another record"
+msgstr "Województwo Praca|Pole łączone do powiązania województwa z innymi rekordami"
+
+msgid "Work County|A combined field used to track and associate counties"
+msgstr "Powiat Praca|Pole łączone do powiązania powiatu z innymi rekordami"
+
+msgid "Work City|City where the individual works"
+msgstr "Miejscowość Praca|Miejscowość pracy danej osoby"
+
+msgid "Work Postal Code|Postal code used to direct mail to the individual's work address"
+msgstr "Kod Pocztowy Praca|Kod pocztowy miejsca pracy danej osoby"
+
+msgid "Work Phone|Telephone number of the individual at their place of work"
+msgstr "Telefon Praca|Numer telefonu osoby w pracy"
+
+msgid "Work Extension|Telephone extension used to direct calls to an individual"
+msgstr "Wewnętrzny Praca|Wewnętrzny numer telefoniczny osoby"
+
+msgid "Home Address|First physical street address of the location where the individual lives"
+msgstr "Adres Dom|Pierwsza nazwa ulicy i budynku domu osoby"
+
+msgid "Home Address|Second physical street address where the individual lives; such as, apartment number"
+msgstr "Adres Dom|Druga nazwa ulicy i budynku domu osoby"
+
+msgid "Home Country|The country in which the person lives"
+msgstr "Państwo Dom|Państwo domu danej osoby"
+
+msgid "Home State|The state where the person lives"
+msgstr "Województwo Dom|Województwo domu osoby"
+
+msgid "Home County|A combined field used to track and associate counties"
+msgstr "Powiat Dom|Powiat domu osoby do powiazania z innymi rekordami"
+
+msgid "Home City|City where the individual lives"
+msgstr "Miejscowość Dom|Miejscowość domu osoby"
+
+msgid "Home Postal Code|Postal code used to direct mail to the individual's home address"
+msgstr "Kod Pocztowy Dom|Domowy kod pocztowy osoby"
+
+msgid "List|View the list of People"
+msgstr "Lista|Widok listy Osób"
+
+msgid "a Person"
+msgstr "Osoba"
+
+msgid "Form|Edit summary information about a person"
+msgstr "Formularz|Edycja informacji o osobie"
+
+msgid "Work|Edit the work address of a person"
+msgstr "Praca|Edycja adresu pracy osoby"
+
+msgid "Home|Edit the home address of a person"
+msgstr "Dom|Edycja adresu domowego osoby"
+
+msgid "Person"
+msgstr "Osoba"
+
+msgid "View|View summary information about a person"
+msgstr "Rekord|Widok informacji o osobie"
+
+msgid "New Person"
+msgstr "Nowa Osoba"
+
+msgid "Work Country|The county in which the person works"
+msgstr "Państwo Praca|Państwo pracy osoby"
+
+msgid "Work State|The state in which the person works"
+msgstr "Województwo Praca|Województwo pracy osoby"
+
+msgid "Home Country|A combined field used to associate this country with another record"
+msgstr "Państwo Dom|Pole łączone do powiązania państwa z innymi rekordami"
+
+msgid "Home State|A combined field used to associate this state with another record"
+msgstr "Województwo Dom|Pole łączone do powiązania województwa z innymi rekordami"
+
+msgid "Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com"
+msgstr "Skype|Adres Skype do prowadzenia rozmów"
+
+msgid "Countries"
+msgstr "Państwa"
+
+msgid "Add New|Add a new Country"
+msgstr "Dodaj Nowy|Dodaj nowe Państwo"
+
+msgid "Search|Search countries"
+msgstr "Wyszukiwanie|Przeszukiwanie państw"
+
+msgid "No Add New|You cannot add a new Country because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowego Państwa bo nie masz do tego uprawnień"
+
+msgid "Country ID"
+msgstr "ID Państwa"
+
+msgid "Country Combined Field"
+msgstr "Łączone Pole Państwa"
+
+msgid "Country Name"
+msgstr "Nazwa Państwa"
+
+msgid "Native Country Name"
+msgstr "Angielska Nazwa Państwa"
+
+msgid "Country Abbreviation"
+msgstr "Kod ISO Państwa"
+
+msgid "Country ID|An internal ID number to identify a country"
+msgstr "ID Państwa|Wewnętrzny numer do identyfikacji państwa"
+
+msgid "Native Country Name|The name of the country in its native language"
+msgstr "Angielska Nazwa Państwa|Nazwa państwa w języku danego państwa"
+
+msgid "Country Abbreviation|The internationally recognized abbreviation of the country name"
+msgstr "Kod ISO Państwa|Międzynarodowy skrót nazwy państwa"
+
+msgid "Country Name|The name of the country in this site's default language"
+msgstr "Nazwa Państwa|Nazwa państwa w języku domyślnym systemu"
+
+msgid "List|View the list of Countries"
+msgstr "Lista|Widok listy Państwa"
+
+msgid "a Country"
+msgstr "Państwo"
+
+msgid "Form|Edit summary information about a country"
+msgstr "Formularz|Edycja informacji o państwie"
+
+msgid "Country"
+msgstr "Państwo"
+
+msgid "View|View summary information about a country"
+msgstr "Rekord|Widok informacji o państwie"
+
+msgid "New Country"
+msgstr "Nowe Państwo"
+
+msgid "Code Items"
+msgstr "Pozycje Słownika"
+
+msgid "Add New|Add a new Code Item"
+msgstr "Dodaj Nowy|Dodaj nową Pozycję Słownika"
+
+msgid "No Add New|You cannot add a new Code Item because you don't have permission"
+msgstr "Brak Dodaj Nowey|Nie możesz dodać nowej Pozycji Słownika bo nie masz do tego uprawnień"
+
+msgid "Code Type ID"
+msgstr "ID Typu Słownika"
+
+msgid "Code Type"
+msgstr "Typ Słownika"
+
+msgid "Code ID"
+msgstr "ID Słownika"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "Sort Order"
+msgstr "Porządek Sortowania"
+
+msgid "Value"
+msgstr "Wartość"
+
+msgid "Code Type ID|A number used to track code records"
+msgstr "ID Typu Słownika|Numer przydzielany do śledzenia rekordów słownika"
+
+msgid "Code Type|The name of the present code type."
+msgstr "Typ Kodu|Nazwa typu kodu"
+
+msgid "Code ID|A number used to track code records"
+msgstr "ID Słownika|Numer przydzielany do śledzenia słowników"
+
+msgid "Description|The text that should be displayed for this code. This is the standard-language text (English). Additional languages are supported by adding columns using the standard language ID as the name."
+msgstr "Opis|Tekst wyświetlany domyślnie dla danego słownika"
+
+msgid "Sort Order|A numerical value to define the placement of this code in an ordered list, such as drop-down list."
+msgstr "Porządek Sortowania|Wartość numeryczna do definiowania położenia na llistach uporządkowanych jak np listy rozwijane"
+
+msgid "Value|This field has special meaning for different code types. It can be used to limit a list of codes based on a matching value."
+msgstr "Wartość|To pole ma różne znaczenie w zależności od słownika. Może być używane do filtrowania"
+
+msgid "List|View the list of Code Items"
+msgstr "Lista|Widok listy Pozycji Słownika"
+
+msgid "a Code Item"
+msgstr "Pozycja Słownika"
+
+msgid "Form|Edit codes"
+msgstr "Formularz|Edycja słownika"
+
+msgid "Code Item"
+msgstr "Pozycja Słownika"
+
+msgid "View|View codes"
+msgstr "Rekord|Widok słowników"
+
+msgid "New Code Item"
+msgstr "Nowa Pozycja Słownika"
+
+msgid "Code Types"
+msgstr "Typy Słowników"
+
+msgid "Add New|Add a new Code Type"
+msgstr "Dodaj Nowy|Dodaj nowy Typ Słownika"
+
+msgid "Search|Search for code types"
+msgstr "Wyszukiwanie|Przeszukiwanie typów słowników"
+
+msgid "No Add New|You cannot add a new Code Type because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowy Typ Słownika bo nie masz do tego uprawnień"
+
+msgid "Dependencies"
+msgstr "Zależności"
+
+msgid "Items"
+msgstr "Pozycje"
+
+msgid "Record ID|A number used to track code records."
+msgstr "ID Rekordu|Numer używany do śledzenia rekordów słownika"
+
+msgid "Name|The name of this code type"
+msgstr "Nazwa|Nazwa danego typu słownika"
+
+msgid "Description|A clarifying descrition of the code type"
+msgstr "Opis|Opis typu słownika"
+
+msgid "Dependencies|A calculated field representing the number of module dependent upon the code type"
+msgstr "Zależności|Pole wyliczane pokazujące ilość modułów zależnych od danego typu słownika"
+
+msgid "Items|A calculated field representing the number of items associated with the code type"
+msgstr "Pozycje|Pole wyliczane pokazujące ilość pozycji powiązanych z typem słownika"
+
+msgid "List|View the list of Code Types"
+msgstr "Lista|Widok listy Typów Słowników"
+
+msgid "a Code Type"
+msgstr "Typ Słownika"
+
+msgid "Form|Edit code types"
+msgstr "Formularz|Edycja typów słownika"
+
+msgid "View|View code types"
+msgstr "Rekord|Widok typów słownika"
+
+msgid "New Code Type"
+msgstr "Nowy Typ Słownika"
+
+msgid "Code Type Dependencies"
+msgstr "Moduły z Typem Słownika"
+
+msgid "No Add New|To add a new Code Type Dependency you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy typ Zależności Typu Słownika musisz przejść do modułu rodzica"
+
+msgid "Search|Search code type dependencies"
+msgstr "Wyszukiwanie|Przeszukiwanie zależności typów słowników"
+
+msgid "Record ID|An automatically assigned number used to associate code type dependencies with dependent modules"
+msgstr "ID Rekordu|Automatycznie przydzielany numer do powiązania zależności typów słowników z modułami zależnymi"
+
+msgid "Code Type ID|A number used to track code type records."
+msgstr "ID Typu Słownika|Numer wykorzystywany do śledzenia rekordów typów słownika"
+
+msgid "Code Type|A combined field used to describe this code type when associating it with other records"
+msgstr "Typ Słownika|Pole łączone używane do opisu typu słownika w powiązaniu z innymi rekordami"
+
+msgid "Dependent Module|The name of the module dependent upon the code type"
+msgstr "Moduł Zależny|Nazwa modułu zależnego od danego typu słownika"
+
+msgid "Module ID|The name of the module dependent upon the code type"
+msgstr "ID Modułu|Nazwa modułu zależnego od danego typu słownika"
+
+msgid "List|View the list of Code Type Dependencies"
+msgstr "Lista|Widok listy Zależności Typów Słowników"
+
+msgid "a Code Type Dependency"
+msgstr "Zależność Typu Słownika"
+
+msgid "Code Type Dependency"
+msgstr "Zależność Typu Słownika"
+
+msgid "View|View summary information about a code type dependency"
+msgstr "Rekord|Widok informacji o zależnościach typów słowników"
+
+msgid "Dependent Module Link|A link to the module record of the dependent module."
+msgstr "Link Modułu Zależnego|Link do rekordu modułu zależnego"
+
+msgid "Support Documents"
+msgstr "Dokumenty Wsparcia"
+
+msgid "No Add New|To add a new Support Document you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Dokument Wsparcia musisz przejść do modułu rodzica"
+
+msgid "Search|Search documentation requirements"
+msgstr "Wyszukiwanie|Przeszukiwanie wymogów dokumentów"
+
+msgid "Implementation Support URL"
+msgstr "URL Wsparcia Wdrożenia"
+
+msgid "Record ID|An automatically assigned number used to track support documents"
+msgstr "ID Rekordu|Automatycznie przydzielany numer do śledzenia dokumentów wsparcia"
+
+msgid "Module ID|The module ID of the module this document is intended to support"
+msgstr "ID Modułu|ID wspieranego modułu"
+
+msgid "Module Name|The name of the module this document is intended to support"
+msgstr "Nazwa Modułu|Nazwa wspieranego modułu"
+
+msgid "Local Status|Development status of the local support documentation"
+msgstr "Status Lokalny|Status opracowania lokalnej dokumentacji wsparcia"
+
+msgid "Implementation URL|The Internet address of the Wiki page corresponding with the module's implementation support guide"
+msgstr "URL Wdrożenia|Adres internetowy strony wiki odpowiadający przewodnikowi wsparcia modułu"
+
+msgid "Implementation Wiki Status|Development status of the implementation support documentation Wiki on the Internet"
+msgstr "Status Wiki Wdrożenia|Status opracowania dokumentacji wsparcia na Wiki w internecie"
+
+msgid "User Guide URL|The Internet address of the Wiki page corresponding with the module's user guide'"
+msgstr "URL Przewodnika Użytkownika|Adres internetowy przewodnika użytkownika"
+
+msgid "User Guide Wiki Status|Development status of the user guide Wiki on the Internet"
+msgstr "Status Wiki Przewodnika Użytkownika|Status opracowania przewodnika na wiki w internecie"
+
+msgid "List|View the list of Support Documents"
+msgstr "Lista|Widok listy Dokumentów Wsparcia"
+
+msgid "a Support Document"
+msgstr "Dokument Wsparcia"
+
+msgid "Form|The screen used to edit module support documentation"
+msgstr "Formularz|Ekran używany do edycji dokumentacji wsparcia modułu"
+
+msgid "Sections|The screen to edit sections of the documentation"
+msgstr "Sekcje|Ekran do edycji sekcji dokumentacji"
+
+msgid "Support Document"
+msgstr "Dokument Wsparcia"
+
+msgid "View|The screen used to view module support documentation"
+msgstr "Rekord|Ekran używany do oglądania dokumentacji wsparcia modułu"
+
+msgid "New Support Document"
+msgstr "Nowy Dokument Wsparcia"
+
+msgid "Support Document Sections"
+msgstr "Sekcje Dokumentu Wsparcia"
+
+msgid "Add New|Add a new Document Section"
+msgstr "Dodaj Nowy|Dodaj nową Sekcję Dokumentu"
+
+msgid "No Add New|You cannot add a new Document Section because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nową Sekcję Dokumentu ponieważ brak Ci uprawnień"
+
+msgid "Support Document ID|The ID of the related Support Document"
+msgstr "ID Dokumentu Wsparcia|ID zależnego Dokumentu Wsparcia"
+
+msgid "Section Title|The title of the Support Document Section"
+msgstr "Tytuł Sekcji|Tytuł Sekcji Dokumentu Wsparcia"
+
+msgid "Support Document Text|The text of the Support Document Section"
+msgstr "Tekst Dokumentu Wsparcia|Tekst Sekcji Dokumentu Wsparcia"
+
+msgid "Sort Order|A numeric sort order"
+msgstr "Porządek Sortowania|Numeryczny porządek sortowania"
+
+msgid "Protected|Protect these changes from being automatically overwritten by the parser"
+msgstr "Chroniony|Chroń te zmiany przed automatycznym nadpisaniem przez parser"
+
+msgid "Display|Display this support section within the module support documentation"
+msgstr "Wyświetlanie|Wyświetl tą sekcje wsparcia w dokumentacji wsparcia modułu"
+
+msgid "List|View the list of Document Sections"
+msgstr "Lista|Widok listy Sekcji Dokumentu"
+
+msgid "a Document Section"
+msgstr "Sekcja Dokumentu"
+
+msgid "Form|The screen used to edit a module support documentation section"
+msgstr "Formularz|Ekran używany do edycji sekcji dokumentacji wsparcia modułu"
+
+msgid "Document Section"
+msgstr "Sekcja Dokumentu"
+
+msgid "View|The screen used to view a module support documentation section"
+msgstr "Rekord|Ekran używany do oglądania sekcji dokumentacji wsparcia modułu"
+
+msgid "New Document Section"
+msgstr "Nowa Sekcja Dokumentu"
+
+msgid "States"
+msgstr "Województwa"
+
+msgid "Add New|Add a new State"
+msgstr "Dodaj Nowy|Dodaj nowe Województwo"
+
+msgid "Search|Search states"
+msgstr "Wyszukiwanie|Przeszukiwanie województw"
+
+msgid "No Add New|You cannot add a new State because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowego Województwa ponieważ brak Ci uprawnień"
+
+msgid "State"
+msgstr "Województwo"
+
+msgid "Abbreviation"
+msgstr "Kod ISO"
+
+msgid "State ID|A unique id to identify states internally"
+msgstr "ID Województwa|Unikalne ID do wewnętrznej identyfikacji"
+
+msgid "State Abbreviation"
+msgstr "Kod ISO Województwa"
+
+msgid "State Abbreviation|The common abbreviation of a state, as used in a mailing address"
+msgstr "Kod ISO Województwa|Popularny skrót nazwy województwa"
+
+msgid "State|The name of the state or similar geographic zone"
+msgstr "Województwo|Nazwa województwa"
+
+msgid "List|View the list of States"
+msgstr "Lista|Widok listy Województw"
+
+msgid "a State"
+msgstr "Województwo"
+
+msgid "Form|Edit summary information about a state"
+msgstr "Formularz|Edycja informacji o województwie"
+
+msgid "View|View summary information about a state"
+msgstr "Rekord|Widok informacji o województwie"
+
+msgid "New State"
+msgstr "Nowe Województwo"
+
+msgid "Counties"
+msgstr "Powiaty"
+
+msgid "Add New|Add a new County"
+msgstr "Dodaj Nowy|Dodaj nowy Powiat"
+
+msgid "Search|Search counties"
+msgstr "Wyszukiwanie|Przeszukiwanie powiatów"
+
+msgid "No Add New|You cannot add a new County because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowy Powiat ponieważ brak Ci uprawnień"
+
+msgid "County ID"
+msgstr "ID Powiatu"
+
+msgid "County Name"
+msgstr "Nazwa Powiatu"
+
+msgid "County ID|A combined field used to track and associate counties"
+msgstr "ID Powiatu|Pole łączone wykorzystywane od śledzenia i powiązywania powiatów"
+
+msgid "County Name|The name of the county or equivalent geographic zone"
+msgstr "Nazwa Powiatu|Oficjalna nazwa powiatu"
+
+msgid "List|View the list of Counties"
+msgstr "Lista|Widok listy Powiatów"
+
+msgid "a County"
+msgstr "Powiat"
+
+msgid "Form|edit summary information about a county"
+msgstr "Formularz|Edycja informacji o powiacie"
+
+msgid "County"
+msgstr "Powiat"
+
+msgid "View|View summary information about a county"
+msgstr "Rekord|Widok informacji o powiacie"
+
+msgid "New County"
+msgstr "Nowy Powiat"
+
+msgid "Users"
+msgstr "Użytkownicy"
+
+msgid "Add New|Add a new User"
+msgstr "Dodaj Nowy|Dodaj nowego Użytkownika"
+
+msgid "Search|Search users"
+msgstr "Wyszukiwanie|Przeszukaj użytkowników"
+
+msgid "No Add New|You cannot add a new User because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowego Użytkownika bo nie masz do tego uprawnień"
+
+msgid "User Name"
+msgstr "Nazwa Użytkownika"
+
+msgid "Default Organization"
+msgstr "Domyślna Organizacja"
+
+msgid "Administrator"
+msgstr "Administrator"
+
+msgid "User Timeout"
+msgstr "Timeout Użytkownika"
+
+msgid "Group Timeout"
+msgstr "Timeout Grupy"
+
+msgid "Effective Timeout"
+msgstr "Timeout efektywny"
+
+msgid "Person ID|The Person ID of the associated person (users must have a matching record in the People module)."
+msgstr "ID Osoby|ID Osoby powiązanej z użytkownikiem (użytkownik musi mieć swój rekord w module Osób)"
+
+msgid "Person|The person who is this user."
+msgstr "Osoba|Osoba którą jest użytkownika"
+
+msgid "Username|The user's login name."
+msgstr "Login|Login Użytkownika"
+
+msgid "Is Site Administrator|Site Administrators have access to all records in all modules, plus administration features."
+msgstr "Jest Administratorem|Administrator ma dostęp do wszystkich rekordów we wszystkich modułach plus funkcje administracyjne"
+
+msgid "Default Organization|This field affects user data entry experience by defaulting designated organization fields throughout the application to the name of the organization selected here"
+msgstr "Domyślna Organizacja|Pole powoduje w systemie domyślne wypełnianie danych o przynależności organizacyjnej użytkownika"
+
+msgid "Language|The user's preferred language"
+msgstr "Język|Preferowany język użytkownika"
+
+msgid "User Session Timeout|If the application settings allow it, the user's session timeout can be specified here (in minutes)."
+msgstr "Timeout Sesji Użytkownika|Jeżeli system na to zezwala to wartość timeoutu sesji użytkownika może być podana"
+
+msgid "Group Session Timeout|If any groups that the user is a member of have an assigned session timeout, the shortest timeout will be displayed here."
+msgstr "Timeout Sesji Grupy|Jeżeli jakaś grupa użytkownika ma podany timeout to będzie on tu wyświetlony"
+
+msgid "Resulting Session Timeout|If the application settings allow it, this is the effective session timeout for the user. Any timeout assigned explicitly to the user will override any timeout value due to group membership."
+msgstr "Wynikowy Timeout Sesji|Jeżeli system na to zezwala to wartość timeoutu sesji użytkownika zostanie tu wyświetlona"
+
+msgid "List|View the list of Users"
+msgstr "Lista|Widok listy Użytkowników"
+
+msgid "a User"
+msgstr "Użytkownik"
+
+msgid "Credentials|Edit a user's user name and password"
+msgstr "Dane Autoryzacji|Edycja loginu i hasła"
+
+msgid "Settings|Edit a user's settings"
+msgstr "Ustawienia|Edycja ustawień użytkownika"
+
+msgid "Permissions|Edit permissions to view or edit records of a module"
+msgstr "Uprawnienia|Edycja uprawnień do oglądania i edycji rekordów w module"
+
+msgid "Permitted Organizations|Edit the assigned organizations"
+msgstr "Uprawnione Organizacje|Edycja przydzielonych organizacji"
+
+msgid "Group Membership|Define which groups this user should be a memebr of"
+msgstr "Przynależność Grupowa|Definiuj członkiem których grup ma być użytkownik"
+
+msgid "View|View a user"
+msgstr "Rekord|Widok użytkownika"
+
+msgid "Password|The user's password."
+msgstr "Hasło|Hasło użytkownika"
+
+msgid "New User"
+msgstr "Nowy Użytkownik"
+
+msgid "Require New Password|If set to 'yes', the user will be asked to enter a new password when logging in."
+msgstr "Wymagaj Nowe Hasło|Jeżeli 'tak' użytkownik będzie proszony o podanie hasła przed zalogowaniem."
+
+msgid "User Permissions"
+msgstr "Uprawnienia Użytkownika"
+
+msgid "No Add New|To add a new Permission you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowe Uprawnienia musisz przejść do modułu rodzica"
+
+msgid "Log ID"
+msgstr "ID Logu"
+
+msgid "View Permission"
+msgstr "Uprawnienia Podglądu"
+
+msgid "Edit Permission"
+msgstr "Uprawnienia Edycji"
+
+msgid "User|The user to whom a permission is assigned"
+msgstr "Użytkownika|Użytkownik któremu przydzielono uprawnienia"
+
+msgid "Module ID|The module ID of the associated module"
+msgstr "ID Modułu|ID modułu stowarzyszonego"
+
+msgid "|The type of permission the user has to view a record of the associated module"
+msgstr "|Rodzaj uprawnień użytkownika to oglądania rekordu w stowarzyszonym module"
+
+msgid "Edit Permission|The type of permission the user has to edit a record of the associated module"
+msgstr "Edycja Uprawnień|Typ uprawnień użytkownika do edycji rekordu w stowarzyszonym module"
+
+msgid "List|View the list of Permissions"
+msgstr "Lista|Widok listy Uprawnień"
+
+msgid "User Permission Organizations"
+msgstr "Organizacje Uprawnień Użytkownika"
+
+msgid "No Add New|To add a new Permitted Organization you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Uprawnioną Organizację musisz przejść do modułu rodzica"
+
+msgid "User ID|The user to whom a permitted organization is assigned"
+msgstr "ID Użytkownika|Użytkownik do którego przydzielona jest uprawniona organizacja"
+
+msgid "Organization ID|The organization that the user is assigned a permission to"
+msgstr "ID Organizacji|Organizacja w użytkownik ma przydzielone uprawnienie do"
+
+msgid "List|View the list of Permitted Organizations"
+msgstr "Lista|Widok Listy Uprawnionych Organizacji"
+
+msgid "User Group Membership"
+msgstr "Grupowe Członkowstwo Użytkownika"
+
+msgid "No Add New|To add a new Member you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowego Członka musisz przejść do modułu rodzica"
+
+msgid "Group"
+msgstr "Grupa"
+
+msgid "Group|The group to which a member is assigned"
+msgstr "Grupa|Grupa do której przydzielony jest członek"
+
+msgid "List|View the list of Members"
+msgstr "Lista|Widok listy Członków"
+
+msgid "User Groups"
+msgstr "Grupy Użytkowników"
+
+msgid "Add New|Add a new User Group"
+msgstr "Dodaj Nowy|Dodaj nową Grupę Użytkowników"
+
+msgid "No Add New|You cannot add a new User Group because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowego Członka Grupy bo nie masz do tego uprawnień"
+
+msgid "Group ID|An ID value for primary key purpose."
+msgstr "ID Grupy|Wartość numeryczna do celów wewnętrznych"
+
+msgid "Name|The group's name."
+msgstr "Nazwa|Nazwa grupy"
+
+msgid "Description|A description of the purpose of the group."
+msgstr "Opis|Opis celu istnienia grupy"
+
+msgid "Session Timeout"
+msgstr "Timeout Sesji"
+
+msgid "Session Timeout|If the application settings allow it, a session timeout can be specified here (in minutes). Members of this group will get the smallest timeout of all groups they are a member of, unless an explicit timeout is set in the Users module."
+msgstr "Timeout Sesji|Jeżeli system na to zezwala może być tu wyspecyfikowany timeout"
+
+msgid "List|View the list of User Groups"
+msgstr "Lista|Widok listy Grup Użytkowników"
+
+msgid "a User Group"
+msgstr "Grupa Użytkowników"
+
+msgid "Form|Edit a user group"
+msgstr "Formularz|Edycja grupy użytkowników"
+
+msgid "Members|Define which users that should be members of this group"
+msgstr "Członkowie|Definiuj członków grupy"
+
+msgid "User Group"
+msgstr "Grupa Użytkowników"
+
+msgid "View|View a user group"
+msgstr "Rekord|Widok grupy użytkowników"
+
+msgid "New User Group"
+msgstr "Nowa Grupa Użytkowników"
+
+msgid "User Group Permissions"
+msgstr "Uprawnienia Grupy Użytkowników"
+
+msgid "Group|The group to which a permission is assigned"
+msgstr "Grupa|Grupa do której przydzielone zostały uprawnienia"
+
+msgid "|The type of permission the members of the group have to view a record of the associated module"
+msgstr "|Typ uprawnień członków grupy do oglądania rekordu w stowarzyszonym module"
+
+msgid "Edit Permission|The type of permission the members of the group have to edit a record of the associated module"
+msgstr "Uprawnienie Edycji|Typ uprawnień członków grupy do edycji rekordu w stowarzyszonym module"
+
+msgid "Accountabilities"
+msgstr "Odpowiedzialności"
+
+msgid "No Add New|To add a new Accountability you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Odpowiedzialność musisz przejść do modułu rodzica"
+
+msgid "Search|Search accountability assignments"
+msgstr "Wyszukiwanie|Przeszukiwanie przydziałów odpowiedzialności"
+
+msgid "Record ID|An automatically assigned number used to track accountability assignments"
+msgstr "ID Rekordu|Automatycznie przydzielany numer do śledzenia przydzielonych odpowiedzialności"
+
+msgid "Source Module|The name of the module which is the source of the assigned involvement"
+msgstr "Moduł Źródłowy|Nazwa modułu będącego źródłem przydzielonego uczestnictwa"
+
+msgid "Record Description|A group of fields used to describe the source record"
+msgstr "Opis Rekordu|Grupa pól używana do opisu rekordu źródłowego"
+
+msgid "Specific Accountability|A word or phrase describing the specific accountability of the person. The specific accountability is automatically generated by the system based on the assignment which occurred within a related module"
+msgstr "Sposób Odpowiedzialności|Automatycznie generowane słowo lub fraza opisujące szczegółową odpowiedzialność danej osoby"
+
+msgid "Person Accountable|The individual assigned primary accountability for the subject matter of this record"
+msgstr "Osoba Odpowiedzialna|Osoba odpowiedzialna za przedmiot rekordu"
+
+msgid "Related Record|A combined field used to display the source module name and record ID"
+msgstr "Rekord Powiązany|Pole łączone wyświetlające nazwę modułu źródłowego i ID rekordu"
+
+msgid "Accountability Details|A detailed description of the personal accountability and any notes which may be of importance to anyone inheriting the accountability"
+msgstr "Szczegóły Odpowiedzialności|Szczegółowy opis osobistej odpowiedzialności"
+
+msgid "Status|Current status of the personal accountability. Some accountabilities are of a short term but renewable nature and others can be ongoing without limitation"
+msgstr "Status|Obecny status osobistej odpowiedzialności"
+
+msgid "Organization|The organization of the individual assigned primary accountability for the subject matter of this record"
+msgstr "Organizacja|Organizacja osoby której przydzielono główną odpowiedzialność za przedmiot rekordu"
+
+msgid "List|View the list of Accountabilities"
+msgstr "Lista|Widok listy Odpowiedzialności"
+
+msgid "an Accountability"
+msgstr "Odpowiedzialność"
+
+msgid "Form|Edit an accountability assignment"
+msgstr "Formularz|Edycja przydziału odpowiedzialności"
+
+msgid "Accountability"
+msgstr "Odpowiedzialność"
+
+msgid "View|View an accountability assignment"
+msgstr "Rekord|Widok przydziału odpowiedzialności"
+
+msgid "New Accountability"
+msgstr "Nowa Odpowiedzialność"
+
+msgid "Actions"
+msgstr "Działania"
+
+msgid "No Add New|To add a new Action you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowe Działanie musisz przejść do modułu rodzica"
+
+msgid "Search|Search actions associated with related records"
+msgstr "Wyszukiwanie|Przeszukiwanie działań powiązanych z odniesionym rekordem"
+
+msgid "Action ID"
+msgstr "ID Działania"
+
+msgid "Related Module"
+msgstr "Moduł Powiązany"
+
+msgid "Related Record Description"
+msgstr "Opis Rekordu Związanego"
+
+msgid "Accountable"
+msgstr "Odpowiedzialny"
+
+msgid "Due"
+msgstr "Do"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Action ID|Numerical ID to identify and track actions assigned within this application"
+msgstr "ID Działania|Numeryczne ID do identyfikacji i śledzenia działań powiązanych w systemie"
+
+msgid "Related Record|A combined field used to display the related module name and what record, if any, it is related to"
+msgstr "Rekord Powiązany|Pole łączone używane do wyświetlania nazwy modułu powiązanego i jeżeli tak to z którym rekordem jest powiązany"
+
+msgid "Organization|The organization with primary responsibility for the assigned action"
+msgstr "Organizacja|Organizacja głownie odpowiedzialna za przydzielone działanie"
+
+msgid "Person Accountable|The individual assigned primary accountability for the assigned action"
+msgstr "Osoba Odpowiedzialna|Osoba której przydzielono główną odpowiedzialność za działanie"
+
+msgid "Title|A concise title that describes the action"
+msgstr "Tytuł|Zwarty tytuł opisujący działanie"
+
+msgid "Action Required|A comprehensive description of the action required"
+msgstr "Wymagane Działania|Zwarty opis wymaganych działań"
+
+msgid "Entry Date|An automatic entry of the date and time the action was entered into the system"
+msgstr "Data Wprowadzenia|Automatycznie generowana data i czas wprowadzenia działania do systemu"
+
+msgid "Assigned Date|Date the action was originally assigned"
+msgstr "Data Przydziału|Data przydziału działania"
+
+msgid "Due Date|Date the action is projected to be completed"
+msgstr "Data Wykonania|Data do kiedy działanie powinni być wykonane"
+
+msgid "Begin Date|The date that activity to satisfy the action began"
+msgstr "Data Rozpoczęcia|Data rozpoczęcia działania"
+
+msgid "Completion Date|The date and time the action was completed"
+msgstr "Data Zakończenia|Data i czas zakończenia akcji"
+
+msgid "Assigned By|The name of the person assigning the action"
+msgstr "Przydzielone Przez|Nazwisko osoby przydzielającej działanie"
+
+msgid "Corrective|Check this box if this action was assigned to correct an identified deficiency"
+msgstr "Naprawcze|Odznacz checkbox jeżeli działanie miało charakter naprawczy"
+
+msgid "Status|Status of the assigned action"
+msgstr "Status|Status przydzielonego zadania"
+
+msgid "Start Delay|A calculated field based on the amount of time between the date the action was assigned and the date activity started to resolve the assigned action"
+msgstr "Opóźnienie Rozpoczęcia|Pole wyliczane pokazujące ilość czasu między czasem przydziału działania i czasem rozpoczęcia działania"
+
+msgid "Completion Delay|A calculated field based on the amount of time between the date the action was assigned and the date action was completed"
+msgstr "Opóźnienie Wykonania|Pole wyliczane pokazujące ilość czasu między planowaną datą wykonania a datą zakończenia"
+
+msgid "List|View the list of Actions"
+msgstr "Lista|Widok listy Działań"
+
+msgid "an Action"
+msgstr "Działanie"
+
+msgid "Form|Edit summary information about an action associated with a related record"
+msgstr "Formularz|Edycja informacji o działaniu stowarzyszonym z  powiązanym rekordem"
+
+msgid "Action"
+msgstr "Działanie"
+
+msgid "View|View summary information about an action associated with a related record"
+msgstr "Rekord|Widok informacji o działaniu stowarzyszonym z  powiązanym rekordem"
+
+msgid "Dates and Delays"
+msgstr "Daty i Opóźnienia"
+
+msgid "New Action"
+msgstr "Nowe Działanie"
+
+msgid "Dates"
+msgstr "Daty"
+
+msgid "No Add New|To add a new Date you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową datę musisz przejść do modułu rodzica"
+
+msgid "Search|Search assigned dates"
+msgstr "Wyszukiwanie|Przeszukiwanie przydzielonych dat"
+
+msgid "Date Type"
+msgstr "Typ Daty"
+
+msgid "Record ID|An automatically assigned number used to track date fields throughout the application"
+msgstr "ID Rekordu|Automatycznie przydzielany numer to śledzenia pól daty w systemie"
+
+msgid "Record Description|A group of fields used to describe the source record which is associated with the date"
+msgstr "Opis Rekordu|Grupa pól używana do opisu rekordu źródłowego powiązanego z datą"
+
+msgid "Organization|The name of the organization producing event date"
+msgstr "Organizacja|Nazwa organizacji tworzącej datę zdarzenia"
+
+msgid "Date Type|A brief description of the date type associated with the related module and record"
+msgstr "Typ Daty|Krótki opis typu daty stowarzyszonej z  powiązanym modułem i rekordem"
+
+msgid "Date|The date associated with the related module, record, and descriptor"
+msgstr "Data|Data stowarzyszona z  powiązanym modułem, rekordem i opisem"
+
+msgid "Source Module|The name of the module which is the source of the date"
+msgstr "Moduł Źródłowy|Nazwa modułu będącego źródłem daty"
+
+msgid "List|View the list of Dates"
+msgstr "Lista|Widok listy Dat"
+
+msgid "a Date"
+msgstr "Data"
+
+msgid "View|View an assigned date"
+msgstr "Rekord|Widok przydzielonej daty"
+
+msgid "Involvement"
+msgstr "Uczestnictwo"
+
+msgid "No Add New|To add a new Involvement you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowe Uczestnictwo musisz przejść do modułu rodzica"
+
+msgid "Search|Search people involved"
+msgstr "Wyszukiwanie|Przeszukiwanie uczestniczących osób"
+
+msgid "Source Record Description"
+msgstr "Opis Rekordu Źródłowego"
+
+msgid "Person Involved"
+msgstr "Osoba Uczestnicząca"
+
+msgid "Record ID|An automatically assigned number used to track the involvement of people with issues and events"
+msgstr "ID Rekordu|Automatycznie przydzielany numer służący do śledzenie uczestnictwa osób w sprawach i zdarzeniach"
+
+msgid "Specific Involvement|A word or phrase describing the specific involvement of the person. The specific involvement is automatically generated by the system based on the assignment which occurred within a related module"
+msgstr "Sposób Uczestnictwa|Automatycznie generowane słowo lub fraza opisujące sposób uczestnictwa danej osoby"
+
+msgid "Person Involved|The name of the person involved with the related record"
+msgstr "Osoba Uczestnicząca|Nazwa uczestniczącej osoby związanej z rekordem"
+
+msgid "Involvement Details|A detailed description of the participant's involvement"
+msgstr "Szczegóły Uczestnictwa|Szczegółowy opis uczestnictwa osoby"
+
+msgid "Involvement Status|The present status of the participant's involvement"
+msgstr "Status Uczestnictwa|Aktualny status uczestnika"
+
+msgid "Organization|The organization of the individual involved with the subject matter of this record"
+msgstr "Organizacja|Organizacja osoby powiązanej z przedmiotem rekordu"
+
+msgid "List|View the list of Involvement"
+msgstr "Lista|Widok listy Uczestnictwa"
+
+msgid "an Involvement"
+msgstr "Uczestnictwo"
+
+msgid "Form|Edit summary information about a person's involvment"
+msgstr "Formularz|Edycja informacji o uczestnictwie osób"
+
+msgid "View|View summary information about a person's involvement"
+msgstr "Rekord|Widok informacji o uczestnictwie osób"
+
+msgid "New Involvement"
+msgstr "Nowe Uczestnictwo"
+
+msgid "Source Record Link|An internal link to the source record."
+msgstr "Link Rekordu Źródłowego|Link wewnętrzny do rekordu źródłowego"
+
+msgid "Attachments"
+msgstr "Załączniki"
+
+msgid "No Add New|To add a new Attachment you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Załącznik musisz przejść do modułu rodzica"
+
+msgid "Search|Search attachments associated with related records"
+msgstr "Wyszukiwanie|Przeszukiwanie załączników stowarzyszonych z  powiązanymi rekordami"
+
+msgid "File Name"
+msgstr "Nazwa Pliku"
+
+msgid "Last Modified"
+msgstr "Ostatnia Modyfikacja"
+
+msgid "File Size"
+msgstr "Rozmiar Pliku"
+
+msgid "Record ID|Numerical ID to identify and track attachments uploaded within this application"
+msgstr "ID Rekordu|Numeryczne ID do identyfikacji i śledzenia załączników w systemie"
+
+msgid "Download Link|A link to the download utilty"
+msgstr "Link Pobrania|Link do pobrania pliku"
+
+msgid "Description|A short description of the file contents"
+msgstr "Opis|Krótki opis zawartości pliku"
+
+msgid "File|The file to be attached"
+msgstr "Plik|Plik do załączenia"
+
+msgid "File Size|The size of the uploaded file"
+msgstr "Rozmiar Pliku|Rozmiar wysyłanego na serwer pliku"
+
+msgid "Modified By|The name of the person that last modified the attachment record"
+msgstr "Zmodyfikowany Przez|Nazwa osoby która ostatnia zmodyfikowała rekord załącznika"
+
+msgid "Last Modified|The date the attachment record was last modified"
+msgstr "Ostatnia Modyfikacja|Data ostatniej modyfikacji rekordu załącznika"
+
+msgid "List|View the list of Attachments"
+msgstr "Lista|Widok listy Załączników"
+
+msgid "an Attachment"
+msgstr "Załącznik"
+
+msgid "Form|Edit summary information about an attachment associated with a related record"
+msgstr "Formularz|Edycja informacji o załącznikach stowarzyszonych z  powiązanym rekordem"
+
+msgid "Attachment"
+msgstr "Załącznik"
+
+msgid "View|View summary information about an attachment associated with a related record"
+msgstr "Rekord|Widok informacji o załączniku stowarzyszonym z  powiązanym rekordem"
+
+msgid "New Attachment"
+msgstr "Nowy Załącznik"
+
+msgid "Costs"
+msgstr "Koszty"
+
+msgid "No Add New|To add a new Cost you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Koszt musisz przejść do modułu rodzica"
+
+msgid "Search|Search costs of risk associated with related records"
+msgstr "Wyszukiwanie|Przeszukiwanie kosztów związanych ze stowarzyszonymi rekordami"
+
+msgid "Cost ID"
+msgstr "ID Kosztu"
+
+msgid "Incurred"
+msgstr "Wartość Kosztu"
+
+msgid "Cost ID|An automatically assigned number used to track costs throughout the enterprise"
+msgstr "ID Kosztu|Automatycznie przydzielany numer używany do śledzenia kosztów w organizacji"
+
+msgid "Cost Date|The date this cost amount was incurred by the organization"
+msgstr "Data Kosztu|Data powstania kosztu w organizacji"
+
+msgid "Organization|The organization responsible for the cost or expense"
+msgstr "Organizacja|Organizacja odpowiedzialna za koszt lub wydatek"
+
+msgid "Person Accountable|The individual assigned primary accountability for the cost"
+msgstr "Osoba Odpowiedzialna|Osoba odpowiedzialna za koszt"
+
+msgid "Cost of Risk Category|A cost of risk categorization which enables a Total Cost of Risk analysis"
+msgstr "Kategoria Kosztu|Kategoryzacja kosztu do celów analitycznych"
+
+msgid "Cost Type|A combined field used to describe this cost type when associating it with other records"
+msgstr "Typ Kosztu|Pole łączone używane do opisu typu kosztu jeżeli jest on stowarzyszony z innymi rekordami"
+
+msgid "Title|A concise title that describes the cost"
+msgstr "Tytuł|Zwarty tytuł opisujący koszt"
+
+msgid "Cost Description|A detailed description of the cost being tracked"
+msgstr "Opis Kosztu|Szczegółowy opis kosztu"
+
+msgid "Incurred|The total estimated amount of the cost to be incurred, stated in the currency assigned to this installation of the software"
+msgstr "Wartość Kosztu|Szacunkowa wartość powstałego kosztu w walucie systemu"
+
+msgid "Budget Consideration?|Whether the cost incurred should be considered for future budget planning"
+msgstr "Budżet?|Czy powstały koszt powinien być brany pod uwagę w przyszłości w konstrukcji budżetu"
+
+msgid "P.O. Number|A purchase order number assigned by an accounting department to allocate funds for a stated and approved purpose"
+msgstr "Numer MPK|Numer Miejsca Powstawania Kosztu przydzielony przez księgowość"
+
+msgid "Modified By|The name of the person that last modified the cost record"
+msgstr "Zmodyfikowany Przez|Nazwa osoby która ostatnia zmodyfikowała rekord kosztu"
+
+msgid "Last Modified|The date the cost record was last modified"
+msgstr "Ostatnia Modyfikacja|Data ostatniej modyfikacji rekordu kosztu"
+
+msgid "List|View the list of Costs"
+msgstr "Lista|Widok listy Kosztów"
+
+msgid "a Cost of Risk"
+msgstr "Koszt"
+
+msgid "List|List costs of risk associated with related records"
+msgstr "Lista|Lista pozycji kosztów powiązanych z rekordami"
+
+msgid "Form|Edit summary information about a cost of risk associated with a related record"
+msgstr "Formularz|Edycja informacji o kosztach stowarzyszonych z  powiązanym rekordem"
+
+msgid "Cost"
+msgstr "Koszt"
+
+msgid "View|View summary information about a cost of risk associated with a related record"
+msgstr "Rekord|Widok informacji o koszcie stowarzyszonym z  powiązanym rekordem"
+
+msgid "New Cost"
+msgstr "Nowy Koszt"
+
+msgid "Cost Types"
+msgstr "Typy Kosztów"
+
+msgid "Add New|Add a new Cost Type"
+msgstr "Dodaj Nowy|Dodaj nowy Typ Kosztu"
+
+msgid "Search|Search cost of risk types"
+msgstr "Wyszukiwanie|Przeszukiwanie typów kosztów"
+
+msgid "Reports"
+msgstr "Raporty Ogólne"
+
+msgid "No Add New|You cannot add a new Cost Type because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowego Typu Kosztu ponieważ brak Ci uprawnień"
+
+msgid "Cost Category"
+msgstr "Kategoria Kosztu"
+
+msgid "Cost Title"
+msgstr "Tytuł Kosztu"
+
+msgid "Person Accountable"
+msgstr "Osoba Odpowiedzialna"
+
+msgid "Expenditure"
+msgstr "Wydatek"
+
+msgid "Record ID|An automatically assigned number used to track risk control participation types"
+msgstr "ID Rekordu|Automatycznie przydzielany numer użytkowany do śledzenia typów uczestnictwa w koszcie"
+
+msgid "Cost Title|A word or short phrase used to describe the specific title of this cost of risk type"
+msgstr "Tytuł Kosztu|Słowo lub fraza używana do opisu tytułu kosztu danego typu"
+
+msgid "Cost Type Description|A detailed description of the cost of risk type and the types of expenses likely to be categorized under this type"
+msgstr "Opis Typu Kosztu|Szczegółowy opis typu kosztu i związanych z nim wydatków"
+
+msgid "Person Accountable|The name of the person accountable for developing, directing, and/or managing this cost of risk type"
+msgstr "Osoba Odpowiedzialna|Osoba odpowiedzialna za zarządzanie kosztem"
+
+msgid "Expenditure?|Whether the cost incurred is associated with an expenditure of cash"
+msgstr "Wydatki?|Czy powstały wydatek ma być stowarzyszony z wydaniem gotówki"
+
+msgid "List|View the list of Cost Types"
+msgstr "Lista|Widok listy Typów Kosztów"
+
+msgid "a Cost Type"
+msgstr "Typ Kosztu"
+
+msgid "Form|The screen used to edit summary information about a cost of risk type"
+msgstr "Formularz|Ekran używany do edycji informacji o typach kosztów"
+
+msgid "Cost Type"
+msgstr "Typ Kosztu"
+
+msgid "View|The screen used to view summary information about a cost of risk type"
+msgstr "Rekord|Ekran do oglądania informacji o typach kosztów"
+
+msgid "New Cost Type"
+msgstr "Nowy Typ Kosztu"
+
+msgid "Glossary"
+msgstr "Glosariusz"
+
+msgid "Add New|Add a new Glossary Item"
+msgstr "Dodaj Nowy|Dodaj nową pozycję Glosariusza"
+
+msgid "Search|Search glossary terms"
+msgstr "Wyszukiwanie|Przeszukiwanie pozycji glosariusza"
+
+msgid "No Add New|You cannot add a new Glossary Item because you don't have permission"
+msgstr "Brak Dodaj Nowy|Nie możesz dodać nowej Pozycji Glosariusza bo nie masz do tego uprawnień"
+
+msgid "Glossary ID"
+msgstr "ID Glosariusza"
+
+msgid "Glossary Item"
+msgstr "Pozycja Glosariusza"
+
+msgid "Definition"
+msgstr "Definicja"
+
+msgid "Glossary ID|An automatically assigned number used to track glossary items associated with the application, technology and the domain"
+msgstr "ID Glosariusza|Automatycznie przydzielany numer do śledzenia pozycji glosariusza "
+
+msgid "Organization|The name of the organization introducing the glossary term and associated definition to assist with organizational communication"
+msgstr "Organizacja|Nazwa organizacji wprowadzającej termin w glosariuszu i związanej z nim definicji"
+
+msgid "Person Accountable|The individual assigned primary accountability for maintaining the currency and accuracy of this glossary item"
+msgstr "Osoba Odpowiedzialna|Osoba odpowiedzialna za zarządzanie i poprawność danej pozycji w glosariuszu"
+
+msgid "Glossary Item|The term, title, or phrase to be included as a glossary item"
+msgstr "Pozycja Glosariusza|Termin, tytuł lub fraza wprowadzana do glosariusza"
+
+msgid "Definition|The definition of the glossary item as it is uesd throughout the enterprise"
+msgstr "Definicja|Definicja terminu w glosariuszu"
+
+msgid "Uniform Resource Locator|The internet address of a useful glossary or definition page"
+msgstr "URL|Adres internetowy strony z informacjami uzupełniającymi"
+
+msgid "Protected|Protect these changes from being automatically overwritten while importing glossary records from another database"
+msgstr "Ochrona|Chroń zmiany przed nadpisanie przy imporcie rekordów glosariusza z innej bazy"
+
+msgid "Display|Display this glossary item within the application glossary"
+msgstr "Wyświetlanie|Wyświetlanie danej pozycji glosariusza w glosariuszu systemu"
+
+msgid "List|View the list of Glossary Items"
+msgstr "Lista|Widok listy Pozycji Glosariusza"
+
+msgid "a Glossary Item"
+msgstr "Pozycja Glosariusza"
+
+msgid "Form|Edit summary information about a glossary term used throughout the organization"
+msgstr "Formularz|Edycja informacji o pozycji glosariusza używanego w organizacji"
+
+msgid "View|View summary information about a glossary term used throughout the organization"
+msgstr "Rekord|Widok informacji o pozycji glosariusza używanego w organizacji"
+
+msgid "New Glossary Item"
+msgstr "Nowa Pozycja Glosariusza"
+
+msgid "Links"
+msgstr "Linki"
+
+msgid "No Add New|To add a new Link you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać Link musisz przejść do modułu rodzica"
+
+msgid "Search|Search links associated with related records"
+msgstr "Wyszukiwanie|Przeszukiwanie linków stowarzyszonych z  powiązanymi rekordami"
+
+msgid "Link ID"
+msgstr "ID Linka"
+
+msgid "Link Title"
+msgstr "Tytuł Linka"
+
+msgid "Link Address"
+msgstr "Adres Linka"
+
+msgid "Link ID|Numerical ID used track links associated with records throughout the application"
+msgstr "ID Linka|Numeryczne ID używane do śledzenia linków stowarzyszonych z rekordami w systemie"
+
+msgid "Related Record Description|A description of the related record based on a combination of field values assigned from within the related module"
+msgstr "Opis Związanek Rekordu|Opis związanego rekordu bazujący na kombinacji wartości pól przydzielonych w związanym module"
+
+msgid "Link Title|Short description of the link"
+msgstr "Tytuł Linka|Krótki opis linka"
+
+msgid "Link Address|A valid address associated with a Web page or other information which is relevant to the related record"
+msgstr "Adres Linka|Adres strony internetowej lub innej informacji odnoszącej się do związanego rekordu"
+
+msgid "Link Description|A detailed description of the Web page or other information to be found at the link address"
+msgstr "Opis Linka|Szczegółowy opis strony lub innej informacji do znalezienia pod adresem internetowym"
+
+msgid "Entry Date|An automatic entry of the date and time the link was entered into the database"
+msgstr "Data Wpisu|Automatycznie wprowadzana data i czas wpisu linka do systemu"
+
+msgid "Entry Person|An automatic entry of the person that entered the link into the database"
+msgstr "Osoba Wpisująca|Automatycznie wprowadzana nazwa osoby wpisującej link do systemu"
+
+msgid "Organization|The name of the organization responsible for the assiated link"
+msgstr "Organizacja|Nazwa organizacji odpowiedzialnej za link"
+
+msgid "List|View the list of Links"
+msgstr "Lista|Widok listy Linków"
+
+msgid "a Link"
+msgstr "Link"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "View|View summary information about a link associated with a related record"
+msgstr "Rekord|Widok informacji o linku stowarzyszonym z  powiązanym rekordem"
+
+msgid "New Link"
+msgstr "Nowy Link"
+
+msgid "Module Notification Recipients"
+msgstr "Odbiorcy Powiadomień Modułu"
+
+msgid "No Add New|To add a new Module Notification Recipient you must go to a parent module"
+msgstr "Brak Dodaj Nowe|Aby dodać nowego Odbiorcę Powiadomień Modułu należy przejść do modułu rodzica"
+
+msgid "Search|Search issue reports"
+msgstr "Wyszukiwanie|Przeszukiwanie raportów spraw"
+
+msgid "Recipient"
+msgstr "Odbiorca"
+
+msgid "Email Address"
+msgstr "Email"
+
+msgid "Record ID|An automatically assigned number used to track notification requirements"
+msgstr "ID Rekordu|Automatycznie przydzielany numer do śledzenia wymogów powiadomienia"
+
+msgid "Module|The name of the module associated with the notification requirement"
+msgstr "Moduł|Nazwa modułu powiązanego z wymogiem powiadomienia"
+
+msgid "Organization|Name of the organization associated with the notification requirements. Individuals from the same organization, or many different organizations, may be added to the notification list of this organization for this module."
+msgstr "Organizacja|Nazwa organizacji stowarzyszonej z wymogami powiadomienia. Osoby z tej samej organizacji lub różnych organizacji mogą być dodawane do listy powiadomień tej organizacji dla danego modułu"
+
+msgid "Recipient|The name of the individual that should be notified"
+msgstr "Odbiorca|Nazwa osoby która ma zostać powiadomiona"
+
+msgid "Contact Card|A combined field used to group basic contact information of a person"
+msgstr "Karta Kontaktu|Pole łączone używane do grupowania informacji kontaktowych danej osoby"
+
+msgid "Recipient Notification Details|Details associated with the notification requirement"
+msgstr "Szczegóły Powiadomienia Odbiorcy|Szczegóły stowarzyszone z wymogiem powiadomienia"
+
+msgid "Module|The name of the module associated with the notification recipient"
+msgstr "Moduł|Nazwa modułu stowarzyszonego z odbiorcą powiadomienia"
+
+msgid "List|View the list of Module Notification Recipients"
+msgstr "Lista|Widok listy Odbiorców Powiadomień Modułu"
+
+msgid "a Module Notification Recipient"
+msgstr "Odbiorca Powiadomienia Modułu"
+
+msgid "Form|Edit summary information about a notification requirement"
+msgstr "Formularz|Edycja informacji o wymogach powiadomienia"
+
+msgid "Module Notification Recipient"
+msgstr "Odbiorca Powiadomienia Modułu"
+
+msgid "View|View summary information about a notification requirement"
+msgstr "Rekord|Widok informacji o wymogu powiadomienia"
+
+msgid "New Module Notification Recipient"
+msgstr "Nowy Odbiorca Powiadomienia Modułu"
+
+msgid "Notifications"
+msgstr "Powiadomienia"
+
+msgid "No Add New|To add a new Notification you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowe Powiadomienie musisz przejść do modułu rodzica"
+
+msgid "Record"
+msgstr "Rekord"
+
+msgid "Subject"
+msgstr "Temat"
+
+msgid "Record ID|An automatically assigned number used to track notifications"
+msgstr "ID Rekordu|Automatycznie przydzielany numer używany do śledzenia powiadomień"
+
+msgid "Module|The name of the module associated with the notification"
+msgstr "Moduł|Nazwa modułu stowarzyszonego z powiadomieniem"
+
+msgid "Record Description|A description of the record that is being sent as a notification"
+msgstr "Opis Rekordu|Opis rekordu wysyłanego jako powiadomienie"
+
+msgid "Sender|The person who sent the notification"
+msgstr "Nadawca|Osoba która wysłała powiadomienie"
+
+msgid "Subject|The subject line for the  notification email"
+msgstr "Temat|Temat maila powiadomienia"
+
+msgid "Message|An additional message in the notification email"
+msgstr "Wiadomość|Dodatkowa wiadomość w mailu powiadomienia"
+
+msgid "Attach XML Data?|Whether to attach a machine-readable data file with the message"
+msgstr "Załączyć Dane XML?|Czy załączyć dane czytelne maszynowo do wiadomości"
+
+msgid "Status|The current status of the notification"
+msgstr "Status|Aktualny status powiadomienia"
+
+msgid "Sent Date|The time and date when the notification was sent"
+msgstr "Data Wysyłki|Data i czas wysyłki powiadomienia"
+
+msgid "Organization|The name of the organization associated with the related record"
+msgstr "Organizacja|Nazwa organizacji stowarzyszonej z  powiązanym rekordem"
+
+msgid "List|View the list of Notifications"
+msgstr "Lista|Widok listy Powiadomień"
+
+msgid "a Notification"
+msgstr "Powiadomienie"
+
+msgid "Recipients|Modify the selected recipients for this notification"
+msgstr "Odbiorcy|Modyfikowanie wybranych odbiorców tego powiadomienia"
+
+msgid "Send|Confim the sending of this notification"
+msgstr "Wyślij|Potwierdź wysyłanie tego powiadomienia"
+
+msgid "Notification"
+msgstr "Powiadomienie"
+
+msgid "New Notification"
+msgstr "Nowe Powiadomienie"
+
+msgid "This notification has already been sent. It can't be changed anymore."
+msgstr "Powiadomienie zostało już wysłane i nie może być zmienione."
+
+msgid "Record|The record that is being sent as a notification"
+msgstr "Rekord|Rekord który został wysłany jako powiadomienie"
+
+msgid "Notification Recipients"
+msgstr "Odbiorcy Powiadomienia"
+
+msgid "No Add New|To add a new Notification Recipient you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowego Odbiorcę Powiadomienia musisz przejść do modułu rodzica"
+
+msgid "Notification ID"
+msgstr "ID Powiadomienia"
+
+msgid "Notification ID|The automatically assigned number used to track notifications"
+msgstr "ID Powiadomienia|Automatycznie przydzielany numer do śledzenia powiadomień"
+
+msgid "Person ID|The person who is the recipient of the notification"
+msgstr "ID Osoby|Osoba która jest odbiorcą powiadomienia"
+
+msgid "List|View the list of Notification Recipients"
+msgstr "Lista|Widok listy Odbiorców Powiadomień"
+
+msgid "a Notification Recipient"
+msgstr "Odbiorca Powiadomienia"
+
+msgid "Notification Recipient"
+msgstr "Odbiorca Powiadomienia"
+
+msgid "Notes"
+msgstr "Notatki"
+
+msgid "No Add New|To add a new Note you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Notatkę musisz przejść do modułu rodzica"
+
+msgid "Search|Search notes"
+msgstr "Wyszukiwanie|Przeszukiwanie notatek"
+
+msgid "Note ID|An automatically assigned number used to track notes associated with records throughout the application"
+msgstr "ID Notatki|Automatycznie przydzielany numer do śledzenia notatek stowarzyszonych z rekordami w systemie"
+
+msgid "Title|A concise title that describes the note"
+msgstr "Tytuł|Zwięzły tytuł opisujący notatkę"
+
+msgid "Note|A note to be associated with a record"
+msgstr "Notatka|Notatka do stowarzyszenia z rekordem"
+
+msgid "Note Date|Automatic entry of the date the note was entered into the system"
+msgstr "Data Notatki|Automatycznie wprowadzana data wpisu notatki do systemu"
+
+msgid "Author|Automatic entry of the name of the person entering or last modifying the note"
+msgstr "Autor|Automatycznie wprowadzana nazwa osoby wpisującej lub modyfikującej notatkę"
+
+msgid "Last Modified|Automatic entry of the last date the note was modified"
+msgstr "Ostatnia Modyfikacja|Automatycznie wprowadzana data ostatniej modyfikacji notatki"
+
+msgid "Last Modified By|Automatic entry of the last user that modified the note"
+msgstr "Zmodyfikowany Przez|Automatycznie wprowadzany użytkownik który jako ostatni zmodyfikował notatkę"
+
+msgid "List|View the list of Notes"
+msgstr "Lista|Widok listy Notatek"
+
+msgid "a Note"
+msgstr "Notatka"
+
+msgid "Form|Edit summary information about a note"
+msgstr "Formularz|Edycja informacji o notatce"
+
+msgid "Note"
+msgstr "Notatka"
+
+msgid "View|View summary information about a note"
+msgstr "Rekord|Widok informacji o notatce"
+
+msgid "New Note"
+msgstr "Nowa Notatka"
+
+msgid "Upgrade Patches"
+msgstr "Aktualizacje"
+
+msgid "No Add New|To add a new Upgrade Patch you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Aktualizację musisz przejść do modułu rodzica"
+
+msgid "Record ID|An automatically assigned ID for internal purposes (primary key)"
+msgstr "ID Rekordu|Automatycznie przydzielane ID do celów wewnętrznych"
+
+msgid "Patch Name|A unique name assigned to each patch"
+msgstr "Nazwa Aktualizacji|Unikalna nazwa przydzielona aktualizacji"
+
+msgid "Description|A description of the patch"
+msgstr "Opis|Opis aktualizacji"
+
+msgid "Release Version|The release version that this patch applies to"
+msgstr "Wersja systemu|Wersja systemu do którego stosuje się aktualizację"
+
+msgid "Applied Status|The status of this patch: Not Applied, Applied, Not Required"
+msgstr "Status|Status aktualizacji: Nie Wykonany, Wykonany, Nie Wymagany"
+
+msgid "User Log"
+msgstr "Log Użytkownika"
+
+msgid "No Add New|To add a new Log Entry you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nowy Wpis Logu musisz przejść do modułu rodzica"
+
+msgid "Person ID"
+msgstr "ID Osoby"
+
+msgid "Remote IP"
+msgstr "Zdalne IP"
+
+msgid "Date and Time"
+msgstr "Data i Czas"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Event Type|The type of user entry being logged by the system"
+msgstr "Typ Zdarzenia|Typ zdarzenia użytkownika zalogowanego do systemu"
+
+msgid "Event URL|URL of request that generated the event"
+msgstr "URL Zdarzenia|URL zapytania które wygenerowało zdarzenia"
+
+msgid "Remote IP|The visiting user's IP address"
+msgstr "Zdalne IP|IP użytkownika zalogowanego do systemu"
+
+msgid "List|View the list of Log Entries"
+msgstr "Lista|Widok listy Wpisów Logu"
+
+msgid "Release Versions"
+msgstr "Wersja Systemu"
+
+msgid "No Add New|To add a new Release Version you must go to a parent module"
+msgstr "Brak Dodaj Nowy|Aby dodać nową Wersję Systemu musisz przejść do modułu rodzica"
+
+msgid "Release Version|A unique version number assigned to each version"
+msgstr "Wersja Systemu|Unikalny numer przydzielony do każdej wersji systemu"
+
+msgid "No checksum file found"
+msgstr "Brak sumy kontrolnej pliku"
+
+msgid "Several checksum files found:"
+msgstr "Znaleziono więcej niż jeden plik sumy kontrolnej:"
+
+msgid "Select a checksum file by typing the number associated with the correct file listed above:"
+msgstr "Wybierz plik sumy kontrolnej wpisując odpowiedni numer połączony z plikiem powyżej:"
+
+#, php-format
+msgid "'%s' is an invalid choice. Would you like to try again?"
+msgstr "'%s' jest nieważnym wyborem. Chcesz spróbować jeszcze raz?"
+
+#, php-format
+msgid "Reading checksum file %s"
+msgstr "Wczytywanie pliku sumy kontrolnej %s"
+
+#, php-format
+msgid "There are %s files to check"
+msgstr "Do sprawdzenia jest %s plików"
+
+#, php-format
+msgid "Found a modification on line %s.\n"
+msgstr "Znaleziono modyfikację w linii %s.\n"
+
+msgid "Found the following modified files:"
+msgstr "Znaleziono następujące zmodyfikowane pliki:"
+
+msgid "Found no modified files."
+msgstr "Nie znaleziono zmodyfikowanych plików."
+
+msgid "The following files were removed:"
+msgstr "Następujące pliki zostały usunięte:"
+
+msgid "No files were removed."
+msgstr "Nie usunięto żadnych plików."
+
+msgid "All done!"
+msgstr "Zadanie wykonane!"
+
+msgid "Change Your Preferences"
+msgstr "Zmień Twoje Preferencje"
+
+msgid "Could not find the file:"
+msgstr "Nie odnaleziono pliku:"
+
+msgid "Your settings were saved successfully. They will become effective next time you log in."
+msgstr "Twoje zmiany zostały zapamiętane. Będą widoczne po następnym zalogowaniu."
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Audit trail for "
+msgstr "Zapis audytu dla "
+
+msgid ", record "
+msgstr ", rekord "
+
+msgid "List|View the list"
+msgstr "Lista|Widok listy"
+
+msgid "View|The View Screen"
+msgstr "Rekord|Ekran widoku"
+
+msgid "There is no data to view here."
+msgstr "Brak danych do wyświetlenia."
+
+msgid "phrase"
+msgstr "fraza"
+
+#, php-format
+msgid "These are the fields of the '%1$s' grid. Please print as many sheets of this page as necessary, or see the %2$s module for a complete data entry form."
+msgstr "To są pola arkusza  '%1$s'. Wydrukuj tyle arkuszy ile potrzebujesz lub obejrzyj wszystkie pola wprowadzania danych w module %2$s."
+
+#, php-format
+msgid "%s's Dashboard"
+msgstr "%s - Pulpit"
+
+msgid "You don't have permission to view this file."
+msgstr "Brak uprawnień do podglądu tego pliku."
+
+msgid "There was a problem"
+msgstr "Wystąpił problem"
+
+msgid "The file could not be found on the system."
+msgstr "Plik nie mógł zostać odnaleziony w systemie."
+
+msgid "This is probably not because of something you did, but a problem on the server.  This problem has been logged, and an administrator will hopefully fix it soon."
+msgstr "Nie stało się to z powodu Twojego działania ale problemu z serwerem. Problem został zapisany i będzie naprawiony przez administratora."
+
+msgid "Search conditions:"
+msgstr "Warunki wyszukiwania:"
+
+msgid "Ordering:"
+msgstr "Uporządkowanie:"
+
+msgid "ascending"
+msgstr "rosnąco"
+
+msgid "descending"
+msgstr "malejąco"
+
+msgid "There is no matching data."
+msgstr "Brak pasujących danych."
+
+#, php-format
+msgid "Worksheet for the %s module"
+msgstr "Arkusz roboczy dla modułu %s"
+
+#, php-format
+msgid "Records in the %s module"
+msgstr "Rekordy w module %s"
+
+msgid "Checking file permissions on the server:"
+msgstr "Sprawdzanie praw dostępu plików na serwerze"
+
+msgid "Note: This is a rudimentary check for the purpose of ensuring basic functionality, not security. A more comprehensive server configuration check might be implemented in a later release of Active Agenda."
+msgstr "Uwaga: Jest to pobieżny test w celu zapewnienia podstawowej funkcjonalności."
+
+msgid "Checking file upload folder:"
+msgstr "Sprawdzanie foldera do wysyłki plików:"
+
+msgid "Folder is writeable (OK)"
+msgstr "Folder ma prawa zapisu (OK)"
+
+msgid "Folder is NOT writeable."
+msgstr "Folder nie ma praw zapisu."
+
+msgid "Warning: It is not possible to upload attachments."
+msgstr "Ostrzeżenie: Nie można wysłać załączników."
+
+msgid "Checking s2alog folder:"
+msgstr "Sprawdzanie foldera s2alog:"
+
+msgid "Checking errors.log file:"
+msgstr "Sprawdzanie pliku errors.log"
+
+msgid "File exists. Checking if it's writeable:"
+msgstr "Plik istnieje. Sprawdzanie czy ma prawa zapisu:"
+
+msgid "File is writeable (OK)"
+msgstr "Plik ma prawa zapisu (OK)"
+
+msgid "File is NOT writeable."
+msgstr "Plik nie ma praw zapisu."
+
+msgid "Warning: Error messages cannot be logged. Additional error messages will be displayed to users. Be sure to change the permissions before using Active Agenda."
+msgstr "Ostrzeżenie: Komunikat o błędzie nie mógł zostać zapisany. Dodatkowy komunikat o błędzie będzie wyświetlany użytkownikom. Upewnij się, że uprawnienia zostaną zmienione przed dalszym użytkowaniem systemu."
+
+msgid "File does not exist, creating it..."
+msgstr "Plik nie istnieje, tworzenie..."
+
+msgid "Created successfully!"
+msgstr "Utworzony z powodzeniem!"
+
+msgid "Could not create file."
+msgstr "Nie można było utworzyć pliku."
+
+msgid "You are not allowed to access this page, because you are not a Site Administrator"
+msgstr "Brak praw dostępu do tej strony ponieważ nie jesteś administratorem systemu."
+
+msgid "Server check"
+msgstr "Sprawdzanie serwera"
+
+msgid "Successfully changed accountabilities"
+msgstr "Zmiana odpowiedzialności zakończona powodzeniem"
+
+msgid "No person selected."
+msgstr "Brak wybranej osoby."
+
+msgid "New Person Accountable|Select the person that the currently filtered accountabilities should be reassigned to."
+msgstr "Nowa Osoba Odpowiedzialna|Wybierz osobę, której przydzielone zostaną wybrane odpowiedzialności."
+
+msgid "Reassign Accountabilities"
+msgstr "Przydziel Odpowiedzialności"
+
+msgid "Select a person below:"
+msgstr "Wybierz osobę poniżej:"
+
+msgid "Search|Go to the search screen"
+msgstr "Wyszukiwanie|Przejdź do ekranu wyszukiwania"
+
+msgid "Available Themes"
+msgstr "Dostępne Tematy"
+
+#, php-format
+msgid "Theme %s"
+msgstr "Temat %s"
+
+#, php-format
+msgid "Theme Values"
+msgstr "Wartości Tematu"
+
+#, php-format
+msgid "Theme Tags"
+msgstr "Znaczniki Tematu"
+
+msgid "Theme Visualizer"
+msgstr "Wizualizacja Tematu"
+
+msgid "You are seeing this page because you don't have permission to the record you were trying to access."
+msgstr "Widzisz tą stronę ponieważ brak Ci praw dostępu do rekordu, który usiłujesz zobaczyć."
+
+msgid "If you feel you require access permissions to this module, please contact your local Active Agenda Administrator.  Please note that new permissions aren't available until the next time you log in."
+msgstr "Jeżeli uważasz, że musisz mieć dostęp do tego modułu, skontaktuj się z administratorem systemu."
+
+msgid "Alright. That's enough tries for now."
+msgstr "Przekroczony limit prób zalogowania się do systemu."
+
+msgid "You have been locked out from the application for 30 minutes. Here's some interesting reading while you wait:"
+msgstr "Twój dostęp do systemu został zablokowany na 30 minut. W międzyczasie tutaj znajdziesz coś interesującego do poczytnia :"
+
+msgid ""
+"<blockquote><strong>The Guy in the Glass</strong>\n"
+"<em>by Dale Wimbrow, &#169; 1934</em>\n"
+"\n"
+"When you get what you want in your struggle for pelf,\n"
+"And the world makes you King for a day,\n"
+"Then go to the mirror and look at yourself,\n"
+"And see what that guy has to say.\n"
+"\n"
+"For it isn't your Father, or Mother, or Wife,\n"
+"Who judgement upon you must pass.\n"
+"The feller whose verdict counts most in your life\n"
+"Is the guy staring back from the glass.\n"
+"\n"
+"He's the feller to please, never mind all the rest,\n"
+"For he's with you clear up to the end,\n"
+"And you've passed your most dangerous, difficult test\n"
+"If the guy in the glass is your friend.\n"
+"\n"
+"You may be like Jack Horner and \"chisel\" a plum,\n"
+"And think you're a wonderful guy,\n"
+"But the man in the glass says you're only a bum\n"
+"If you can't look him straight in the eye.\n"
+"\n"
+"You can fool the whole world down the pathway of years,\n"
+"And get pats on the back as you pass,\n"
+"But your final reward will be heartaches and tears\n"
+"If you've cheated the guy in the glass.</blockquote>"
+msgstr ""
+"<blockquote><strong>Z czasów PRL...</strong>\n"
+"\n"
+"Przełożonych się nie lękaj. Mało pracuj, dużo stękaj.\n"
+"Nie krytykuj, nie podskakuj. Siedź na dupie i przytakuj.\n"
+"Nie przejmuj się swoją rolą bo i tak Cię opierdolą.\n"
+"Nie przejmuj się swoją pracą Bo i tak Ci gówno płacą.\n"
+"Bo wydajność Twojej pracy Reguluje fundusz płacy.\n"
+"A gdy jesteś w niskiej grupie wolno mieć Ci wszystko w dupie.\n"
+"Za pięć trzecia bierz kapotę. Pierdol firmę i robotę.\n"
+"Tak dożyjesz starczej renty. Nigdy w dupę nie kopnięty.\n"
+"Żebyś z głodu nie umierał rentę będziesz sam pobierał.\n"
+"Nie za dużo, nie za mało, byle na kartofle stało.\n"
+"A gdy przyjdzie życia kres Powiedz wszystkim: SRAŁ WAS PIES.\n"
+" </blockquote>"
+
+msgid "No Access"
+msgstr "Brak Dostępu"
+
+msgid "Permission Denied"
+msgstr "Brak praw dostępu"
+
+msgid "Change Your Password"
+msgstr "Zmień Twoje Hasło"
+
+msgid "Please choose a new password. It cannot be the same as you used before."
+msgstr "Wybierz nowe hasło. Musi być inne niż poprzednio."
+
+msgid "You are required to choose and enter a new password before proceeding."
+msgstr "Zanim możesz dalej pracować w systemie musisz wybrać i wprowadzić nowe hasło ."
+
+#, php-format
+msgid "No glossary items found for letter %s."
+msgstr "Pod literą %s nie znaleziono żadnych wpisów w glosariuszu."
+
+msgid "No glossary items found."
+msgstr "Nie znaleziono wpisów w glosariuszu."
+
+msgid "Glossary List"
+msgstr "Lista Glosariusza"
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Login failed."
+msgstr "Logowanie nieudało się."
+
+msgid "Please check the spelling of username and password"
+msgstr "Sprawdź pisownie loginu i hasła"
+
+msgid "Check that CAPS LOCK is not accidentally on."
+msgstr "Sprawdź czy  przez przypadek  nie jest włączony CAPS LOCK."
+
+msgid "The data in the following reports is filtered by the following conditions"
+msgstr "Dane w raportach zostały wyfiltrowane za pomocą następujących warunków"
+
+msgid "Could not find any reports for this module"
+msgstr "Nie można znaleźć żadnych raportów dla tego modułu"
+
+msgid "Search|Search to select different data"
+msgstr "Wyszukiwanie|Przeszukiwanie danych"
+
+msgid "Charts|View the selected data in charts"
+msgstr "Wykresy|Widok wybranych danych na wykresach"
+
+msgid "Read More..."
+msgstr "Przeczytaj więcej..."
+
+msgid "Dismiss for this module"
+msgstr "Zrezygnuj w tym module"
+
+msgid "Dismiss for all modules"
+msgstr "Zrezygnuj we wszystkich modułach"
+
+msgid "default filter"
+msgstr "filtr domyślny"
+
+msgid "custom filter"
+msgstr "filtr własny"
+
+msgid "all"
+msgstr "wszystkie"
+
+msgid "This file should not be accessed directly."
+msgstr "Ten plik nie powinien być pobierany bezpośrednio."
+
+msgid "This is the first page"
+msgstr "To jest pierwsza strona"
+
+msgid "Go to the first page"
+msgstr "Przejdź do pierwszej strony"
+
+msgid "Go to the previous page"
+msgstr "Przejdź do poprzedniej strony"
+
+msgid "This is the last page"
+msgstr "To jest ostatnia strona"
+
+msgid "Go to the next page"
+msgstr "Przejdź do następnej strony"
+
+msgid "Go to the last page"
+msgstr "Przejdź do ostatniej strony"
+
+msgid "Useful for shortcuts, bookmarks, etc."
+msgstr "Użyteczny do Skrótów, Ulubionych, etc."
+
+msgid "Direct link to this page"
+msgstr "Link do tej strony"
+
+msgid "Click here to download this record as an XML data file."
+msgstr "Kliknij tutaj aby pobrać rekord jako plik XML."
+
+msgid "XML Download"
+msgstr "Pobieranie XML"
+
+msgid "Dashboard Shortcut: "
+msgstr "Skrót pulpitu: "
+
+msgid "Click here to remove this page from the shortcuts on your home page."
+msgstr "Kliknij tutaj aby usunąć stronę ze skrótów na stronie startowej."
+
+msgid "remove"
+msgstr "usuń"
+
+msgid "Click here to add this page as a shortcut on your home page."
+msgstr "Kliknij tutaj aby dodać stronę jako skrót do strony startowej."
+
+msgid "Add shortcut"
+msgstr "Dodaj Skrót"
+
+msgid "New Accountabilities"
+msgstr "Nowe Odpowiedzialności"
+
+msgid "Shortcuts"
+msgstr "Skróty"
+
+msgid "Check server configuration"
+msgstr "Sprawdź konfigurację serwera"
+
+msgid "Invalid Dashboard Chart ID"
+msgstr "Nieważne ID Wykresu Pulpitu"
+
+msgid "All records"
+msgstr "Wszystkie rekordy"
+
+msgid "Select one"
+msgstr "Wybierz jeden"
+
+msgid "This chart is on your dashboard"
+msgstr "Ten wykres jest na Twoim pulpitu"
+
+msgid "Click here to add this chart to your dashboard."
+msgstr "Kliknij tutaj aby dodać ten wykres na pulpit."
+
+msgid "Add this chart to your dashboard"
+msgstr "Dodaj ten wykres na Twój pulpit"
+
+msgid "One page per section"
+msgstr "Jedna strona na sekcję"
+
+msgid "All on one page"
+msgstr "Wszystko na jednej stronie"
+
+msgid "Edit documentation for this module"
+msgstr "Edytuj dokumentację dla tego modułu"
+
+msgid "Table of Contents"
+msgstr "Spis Treści"
+
+msgid "Edit this section"
+msgstr "Edytuj tą sekcję"
+
+msgid "External"
+msgstr "Zewnętrzny"
+
+msgid "Online Documentation"
+msgstr "Dokumentacja Online"
+
+msgid "Support Documentation"
+msgstr "Dokumentacja Wsparcia"
+
+#, php-format
+msgid "Entering a new %s record"
+msgstr "Wprowadzanie nowego rekordu %s"
+
+msgid "New Record"
+msgstr "Nowy Rekord"
+
+msgid "Close and Reload"
+msgstr "Zamknij i Odśwież"
+
+msgid "Parent Modules"
+msgstr "Moduł Rodzic"
+
+msgid "Modules where this module is a submodule"
+msgstr "Moduły gdzie ten moduł jest podmodułem"
+
+msgid "Submodules"
+msgstr "Podmoduły"
+
+msgid "Submodules of this module"
+msgstr "Podmoduły tego modułu"
+
+msgid "Foreign Modules"
+msgstr "Moduł Obcy"
+
+msgid "This module displays data from the following modules"
+msgstr "Ten moduł wyświetla dane z następujących modułów"
+
+msgid "This module displays data from and saves data into the following modules"
+msgstr "Ten moduł wyświetla i zapamiętuje dane z następujących modułów"
+
+msgid "Reverse Foreign Modules"
+msgstr "Odwrotne Moduły Obce"
+
+msgid "Modules that display data from this module"
+msgstr "Moduły, które wyświetlają dane z tego modułu"
+
+msgid "Reverse Remote Modules"
+msgstr "Odwrotne Moduły Zdalne"
+
+msgid "Modules that display data from this module and save data into this module"
+msgstr "Moduły, które wyświetlają dane z tego modułu i zapamiętują w nim dane"
+
+#, php-format
+msgid "There are %s items in this list"
+msgstr "Jest %s pozycji na liście"
+
+msgid "Show Items"
+msgstr "Pokaż Pozycje"
+
+msgid "Hide Items"
+msgstr "Ukryj Pozycje"
+
+msgid "ERROR: No 'grid type' parameter passed."
+msgstr "Błąd: Brak przekazania parametru 'gridtype'."
+
+msgid "ERROR: The following file could not be found:"
+msgstr "Błąd: Następujące pliki nie zostały znalezione:"
+
+msgid "ERROR: No module ID."
+msgstr "Błąd: Brak ID modułu."
+
+msgid "Full Edit (in new window)"
+msgstr "Pełna Edycja (w nowym oknie)"
+
+msgid "Quick Edit"
+msgstr "Szybka Edycja"
+
+msgid "Invalid dashboard chart."
+msgstr "Nieważny wykres pulpitu"
+
+msgid "Unknown action requested"
+msgstr "Żądanie nieznanego działania"
+
+msgid "PERMISSION DENIED: You appear not to have permission to this data."
+msgstr "Brak praw dostępu: Brak Ci praw dostępu do tych danych."
+
+#, php-format
+msgid "Manage %s for this %s:"
+msgstr "Zarządzaj %s dla %s:"
+
+msgid "Reassign these accountabilities to a different person"
+msgstr "Przydziel te odpowiedzialności innej osobie"
+
+msgid "Reassign<br>Accountabilities"
+msgstr "Przydziel<br>Odpowiedzialności"
+
+msgid "Could not find file:"
+msgstr "Nie można znaleźć pliku:"
+
+msgid "This notification has been sent."
+msgstr "To powiadomienie zostało wysłane."
+
+msgid "To send this notification to the recipients listed below, press the button."
+msgstr "Przyciśnij przycisk aby wysłać powiadomienie do osób wylistowanych poniżej."
+
+msgid "Send this Notification"
+msgstr "Wyślij to Powiadominie"
+
+msgid "There are no recipients for this notification. To send it, first go to the Recipients screen and add some."
+msgstr "Brak odbiorców dla tego powiadomienia. Aby go wysłać, przejdź do Ekranu Odbiorcy i dodaj ich."
+
+msgid "/**singular_record_name**/"
+msgstr "/**singular_record_name**/"
+
+msgid "/**screen_phrase**/"
+msgstr "/**screen_phrase**/"
+
+msgid "/**module_name**/"
+msgstr "/**module_name**/"
+
+msgid "List|View the list of /**plural_record_name**/"
+msgstr "Lista|Widok listy  /**plural_record_name**/"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "No data"
+msgstr "Brak danych"
+
+msgid "(no date set)"
+msgstr "(brak podania daty)"
+
+msgid "(no date/time set)"
+msgstr "(brak daty/czasu)"
+
+msgid "View in new window"
+msgstr "Widok w nowym oknie"
+
+msgid "(confirm)"
+msgstr "(potwierdź)"
+
+msgid "on or after"
+msgstr "na lub po"
+
+msgid "on or before"
+msgstr "na lub przed"
+
+msgid "Unknown"
+msgstr "Nieznany"
+
+msgid "Permission Error:  You have no permission to view records in the %s module"
+msgstr "Błąd praw dostępu: Nie masz prawa podglądu rekordów w module %s"
+
+msgid "(unselected)"
+msgstr "(niewybrany)"
+
+msgid "(match all empty values)"
+msgstr "(dopasuj wszystkie puste wartości)"
+
+msgid "(match all non-empty values)"
+msgstr "(dopasuj wszystkie niepuste wartości)"
+
+msgid "All empty values"
+msgstr "Wszystkie puste wartości"
+
+msgid "All non-empty values"
+msgstr "Wszystkie niepuste wartości"
+
+msgid "no value"
+msgstr "brak wartości"
+
+msgid "This report is not designed to be displayed as a List report"
+msgstr "Raport nie został zaprojektowany do wyświetlania jako raport Listy"
+
+msgid "years"
+msgstr "lata"
+
+msgid "months"
+msgstr "miesiące"
+
+msgid "days"
+msgstr "dni"
+
+msgid "hours"
+msgstr "godziny"
+
+msgid "bytes"
+msgstr "bajty"
+
+msgid "kilobytes"
+msgstr "kilobajty"
+
+msgid "megabytes"
+msgstr "megabajty"
+
+msgid "Error: Not enough data to render this chart."
+msgstr "Błąd: Brak wystarczającej ilości danych do wygenerowania wykresu."
+
+msgid "Error: SQL error."
+msgstr "Błąd: Błąd w SQL"
+
+msgid "Error: Unknown error type."
+msgstr "Błąd: Nieznany typ błędu."
+
+msgid "Pie"
+msgstr "Kołowy"
+
+msgid "(no data)"
+msgstr "(brak danych)"
+
+msgid "other"
+msgstr "inne"
+
+msgid "Pareto"
+msgstr "Pareto"
+
+msgid "Bar"
+msgstr "Kolumnowy"
+
+msgid "Radar"
+msgstr "Radarowy"
+
+#, php-format
+msgid "You have no permissions to view records in the %s module."
+msgstr "Brak praw dostępu do podglądu rekordów w module %s."
+
+msgid "(No data)"
+msgstr "(Brak danych)"
+
+#, php-format
+msgid "You have no permissions to view or edit records in the %s module."
+msgstr "Brak praw do podglądu lub edycji rekordów w module %s."
+
+msgid "Add New"
+msgstr "Dodaj Nowy"
+
+msgid "Delete"
+msgstr "      Usuń      "
+
+msgid "Save"
+msgstr " Zapamiętaj "
+
+msgid "Cancel"
+msgstr "     Anuluj     "
+
+msgid "Unknown action requested."
+msgstr "Żądanie nieznanego działania."
+
+msgid "The data was not saved, because:"
+msgstr "Dane nie zostały zapisane ponieważ:"
+
+msgid "Database error"
+msgstr "Błąd bazy danych"
+
+msgid "The server's upload directory is not writeable. You will not be able to upload files."
+msgstr "Folder serwera do wysyłki plików nie ma praw zapisu. Nie będziesz mógł wysyłać plików na serwer."
+
+msgid "The server's upload directory for this module is not writeable. You will not be able to upload files."
+msgstr "Folder serwera do wysyłki plików dla tego modułu nie ma praw zapisu. Nie będziesz mógł wysyłać plików na serwer."
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Add"
+msgstr "Dodaj"
+
+#, php-format
+msgid "You have no permissions to edit records in the %s module."
+msgstr "Nie masz prawa edycji rekordów w module %s."
+
+msgid "The file was uploaded successfully."
+msgstr "Wysyłka pliku na serwer zakończyła się powodzeniem."
+
+msgid "There was a problem uploading the file "
+msgstr "Wystąpił problem z wysyłką pliku na serwer."
+
+msgid "There was a problem uploading the file. "
+msgstr "Wystąpił problem podczas wysyłki pliku na serwer."
+
+msgid "The file is larger than allowed for this server."
+msgstr "Plik jest większy niż zezwala na to serwer."
+
+msgid "The file is larger than allowed."
+msgstr "Plik jest większy niż jest to dozwolone."
+
+msgid "The file was not completely uploaded."
+msgstr "Plik nie został w całości wysłany na serwer."
+
+msgid "No file was uploaded."
+msgstr "Nie wysłano na serwer żadnego pliku."
+
+msgid "There was a problem uploading the file. Unknown problem."
+msgstr "Wystąpił nieznany problem podczas wysyłki pliku na serwer."
+
+msgid "Add All"
+msgstr "Dodaj Wszystkie"
+
+msgid "Remove All"
+msgstr "Usuń Wszystkie"
+
+msgid "None"
+msgstr "Brak"
+
+msgid "The request returned no data. Please try a different search.<br><br>"
+msgstr "Zapytanie nie zwróciło żadnych danych. Spróbuj innego zapytania.<br><br>"
+
+msgid "View this record in a new window"
+msgstr "Obejrzyj rekord w nowym oknie"
+
+msgid "Full Edit"
+msgstr "Pełna Edycja"
+
+msgid "View this record"
+msgstr "Obejrzyj rekord"
+
+msgid "A best practice!"
+msgstr "Najlepsza praktyka!"
+
+#, php-format
+msgid "Pages: %s Rows: %s"
+msgstr "Strony: %s Wiersze: %s"
+
+msgid "Rows per page: "
+msgstr "Wierszy na stronę:"
+
+msgid "Batch Edit"
+msgstr "Zbiorcza edycja"
+
+msgid "Edit All"
+msgstr "Prawa edycji dla Wszystkich"
+
+msgid "Edit Orgs"
+msgstr "Prawa edycji dla Organizacji"
+
+msgid "Edit None"
+msgstr "Brak prawa edycji"
+
+msgid "View All"
+msgstr "Prawa podglądu dla Wszystkich"
+
+msgid "View Orgs"
+msgstr "Prawa podglądu dla Organizacji"
+
+msgid "View None"
+msgstr "Brak prawa podglądu"
+
+msgid "Note: this page will take some time to load."
+msgstr "Uwaga: Ta strona będzie się ładował przez dłuższy czas."
+
+msgid "NOTE: This user has Site Admin privileges, which gives <strong>full access</strong> to all modules in the application. The permissions selected below are effective only if the Site Admin privilege is revoked.<br />"
+msgstr "Uwaga: Ten użytkownik ma prawa administratora systemu, co daje mu <strong>pełny dostęp</strong> do wszystkich modułów. Prawa dostępu wybrane poniżej są aktywne po odebraniu praw administratora.<br/>"
+
+msgid "Your session has timed out (or you have logged out). Please close this window and log in from the main window."
+msgstr "Czas Twojej sesji przekroczył limit (lub wylogowałeś się). Zamknij okno i ponownie zaloguj się  w głównym oknie."
+
+msgid "The field '%s' must match pattern %s."
+msgstr "- pole '%s' musi odpowiadać wzorcowi %s."
+
+#, php-format
+msgid "The field '%s' must contain a valid date."
+msgstr "- pole '%s' musi zawierać ważną datę."
+
+#, php-format
+msgid "The field '%s' can only contain numeric values."
+msgstr "- pole '%s' może zawierać tylko wartości numeryczne."
+
+#, php-format
+msgid "The field '%s' may not be zero."
+msgstr "- pole '%s' nie może być równe zero."
+
+#, php-format
+msgid "The field '%s' may not be empty."
+msgstr "- pole '%s' nie może być puste."
+
+#, php-format
+msgid "The field '%s' may not be negative."
+msgstr "- pole '%s' nie może być ujemne."
+
+#, php-format
+msgid "The field '%s' must be a valid email address. The format is incorrect for an email address."
+msgstr "- pole '%s' musi być poprawnym adresem emailowym. "
+
+#, php-format
+msgid "The field '%s' must be a valid email address. The domain name (the value after \"@\") is invalid for email addresses."
+msgstr "- pole '%s' musi być poprawnym adresem emailowym.  Nazwa domeny (wartość po \"@\") jest niepoprawna."
+
+#, php-format
+msgid "The field '%s' must be a valid whole number."
+msgstr "- pole '%s' musi być liczbą całkowitą."
+
+#, php-format
+msgid "The field '%s' must be a valid number."
+msgstr "- pole '%s' musi być liczbą."
+
+#, php-format
+msgid "The field '%s' must have a selected value."
+msgstr "- pole '%s' musi mieć wybraną wartość."
+
+#, php-format
+msgid "The field '%s' has an unknown validation type '%s'. There is a problem in the XML file that defines this module."
+msgstr "- pole '%s' posiada nieznany typ walidacji '%s'. "
+
+msgid "Chart"
+msgstr "    Wykres    "
+
+msgid "ERROR: file not found: "
+msgstr "Błąd: nie znaleziono pliku:"
+
+msgid "ERROR: Empty query result."
+msgstr "Błąd: Pusty wynik zapytania."
+
+#, php-format
+msgid "Edit %s for this record"
+msgstr "Edytuj %s tego rekordu"
+
+#, php-format
+msgid "Parent Module: %s"
+msgstr "Moduł Rodzic: %s"
+
+#, php-format
+msgid "Parent Modules: %s"
+msgstr "Moduły Rodzice: %s"
+
+msgid "You have no charts yet. You can add charts to this dashboard from the Charts screen in any module."
+msgstr "Nie masz jeszcze zdeklarowanych wykresów. Możesz je dodać w każdym module do Twojego pulpitu poprzez ekran Wykresy."
+
+#, php-format
+msgid "Cannot find the file %s."
+msgstr "Nie można znaleźć pliku %s."
+
+msgid "An error occurrred while processing your request."
+msgstr "Wystąpił błąd podczas obróbki Twojego zapytania."
+
+#, php-format
+msgid "Since all errors are logged and administrators are automatically notified, it is likely that we are already working on it."
+msgstr "Wszystkie błędy są logowane a administrator automatycznie otrzymuje powiadamienie o ich wystąpieniu. Jest więc możliwe, że już pracuje na jego usunięciem."
+
+msgid "You can help us by %sfiling an error report%s, explaining what you were trying to do, and what you would have expected to see. Please be as specific as you can."
+msgstr "Możesz  pomóc %s wypełniając raport o błędzie%s, w którym wyjaśnisz precyzyjnie jakie działanie usiłowałeś zrealizować gdy wystąpił błąd."
+
+msgid "Ooops! Something went wrong!"
+msgstr "Wystąpiła nieprawidłowość w systemie!"
+
+msgid "You must supply a password"
+msgstr "Musisz podać hasło"
+
+msgid "No password change"
+msgstr "Brak zmiany hasła"
+
+msgid "Updating password"
+msgstr "Aktualizacja hasła"
+
+msgid "The passwords you supplied did not match"
+msgstr "Hasło, które podałeś, nie pasuje"
+
+msgid "\"Complete\" or \"Deferred\" actions are not shown."
+msgstr "Działania \"Ukończone\" i  \"Przerwane\" nie są pokazywane."
+
+msgid "No new accountabilities have been assigned to you since your last login."
+msgstr "Nie przydzielono Ci nowych odpowiedzialności od ostatniego zalogowania."
+
+msgid "\"New\" accountabilities were assigned today,<br /> or since your last login a previous day."
+msgstr "\"Nowe\" odpowiedzialności zostały Ci przydzielone dzisiaj<br/> lub wczoraj po ostatnim wylogowaniu się."
+
+msgid "Username:"
+msgstr "Login:"
+
+msgid "Password:"
+msgstr "Hasło:"
+
+msgid "Sign In"
+msgstr "Zaloguj się"
+
+msgid "Please Sign In"
+msgstr "Proszę się zalogować"
+
+msgid "Log out"
+msgstr "Wyloguj się"
+
+msgid "Administration"
+msgstr "Administracja"
+
+msgid "Views"
+msgstr "Widoki"
+
+msgid "Discussions (External)"
+msgstr "Dyskusja (Zewnętrzna)"
+
+msgid "Application"
+msgstr "System"
+
+msgid "Localities"
+msgstr "Umiejscowienie"
+
+msgid "Error Log"
+msgstr "Log Błędów"
+
+msgid "Sections"
+msgstr "Sekcje"
+
+msgid "Reset form to add another %s"
+msgstr "Wyczyść formularz aby dodać nowy rekord %s"
+
+msgid "Download Data"
+msgstr "Pobieranie Danych"
+
+msgid "Relations"
+msgstr "Relacje"
+
+msgid "discussions"
+msgstr "dyskusje"
+
+msgid "documentation"
+msgstr "dokumentacja"
+
+msgid "Notification List"
+msgstr "Powiadamianie"
+
+msgid "Manage the list of people that should be notified"
+msgstr "Zarządzaj listą ludzi do powiadomienia"
+
+msgid "You have been here"
+msgstr "Odwiedziłeś strony"
+
+msgid "View"
+msgstr "Widok"
+
+msgid "Notify"
+msgstr "Powiadomienie"
+
+msgid "You have no breadcrumbs"
+msgstr "Nie odwiedziłeś poprzednio żadnej strony"
+
+msgid "Send a new notification of this record"
+msgstr "Wyślij nowe powiadomienie o tym rekordzie"
+
+msgid "next"
+msgstr "następny"
+
+msgid "previous"
+msgstr "poprzedni"
+
+msgid "General %s for %s"
+msgstr "Wszystkie %s dla %s"
+
+msgid "Global Discussions"
+msgstr "Ogólna Dyskusja"
+
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+msgid "Clone form data as new %s"
+msgstr "Powiel dane jako nowy rekord %s"
+
+msgid "List Reports"
+msgstr "Lista Raportów"
+
+msgid "Date selector"
+msgstr "Wybór daty"
+
+msgid "Type a few characters to select an item in the list to the right"
+msgstr "Wpisz parę znaków aby wybrać pozycję na liście po prawej"
+
+msgid "Open Module in new window"
+msgstr "Otwórz Moduł w nowym oknie"
+
+msgid "new window"
+msgstr "nowe okno"
+
+msgid "Open Module in same window"
+msgstr "Otwórz Moduł w tym samym oknie"
+
+msgid "go to the first screen"
+msgstr "przejdź do pierwszego ekranu"
+
+msgid "go to the previous screen"
+msgstr "przejdż do poprzedniego ekranu"
+
+msgid "go to the last screen"
+msgstr "przejdż do ostatniego ekranu"
+
+msgid "go to the next screen"
+msgstr "przejdź do następnego ekranu"
+
+msgid "add new"
+msgstr "dodaj nowy"
+
+msgid "grid"
+msgstr "siatka"
+
+msgid "no permission"
+msgstr "brak praw dostępu"
+
+msgid "page"
+msgstr "strona"
+
+msgid "[Yes] [No]"
+msgstr "[Tak] [Nie]"
+
+msgid "Top"
+msgstr "Góra"
+
+msgid "Bottom"
+msgstr "Dół"
+
+msgid "To reassign accountabilities, you must first perform a search. Please close this screen and search for records that should be reassigned"
+msgstr "Aby ponownie przydzielić dopowiedzialności musisz najpierw wykonać wyszukiwanie. Zamknij ten ekran i wyszukaj rekordy do przydzielenia"
+
+msgid "Filter Conditions"
+msgstr "Filtr Wyszukiwania"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "Main Menu"
+msgstr "Menu Główne"
+
+msgid "Home - Dashboard"
+msgstr "Start - Pulpit"
+
+msgid "dashboard"
+msgstr "pulpit"
+
+msgid "Dashboard"
+msgstr "Pulpit"
+
+msgid "Quick Start Guide"
+msgstr "Tutorial dla nowych użytkowników"
+
+msgid "quickstart"
+msgstr "tutorial"
+
+msgid "Quick Guide"
+msgstr "Tutorial"
+
+msgid "Email Us!"
+msgstr "Napisz do nas!"
+
+msgid "email"
+msgstr "email"
+
+msgid "Dicusssion Forums"
+msgstr "Forum dyskusyjne"
+
+msgid "discussion forums"
+msgstr "forum dyskusyjne"
+
+msgid "Forums"
+msgstr "Forum"
+
+msgid "Report Bug"
+msgstr "Raportuj błąd"
+
+msgid "File a Bug Report or Feature Request"
+msgstr "Wyślij raport o błędzie"
+
+msgid "report bug"
+msgstr "raportuj błąd"
+
+msgid "Look up a term in the Glossary"
+msgstr "Sprawdź wyrażenie w Glosariuszu"
+
+msgid "glossary"
+msgstr "glosariusz"
+
+msgid "Reload the page below"
+msgstr "Odśwież stronę poniżej"
+
+msgid "reload"
+msgstr "odśwież"
+
+msgid "Reload"
+msgstr "Odśwież"
+
+msgid "Log Out"
+msgstr "Wylogowanie"
+
+msgid "logout"
+msgstr "wylogowanie"
+
+msgid "You have successfully logged out."
+msgstr "Jesteś wylogowany z systemu."
+
+msgid "This ends the session for"
+msgstr "Tym kończy się sesja użytkownika"
+
+msgid "There was a problem logging out."
+msgstr "Wystąpił problem z wylogowaniem się."
+
+msgid "The address that you typed or clicked is invalid.|This module has no screen by the name"
+msgstr "Kliknięty lub wprowadzony adres internetowy jest nieważny.|Ten moduł nie posiada ekranu o nazwie"
+
+msgid "is not an EditScreen (it's a"
+msgstr "nie jest ekranem edycji (to jest lista"
+
+msgid "The address that you typed or clicked is invalid.|Could not find a Screen List to verify the requested screen."
+msgstr "Kliknięty lub wprowadzony adres internetowy jest nieważny.|Nie znaleziono ekranu Lista zgodnego z zapytaniem."
+
+msgid "The address that you typed or clicked is invalid.|Could not find file"
+msgstr "Kliknięty lub wprowadzony adres internetowy jest nieważny.|Nie można znaleźć pliku"
+
+msgid "Go Back"
+msgstr "Przejdź wstecz do poprzednio wywołanej strony"
+
+msgid "Go to the Home / Dashboard page"
+msgstr "Przejdź do Pulpitu"
+
+msgid "Anonymous data entry is not enabled.|ANON_USER is not defined"
+msgstr "Anonimowe wprowadzanie danych nie jest zaktywowane.| Użytkownik ANON_USER nie jest zdefiniowany"
+
+msgid "is not an AnonEditScreen (it's a"
+msgstr "nie jest ekranem anonimowej edycji (to jest lista"
+
+msgid "Delete this record?"
+msgstr "Usunąć ten rekord?"
+
+msgid "Dependent Modules"
+msgstr "Moduły Zależne"
+
+msgid "Code Dependencies"
+msgstr "Zależności Słowników"
+
+msgid "Entry Log"
+msgstr "Log Użytkownika"
+
+msgid "Permissions"
+msgstr "Uprawnienia Użytkownika"
+
+msgid "Permitted Organizations"
+msgstr "Uprawnienia Organizacji"
+
+msgid "Available"
+msgstr "Dostępne"
+
+msgid "Selected"
+msgstr "Wybrane"
+
+msgid "The PermissionGrid does not support the module"
+msgstr "Macierz uprawnień podglądu nie wspiera modułu"
+
+msgid "All"
+msgstr "Wszyscy"
+
+msgid "Orgs"
+msgstr "Organizacje"
+
+msgid "chart"
+msgstr "wykres"
+
+msgid "move chart left/up"
+msgstr "przesuń wykres w lewo/górę"
+
+msgid "move chart right/down"
+msgstr "przesuń wykres w prawo/dół"
+
+msgid "remove this chart from the desktop"
+msgstr "usuń wykres z pulpitu"
+
+msgid "View All Your Acountabilities"
+msgstr "Widok wszystkich Twoich Odpowiedzialności"
+
+msgid "Type|The type of link"
+msgstr "Typ|Typ linka"
+
+msgid "Title|The title"
+msgstr "Tytuł|Tytuł"
+
+msgid "Total"
+msgstr "Suma"
+
+msgid "New"
+msgstr "Nowy"
+
+msgid "An error occurred while processing your request."
+msgstr "W trakcie obróbki zapytania wystąpił błąd."
+
+msgid "Module (Record ID:"
+msgstr "(powiązany z rekordem:"
+
+msgid "(general)"
+msgstr "(powiązany ogólnie)"
+
+msgid "Screens"
+msgstr "Definicje pól"
+
+msgid "No chart defined for this module"
+msgstr "Nie zdefiniowano wykresów dla tego modułu"
+
+msgid "Invalid request URL. Unknown file type requested."
+msgstr "Adres URL nie istnieje lub zdano zapytanie o nieznany typ pliku."
+
+msgid "Main"
+msgstr "Raporty podstawowe"
+
+msgid "Reports|View available reports for this record"
+msgstr "Raporty|Widok dostępnych raportów dla danego rekordu"
+
+msgid "Reports|View available reports based on active search criteria"
+msgstr "Raporty|Widok dostępnych raportów bazujących na kryteriach wyszukiwania"
+
+msgid "More than one record was found."
+msgstr "Zapytanie zwróciło więcej niż jeden rekord."
+
+msgid "This record does not exist, or could not be found.|Record not found."
+msgstr "Rekord nie istnieje lub nie może być znaleziony.|Nie znaleziono rekordu."
+
+msgid "Dashboard Charts"
+msgstr "Wykresy Pulpitu"
+
+msgid "Dashboard Chart Conditions"
+msgstr "Warunki Wykresu Pulpitu"
+
+msgid "Consistency Condition States"
+msgstr "Stany Warunków Spójności"
+
+msgid "Module Generating Times"
+msgstr "Czasy Generowania Modułów"
+
+msgid "Submodule Record Cache"
+msgstr "Kesz Rekordów Podmodułów"
+
+msgid "User Documentation Intros"
+msgstr "Wprowadzenia Dokumentacji Użytkownika"
+
+msgid "User Desktop Shortcuts"
+msgstr "Skróty na Pulpicie użytkownika n"
+
+msgid "The field '%s' is required (because of a uniqueness constraint) when inserting a new record into %s."
+msgstr "Ze wzlędu na wymóg unikalności pole '%s' jest wymagane przy wprowadzaniu nowego rekordu do %s."
+
+msgid "You must be an Administrator to read the log file."
+msgstr "Musisz mieć prawa administratora aby czytać plik logu"
+
+msgid "The log file does not exist."
+msgstr "Plik logu nie istnieje"
+
+msgid "The log file is empty."
+msgstr "Plik logu jest pusty."
+
+msgid "The log file cannot be read."
+msgstr "Plik logu nie może być odczytany"
+
+msgid "Error Log Viewer"
+msgstr "Przeglądarka Logu Błędów"
+
+msgid "View definitions beginning with the letter"
+msgstr "Zobacz definicje zaczynające się od litery"
+
+msgid "Tutorials"
+msgstr "Wprowadzenia"
+
+msgid "Tutorial"
+msgstr "Wprowadzenie"
+

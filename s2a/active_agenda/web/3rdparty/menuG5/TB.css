@@ -1,0 +1,92 @@
+.itemTopOff { 
+    /*width:160px; */
+    width: 70px;
+    height: 23px;
+    padding: 5px 3px 1px 36px; 
+    border-right:1px solid #4283c5;
+    color: #4283c5;
+    text-align:left; 
+    /*background-color:#4283c5; */
+    /*background: transparent;*/
+    /*background: transparent url('../img/menu.gif') 85px 15px no-repeat;*/
+    background: transparent url('../img/start-here.gif') 10px 3px no-repeat;
+}
+.itemTopOn { 
+    cursor:default; 
+    /*width:160px; */
+    width: 70px;
+    height: 23px;
+    padding: 5px 3px 1px 36px; 
+    border-right:1px solid #4283c5; 
+    text-align:left; 
+    /*background-color:#2461aa; */
+    /*background-color:#ffffff; */
+    /*background: transparent url('../img/view_tree.png') 5px center no-repeat;*/
+    background: transparent url('../img/start-here.gif') 10px 3px no-repeat;
+}
+.itemSubOff { 
+    width:180px; 
+    padding:1px 6px 1px 11px; 
+    border:1px solid #ffffff; 
+    text-align:left; 
+    background-color:#4283c5; 
+}
+.itemSubOn { 
+    cursor:default; 
+    width:180px; 
+    padding:1px 6px 1px 11px; 
+    border:1px solid #ffffff; 
+    text-align:left; 
+    background-color:#2461aa; 
+}
+.itemTitle { 
+    cursor:default; 
+    width:180px; 
+    padding:1px; 
+    border:1px solid #ffffff; 
+    text-align:center; 
+    background-color:#cccccc; 
+    background-color:#c99666; 
+}
+
+.fontOff { 
+    font-family:Verdana, Helvetica, Arial, sans-serif; 
+    font-size:13px; 
+    color:#ffffff; 
+}
+.fontOn { 
+    font-family:Verdana, Helvetica, Arial, sans-serif; 
+    font-size:13px; 
+    color:#ffffff; 
+}
+.fontTitle { 
+    font-family:Verdana, Helvetica, Arial, sans-serif; 
+    font-size:13px; 
+    color:#ffffff; 
+}
+
+.tagOff { 
+    width:8px; 
+    height:13px; 
+    float:right; 
+    background:url("tagRH6.gif") no-repeat bottom; 
+}
+.tagOn { 
+    width:8px; 
+    height:13px; 
+    float:right; 
+    background:url("tagRH6.gif") no-repeat bottom; 
+}
+
+.tagDownOff { 
+    width:20px; 
+    height:10px; 
+    float:right; 
+    background:url("tagDH6.gif") no-repeat bottom left; 
+}
+.tagDownOn { 
+    width:20px; 
+    height:10px; 
+    float:right; 
+    background:url("tagDH6.gif") no-repeat bottom left; 
+}

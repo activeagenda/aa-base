@@ -1,0 +1,67 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $RDCinsert = unserialize('s:974:"INSERT INTO `rdc` (ModuleID, RecordID, Value, OrganizationID, _ModDate, _ModBy, _Deleted)
+SELECT 
+   \'dat\' AS ModuleID,
+   `dat`.DateID AS RecordID,
+   NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( DATE_FORMAT(`dat`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CHAR ),\'\'),\' | \',IFNULL( CAST( `cod1`.Description AS CHAR ),\'\'),\' | \',IFNULL( CAST( `rdc1`.Value AS CHAR ),\'\')),\' |  |  | \') AS Value,
+`rdc1`.OrganizationID,
+    NOW() AS _ModDate,
+    0 AS _ModBy,
+    0 AS _Deletetd
+FROM 
+   `dat`
+LEFT OUTER JOIN `rdc` ON (`dat`.DateID = `rdc`.RecordID AND `rdc`.ModuleID = \'dat\')
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`dat`.SourceModuleID = rdc1.ModuleID AND `dat`.SourceRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`dat`.DateDescriptorID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'281\')
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`dat`.SourceModuleID = `mod1`.ModuleID )
+WHERE `dat`.DateID IN ([*insertIDs*])";');
+    $RDCupdate = unserialize('s:810:"UPDATE `rdc`
+INNER JOIN `dat` ON (`rdc`.RecordID = `dat`.DateID AND `rdc`.ModuleID = \'dat\')
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`dat`.SourceModuleID = rdc1.ModuleID AND `dat`.SourceRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`dat`.DateDescriptorID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'281\')
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`dat`.SourceModuleID = `mod1`.ModuleID )
+SET
+   `rdc`.Value = NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( DATE_FORMAT(`dat`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CHAR ),\'\'),\' | \',IFNULL( CAST( `cod1`.Description AS CHAR ),\'\'),\' | \',IFNULL( CAST( `rdc1`.Value AS CHAR ),\'\')),\' |  |  | \'),
+rdc.OrganizationID = `rdc1`.OrganizationID,
+   `rdc`._ModDate = NOW()
+WHERE
+   `rdc`.ModuleID = \'dat\'
+";');
+?>

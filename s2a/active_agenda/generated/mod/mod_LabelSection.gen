@@ -1,0 +1,85 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //label section, serialized
+    $fields = unserialize('a:17:{s:8:"ModuleID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:236:"Module ID|A unique character ID assigned to each module of the application. Character ID\'s consist of between three and five characters. Main module ID\'s typically contain three characters and sub-modules contain four to five characters";s:8:"dataType";s:10:"varchar(5)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"ModuleID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:4:"Name";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:34:"Module Name|The name of the module";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Name";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"ModuleDesc";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:70:"Module Description|A detailed description of the purpose of the module";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"ModuleDesc";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:23:"GlobalDiscussionAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:96:"Global Discussion ID|The ID assigned to the global discussion forum most relevant to this module";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:23:"GlobalDiscussionAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:22:"LocalDiscussionAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:94:"Local Discussion ID|The ID assigned to the local discussion forum most relevant to this module";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:22:"LocalDiscussionAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"StandAlone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Stand Alone|Whether this module is a stand alone module";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"StandAlone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"SubModule";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Sub Module|Whether this module is a sub module of another module";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"SubModule";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"Association";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:115:"Association|Whether this module is an association module which is used to associate many modules of different types";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Association";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Global";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:94:"Global|Whether this module is a global module which is available from within all other modules";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Global";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Remote";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Remote|Whether this module is a remote module, i.e. pointed to by RemoteFields from other modules";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Remote";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"ModuleStatus";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:86:"Module Status|A short description of the technical implementation status of the module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"ModuleStatus";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:18:"ModuleDependencies";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Module Dependencies|A calculated field representing the total number of modules dependent upon this module";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:18:"ModuleDependencies";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:16:"CodeDependencies";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Code Dependencies|A calculated field representing the total number of codes the module is dependent upon";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"CodeDependencies";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:14:"ModuleListType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Type List|Whether this module is used to populate \'type\' lists used by other modules to define a record";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"ModuleListType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"GuidanceType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:84:"Guidance Type|Whether this \'type\' module is used to enable the provision of guidance";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"GuidanceType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"ImpPlan";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:127:"Implementation Planning|Whether this module should be included within the list of modules for implementation planning purposes.";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"ImpPlan";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"RecordLabel";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:11:"RecordLabel";}}');
+    $phrases = unserialize('a:16:{s:8:"ModuleID";N;s:4:"Name";N;s:10:"ModuleDesc";N;s:23:"GlobalDiscussionAddress";N;s:22:"LocalDiscussionAddress";N;s:10:"StandAlone";N;s:9:"SubModule";N;s:11:"Association";N;s:6:"Global";N;s:6:"Remote";N;s:12:"ModuleStatus";N;s:18:"ModuleDependencies";N;s:16:"CodeDependencies";N;s:14:"ModuleListType";N;s:12:"GuidanceType";N;s:7:"ImpPlan";N;}');
+    $singularRecordName = 'Module';
+    $labelSQL = "SELECT 
+   `mod`.ModuleID AS ModuleID,
+   `mod`.Name AS Name,
+   `mod`.ModuleDesc AS ModuleDesc,
+   `mod`.GlobalDiscussionAddress AS GlobalDiscussionAddress,
+   `mod`.LocalDiscussionAddress AS LocalDiscussionAddress,
+   `mod`.StandAlone AS StandAlone,
+   `mod`.SubModule AS SubModule,
+   `mod`.Association AS Association,
+   `mod`.Global AS Global,
+   `mod`.Remote AS Remote,
+   `cod1`.Description AS ModuleStatus,
+   `modd1`.ModuleDependencies AS ModuleDependencies,
+   `codtd1`.CodeDependencies AS CodeDependencies,
+   `mod`.ModuleListType AS ModuleListType,
+   `mod`.GuidanceType AS GuidanceType,
+   `mod`.ImpPlan AS ImpPlan,
+   NULLIF(CONCAT(IFNULL( CAST( `mod`.Name AS CHAR ),''),' | ',IFNULL( CAST( `cod1`.Description AS CHAR ),''),' Ostatnio przetworzony: ',IFNULL( CAST( DATE_FORMAT(`mod`.LastParsed, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS CHAR ),'')),' |  Ostatnio przetworzony: ') AS RecordLabel
+FROM `mod`
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`mod`.ModuleStatusID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = '272')
+   LEFT OUTER JOIN (SELECT 
+COUNT(`modd`.DependencyID) AS ModuleDependencies,
+`modd`.ModuleID
+FROM `modd` 
+ WHERE `modd`._Deleted = 0 
+
+GROUP BY `modd`.ModuleID 
+) AS modd1 
+ON (
+`mod`.ModuleID = modd1.ModuleID
+) 
+   LEFT OUTER JOIN (SELECT 
+COUNT(`codtd`.CodeTypeID) AS CodeDependencies,
+`codtd`.DependencyID
+FROM `codtd` 
+ WHERE `codtd`._Deleted = 0 
+
+GROUP BY `codtd`.DependencyID 
+) AS codtd1 
+ON (
+`mod`.ModuleID = codtd1.DependencyID
+) 
+WHERE mod._Deleted = 0
+   AND `mod`.RecordID = '/**RecordID**/'
+";
+    $recordLabelField = "RecordLabel";
+?>

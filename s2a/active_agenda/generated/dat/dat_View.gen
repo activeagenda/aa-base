@@ -1,0 +1,161 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+    /**CUSTOM_CODE|init**/
+
+    //list of objects containing the field information
+    $fields = unserialize('a:7:{s:6:"DateID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:95:"Record ID|An automatically assigned number used to track date fields throughout the application";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"DateID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:18:"SourceModuleRecord";O:9:"ViewField":21:{s:9:"linkField";s:16:"SourceRecordLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:84:"Related Record|A combined field used to display the source module name and record ID";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:18:"SourceModuleRecord";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:24:"RelatedRecordDescription";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:105:"Record Description|A group of fields used to describe the source record which is associated with the date";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:24:"RelatedRecordDescription";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:17:"OwnerOrganization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:62:"Organization|The name of the organization producing event date";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:17:"OwnerOrganization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"DateDescriptor";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:92:"Date Type|A brief description of the date type associated with the related module and record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"DateDescriptor";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"RelatedDate";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:72:"Date|The date associated with the related module, record, and descriptor";s:8:"dataType";s:8:"datetime";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"RelatedDate";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"_ModDate";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"_ModDate";}}');
+
+
+    //list of grids
+    /**grids**/
+
+    //phrases for field names, in field order
+    $phrases = array(
+   'DateID' => gettext("Record ID|An automatically assigned number used to track date fields throughout the application"),
+   'SourceModuleRecord' => gettext("Related Record|A combined field used to display the source module name and record ID"),
+   'RelatedRecordDescription' => gettext("Record Description|A group of fields used to describe the source record which is associated with the date"),
+   'OwnerOrganization' => gettext("Organization|The name of the organization producing event date"),
+   'DateDescriptor' => gettext("Date Type|A brief description of the date type associated with the related module and record"),
+   'RelatedDate' => gettext("Date|The date associated with the related module, record, and descriptor"),
+   '_ModDate' => gettext("Modified On")
+   );
+
+
+    $ownerField = 'OwnerOrganizationID';
+
+
+    /**disbleGlobalModules**/
+    /**useBestPractices**/
+
+    //retrieve record
+    $data = array();
+
+    /**SQL|GET_BEGIN**/
+    $SQL = "SELECT 
+   `dat`.DateID AS DateID,
+   CONCAT('internal:view.php?mdl=',`dat`.SourceModuleID,'&rid=',`dat`.SourceRecordID) AS SourceRecordLink,
+   NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),''),' (ID Rekordu: ',IFNULL( CAST( `dat`.SourceRecordID AS CHAR ),''),')'),' (ID Rekordu: )') AS SourceModuleRecord,
+   `rdc1`.Value AS RelatedRecordDescription,
+   `org1`.Name AS OwnerOrganization,
+   `cod1`.Description AS DateDescriptor,
+   DATE_FORMAT(`dat`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS RelatedDate,
+   DATE_FORMAT(`dat`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS _ModDate,
+   NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),''),' | ',IFNULL( CAST( `cod1`.Description AS CHAR ),''),': ',IFNULL( CAST( DATE_FORMAT(`dat`.RelatedDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS CHAR ),''),' | ',IFNULL( CAST( `org1`.Name AS CHAR ),'')),' | :  | ') AS RecordLabel,
+   `rdc1`.OrganizationID AS OwnerOrganizationID
+FROM `dat`
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`dat`.SourceModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`dat`.SourceModuleID = rdc1.ModuleID AND `dat`.SourceRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`dat`.DateDescriptorID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = '281')
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`rdc1`.OrganizationID = `org1`.OrganizationID )
+WHERE dat._Deleted = 0
+   AND `dat`.DateID = '/**RecordID**/'
+";
+
+    $SQL = TranslateLocalDateSQLFormats($SQL);
+
+    /**CUSTOM_CODE|before_get**/
+
+    //get data
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $SQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+
+    /**SQL|GET_END**/
+    switch (count($r)){
+    case 0:
+        trigger_error("This record does not exist, or could not be found.|Record not found.", E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error("More than one record was found.", E_USER_WARNING);
+        break;
+    }
+
+    $data = array_merge($data, $r[0]); //assign first (only) row
+
+    /**CUSTOM_CODE|get**/
+
+    //check if user has permission to view or edit record - will redirect if no permission at all
+    $allowEdit = $User->CheckViewScreenPermission();
+    //$allowEdit = true;
+
+    $tabsQSargs = $qsArgs;
+    unset($tabsQSargs['scr']);
+    $tabsQS = MakeQS($tabsQSargs);
+
+    //List tab
+    $tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Dates"));
+
+    if ($allowEdit){
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Date") );
+
+    } else {
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Date") );
+
+    }
+
+    $recordLabelField = $data['RecordLabel'];
+
+    $content = '';
+    foreach($fields as $key => $field){
+        if (!$field->isSubField()){
+            $content .= $field->render($data, $phrases);
+        }
+    }
+
+    $pageTitle = gettext("Date");
+    $screenPhrase = gettext("View|View an assigned date");
+
+    $backlink = "list.php?$qs";
+
+    $nextScreen = "";
+    $editlink = "edit.php?$tabsQS&scr=$nextScreen";
+    $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
+
+    //add byline info on record modification info
+    $content .= "<div class=\"recinfo\">{$phrases['_ModDate']} {$data['_ModDate']}";
+    if ($User->IsAdmin) {
+        $content .= '&nbsp; &nbsp; <a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'">'.gettext("Audit Trail").'</a> ';
+    }
+    $content .= "</div>";
+
+    //display view grids here
+
+
+//View Screen Sections here
+/**VIEWSCREENSECTIONS**/
+?>

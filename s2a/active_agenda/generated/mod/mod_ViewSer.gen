@@ -1,0 +1,182 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $phrases[0] = array(
+   'RecordID' => gettext("Record ID|A unique ID for internal database purposes (primary key)"),
+   'ModuleID' => gettext("Module ID|A unique character ID assigned to each module of the application. Character ID's consist of between three and five characters. Main module ID's typically contain three characters and sub-modules contain four to five characters"),
+   'Name' => gettext("Module Name|The name of the module"),
+   'InternalLink' => gettext("Internal Link|A link to the List screen of that module"),
+   'ModuleDesc' => gettext("Module Description|A detailed description of the purpose of the module"),
+   'GlobalDiscussionAddress' => gettext("Global Discussion ID|The ID assigned to the global discussion forum most relevant to this module"),
+   'LocalDiscussionAddress' => gettext("Local Discussion ID|The ID assigned to the local discussion forum most relevant to this module"),
+   'StandAlone' => gettext("Stand Alone|Whether this module is a stand alone module"),
+   'SubModule' => gettext("Sub Module|Whether this module is a sub module of another module"),
+   'Association' => gettext("Association|Whether this module is an association module which is used to associate many modules of different types"),
+   'Global' => gettext("Global|Whether this module is a global module which is available from within all other modules"),
+   'Remote' => gettext("Remote|Whether this module is a remote module, i.e. pointed to by RemoteFields from other modules"),
+   'ModuleStatus' => gettext("Module Status|A short description of the technical implementation status of the module"),
+   'LastParsed' => gettext("Last Parsed|Most recent date and time when the module was parsed"),
+   'RevisionAuthor' => gettext("Revision Author|The author of the XML specification file used to generate the module"),
+   'RevisionNumber' => gettext("Revision Number|A number that was automatically assigned by the software versioning system when the revision was made"),
+   'RevisionDate' => gettext("Revision Date|The revision date of the XML specification file used to generate the module"),
+   'ModuleDependencies' => gettext("Module Dependencies|A calculated field representing the total number of modules dependent upon this module"),
+   'CodeDependencies' => gettext("Code Dependencies|A calculated field representing the total number of codes the module is dependent upon")
+   );
+$phrases[1] = array(
+   'AllowAdd' => gettext("Allow Add|Whether this module allows users to add new records directly. If the module does not allow records to be added directly, the data must be added indirectly through a related module edit grid"),
+   'DataForm' => gettext("Data Form|Whether this module includes a blank data form"),
+   'MasterData' => gettext("Master Data|Whether the default data entered into the related table should be included during module distribution"),
+   'ModuleListType' => gettext("Type List|Whether this module is used to populate 'type' lists used by other modules to define a record"),
+   'GuidanceType' => gettext("Guidance Type|Whether this 'type' module is used to enable the provision of guidance"),
+   'ImpPlan' => gettext("Implementation Planning|Whether this module should be included within the list of modules for implementation planning purposes."),
+   'AddNew' => gettext("Add New|Whether this module includes a short name to be used on the Add New tab"),
+   'ExtendsModule' => gettext("Extending Module|Whether this module extends the functionality of another module"),
+   'HasGlobalModules' => gettext("Has Global Modules|Whether this module uses the global modules")
+   );
+
+
+    $sections = unserialize('a:3:{i:0;a:3:{s:6:"phrase";s:6:"Module";s:3:"sql";s:1815:"SELECT 
+   `mod`.RecordID AS RecordID,
+   `mod`.ModuleID AS ModuleID,
+   NULLIF(CONCAT(\'internal:list.php?mdl=\',IFNULL( CAST( `mod`.ModuleID AS CHAR ),\'\')),\'internal:list.php?mdl=\') AS InternalLink,
+   `mod`.Name AS Name,
+   `mod`.ModuleDesc AS ModuleDesc,
+   `mod`.GlobalDiscussionAddress AS GlobalDiscussionAddress,
+   `mod`.LocalDiscussionAddress AS LocalDiscussionAddress,
+   `mod`.StandAlone AS StandAlone,
+   `mod`.SubModule AS SubModule,
+   `mod`.Association AS Association,
+   `mod`.Global AS Global,
+   `mod`.Remote AS Remote,
+   `cod1`.Description AS ModuleStatus,
+   DATE_FORMAT(`mod`.LastParsed, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS LastParsed,
+   `mod`.RevisionAuthor AS RevisionAuthor,
+   `mod`.RevisionNumber AS RevisionNumber,
+   `mod`.RevisionDate AS RevisionDate,
+   `modd1`.ModuleDependencies AS ModuleDependencies,
+   `codtd1`.CodeDependencies AS CodeDependencies,
+   NULLIF(CONCAT(IFNULL( CAST( `mod`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `cod1`.Description AS CHAR ),\'\'),\' Ostatnio przetworzony: \',IFNULL( CAST( DATE_FORMAT(`mod`.LastParsed, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CHAR ),\'\')),\' |  Ostatnio przetworzony: \') AS RecordLabel
+FROM `mod`
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`mod`.ModuleStatusID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'272\')
+   LEFT OUTER JOIN (SELECT 
+COUNT(`modd`.DependencyID) AS ModuleDependencies,
+`modd`.ModuleID
+FROM `modd` 
+ WHERE `modd`._Deleted = 0 
+
+GROUP BY `modd`.ModuleID 
+) AS modd1 
+ON (
+`mod`.ModuleID = modd1.ModuleID
+) 
+   LEFT OUTER JOIN (SELECT 
+COUNT(`codtd`.CodeTypeID) AS CodeDependencies,
+`codtd`.DependencyID
+FROM `codtd` 
+ WHERE `codtd`._Deleted = 0 
+
+GROUP BY `codtd`.DependencyID 
+) AS codtd1 
+ON (
+`mod`.ModuleID = codtd1.DependencyID
+) 
+WHERE mod._Deleted = 0
+   AND `mod`.RecordID = \'/**RecordID**/\'
+";s:6:"fields";a:19:{s:8:"RecordID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:66:"Record ID|A unique ID for internal database purposes (primary key)";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"RecordID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"ModuleID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:236:"Module ID|A unique character ID assigned to each module of the application. Character ID\'s consist of between three and five characters. Main module ID\'s typically contain three characters and sub-modules contain four to five characters";s:8:"dataType";s:10:"varchar(5)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"ModuleID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:4:"Name";O:9:"ViewField":21:{s:9:"linkField";s:12:"InternalLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:34:"Module Name|The name of the module";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Name";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"InternalLink";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"InternalLink";}s:10:"ModuleDesc";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:70:"Module Description|A detailed description of the purpose of the module";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"ModuleDesc";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:23:"GlobalDiscussionAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:96:"Global Discussion ID|The ID assigned to the global discussion forum most relevant to this module";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:23:"GlobalDiscussionAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:22:"LocalDiscussionAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:94:"Local Discussion ID|The ID assigned to the local discussion forum most relevant to this module";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:22:"LocalDiscussionAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"StandAlone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Stand Alone|Whether this module is a stand alone module";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"StandAlone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"SubModule";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Sub Module|Whether this module is a sub module of another module";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"SubModule";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"Association";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:115:"Association|Whether this module is an association module which is used to associate many modules of different types";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Association";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Global";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:94:"Global|Whether this module is a global module which is available from within all other modules";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Global";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Remote";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Remote|Whether this module is a remote module, i.e. pointed to by RemoteFields from other modules";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Remote";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"ModuleStatus";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:86:"Module Status|A short description of the technical implementation status of the module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"ModuleStatus";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"LastParsed";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Last Parsed|Most recent date and time when the module was parsed";s:8:"dataType";s:8:"datetime";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"LastParsed";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"RevisionAuthor";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:84:"Revision Author|The author of the XML specification file used to generate the module";s:8:"dataType";s:11:"varchar(30)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"RevisionAuthor";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"RevisionNumber";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:117:"Revision Number|A number that was automatically assigned by the software versioning system when the revision was made";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"RevisionNumber";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"RevisionDate";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:89:"Revision Date|The revision date of the XML specification file used to generate the module";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"RevisionDate";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:18:"ModuleDependencies";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Module Dependencies|A calculated field representing the total number of modules dependent upon this module";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:18:"ModuleDependencies";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:16:"CodeDependencies";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Code Dependencies|A calculated field representing the total number of codes the module is dependent upon";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"CodeDependencies";s:10:"needsReGet";b:1;s:11:"formatField";N;}}}i:1;a:3:{s:6:"phrase";s:17:"Module Attributes";s:3:"sql";s:409:"SELECT 
+   `mod`.AllowAdd AS AllowAdd,
+   `mod`.DataForm AS DataForm,
+   `mod`.MasterData AS MasterData,
+   `mod`.ModuleListType AS ModuleListType,
+   `mod`.GuidanceType AS GuidanceType,
+   `mod`.ImpPlan AS ImpPlan,
+   `mod`.AddNew AS AddNew,
+   `mod`.ExtendsModule AS ExtendsModule,
+   `mod`.HasGlobalModules AS HasGlobalModules
+FROM `mod`
+   
+WHERE mod._Deleted = 0
+   AND `mod`.RecordID = \'/**RecordID**/\'
+";s:6:"fields";a:9:{s:8:"AllowAdd";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:199:"Allow Add|Whether this module allows users to add new records directly. If the module does not allow records to be added directly, the data must be added indirectly through a related module edit grid";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"AllowAdd";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"DataForm";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:56:"Data Form|Whether this module includes a blank data form";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"DataForm";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"MasterData";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:113:"Master Data|Whether the default data entered into the related table should be included during module distribution";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"MasterData";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"ModuleListType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Type List|Whether this module is used to populate \'type\' lists used by other modules to define a record";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"ModuleListType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"GuidanceType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:84:"Guidance Type|Whether this \'type\' module is used to enable the provision of guidance";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"GuidanceType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"ImpPlan";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:127:"Implementation Planning|Whether this module should be included within the list of modules for implementation planning purposes.";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"ImpPlan";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"AddNew";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:79:"Add New|Whether this module includes a short name to be used on the Add New tab";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"AddNew";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"ExtendsModule";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:80:"Extending Module|Whether this module extends the functionality of another module";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"ExtendsModule";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"HasGlobalModules";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:62:"Has Global Modules|Whether this module uses the global modules";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"HasGlobalModules";s:10:"needsReGet";b:0;s:11:"formatField";N;}}}i:2;a:2:{s:6:"phrase";s:12:"Associations";s:5:"grids";a:2:{s:13:"viewgrid_modd";O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:0;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:4:"modd";s:6:"phrase";s:17:"Dependent Modules";s:6:"number";N;s:6:"Fields";a:7:{s:18:"ModuleDependencyID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Record ID|An automatically assigned number used to associate module dependencies with dependent modules";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:18:"ModuleDependencyID";}s:12:"DependencyID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:53:"Dependent Module ID|The name of the module dependency";s:8:"dataType";s:10:"varchar(5)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"DependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Dependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:49:"Dependent Module|The name of the dependent module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Dependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:17:"ForeignDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:44:"Foreign|Whether this is a foreign dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:17:"ForeignDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"RemoteDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Remote|Whether this is a remote dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"RemoteDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"SubModDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:50:"Sub Module|Whether this is a sub-module dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"SubModDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"ModuleListType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Type List|Whether this module is used to populate \'type\' lists used by other modules to define a record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"modd";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"ModuleListType";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:179:"SELECT 
+    count(*) 
+FROM `modd`
+   
+ INNER JOIN `mod` AS `parent` ON (
+`modd`.ModuleID = `parent`.ModuleID)
+
+WHERE modd._Deleted = 0
+   AND `parent`.RecordID = \'/**RecordID**/\'
+";s:7:"listSQL";s:607:"SELECT 
+   `modd`.ModuleDependencyID AS ModuleDependencyID,
+`modd`.DependencyID AS DependencyID,
+`mod1`.Name AS Dependency,
+`modd`.ForeignDependency AS ForeignDependency,
+`modd`.RemoteDependency AS RemoteDependency,
+`modd`.SubModDependency AS SubModDependency,
+`mod2`.ModuleListType AS ModuleListType
+FROM `modd`
+LEFT OUTER JOIN `mod` AS mod1 
+   ON (`modd`.DependencyID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `mod` AS mod2 
+   ON (`modd`.ModuleID = `mod2`.ModuleID )
+ INNER JOIN `mod` AS `parent` ON (
+`modd`.ModuleID = `parent`.ModuleID)
+
+WHERE modd._Deleted = 0
+AND `parent`.RecordID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:8:"ModuleID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:0:{}s:10:"fieldTypes";a:7:{s:18:"ModuleDependencyID";s:3:"int";s:12:"DependencyID";s:10:"varchar(5)";s:10:"Dependency";N;s:17:"ForeignDependency";s:4:"bool";s:16:"RemoteDependency";s:4:"bool";s:16:"SubModDependency";s:4:"bool";s:14:"ModuleListType";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:7:{s:18:"ModuleDependencyID";s:5:"right";s:12:"DependencyID";s:4:"left";s:10:"Dependency";s:4:"left";s:17:"ForeignDependency";s:6:"center";s:16:"RemoteDependency";s:6:"center";s:16:"SubModDependency";s:6:"center";s:14:"ModuleListType";s:6:"center";}}s:14:"viewgrid_codtd";O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:0;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:5:"codtd";s:6:"phrase";s:17:"Code Dependencies";s:6:"number";N;s:6:"Fields";a:3:{s:20:"CodeTypeDependencyID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Record ID|An automatically assigned number used to associate code type dependencies with dependent modules";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"codtd";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:20:"CodeTypeDependencyID";}s:10:"CodeTypeID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Code Type ID|A number used to track code type records.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"codtd";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"CodeTypeID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"CodeType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Code Type|A combined field used to describe this code type when associating it with other records";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"codtd";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"CodeType";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:186:"SELECT 
+    count(*) 
+FROM `codtd`
+   
+ INNER JOIN `mod` AS `parent` ON (
+`codtd`.DependencyID = `parent`.ModuleID)
+
+WHERE codtd._Deleted = 0
+   AND `parent`.RecordID = \'/**RecordID**/\'
+";s:7:"listSQL";s:364:"SELECT 
+   `codtd`.CodeTypeDependencyID AS CodeTypeDependencyID,
+`codtd`.CodeTypeID AS CodeTypeID,
+`codt1`.Name AS CodeType
+FROM `codtd`
+LEFT OUTER JOIN `codt` AS codt1 
+   ON (`codtd`.CodeTypeID = `codt1`.CodeTypeID )
+ INNER JOIN `mod` AS `parent` ON (
+`codtd`.DependencyID = `parent`.ModuleID)
+
+WHERE codtd._Deleted = 0
+AND `parent`.RecordID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:12:"DependencyID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:0:{}s:10:"fieldTypes";a:3:{s:20:"CodeTypeDependencyID";s:3:"int";s:10:"CodeTypeID";s:3:"int";s:8:"CodeType";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:3:{s:20:"CodeTypeDependencyID";s:5:"right";s:10:"CodeTypeID";s:5:"right";s:8:"CodeType";s:4:"left";}}}}}');
+
+?>

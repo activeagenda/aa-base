@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# importing data into Active Agenda
+
+AA_PATH=/var/www/s2a 
+
+# Importing codes and codes types
+mysql --user=s2aroot --password=swords --database=activeagenda < $AA_PATH/install/codes_pl.sql
+
+# Importing module values
+php $AA_PATH/s2a-import-data.php -a -d $AA_PATH/install/master

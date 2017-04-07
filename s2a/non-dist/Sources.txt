@@ -1,0 +1,1423 @@
+0 CHEMICALS AND CHEMICAL PRODUCTS 
+00 Chemicals and chemical products, unspecified 
+01 Acids 
+010 Acids, unspecified 
+011 Acid gases--halogen 
+0110 Acid gases, unspecified 
+0111 Hydrogen bromide 
+0112 Hydrogen chloride 
+0113 Hydrogen fluoride 
+0114 Hydrogen iodide 
+0119 Acid gases, n.e.c. 
+012 Inorganic acids--halogens 
+0120 Inorganic acids--halogens, unspecified 
+0121 Hydriodic acid 
+0122 Hydrobromic acid 
+0123 Hydrochloric acid 
+0124 Hydrofluoric acid 
+0129 Inorganic acids--halogens, n.e.c. 
+013 Inorganic acids--other 
+0130 Inorganic acids, unspecified 
+0131 Chlorine-containing oxyacids 
+0132 Nitric acid 
+0133 Phosphoric acid 
+0134 Sulfuric acid 
+0139 Inorganic acids, n.e.c. 
+014 Organic acids 
+0140 Organic acids, unspecified 
+0141 Acetic acid, vinegar 
+0142 Acrylic acids 
+0143 Carbolic acids 
+0144 Hydrocyanic acid 
+0145 Peracetic acid 
+0146 Picric acid 
+0149 Organic acids, n.e.c. 
+018 Multiple acids 
+019 Acids, n.e.c. 
+02 Alkalies 
+020 Alkalies, unspecified 
+021 Calcium hydroxides, calcium oxides 
+0210 Calcium hydroxide, calcium oxides, unspecified 
+0211 Cement, mortar mix--dry 
+0212 Cement, mortar--wet 
+0213 Lime 
+0219 Calcium hydroxide, calcium oxides, n.e.c. 
+022 Carbonates--calcium, sodium 
+0220 Carbonates--calcium, sodium, unspecified 
+0221 Limestone, calcium carbonate 
+0222 Sodium bicarbonate, baking soda 
+0223 Sodium carbonate, soda ash 
+0229 Carbonates, n.e.c. 
+023 Lithium hydroxide 
+024 Sodium and potassium hydroxide, potassium carbonate 
+028 Multiple alkalies 
+029 Alkalies, n.e.c. 
+03 Aromatics and hydrocarbon derivatives, except halogenated 
+030 Aromatics and hydrocarbon derivatives, except halogenated, unspecified 
+031 Alcohols 
+0310 Alcohol, unspecified 
+0311 Antifreeze 
+0312 Ethanol 
+0313 Ethylene glycol 
+0314 Fusel oil 
+0315 Methanol 
+0316 Propanol 
+0319 Alcohol, n.e.c. 
+032 Aldehydes 
+0320 Aldehydes, unspecified 
+0321 Acetaldehyde 
+0322 Acrolein 
+0323 Formaldehyde 
+0324 Formalin 
+0329 Aldehydes, n.e.c. 
+033 Amines--nonaromatic 
+0330 Nonaromatic amines, unspecified 
+0331 Methyl amine 
+0339 Nonaromatic amines, n.e.c. 
+034 Aromatics 
+0340 Aromatics, unspecified 
+0341 Aniline and other aromatic amines 
+0342 Benzene 
+0343 Toluene 
+0344 Xylene 
+0349 Aromatics, n.e.c. 
+035 Ethers 
+0350 Ethers, unspecified 
+0351 Diethyl ether 
+0352 Dimethyl ether 
+0353 Ethylene oxide 
+0354 Methyl ethyl ether 
+0355 Vinyl ether 
+0359 Ethers, n.e.c. 
+036 Ketones 
+0360 Ketones, unspecified 
+0361 Acetone 
+0362 Mesityl oxide 
+0363 Methyl ethyl ketone 
+0364 Methyl N-butyl ketone 
+0369 Ketones, n.e.c. 
+037 Peroxides 
+0370 Peroxides, unspecified 
+0371 Benzoyl peroxide 
+0372 Hydrogen peroxide 
+0373 Lithium peroxide 
+0374 Potassium peroxide 
+0375 Sodium peroxide 
+0379 Peroxides, n.e.c. 
+038 Multiple aromatics and hydrocarbon derivatives, except halogenated 
+039 Aromatics and hydrocarbon derivatives, except halogenated, n.e.c. 
+0391 Nitro hydrocarbons 
+0399 Other aromatics and hydrocarbon derivatives, except halogenated, n.e.c. 
+04 Halogens and halogen compounds 
+040 Halogens and halogen compounds, unspecified 
+041 Bromine and bromine compounds 
+0410 Bromine compounds, unspecified 
+0411 Bromine 
+0412 Ethylene dibromide 
+0413 Methyl bromide 
+0414 Potassium bromide 
+0419 Bromine compounds, n.e.c. 
+042 Chlorine and chlorine compounds 
+0420 Chlorine compounds, unspecified 
+0421 Carbon tetrachloride 
+0422 Chlorine, chlorine bleach 
+0423 Methyl chloride 
+0424 Pentachlorophenol 
+0425 Perchloroethylene 
+0426 Polychlorinated biphenyls (PCBs) 
+0427 Trichloroethylene 
+0429 Chlorine compounds, n.e.c. 
+043 Fluorine and fluorine compounds 
+0430 Fluorine compounds, unspecified 
+0431 Fluorine 
+0432 Fluorotrichloromethane 
+0433 Fluorocarbons, n.e.c. 
+0434 Methyl fluoride 
+0439 Fluorine compounds, n.e.c. 
+044 Iodine and iodine compounds 
+048 Multiple halogens and halogen compounds 
+049 Halogens and halogen compounds, n.e.c. 
+05 Metallic particulates, trace elements, dusts, powders, fumes 
+050 Metallic particulates, trace elements, dusts, powders, fumes, unspecified 
+051 Arsenic, arsenic compound 
+052 Beryllium and beryllium compounds 
+053 Cadmium and cadmium compounds 
+054 Lead and lead compounds 
+0540 Lead and lead compounds, unspecified 
+0541 Inorganic lead compounds 
+0542 Organic lead compounds 
+0549 Lead and lead compounds, n.e.c. 
+055 Mercury and compounds 
+056 Other metallics and compounds 
+0561 Aluminum and aluminum compounds 
+0562 Antimony 
+0563 Chromium and chromium compounds 
+0564 Iron and iron compounds 
+0565 Magnesium and magnesium compounds 
+0566 Manganese 
+0567 Nickel and nickel compounds 
+0568 Zinc and zinc compounds 
+0569 Other metallics and compounds, n.e.c. 
+057 Welding or soldering fumes, unspecified or n.e.c. 
+058 Multiple metallics and metallic compounds 
+059 Metallic particulates, trace elements, dusts, powders, fumes, n.e.c. 
+06 Agricultural chemicals and other pesticides 
+060 Agricultural chemicals and other pesticides, unspecified 
+061 Fertilizers, plant food, n.e.c. 
+062 Fumigants, n.e.c. 
+063 Fungicides 
+064 Herbicides 
+0640 Herbicides, unspecified 
+0641 Benzoic and phenylacetic acids 
+0642 Bipyridyls 
+0643 Carbamate and thiocarbamate herbicides 
+0644 Dinitro compounds 
+0645 Phenols 
+0646 Triazines 
+0649 Herbicides, n.e.c. 
+065 Insecticides 
+0650 Insecticides, unspecified 
+0651 Carbamate insecticides 
+0652 Organochlorine compounds 
+0653 Organophosphorus compounds 
+0658 Multiple insecticides 
+0659 Insecticides, n.e.c. 
+066 Rodenticides 
+068 Multiple agricultural and horticultural chemicals 
+069 Agricultural and horticultural chemicals, n.e.c. 
+07 Chemical products--general 
+070 Chemical products, unspecified 
+071 Adhesives, glues, n.e.c. 
+072 Beauty preparations, cosmetics, n.e.c. 
+0720 Beauty preparations, cosmetics, unspecified 
+0721 Hair preparations 
+0729 Other beauty preparations, cosmetics 
+073 Cleaning and polishing agents, disinfectants, n.e.c. 
+0730 Cleaning and polishing agents, unspecified 
+0731 Bleach--nonchlorine, nonperoxide 
+0732 Disinfectants 
+0733 Drain and oven cleaners 
+0734 Polishes 
+0735 Scouring powders 
+0736 Soap products 
+0737 Synthetic detergents and shampoos 
+0738 Multiple cleaning and polishing agents 
+0739 Other cleaning and polishing agents 
+074 Drugs, alcohol, medicines 
+0740 Drugs and medicines, unspecified 
+0741 Alcoholic beverages 
+0742 Drugs--nonmedicinal 
+0743 Medicines 
+0748 Multiple drugs, medicines 
+0749 Drugs and medicines, n.e.c. 
+075 Explosives, blasting agents, n.e.c. 
+0750 Explosives, blasting agents, unspecified 
+0751 Dynamite 
+0752 Flammable gas, unspecified 
+0753 Gunpowder 
+0754 Pyrotechnics, fireworks 
+0759 Other explosives, blasting agents 
+076 Paint, lacquer, shellac, varnish, n.e.c. 
+0760 Paint, lacquer, shellac, varnish, unspecified 
+0761 Lacquer, shellac, varnish 
+0762 Paint 
+0768 Multiple paint, lacquer, shellac, or varnishes 
+0769 Other paint, lacquer, shellac, varnish 
+077 Solvents, degreasers, n.e.c. 
+0770 Solvents, degreasers, unspecified 
+0771 Naphtha solvents 
+0772 Paint removers, thinners 
+0773 Dry cleaning fluids, n.e.c. 
+0778 Multiple solvents, degreasers 
+0779 Other solvents, degreasers 
+079 Other chemical products 
+0790 Other chemical products, unspecified 
+0791 Dyes, inks 
+0792 Tear gas, mace 
+0793 Photographic and copying solutions 
+0799 Chemical products, n.e.c. 
+08 Coal, natural gas, petroleum fuels and products, n.e.c. 
+080 Coal, natural gas, petroleum fuels and products, unspecified 
+081 Coal and coal products 
+0810 Coal products, unspecified 
+0811 Coal 
+0812 Coke and other coal manufactures 
+0819 Coal and coal products, n.e.c. 
+082 Natural gas 
+083 Petroleum, crude oil 
+084 Petroleum fuels, distillates, products, n.e.c. 
+0840 Petroleum fuels, distillates, products, unspecified 
+0841 Butane 
+0842 Gasoline, diesel fuel, jet fuel 
+0843 Kerosene, heating oil 
+0844 Lubricating greases, cutting oils 
+0845 Propane 
+0849 Other petroleum fuels, distillates, products 
+089 Coal, natural gas, petroleum fuels and products, n.e.c. 
+09 Other chemicals 
+091 Ammonia and ammonium compounds 
+0910 Ammonia and ammonium compounds, unspecified 
+0911 Ammonia, anhydrous ammonia 
+0912 Ammonium hydroxide 
+0913 Ammonium nitrate 
+0914 Ammonium sulfate 
+0918 Multiple ammonia and ammonium compounds 
+0919 Ammonia and ammonium compounds, n.e.c. 
+092 Cryogenic gases 
+0920 Cryogenic gases, unspecified 
+0921 Liquid fluorine 
+0922 Liquid helium 
+0923 Liquid hydrogen 
+0924 Liquid nitrogen 
+0925 Liquid oxygen 
+0929 Cryogenic gases, n.e.c. 
+093 Cyanide and cyanide compounds, n.e.c. 
+0930 Cyanide and cyanide compounds, unspecified 
+0931 Hydrogen cyanide 
+0938 Multiple cyanides 
+0939 Other cyanide and cyanide compounds 
+094 Oxygen and oxygen compounds, n.e.c. 
+0940 Oxygen and oxygen compounds, unspecified 
+0941 Carbon monoxide 
+0942 Carbon dioxide, dry ice 
+0943 Nitrogen oxides 
+0944 Oxygen--nonliquified 
+0945 Ozones 
+0948 Multiple oxygen and oxygen compounds 
+0949 Other oxygen and oxygen compounds, n.e.c. 
+095 Plastics, resins 
+0950 Plastics, unspecified 
+0951 Cyanates 
+0952 Resins 
+0953 Urethanes 
+0954 Vinyl chloride, polyvinyl chloride 
+0959 Plastics, resins, n.e.c. 
+096 Sewer gas, mine gas, methane 
+0960 Sewer gas, mine gas, unspecified 
+0961 Methane gas 
+0962 Mine gas 
+0963 Sewer gas 
+097 Sulfur and sulfur compounds 
+0970 Sulfur and sulfur compounds, unspecified 
+0971 Carbon bisulfide 
+0972 Hydrogen sulfide 
+0973 Sulfur dioxide 
+0978 Multiple sulfur and sulfur compounds 
+0979 Sulfur and sulfur compounds, n.e.c. 
+098 Multiple chemicals or chemical mixtures, n.e.c. 
+0980 Multiple chemicals or chemical mixtures, unspecified 
+0981 Ammonia and chlorine 
+0982 Chlorine and phosphoric acid 
+0983 Chlorine and cleaning agent, n.e.c. 
+0989 Other multiple chemicals or chemical mixtures 
+099 Chemicals and chemical products, n.e.c. 
+1 CONTAINERS 
+10 Containers, unspecified 
+11 Containers--nonpressurized 
+110 Containers--nonpressurized, unspecified 
+111 Bags, sacks, totes 
+112 Barrels, kegs, drums 
+113 Bottles, jugs, flasks 
+114 Boxes, crates, cartons 
+115 Buckets, baskets, pails 
+116 Cans 
+117 Pots, pans, trays 
+118 Tanks, bins, vats 
+119 Containers--nonpressurized, n.e.c. 
+12 Containers--pressurized 
+120 Containers--pressurized, unspecified 
+121 Boilers 
+122 Hoses 
+123 Oxygen tanks 
+124 Pressure lines, except hoses 
+125 Propane tanks 
+129 Containers--pressurized, n.e.c. 
+13 Containers--variable restraint 
+130 Containers--variable restraint, unspecified 
+131 Bundles, bales 
+132 Packages, parcels 
+133 Reels, rolls 
+139 Containers--variable restraint, n.e.c. 
+14 Dishes, drinking cups, beverage glasses 
+140 Dishes, drinking cups, beverage glasses, unspecified 
+141 Dishes, bowls 
+142 Drinking cups, beverage glasses 
+149 Dishes, drinking cups, beverage glasses, n.e.c. 
+15 Luggage, handbags 
+150 Luggage, unspecified 
+151 Briefcases 
+152 Handbags, pocketbooks, wallets 
+153 Suitcases 
+159 Luggage, n.e.c. 
+16 Skids, pallets 
+19 Containers, n.e.c. 
+2 FURNITURE AND FIXTURES 
+20 Furniture and fixtures, unspecified 
+21 Cases, cabinets, racks, shelves 
+210 Cases, cabinets, racks, shelves, unspecified 
+211 Bookcases 
+212 Cabinets, cases--display, storage 
+213 Counters, counter tops 
+214 Garment racks, other racks 
+215 Lockers 
+216 Partitions 
+217 Shelving 
+219 Cases, cabinets, racks, shelves, n.e.c. 
+22 Floor, wall, window coverings 
+220 Floor, wall, window coverings, unspecified 
+221 Floor coverings, nonstructural 
+222 Wall coverings 
+223 Window coverings, blinds, shades, or draperies 
+229 Floor, wall, window coverings, n.e.c. 
+23 Furniture 
+230 Furniture, unspecified 
+231 Beds, bedding, mattresses 
+232 Benches, workbenches, saw horses 
+233 Chairs 
+234 Desks 
+235 Sofas 
+236 Tables, worktables 
+239 Furniture, n.e.c. 
+24 Other fixtures 
+240 Other fixtures, unspecified 
+241 Lighting equipment 
+2410 Lighting equipment, unspecified 
+2411 Lamps 
+2412 Light bulbs 
+2419 Lighting equipment, n.e.c. 
+242 Plumbing fixtures 
+2420 Plumbing fixtures, unspecified 
+2421 Bathtubs 
+2422 Sinks 
+2423 Toilets 
+2429 Plumbing fixtures, n.e.c. 
+249 Other fixtures, n.e.c. 
+29 Furniture and fixtures, n.e.c. 
+3 MACHINERY 
+30 Machinery, unspecified 
+31 Agricultural and garden machinery 
+310 Agricultural and garden machinery, unspecified 
+311 Harvesting and threshing machinery 
+3110 Harvesting and threshing machinery, unspecified 
+3111 Balers 
+3112 Combines 
+3113 Harvesters, reapers 
+3114 Threshers 
+3119 Harvesting and threshing machinery, n.e.c. 
+312 Mowing machinery 
+3120 Mowing machinery, unspecified 
+3121 Lawn mowers--nonriding, powered 
+3122 Lawn mowers--riding 
+3123 Mowers--tractor 
+3129 Mowing machinery, n.e.c. 
+313 Plowing, planting, and fertilizing machinery 
+3130 Plowing, planting, and fertilizing machinery, unspecified 
+3131 Plowing and cultivating machinery 
+3132 Seed planting machinery 
+3133 Spreading machinery--agricultural 
+3139 Plowing, planting, and fertilizing machinery, n.e.c. 
+319 Other agricultural and garden machinery 
+3190 Other agricultural and garden machinery, unspecified 
+3191 Dairy and milk processing machinery--specialized 
+3192 Feed grinders, crushers, mixers--agricultural 
+3193 Spraying and dusting machinery--agricultural 
+3199 Agricultural and garden machinery, n.e.c. 
+32 Construction, logging, and mining machinery 
+320 Construction, logging, and mining machinery, unspecified 
+321 Excavating machinery 
+3210 Excavating machinery, unspecified 
+3211 Backhoes 
+3212 Bulldozers 
+3213 Steam and power shovels 
+3214 Trenchers 
+3219 Excavating machinery, n.e.c. 
+322 Loaders 
+3220 Loaders, unspecified 
+3221 Bucket loaders 
+3222 End loaders 
+3223 Front end loaders 
+3229 Loaders, n.e.c. 
+323 Logging and wood processing machinery--specialized 
+3230 Logging and wood processing machinery--specialized, unspecified 
+3231 Chippers 
+3232 Debarkers 
+3233 Harvesters, including feller-buncher, sheet 
+3234 Log loaders, including heel boom 
+3235 Forwarder/yarder, skidder 
+3236 Mechanical harvester 
+3237 Slasher 
+3238 Skidder--cable and grapple 
+3239 Logging and wood processing machinery--specialized, n.e.c. 
+324 Mining and drilling machinery 
+3240 Mining and drilling machinery, unspecified 
+3241 Drilling machines, drilling augers 
+3242 Mineral sorters, separators, concentrators 
+3243 Tunnelling machines 
+3249 Mining and drilling machinery, n.e.c. 
+325 Road grading and surfacing machinery 
+3250 Road grading and surfacing machinery, unspecified 
+3251 Asphalt and mortar spreaders 
+3252 Graders, levellers, planers, scrapers 
+3253 Road linemarking machinery 
+3254 Steam rollers, road pavers 
+3259 Road grading and surfacing machinery, n.e.c. 
+329 Other construction, logging, and mining machinery 
+3290 Other contruction, logging, and mining machinery, unspecified 
+3291 Agitators, mixers--earth, mineral 
+3292 Compactors, crushers, pulverizers--earth, mineral 
+3293 Pile drivers, tamping machinery 
+3294 Pile extractors 
+3299 Construction, logging, and mining machinery, n.e.c. 
+33 Heating, cooling, and cleaning machinery and appliances 
+330 Heating, cooling, and cleaning machinery and appliances, unspecified 
+331 Cooling and humidifying machinery and appliances 
+3310 Cooling and humidifying machinery and appliances, unspecified 
+3311 Air conditioning units 
+3312 Fans, blowers--wall, floor, ceiling, ventilation 
+3313 Humidifiers, dehumidifiers, vaporizers 
+3314 Refrigerators, freezers, ice makers 
+3319 Cooling and humidifying machinery and appliances, n.e.c. 
+332 Heating and cooking machinery and appliances 
+3320 Heating and cooking machinery and appliances, unspecified 
+3321 Beverage heating and percolating equipment and appliances 
+3322 Broiling and frying equipment and appliances 
+3323 Fabric pressers and ironing appliances 
+3324 Furnaces, heaters 
+3325 Kilns 
+3326 Ranges, cooking ovens, grills, toasters, food warmers 
+3327 Steaming equipment and appliances 
+3329 Heating and cooking machinery and appliances, n.e.c. 
+333 Washers, dryers, and cleaning machinery and appliances 
+3330 Washers, dryers, and cleaning machinery and appliances, unspecified 
+3331 Car or vehicle washing machinery 
+3332 Clothes dryers 
+3333 Clothes washers 
+3334 Dish washers 
+3335 Hair and hand dryers 
+3336 Vacuum cleaners 
+3339 Washers, dryers, and cleaning machinery and appliances, n.e.c. 
+339 Heating, cooling, and cleaning machinery and appliances, n.e.c. 
+34 Material handling machinery 
+340 Material handling machinery, unspecified 
+341 Conveyors--gravity 
+3410 Conveyors--gravity, unspecified 
+3411 Chutes 
+3412 Conveyors--roller 
+3413 Conveyors--wheel 
+3419 Conveyors--gravity, n.e.c. 
+342 Conveyors--powered 
+3420 Conveyors--powered, unspecified 
+3421 Conveyors--belt 
+3422 Conveyors--bucket, cup 
+3423 Conveyors--chain 
+3424 Conveyors--live roller 
+3425 Conveyors--pan 
+3426 Conveyors--pneumatic 
+3427 Conveyors--screw, auger 
+3428 Conveyors--slot 
+3429 Conveyors--powered, n.e.c. 
+343 Cranes 
+3430 Cranes, unspecified 
+3431 Cranes--floating 
+3432 Cranes--gantry 
+3433 Cranes--hammerhead 
+3434 Cranes--mobile, truck, rail mounted 
+3435 Cranes--monorail and underhung 
+3436 Cranes--overhead 
+3437 Cranes--portal, tower, pillar 
+3438 Storage and retrieval hoist systems 
+3439 Cranes, n.e.c. 
+344 Overhead hoists 
+3440 Overhead hoists, unspecified 
+3441 Overhead hoists--electric powered 
+3442 Overhead hoists--manual 
+3443 Overhead hoists--pneumatic powered 
+3449 Overhead hoists, n.e.c. 
+345 Derricks 
+3450 Derricks, unspecified 
+3451 Derricks--A-frame 
+3452 Derricks--basket 
+3453 Derricks--breast 
+3454 Derricks--gin pole 
+3455 Derricks--guy 
+3459 Derricks, n.e.c. 
+346 Elevators 
+3460 Elevators, unspecified 
+3461 Bucket or basket hoist--truck mounted 
+3462 Dumbwaiters 
+3463 Elevators--electric 
+3464 Elevators--hydraulic 
+3465 Elevators--hand operated 
+3466 Manlifts 
+3469 Elevators, n.e.c. 
+347 Jacks 
+3470 Jacks, unspecified 
+3471 Jacks--hydraulic 
+3472 Jacks--mechanical 
+3473 Jacks--pneumatic 
+3479 Jacks, n.e.c. 
+349 Other material handling machinery 
+3491 Winders, unwinders 
+3499 Material handling machinery, n.e.c. 
+35 Metal, woodworking, and special material machinery 
+350 Metal, woodworking, and special material machinery, unspecified 
+351 Bending, rolling, shaping machinery 
+3510 Bending, rolling, shaping machinery, unspecified 
+3511 Bending, crimping machines 
+3512 Shearing machines 
+3513 Rolling mills, rolling, calendering machinery 
+3519 Bending, rolling, shaping machinery, n.e.c. 
+352 Boring, drilling, planing, milling machinery 
+3520 Boring, drilling, planing, milling machinery, unspecified 
+3521 Drills--stationary 
+3522 Planing machines 
+3523 Milling machines 
+3524 Reaming machines 
+3529 Boring, drilling, planing, milling machinery, n.e.c. 
+353 Extruding, injecting, forming, molding machinery 
+3530 Extruding, injecting, forming, molding machinery, unspecified 
+3531 Casting machinery 
+3532 Extruding machinery 
+3533 Forging machinery 
+3534 Plastic injection molding machinery 
+3539 Extruding, injecting, forming, molding machinery, n.e.c. 
+354 Grinding, polishing machinery 
+3540 Grinding, polishing machinery, unspecified 
+3541 Grinders, abraders 
+3542 Honing, polishing, lapping machinery 
+3549 Grinding, polishing machinery, n.e.c. 
+355 Lathes 
+3550 Lathes, unspecified 
+3551 Metalworking lathes 
+3552 Woodworking lathes 
+3559 Lathes, n.e.c. 
+356 Presses, except printing 
+3560 Presses, except printing, unspecified 
+3561 Assembly presses 
+3562 Brake presses 
+3563 Punch presses 
+3569 Presses, except printing, n.e.c. 
+357 Sawing machinery--stationary 
+3570 Sawing machinery--stationary, unspecified 
+3571 Arm saws, radial arm saws 
+3572 Band saws 
+3573 Table saws 
+3579 Sawing machinery--stationary, n.e.c. 
+358 Threading and tapping machines 
+359 Other metal, woodworking, and special material machinery 
+3591 Electrochemical and discharge machinery (EDM) 
+3592 Laser cutting machinery 
+3593 Pressure fluid cutting machinery 
+3594 Spot welding machinery 
+3599 Metal, woodworking, and special material machinery, n.e.c. 
+36 Office and business machinery 
+360 Office and business machinery, unspecified 
+361 Electronic computers and peripheral equipment 
+3610 Electronic computers and peripheral equipment, unspecified 
+3611 Cathode ray tubes (CRTs) and video display terminals (VDTs) 
+3612 Computers--electronic 
+3613 Keyboards--computer 
+3614 Optical scanners 
+3615 Printers and plotters--computer 
+3619 Electronic computers and peripheral equipment, n.e.c. 
+362 Office, banking, and retail machinery 
+3620 Office and banking machinery, unspecified 
+3621 Automated teller machines 
+3622 Calculating machines and cash registers 
+3623 FAX machines 
+3624 Mailing and metering machines 
+3625 Photocopiers 
+3626 Typewriters and word processing equipment 
+3629 Office and banking machinery, n.e.c. 
+37 Special process machinery 
+370 Special process machinery, unspecified 
+371 Food and beverage processing machinery--specialized 
+3710 Food and beverage processing machinery--specialized, unspecified 
+3711 Food slicers 
+3712 Juice, oil, fat extractors 
+3713 Meat grinders 
+3714 Mixers, blenders, whippers--food and beverage 
+3719 Food and beverage processing machinery--specialized, n.e.c. 
+372 Medical, surgical, and X-ray machinery and equipment 
+3720 Medical, surgical, and X-ray machinery and equipment, unspecified 
+3721 Medical machinery and equipment, except X-ray 
+3722 X-ray, magnetic resonance imaging (MRIs), and fluoroscope machinery and equipment 
+3729 Medical, surgical, and X-ray machinery and equipment, n.e.c. 
+373 Packaging, bottling, wrapping machinery 
+3730 Packaging, bottling, wrapping machinery, unspecified 
+3731 Bottling, canning, filling machinery 
+3732 Packaging, wrapping, bundling machinery 
+3733 Product labeling machinery 
+3734 Sealing, stapling machinery 
+3739 Packaging, bottling, wrapping machinery, n.e.c. 
+374 Paper production machinery 
+3740 Paper production machinery, unspecified 
+3741 Calendars/supercalendars--paper production 
+3742 Coaters--paper production 
+3743 Dryers--paper production 
+3744 Formers--paper production 
+3745 Slitters, winders--paper production 
+3746 Washers, bleachers, refiners--paper production 
+3749 Paper production machinery, n.e.c. 
+375 Printing machinery and equipment 
+3750 Printing machinery and equipment, unspecified 
+3751 Bindery machinery 
+3752 Engraving machinery 
+3753 Presses--printing 
+3754 Typesetting machinery 
+3759 Printing machinery and equipment, n.e.c. 
+376 Textile, apparel, leather production machinery 
+3760 Textile, apparel, leather production machinery, unspecified 
+3761 Dyeing machinery--textile 
+3762 Knitting machinery 
+3763 Picking, carding, combing machinery 
+3764 Sewing, stitching machinery 
+3765 Spinning machinery 
+3766 Weaving machinery 
+3769 Textile, apparel, leather production machinery, n.e.c. 
+379 Other special process machinery 
+3790 Other special process machinery, unspecified 
+3791 Centrifuges 
+3792 Distilling and rectifying machinery 
+3793 Dyeing machinery, except textile 
+3794 Gas liquefying machinery 
+3795 Paint mixing machinery 
+3796 Painting, priming, metal coating machinery 
+3797 Pumps 
+3799 Special process machinery, n.e.c. 
+39 Miscellaneous machinery 
+391 Audio and video equipment 
+3910 Audio and video equipment, unspecified 
+3911 Radios, stereos, and other audio equipment 
+3912 Telephones and communication equipment 
+3913 Televisions 
+3914 Video players and recorders--tape and disk 
+3919 Audio and video equipment, n.e.c. 
+392 Product assembly machinery, n.e.c. 
+393 Product testing, inspecting, and diagnostic machinery, n.e.c. 
+399 Other machinery 
+3990 Other machinery, unspecified 
+3991 Air compressors 
+3992 Garbage disposals 
+3993 Incinerators 
+3994 Snowblowers 
+3995 Snow plows 
+3996 Street sweeping and cleaning machinery 
+3997 Trash compactors 
+3998 Vending machines 
+3999 Machinery, n.e.c. 
+4 PARTS AND MATERIALS 
+40 Parts and materials, unspecified 
+41 Building materials--solid elements 
+410 Building materials, unspecified 
+411 Bricks, blocks, structural stone 
+4110 Bricks, blocks, structural stone, unspecified 
+4111 Bricks and pavers 
+4112 Concrete blocks, cinder blocks 
+4113 Structural stones or slabs, n.e.c. 
+4119 Bricks, blocks, structural stone, n.e.c. 
+412 Pipes, ducts, tubing 
+4120 Pipes, ducts, tubing, unspecified 
+4121 Concrete or clay pipes and conduits 
+4122 Ducts 
+4123 Metal pipe, tubing 
+4124 Pipe fittings 
+4125 Plastic or rubber pipe and tubing 
+4129 Pipes, ducts, tubing, n.e.c. 
+413 Structural metal materials 
+4130 Structural metal materials, unspecified 
+4131 Angle irons 
+4132 Bars, rods, reinforcing bar (rebar) 
+4133 Beams 
+4134 Grates 
+4135 Plates, metal panels 
+4136 Rails 
+4137 Sheet metal 
+4139 Structural metal materials, n.e.c. 
+414 Tiles, shingles 
+4140 Tiles, shingles, unspecified 
+4141 Ceiling tiles 
+4142 Ceramic or stone tiles--drain, roof, multipurpose 
+4143 Roof shingles, except tile 
+4144 Vinyl floor tiles 
+4149 Tiles, shingles, n.e.c. 
+415 Wood, lumber 
+4150 Wood, lumber, unspecified 
+4151 Dimensional lumber: 2x4, 2x3, etc. 
+4152 Plywood, wood paneling; particle, chip, flake board 
+4153 Wood pieces, trim pieces, n.e.c. 
+4159 Wood, lumber, n.e.c. 
+419 Other building materials--solid elements 
+4190 Other building materials--solid elements, unspecified 
+4191 Fencing and screening material, n.e.c. 
+4192 Flashing 
+4193 Glass, window panes 
+4194 Gutters, downspouts 
+4195 Sheet flooring 
+4196 Siding--aluminum, vinyl 
+4197 Structural hardware, n.e.c. 
+4198 Wallboard, drywall 
+4199 Other building materials--solid elements, n.e.c. 
+42 Fasteners, connectors, ropes, ties 
+420 Fasteners, connectors, ropes, ties, unspecified 
+421 Fasteners 
+4210 Fasteners, unspecified 
+4211 Clamps, couplings 
+4212 Nails, brads, tacks 
+4213 Nuts, bolts, washers 
+4214 Rivets 
+4215 Screws 
+4216 Spikes 
+4217 Staples 
+4219 Fasteners, n.e.c. 
+422 Ropes, ties 
+4220 Ropes, ties, unspecified 
+4221 Bands 
+4222 Bungee cords 
+4223 Chains, n.e.c. 
+4224 Rope, twine, string 
+4225 Strapping 
+4226 Wire--nonelectrical 
+4229 Ropes, ties, n.e.c. 
+423 Valves, nozzles 
+429 Fasteners, connectors, ropes, ties, n.e.c. 
+43 Hoisting accessories 
+430 Hoisting accessories, unspecified 
+431 Fixtures, load indicators 
+432 Hooks, shackles, magnets, clamshells 
+433 Slings 
+439 Hoisting accessories, n.e.c. 
+44 Machine, tool, and electric parts 
+440 Machine, tool, and electric parts, unspecified 
+441 Electric parts 
+4410 Electric parts, unspecified 
+4411 Electrical wiring 
+4412 Generators 
+4413 Magnetic and electrolytic apparatus 
+4414 Motors 
+4415 Power lines, transformers, convertors 
+4416 Relays, rheostats, starters, controls 
+4417 Switchboards, switches, fuses 
+4419 Electric parts, n.e.c. 
+442 Machine and appliance parts 
+4420 Machine and appliance parts, unspecified 
+4421 Dies, molds, patterns 
+4422 Drives--chain, leather, fabric, vee belt 
+4423 Drums, pulleys, sheaves 
+4424 Engines, turbines, except vehicle 
+4425 Friction clutches 
+4426 Gears 
+4427 Rollers 
+4429 Machine and appliance parts, n.e.c. 
+443 Tool parts, accessories 
+4430 Tool parts, accessories, unspecified 
+4431 Drill bits--unattached 
+4432 Saw blades--unattached 
+4439 Tool parts, accessories, n.e.c. 
+449 Machine, tool, and electric parts, n.e.c. 
+45 Metal materials--nonstructural 
+450 Metal materials--nonstructural, unspecified 
+451 Metal sheets, ingots, bars--nonstructural 
+452 Molten or hot metals, slag 
+459 Metal materials--nonstructural, n.e.c. 
+46 Tars, sealants, caulking, insulating material 
+460 Tars, sealants, caulking, insulation, unspecified 
+461 Asphalt, roofing tar 
+462 Fiberglass insulation 
+463 Foam caulking, foam insulation 
+464 Joint compound, patching compounds 
+465 Plastic, vinyl caulking 
+466 Sealants, waterproofers, n.e.c. 
+469 Tars, sealants, caulking, insulation, n.e.c. 
+47 Tarps and sheeting--nonmetal 
+470 Tarps and sheeting, nonmetal, unspecified 
+471 Roofing paper, roofing felt 
+472 Tarps; plastic, or fabric sheeting 
+479 Tarps and sheeting, nonmetal, n.e.c. 
+48 Vehicle and mobile equipment parts 
+480 Vehicle and mobile equipment parts, unspecified 
+481 Tires, inner tubes, wheels 
+4810 Tires, inner tubes, wheels, unspecified 
+4811 Bike tires 
+4812 Tire inner tubes 
+4813 Tires, except bike 
+4814 Wheels, tire rims 
+4819 Tires, inner tubes, wheels, n.e.c. 
+482 Engine parts and accessories 
+4820 Engine parts and accessories, unspecified 
+4821 Battery 
+4822 Belts, hoses 
+4823 Engine block 
+4824 Fan 
+4825 Muffler, exhaust 
+4826 Radiator 
+4827 Transmission 
+4829 Engine parts and accessories, n.e.c. 
+483 Trailers 
+484 Windshields, vehicle windows 
+489 Vehicle and mobile equipment parts, n.e.c. 
+49 Parts and materials, n.e.c. 
+5 PERSONS, PLANTS, ANIMALS, AND MINERALS 
+51 Animals and animal products 
+510 Animals, unspecified 
+511 Animal products--nonfood 
+5110 Animal products--nonfood, unspecified 
+5111 Bones, shells 
+5112 Feathers 
+5113 Fur, wool 
+5114 Hides--leather 
+5119 Animal products--nonfood, n.e.c. 
+512 Birds and fowl 
+5120 Birds and fowl, unspecified 
+5121 Birds, except fowl 
+5122 Chicken 
+5123 Ducks 
+5124 Geese 
+5125 Turkey 
+5129 Birds and fowl, n.e.c. 
+513 Fish, shellfish 
+514 Insects, arachnids (spiders, ticks, scorpions, etc.) 
+515 Mammals, except humans 
+5150 Mammals, unspecified 
+5151 Cats 
+5152 Cattle 
+5153 Dogs 
+5154 Horses 
+5155 Rats, rodents 
+5156 Sheep 
+5157 Swine 
+5159 Mammals, n.e.c. 
+516 Reptiles, snakes 
+517 Animal waste products, including manure 
+519 Animals, n.e.c. 
+52 Food products--fresh or processed 
+520 Food products, unspecified 
+521 Bakery products, candy, confections, snack foods 
+522 Beverages, n.e.c. 
+523 Dairy products 
+524 Fruits, nuts, vegetables 
+525 Grains, grain mill products 
+526 Meat, poultry 
+527 Seafood 
+528 Multiple foods or groceries 
+529 Other food products--fresh or processed 
+5291 Fats, oils 
+5292 Sugar, cocoa, chocolate 
+5299 Other food products--fresh or processed, n.e.c. 
+53 Infectious and parasitic agents 
+530 Infectious and parasitic agents, unspecified 
+531 Bacteria 
+532 Fungi 
+533 Viruses 
+539 Infectious and parasitic agents, n.e.c. 
+54 Metallic minerals 
+540 Metallic minerals, unspecified 
+541 Metal ores--nonradiating 
+542 Radiating metals, natural and processed 
+5420 Radiating metals, natural and processed, unspecified 
+5421 Plutonium 
+5422 Radium 
+5423 Uranium 
+5429 Radiating metals, natural and processed, n.e.c. 
+549 Metallic minerals, n.e.c. 
+55 Nonmetallic minerals, except fuel 
+550 Nonmetallic minerals, except fuel, unspecified 
+551 Asbestos 
+552 Boulders 
+553 Clay--natural and processed 
+554 Dirt, earth 
+555 Rocks, crushed stone 
+556 Sand, gravel 
+557 Silica 
+559 Nonmetallic minerals, except fuel, n.e.c. 
+56 Person--injured or ill worker 
+561 Bodily conditions of injured, ill worker 
+562 Bodily motion or position of injured, ill worker 
+569 Person--injured or ill worker, n.e.c. 
+57 Person--other than injured or ill worker 
+570 Person--other than injured or ill worker, unspecified 
+571 Bodily fluids or substances of person 
+572 Co-worker, former co-worker of injured or ill worker 
+573 Health care patient or resident of health care facility 
+574 Relative of injured or ill worker 
+579 Person--other than injured or ill worker, n.e.c. 
+58 Plants, trees, vegetation--not processed 
+580 Plants, trees, vegetation, unspecified 
+581 Cash grain crops 
+582 Field crops 
+583 Flowers 
+584 Houseplants 
+585 Poison ivy, oak, sumac 
+586 Shrubs, grasses 
+587 Trees, logs 
+589 Plants, trees, vegetation--not processed, n.e.c. 
+59 Persons, plants, animals, and minerals, n.e.c. 
+6 STRUCTURES AND SURFACES 
+60 Structures and surfaces, unspecified 
+61 Building systems 
+610 Building system, unspecified 
+611 Climate control system 
+612 Plumbing system 
+619 Building system, n.e.c. 
+62 Floors, walkways, ground surfaces 
+620 Floors, walkways, ground surfaces, unspecified 
+621 Escalators 
+622 Floors 
+6220 Floor, unspecified 
+6221 Floor of building 
+6222 Floor of elevator 
+6223 Floor of mine 
+6224 Floor of scaffold, staging, or temporary work platform 
+6225 Floor of vehicle 
+6229 Floor, n.e.c. 
+623 Ground 
+624 Sidewalks, paths, outdoor walkways 
+625 Stairs, steps 
+6250 Stairs, steps, unspecified 
+6251 Stairs, steps--indoors 
+6252 Stairs, steps--outdoors 
+626 Street, road 
+627 Surfaces below ground level, n.e.c. 
+6270 Surfaces below ground level, unspecified 
+6271 Ditches, channels, trenches, excavations 
+6279 Surfaces below ground level, n.e.c. 
+628 Parking lots 
+629 Other floors, walkways, ground surfaces 
+6290 Other floors, walkways, ground surfaces, unspecified 
+6291 Piers, wharfs 
+6292 Ramps, runways, loading docks 
+6293 Moving walkways 
+6299 Floors, walkways, ground surfaces, n.e.c. 
+63 Other structural elements 
+630 Other structural elements, unspecified 
+631 Doors 
+632 Fences, fence panels 
+633 Gates 
+634 Roof 
+635 Roof trusses 
+636 Skylights 
+637 Walls 
+638 Windows 
+639 Structural elements, n.e.c. 
+64 Structures 
+640 Structures, unspecified 
+641 Bridges, dams, locks 
+642 Buildings--office, plant, residential 
+643 Grandstands, stadia 
+644 Mines, caves, tunnels 
+6440 Mines, caves, tunnels, unspecified 
+6441 Mines, mine tunnels 
+6442 Pedestrian tunnels 
+6443 Sewers, manholes, storm drains 
+6444 Subway and train tunnels 
+6449 Mines, caves, tunnels, n.e.c. 
+645 Pools 
+646 Scaffolds, staging 
+6460 Scaffolds--staging, unspecified 
+6461 Scaffolds--improvised staging 
+6462 Scaffolds--selfsupporting staging 
+6463 Scaffolds--staging supported by structure or other means 
+6464 Scaffolds--suspended staging 
+6469 Scaffolds--staging, n.e.c. 
+647 Towers, poles 
+648 Other structures 
+6480 Other structures, unspecified 
+6481 Guardrails, road dividers 
+6482 Hydrants 
+6483 Wells 
+6489 Structures, n.e.c. 
+69 Structures and surfaces, n.e.c. 
+7 TOOLS, INSTRUMENTS, AND EQUIPMENT 
+70 Tools, instruments, and equipment, unspecified 
+71 Handtools--nonpowered 
+710 Handtools--nonpowered, unspecified 
+711 Boring handtools--nonpowered 
+7110 Boring handtools--nonpowered, unspecified 
+7111 Augers 
+7112 Braces 
+7113 Drills 
+7119 Boring handtools--nonpowered, n.e.c. 
+712 Cutting handtools--nonpowered 
+7120 Cutting handtools--nonpowered, unspecified 
+7121 Axes, hatchets 
+7122 Bolt cutters 
+7123 Chisels 
+7124 Knives 
+7125 Saws 
+7126 Scissors, snips, shears 
+7129 Cutting handtools--nonpowered, n.e.c. 
+713 Digging handtools--nonpowered 
+7130 Digging handtools--nonpowered, unspecified 
+7131 Hoes 
+7132 Picks 
+7133 Shovels 
+7134 Trowels 
+7139 Digging handtools--nonpowered, n.e.c. 
+714 Gripping handtools--nonpowered 
+7140 Gripping handtools--nonpowered, unspecified 
+7141 Pliers, tongs 
+7142 Vises, clamps 
+7149 Gripping handtools--nonpowered, n.e.c. 
+715 Measuring handtools--nonpowered 
+7150 Measuring handtools--nonpowered, unspecified 
+7151 Calipers, micrometers 
+7152 Dividers 
+7153 Gauges 
+7154 Levels 
+7155 Plumb bobs 
+7156 Rulers, tape measures 
+7157 Squares 
+7159 Measuring handtools--nonpowered, n.e.c. 
+716 Striking and nailing handtools--nonpowered 
+7160 Striking handtools--nonpowered, unspecified 
+7161 Hammers 
+7162 Mallets 
+7163 Punches, counterpunches, countersinks 
+7164 Sledges 
+7169 Striking handtools--nonpowered, n.e.c. 
+717 Surfacing handtools--nonpowered 
+7170 Surfacing handtools--nonpowered, unspecified 
+7171 Files 
+7172 Planes 
+7173 Sanders 
+7174 Sharpening stones and wheels 
+7179 Surfacing handtools--nonpowered, n.e.c. 
+718 Turning handtools--nonpowered 
+7180 Turning handtools--nonpowered, unspecified 
+7181 Screwdrivers 
+7182 Wrenches 
+7189 Turning handtools--nonpowered, n.e.c. 
+719 Other handtools--nonpowered 
+7190 Other handtools--nonpowered, unspecified 
+7191 Brooms, mops, and other cleaning tools 
+7192 Crowbars 
+7193 Pitchforks, sading forks 
+7194 Rakes 
+7195 Stapling tools--nonpowered 
+7199 Handtools--nonpowered, n.e.c. 
+72 Handtools--powered 
+720 Handtools--powered, unspecified 
+721 Boring handtools--powered 
+7210 Boring handtools--powered, unspecified 
+7211 Augers--powered 
+7212 Braces--powered 
+7213 Drills--powered 
+7214 Routers and molders--powered 
+7219 Boring handtools--powered, n.e.c 
+722 Cutting handtools--powered 
+7220 Cutting handtools--powered, unspecified 
+7221 Chainsaws--powered 
+7222 Chisels--powered 
+7223 Knives--powered 
+7224 Saws--powered, except chainsaws 
+7229 Cutting handtools--powered, n.e.c. 
+723 Striking and nailing handtools--powered 
+7230 Striking handtools--powered, unspecified 
+7231 Hammers--powered 
+7232 Jackhammers--powered 
+7233 Punches--powered 
+7234 Riveters--powered 
+7239 Striking handtools--powered, n.e.c. 
+724 Surfacing handtools--powered 
+7240 Surfacing handtools--powered, unspecified 
+7241 Buffers, polishers, waxers--powered 
+7242 Hand grinders--powered 
+7243 Sanders--powered 
+7244 Sandblasters--powered 
+7249 Surfacing handtools--powered, n.e.c. 
+725 Turning handtools--powered 
+7250 Turning handtools--powered, unspecified 
+7251 Bolt setters--powered 
+7252 Impact wrenches--powered 
+7253 Screwdrivers--powered 
+7259 Turning handtools--powered, n.e.c. 
+726 Welding and heating handtools--powered 
+7260 Welding and heating handtools--powered, unspecified 
+7261 Blow torches 
+7262 Soldering irons--powered 
+7263 Welding torches--powered 
+7269 Welding and heating handtools--powered, n.e.c. 
+729 Other handtools--powered 
+7290 Other handtools--powered, unspecified 
+7291 Nail guns--powered 
+7293 Scrubbers--powered 
+7294 Sprayers--paint 
+7295 Stapling tools--electric or pneumatic 
+7299 Handtools--powered, n.e.c. 
+73 Handtools--power not determined 
+730 Handtools--power not determined, unspecified 
+731 Boring handtools--power not determined 
+7310 Boring handtools--power not determined, unspecified 
+7311 Augers--power not determined 
+7312 Braces--power not determined 
+7313 Drills--power not determined 
+7319 Boring handtools--power not determined, n.e.c. 
+732 Cutting handtools--power not determined 
+7320 Cutting handtools--power not determined, unspecified 
+7321 Chisels--power not determined 
+7322 Knives--power not determined 
+7323 Saws--power not determined 
+7329 Cutting handtools--power not determined, n.e.c. 
+733 Striking and nailing handtools--power not determined 
+7330 Striking and nailing handtools--power not determined, unspecified 
+7331 Hammers--power not determined 
+7332 Punches--power not determined 
+7339 Striking and nailing handtools--power not determined, n.e.c. 
+734 Surfacing handtools--power not determined 
+7340 Surfacing handtools--power not determined, unspecified 
+7341 Sanders--power not determined 
+7349 Surfacing handtools--power not determined, n.e.c. 
+735 Turning handtools--power not determined 
+7350 Turning handtools--power not determined, unspecified 
+7351 Screwdrivers--power not determined 
+7352 Wrenches--power not determined 
+7359 Turning handtools--power not determined, n.e.c. 
+739 Other handtools--power not determined 
+7391 Staplers--power not determined 
+7399 Handtools--power not determined, n.e.c. 
+74 Ladders 
+740 Ladders, unspecified 
+741 Ladders--fixed 
+742 Ladders--movable 
+7420 Movable ladders, unspecified 
+7421 Extension ladders 
+7422 Step ladders 
+7423 Straight ladders 
+7424 Truck mounted ladders, aerial ladder trams 
+7429 Movable ladders, n.e.c. 
+749 Ladders, n.e.c. 
+75 Medical and surgical instruments 
+750 Medical and surgical instruments, unspecified 
+751 Needles and syringes 
+752 Scalpels 
+759 Medical and surgical instruments, n.e.c. 
+76 Photographic equipment 
+760 Photographic equipment, unspecified 
+761 Cameras--still and motion picture 
+762 Photographic paper and cloth 
+763 Projectors--still and motion picture 
+764 Tripods, stands 
+769 Photographic equipment, n.e.c. 
+77 Protective equipment, except clothing 
+770 Protective equipment, except clothing, unspecified 
+771 Dust masks 
+772 Earplugs and hearing protectors 
+773 Face shields, welding masks 
+774 Hard hats 
+775 Lifelines, lanyards, safety belts or harnesses 
+776 Respirators 
+777 Safety glasses or goggles 
+779 Protective equipment, except clothing, n.e.c. 
+78 Recreation and athletic equipment 
+780 Recreation and athletic equipment, unspecified 
+781 Camping equipment 
+782 Gymnasium and exercise equipment 
+783 Playground equipment 
+784 Riding goods and equipment 
+785 Snow skiing goods and equipment 
+786 Water sports equipment 
+789 Recreation and athletic equipment, n.e.c. 
+79 Other tools, instruments, and equipment 
+791 Clocks 
+792 Cooking and eating utensils, except knives 
+793 Firearms 
+7930 Firearm, unspecified 
+7931 Pistol, handgun, revolver 
+7932 Rifle 
+7933 Shotgun 
+7939 Firearm, n.e.c. 
+794 Health care and orthopedic equipment, n.e.c. 
+795 Musical instruments 
+7950 Musical instrument, unspecified 
+7951 Pianos 
+7959 Other musical instruments 
+796 Sewing notions, n.e.c 
+7960 Sewing notions, unspecified 
+7961 Fabric pins, safety pins 
+7962 Sewing needles 
+7969 Sewing notions, n.e.c. 
+797 Wheelchairs 
+798 Writing, drawing, and art supplies. 
+7980 Writing, drawing, and art supplies, unspecified 
+7981 Art supplies and materials, except paint 
+7982 Chalk, crayons, marking devices 
+7983 Pens and pencils 
+7989 Writing, drawing, and art supplies, n.e.c. 
+799 Tools, instruments, and equipment, n.e.c 
+8 VEHICLES 
+80 Vehicle, unspecified 
+81 Air vehicle 
+810 Aircraft, unspecified 
+811 Aircraft--powered fixed wing 
+8110 Aircraft--powered fixed wing, unspecified 
+8111 Jet 
+8112 Propeller-driven aircraft 
+8119 Aircraft--powered fixed wing, n.e.c. 
+812 Aircraft--powered rotary wing 
+8120 Aircraft--rotary wing, unspecified 
+8121 Helicopter 
+8122 Hovercraft 
+8129 Aircraft--rotary wing, n.e.c. 
+813 Aircraft--nonpowered 
+8130 Aircraft--nonpowered, unspecified 
+8131 Glider, nonpowered 
+8132 Parachute 
+8139 Aircraft--nonpowered, n.e.c. 
+819 Aircraft, n.e.c. 
+82 Highway vehicle, motorized 
+820 Highway vehicle, unspecified 
+821 Automobile 
+822 Bus 
+823 Motorcycle, moped 
+824 Motor home, recreational vehicle 
+825 Truck 
+8250 Truck, unspecified 
+8251 Delivery truck 
+8252 Dump truck 
+8253 Pickup truck 
+8254 Semitrailer, tractor trailer, trailer truck 
+8259 Truck, n.e.c. 
+826 Van--passenger or light delivery 
+829 Highway vehicle, motorized, n.e.c. 
+83 Highway vehicle, nonmotorized 
+830 Highway vehicle, nonmotorized, unspecified 
+831 Animal or human powered vehicle 
+8311 Horse drawn carriage 
+8312 Bicycle 
+8319 Animal or human powered vehicle, n.e.c. 
+839 Highway vehicle, nonmotorized, n.e.c. 
+84 Offroad vehicle, nonindustrial 
+840 Offroad vehicle, nonindustrial, unspecified 
+841 All terrain vehicle (ATV) 
+842 Golf cart, powered 
+843 Snowmobile 
+849 Offroad vehicle, nonindustrial, n.e.c. 
+85 Plant and industrial powered vehicles, tractors 
+850 Plant and industrial powered vehicles, unspecified 
+851 Forklift 
+8510 Forklift, unspecified 
+8511 Counterbalance rider--high lift 
+8512 Hand/rider forklift truck--motorized 
+8513 Order picker high lift truck 
+8514 Pallet lift truck--motorized 
+8515 Platform lift truck--high or low lift 
+8516 Reach rider lift truck 
+8517 Single side loader rider truck 
+8518 Straddle rider lift truck 
+8519 Forklift, n.e.c. 
+852 Powered industrial carrier, except forklifts 
+8520 Powered industrial carrier, unspecified 
+8521 Container carrier 
+8522 Lumber carrier 
+8523 Stacker carrier 
+8524 Straddle carrier 
+8529 Powered industrial carrier, n.e.c. 
+853 Tractor 
+859 Plant and industrial powered vehicle, n.e.c. 
+86 Plant and industrial vehicle--nonppowered 
+860 Plant and industrial vehicle--nonpowered, unspecified 
+861 Cart, dolly, handtruck 
+862 Wheelbarrow 
+869 Plant and industrial vehicle--nonpowered, n.e.c. 
+87 Rail vehicle 
+870 Rail vehicle, unspecified 
+871 Amusement park rail vehicle 
+872 Streetcar, trolley 
+873 Subway 
+874 Train 
+879 Rail vehicle, n.e.c. 
+88 Water vehicle 
+880 Water vehicle, unspecified 
+881 Barge 
+882 Canoe, kayak, rowboat, raft 
+883 Jet skis 
+884 Motorboat, yachts 
+885 Sailboat, sailing ship 
+886 Ships--other than sail powered 
+887 Tugboat, commercial fishing boat 
+889 Water vehicle, n.e.c. 
+89 Vehicles, n.e.c. 
+9 OTHER SOURCES 
+91 Ammunition 
+910 Ammunition, unspecified 
+911 Bullets 
+912 Explosive devices 
+913 Pellets 
+919 Ammunition, n.e.c. 
+92 Apparel and textiles 
+920 Apparel and textiles, unspecified 
+921 Clothing and shoes 
+9210 Clothing, unspecified 
+9211 Belts, gloves, neckties, scarves 
+9212 Blouses, shirts, dresses, trousers, skirts 
+9213 Hats, caps 
+9214 Shoes, boots, slippers, sandals 
+9215 Suits, coats, jackets 
+9219 Clothing, n.e.c. 
+922 Eye glasses, jewelry, and watches 
+9221 Eye glasses, sunglasses 
+9222 Jewelry 
+9223 Watches 
+923 Textile products 
+9230 Textile products, unspecified 
+9231 Fabric 
+9232 Yarn, thread 
+9239 Textile products, n.e.c. 
+924 Laundry 
+929 Apparel and textiles, n.e.c. 
+93 Atmospheric and environmental conditions 
+930 Atmospheric and environmental conditions, unspecified 
+931 Air pressure 
+9310 Air pressure, unspecified 
+9311 High pressure 
+9312 Low pressure 
+932 Avalanche, mud slide 
+933 Earthquake 
+934 Fire, flame, smoke 
+9340 Fire, flame, smoke, unspecified 
+9341 Fire, flame 
+9342 Smoke, fire gases 
+935 Flood 
+936 Temperature extremes--environmental 
+9360 Temperature extremes--environmental, unspecified 
+9361 Cold--environmental 
+9362 Heat--environmental 
+937 Weather and atmospheric conditions 
+9370 Weather and atmospheric conditions, unspecified 
+9371 Fog 
+9372 High winds, gusts 
+9373 Ice, sleet, snow 
+9374 Lightning 
+9375 Rain 
+9376 Smog 
+9377 Tornado, hurricane. typhoon 
+9379 Weather and atmospheric conditions, n.e.c. 
+939 Other environmental conditions 
+9391 Noise 
+9392 Sun 
+9399 Environmental conditions, n.e.c. 
+94 Paper, books, magazines 
+940 Paper, books, magazines, unspecified 
+941 Books, notebooks, magazines, catalogues 
+942 Paper, sheets 
+949 Paper, books, magazines, n.e.c. 
+95 Scrap, waste, debris 
+950 Scrap, waste, debris, unspecified 
+951 Chips, particles, splinters 
+9510 Chips, particles, splinters, unspecified 
+9511 Dirt particles 
+9512 Glass chips or fibers 
+9513 Metal chips, particles 
+9514 Wood chips, sawdust 
+9519 Chips, particles, splinters, n.e.c. 
+952 Sewage 
+953 Trash, garbage 
+959 Scrap, waste, debris, n.e.c. 
+96 Steam, vapors, liquids, n.e.c. 
+961 Steam, vapors--nonchemical 
+962 Liquids 
+9620 Liquids, unspecified 
+9621 Water 
+9629 Liquids, n.e.c. 
+98 Other sources, n.e.c. 
+9999 Nonclassifiable

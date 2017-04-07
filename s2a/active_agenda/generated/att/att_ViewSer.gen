@@ -1,0 +1,74 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $phrases[0] = array(
+   'AttachmentID' => gettext("Record ID|Numerical ID to identify and track attachments uploaded within this application"),
+   'DisplayRelatedModuleRecord' => gettext("Related Record|A combined field used to display the related module name and what record, if any, it is related to"),
+   'RelatedRecordDescription' => gettext("Record Description|A description of the related record based on a combination of field values assigned from within the related module"),
+   'DownloadLink' => gettext("Download Link|A link to the download utilty"),
+   'Description' => gettext("Description|A short description of the file contents"),
+   'FileName' => gettext("File|The file to be attached"),
+   'FileSizeDisplay' => gettext("File Size|The size of the uploaded file"),
+   'ModifiedBy' => gettext("Modified By|The name of the person that last modified the attachment record"),
+   'LastModifiedDate' => gettext("Last Modified|The date the attachment record was last modified")
+   );
+
+
+    $sections = unserialize('a:1:{i:0;a:3:{s:6:"phrase";s:10:"Attachment";s:3:"sql";s:2259:"SELECT 
+   `att`.AttachmentID AS AttachmentID,
+   IF(`att`.RelatedModuleID = \'mod\', NULLIF(CONCAT(\'internal:global.php?mdl=\',IFNULL( CAST( IF(`att`.RelatedModuleID = \'mod\', `mod2`.ModuleID, `att`.RelatedModuleID) AS CHAR ),\'\'),\'&\',\'rid=list\',\'&\',\'gmd=att\'),\'internal:global.php?mdl=&rid=list&gmd=att\'), CONCAT(\'internal:view.php?mdl=\',`att`.RelatedModuleID,\'&rid=\',`att`.RelatedRecordID)) AS DisplayRelatedRecordLink,
+   IF(`att`.RelatedModuleID = \'mod\', NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),\'\'),\' (general)\'),\' (general)\'), NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' (ID Rekordu: \',IFNULL( CAST( `att`.RelatedRecordID AS CHAR ),\'\'),\')\'),\' (ID Rekordu: )\')) AS DisplayRelatedModuleRecord,
+   `rdc1`.Value AS RelatedRecordDescription,
+   NULLIF(CONCAT(\'internal:download.php?mdl=\',IFNULL( CAST( `att`.RelatedModuleID AS CHAR ),\'\'),\'&\',\'rid=\',IFNULL( CAST( `att`.RelatedRecordID AS CHAR ),\'\'),\'&\',\'fid=\',IFNULL( CAST( `att`.AttachmentID AS CHAR ),\'\')),\'internal:download.php?mdl=&rid=&fid=\') AS DownloadLink,
+   `att`.Description AS Description,
+   `att`.FileName AS FileName,
+   CASE 
+        WHEN `att`.FileSize >= 1048576 THEN CONCAT(ROUND((`att`.FileSize/1048576), 1), \' megabytes\')
+        WHEN `att`.FileSize >= 1024 THEN CONCAT(ROUND((`att`.FileSize/1024), 1), \' kilobytes\')
+        ELSE CONCAT(`att`.FileSize, \' bytes\') END AS FileSizeDisplay,
+   `ppl1`.DisplayName AS ModifiedBy,
+   DATE_FORMAT(`att`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS LastModifiedDate,
+   NULLIF(CONCAT(IFNULL( CAST( `att`.FileName AS CHAR ),\'\'),\' jest za\',\'łącznikiem do rekordu o ID \',IFNULL( CAST( `att`.RelatedRecordID AS CHAR ),\'\'),\' z \',IFNULL( CAST( `mod1`.Name AS CHAR ),\'\')),\' jest załącznikiem do rekordu o ID  z \') AS RecordLabel,
+   `rdc1`.OrganizationID AS OwnerOrganizationID
+FROM `att`
+   LEFT OUTER JOIN `mod` AS mod2 
+   ON (`att`.RelatedRecordID = `mod2`.RecordID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`att`.RelatedModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`att`.RelatedModuleID = rdc1.ModuleID AND `att`.RelatedRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`att`._ModBy = `ppl1`.PersonID )
+WHERE att._Deleted = 0
+   AND `att`.AttachmentID = \'/**RecordID**/\'
+";s:6:"fields";a:9:{s:12:"AttachmentID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:89:"Record ID|Numerical ID to identify and track attachments uploaded within this application";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"AttachmentID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:26:"DisplayRelatedModuleRecord";O:9:"ViewField":21:{s:9:"linkField";s:24:"DisplayRelatedRecordLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:113:"Related Record|A combined field used to display the related module name and what record, if any, it is related to";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:26:"DisplayRelatedModuleRecord";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:24:"RelatedRecordDescription";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:133:"Record Description|A description of the related record based on a combination of field values assigned from within the related module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:24:"RelatedRecordDescription";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"DownloadLink";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"DownloadLink";}s:11:"Description";O:9:"ViewField":21:{s:9:"linkField";s:12:"DownloadLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:52:"Description|A short description of the file contents";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Description";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"FileName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:28:"File|The file to be attached";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"FileName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:15:"FileSizeDisplay";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:39:"File Size|The size of the uploaded file";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:15:"FileSizeDisplay";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:10:"ModifiedBy";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:75:"Modified By|The name of the person that last modified the attachment record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"ModifiedBy";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"LastModifiedDate";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:62:"Last Modified|The date the attachment record was last modified";s:8:"dataType";s:8:"datetime";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"LastModifiedDate";s:10:"needsReGet";b:1;s:11:"formatField";N;}}}}');
+
+?>

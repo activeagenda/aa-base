@@ -1,0 +1,460 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+/**CUSTOM_CODE|classdef**/
+
+//list of objects containing the field information
+$fields = unserialize('a:22:{s:8:"PersonID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Person ID|A unique, automatically assigned, number used to track people associated with the organization";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"PersonID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Organization|Name of organization associated with the individual";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"DisplayName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:121:"Display Name|Commonly used name of an individual used to identify a person. This name may vary from a person\'s given name";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"DisplayName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"LastName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:38:"Last Name|Family Name of an individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"LastName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"FirstName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:38:"First Name|Given Name of an individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"FirstName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"Username";O:9:"ViewField":21:{s:9:"linkField";s:8:"UserLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:30:"Username|The user\'s login name";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"Username";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"WorkAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:76:"Work Address|Physical street address where the person can be located at work";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"WorkAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"FullWorkPhone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Work Phone|Telephone number of the individual at their place of work with a lable to identify the number";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"FullWorkPhone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"WorkFax";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Work Fax|Facsimile telephone number of the individual at work";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"WorkFax";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"MobilePhone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Mobile Phone|Mobile telephone number of the individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"MobilePhone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"WorkEmail";O:9:"ViewField":21:{s:9:"linkField";s:9:"WorkEmail";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Work Email|Email address used by the individual at work";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"WorkEmail";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"HomeAddress1";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:85:"Home Address|First physical street address of the location where the individual lives";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"HomeAddress1";}s:12:"HomeAddress2";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Home Address|Second physical street address where the individual lives; such as, apartment number";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"HomeAddress2";}s:13:"HomeCountryID";O:10:"ComboField":31:{s:9:"listField";s:11:"HomeCountry";s:12:"foreignTable";s:3:"ctr";s:10:"foreignKey";s:9:"CountryID";s:12:"foreignField";s:7:"Country";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:223:"SELECT 
+`ctr`.CountryID AS ID, NULLIF(CONCAT(IFNULL( CAST( `ctr`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name FROM `ctr`
+WHERE ctr._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:220:"SELECT 
+`ctr`.CountryID AS ID, NULLIF(CONCAT(IFNULL( CAST( `ctr`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS Name FROM `ctr`
+
+WHERE `ctr`.CountryID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:1:{s:11:"HomeStateID";a:1:{s:4:"name";s:11:"HomeStateID";}}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:50:"Home Country|The country in which the person lives";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"HomeCountryID";}s:11:"HomeStateID";O:10:"ComboField":31:{s:9:"listField";s:9:"HomeState";s:12:"foreignTable";s:3:"sta";s:10:"foreignKey";s:7:"StateID";s:12:"foreignField";s:17:"StateAbbreviation";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:143:"SELECT 
+`sta`.StateID AS ID, `sta`.StateAbbreviation AS Name, `sta`.CountryID AS ParentID FROM `sta`
+WHERE sta._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:138:"SELECT 
+`sta`.StateID AS ID, `sta`.StateAbbreviation AS Name, `sta`.CountryID AS ParentID FROM `sta`
+
+WHERE `sta`.StateID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";s:13:"HomeCountryID";s:21:"parentListModuleField";N;s:11:"childFields";a:1:{s:12:"HomeCountyID";a:1:{s:4:"name";s:12:"HomeCountyID";}}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:43:"Home State|The state where the person lives";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"HomeStateID";}s:12:"HomeCountyID";O:10:"ComboField":31:{s:9:"listField";s:10:"HomeCounty";s:12:"foreignTable";s:3:"cti";s:10:"foreignKey";s:8:"CountyID";s:12:"foreignField";s:6:"County";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:182:"SELECT 
+`cti`.CountyID AS ID, NULLIF(CONCAT(IFNULL( CAST( `cti`.CountyName AS CHAR ),\'\')),\'\') AS Name, `cti`.StateID AS ParentID FROM `cti`
+WHERE cti._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:178:"SELECT 
+`cti`.CountyID AS ID, NULLIF(CONCAT(IFNULL( CAST( `cti`.CountyName AS CHAR ),\'\')),\'\') AS Name, `cti`.StateID AS ParentID FROM `cti`
+
+WHERE `cti`.CountyID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";s:11:"HomeStateID";s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:65:"Home County|A combined field used to track and associate counties";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"HomeCountyID";}s:8:"HomeCity";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:41:"Home City|City where the individual lives";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"HomeCity";}s:14:"HomePostalCode";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:81:"Home Postal Code|Postal code used to direct mail to the individual\'s home address";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"HomePostalCode";}s:9:"HomePhone";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:53:"Home Phone|Telephone number of the individual at home";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"HomePhone";}s:7:"HomeFax";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Home Fax|Facsimile telephone number of the individual at home";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"HomeFax";}s:9:"HomeEmail";O:9:"EditField":18:{s:4:"size";s:2:"75";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Home Email|Email address used by the individual at home";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"HomeEmail";}s:9:"SkypeName";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:2:"50";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:124:"Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com";s:8:"dataType";s:11:"varchar(50)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"SkypeName";}}');
+
+$hasEditableFields = true;
+
+
+$skipSaveFields = unserialize('a:11:{i:0;s:8:"PersonID";i:1;s:12:"Organization";i:2;s:11:"DisplayName";i:3;s:8:"LastName";i:4;s:9:"FirstName";i:5;s:8:"Username";i:6;s:11:"WorkAddress";i:7;s:13:"FullWorkPhone";i:8;s:7:"WorkFax";i:9;s:11:"MobilePhone";i:10;s:9:"WorkEmail";}');
+
+
+$singularRecordName = gettext("Person");
+
+//field value array
+$data = array(
+'PersonID' => '',
+         'Organization' => '',
+         'DisplayName' => '',
+         'LastName' => '',
+         'FirstName' => '',
+         'Username' => '',
+         'WorkAddress' => '',
+         'FullWorkPhone' => '',
+         'WorkFax' => '',
+         'MobilePhone' => '',
+         'WorkEmail' => '',
+         'HomeAddress1' => '',
+         'HomeAddress2' => '',
+         'HomeCountryID' => '',
+         'HomeStateID' => '',
+         'HomeCountyID' => '',
+         'HomeCity' => '',
+         'HomePostalCode' => '',
+         'HomePhone' => '',
+         'HomeFax' => '',
+         'HomeEmail' => '',
+         'SkypeName' => ''
+);
+
+if(empty($_POST)){
+    //pre-populate fields with URL values
+    if(0 === $recordID){
+        foreach($data as $fieldName=>$value){
+            if(isset($_GET[$fieldName])){
+                $data[$fieldName] = $_GET[$fieldName];
+            }
+        }
+    }
+} else {
+    foreach($data as $fieldName=>$value){
+        if(isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        }
+    }
+}
+
+//list of grids
+   $grids = array();
+
+
+/**guidanceGrid**/
+
+$PKField = 'PersonID';
+
+$ownerField = 'OrganizationID';
+
+
+/**disbleGlobalModules**/
+
+//handle any posted grid form
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+$nextScreen = "";
+$nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+$form_enctype = '';
+
+/**CUSTOM_CODE|init**/
+
+$getSQL = "SELECT 
+   `ppl`.PersonID AS PersonID,
+   `org1`.Name AS Organization,
+   `ppl`.DisplayName AS DisplayName,
+   `ppl`.LastName AS LastName,
+   `ppl`.FirstName AS FirstName,
+   IF(ISNULL(`usr1`.Username), NULLIF(CONCAT('internal:edit.php?mdl=usr&rid=0&PersonID=',IFNULL( CAST( `ppl`.PersonID AS CHAR ),'')),'internal:edit.php?mdl=usr&rid=0&PersonID='), CONCAT('internal:view.php?mdl=','usr','&rid=',`ppl`.PersonID)) AS UserLink,
+   `usr1`.Username AS Username,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.WorkAddress1 AS CHAR ),''),'<br />',IFNULL( CAST( `ppl`.WorkAddress2 AS CHAR ),''),'<br />',IFNULL( CAST( `ppl`.WorkCity AS CHAR ),''),', ',IFNULL( CAST( NULLIF(CONCAT(IFNULL( CAST( `sta1`.StateName AS CHAR ),''),' (',IFNULL( CAST( `sta1`.StateAbbreviation AS CHAR ),''),')'),' ()') AS CHAR ),''),' ',IFNULL( CAST( `ppl`.WorkPostalCode AS CHAR ),''),'<br />',IFNULL( CAST( NULLIF(CONCAT(IFNULL( CAST( `ctr1`.CountryName AS CHAR ),''),' (',IFNULL( CAST( `ctr1`.CountryAbbreviation AS CHAR ),''),')'),' ()') AS CHAR ),'')),'<br /><br />,  <br />') AS WorkAddress,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.WorkPhone AS CHAR ),''),', wewn. ',IFNULL( CAST( `ppl`.WorkExtension AS CHAR ),'')),', wewn. ') AS FullWorkPhone,
+   `ppl`.WorkFax AS WorkFax,
+   `ppl`.MobilePhone AS MobilePhone,
+   `ppl`.WorkEmail AS WorkEmail,
+   `ppl`.HomeAddress1 AS HomeAddress1,
+   `ppl`.HomeAddress2 AS HomeAddress2,
+   NULLIF(CONCAT(IFNULL( CAST( `ctr2`.CountryName AS CHAR ),''),' (',IFNULL( CAST( `ctr2`.CountryAbbreviation AS CHAR ),''),')'),' ()') AS HomeCountry,
+   `ppl`.HomeCountryID AS HomeCountryID,
+   `sta2`.StateAbbreviation AS HomeState,
+   `ppl`.HomeStateID AS HomeStateID,
+   NULLIF(CONCAT(IFNULL( CAST( `cti2`.CountyName AS CHAR ),'')),'') AS HomeCounty,
+   `ppl`.HomeCountyID AS HomeCountyID,
+   `ppl`.HomeCity AS HomeCity,
+   `ppl`.HomePostalCode AS HomePostalCode,
+   `ppl`.HomePhone AS HomePhone,
+   `ppl`.HomeFax AS HomeFax,
+   `ppl`.HomeEmail AS HomeEmail,
+   `ppl`.SkypeName AS SkypeName,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.DisplayName AS CHAR ),''),' | ',IFNULL( CAST( `org1`.Name AS CHAR ),'')),' | ') AS RecordLabel,
+   `ppl`.OrganizationID AS OrganizationID
+FROM `ppl`
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`ppl`.OrganizationID = `org1`.OrganizationID )
+   LEFT OUTER JOIN `usr` AS usr1 
+   ON (`ppl`.PersonID = `usr1`.PersonID )
+   LEFT OUTER JOIN `ctr` AS ctr1 
+   ON (`ppl`.WorkCountryID = `ctr1`.CountryID )
+   LEFT OUTER JOIN `sta` AS sta1 
+   ON (`ppl`.WorkStateID = `sta1`.StateID )
+   LEFT OUTER JOIN `ctr` AS ctr2 
+   ON (`ppl`.HomeCountryID = `ctr2`.CountryID )
+   LEFT OUTER JOIN `sta` AS sta2 
+   ON (`ppl`.HomeStateID = `sta2`.StateID )
+   LEFT OUTER JOIN `cti` AS cti2 
+   ON (`ppl`.HomeCountyID = `cti2`.CountyID )
+WHERE ppl._Deleted = 0
+   AND `ppl`.PersonID = '/**RecordID**/'
+";
+
+$getSQL = TranslateLocalDateSQLFormats($getSQL);
+
+if(!empty($_POST['CloneForm'])){
+    $recordID = 0;
+}
+
+
+$screenPhrase = gettext("Home|Edit the home address of a person");
+
+/*populates screen messages differently depending on whether the record exists in db or not*/
+if($recordID != 0) {
+    $existing = true;
+
+    $pageTitle = gettext("Person");
+
+    /**CUSTOM_CODE|before_get**/
+
+    //retrieve record
+    /**SQL|GET_BEGIN**/
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+    /**SQL|GET_END**/
+
+    switch (count($r)){
+    case 0:
+        trigger_error(gettext("This record does not exist, or could not be found.|Record not found."), E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error(gettext("More than one record was found."), E_USER_WARNING);
+        break;
+    }
+
+    //populate data array, combining POSTed data with DB record:
+    //POST data takes precedence
+    foreach($r[0] as $fieldName=>$dbValue){
+        //(checking for gridnum avoids interference with any posted edit grid)
+        if (empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        } else {
+            $data[$fieldName] = $dbValue;
+        }
+    }
+
+
+    /**CUSTOM_CODE|get**/
+} else {
+    //inserting a record
+    $existing = false;
+    $pageTitle = gettext("People");
+    /**CUSTOM_CODE|new**/
+}
+
+//check if user has permission to edit record
+$allowEdit = $User->CheckEditScreenPermission();
+//if not, it terminates and display error msg.
+
+//phrases for field names, in field order
+$phrases = array(
+   'PersonID' => gettext("Person ID|A unique, automatically assigned, number used to track people associated with the organization"),
+   'Organization' => gettext("Organization|Name of organization associated with the individual"),
+   'DisplayName' => gettext("Display Name|Commonly used name of an individual used to identify a person. This name may vary from a person's given name"),
+   'LastName' => gettext("Last Name|Family Name of an individual"),
+   'FirstName' => gettext("First Name|Given Name of an individual"),
+   'Username' => gettext("Username|The user's login name"),
+   'WorkAddress' => gettext("Work Address|Physical street address where the person can be located at work"),
+   'FullWorkPhone' => gettext("Work Phone|Telephone number of the individual at their place of work with a lable to identify the number"),
+   'WorkFax' => gettext("Work Fax|Facsimile telephone number of the individual at work"),
+   'MobilePhone' => gettext("Mobile Phone|Mobile telephone number of the individual"),
+   'WorkEmail' => gettext("Work Email|Email address used by the individual at work"),
+   'HomeAddress1' => gettext("Home Address|First physical street address of the location where the individual lives"),
+   'HomeAddress2' => gettext("Home Address|Second physical street address where the individual lives; such as, apartment number"),
+   'HomeCountryID' => gettext("Home Country|A combined field used to associate this country with another record"),
+   'HomeStateID' => gettext("Home State|A combined field used to associate this state with another record"),
+   'HomeCountyID' => gettext("Home County|A combined field used to associate this county with another record"),
+   'HomeCity' => gettext("Home City|City where the individual lives"),
+   'HomePostalCode' => gettext("Home Postal Code|Postal code used to direct mail to the individual's home address"),
+   'HomePhone' => gettext("Home Phone|Telephone number of the individual at home"),
+   'HomeFax' => gettext("Home Fax|Facsimile telephone number of the individual at home"),
+   'HomeEmail' => gettext("Home Email|Email address used by the individual at home"),
+   'SkypeName' => gettext("Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com")
+   );
+
+
+//if the form was posted by clicking the Save button
+if(!empty($_POST['Save'])){
+    /**DB_SAVE_BEGIN**/
+
+    /**CUSTOM_CODE|save**/
+
+    //validate submitted data:
+    $vMsgs = "";
+    
+
+    if(0 != strlen($vMsgs)){
+        //prepend a general error message
+        $vMsgs = gettext("The record has not been saved, because:")."\n".$vMsgs;
+        $vMsgs = nl2br($vMsgs);
+
+        //return error messages
+        $messages[] = array('e', $vMsgs);
+
+    } else {
+//START   	    
+	    
+//END
+        /**CUSTOM_CODE|check_deleted_row_exists**/
+
+        $dh = GetDataHandler($ModuleID);
+//        $recordID = $dh->saveRow($data, $recordID, $skipSaveFields);
+        $dbRecordID = $dh->saveRow($_POST, $recordID, $skipSaveFields);
+
+        if(false === $dbRecordID){
+            $errmsg = gettext("The record has not been saved, because:");
+            foreach($dh->errmsg as $err => $id){
+                $errmsg .= "\n".$err;
+            }
+            $errmsg = nl2br($errmsg);
+            $messages[] = array('e', $errmsg);
+        } else {
+            $recordID = $dbRecordID;
+        }
+
+        //recreate $nextlink b/c of new record ID when inserting
+        $inserted = false;
+        if(!$existing){
+            $qsArgs['rid'] = $recordID; //pass both to tabs and other links
+            $tabsQSargs = $qsArgs;
+            unset($tabsQSargs['scr']);
+            //$tabsQSargs['rid'] = $recordID;
+            $tabsQS = MakeQS($tabsQSargs);
+            $nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+            if(empty($_POST['KeepNew'])){
+                $existing = true;
+            } else {
+                $recordID = 0;
+            }
+            $inserted = true;
+        }
+    }
+
+    /**CUSTOM_CODE|save_end**/
+    /**DB_SAVE_END**/
+
+    if(empty($_POST['KeepNew'])){
+        if(count($messages) == 0){
+            /**-remove_begin-**/
+            //only executed on screens that need it: have ViewField with Update, or Calculated/Summary fields
+            $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+            dbErrorCheck($r);
+            if(count($r) > 0) {
+                foreach($r[0] as $fieldName=>$dbValue){
+                    //(checking for gridnum avoids interference with any posted edit grid)
+                    if(empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+                        $data[$fieldName] = $_POST[$fieldName];
+                    } else {
+                        $data[$fieldName] = $dbValue;
+                    }
+                }
+            } else {
+                $messages[] = array('e', gettext("Error: Empty query result."));
+            }
+            /**-remove_end-**/
+        }
+    } else {
+        foreach($data as $fieldName => $fieldValue){
+            $data[$fieldName] = '';
+        }
+    }
+
+    //note: assumes all messages up til this point were errors
+    if (count($messages) == 0){
+        //add success message
+        if ($inserted){
+            $messages[] = array('m', gettext("The record was added successfully."));
+        } else {
+            $messages[] = array('m', gettext("The record was updated successfully."));
+        }
+    }
+}
+/**SQL|DELETE_BEGIN**/
+if(!empty($_POST['Delete'])){
+
+    $dh = GetDataHandler($ModuleID);
+    $result = $dh->deleteRow($recordID);
+
+    $deletelink = "list.php?$tabsQS";
+
+    //redirect to list screen
+    header("Location:" . $deletelink);
+    exit;
+}
+/**SQL|DELETE_END**/
+
+/**CUSTOM_CODE|after_save**/
+
+
+if(!empty($_POST['KeepNew'])){
+    unset($qsArgs['rid']); //ensures next submit will cause a new record
+}
+
+$qs = MakeQS($qsArgs);
+
+//List tab
+$tabs['List'] = Array("list.php?$tabsQS", gettext("List|View the list of People"));
+
+//target for FORMs
+$targetlink = "edit.php?$qs";
+
+$cloneAsNew = false;
+$keepAddNew = false;
+
+//formatting that depends on whether the record exists or not
+if($existing){
+    //delete button only appears on the first EditScreen.
+    $deletelink = '';
+    $cancellink = "view.php?$tabsQS";
+
+    $cloneAsNew = true;
+
+          $tabs['View'] = array( "view.php?scr=View&amp;$tabsQS", gettext("View|View summary information about").' '.gettext("a Person") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit summary information about a person") );
+      $tabs['WorkAddress'] = array( "edit.php?scr=WorkAddress&amp;$tabsQS", gettext("Work|Edit the work address of a person") );
+      $tabs['HomeAddress'] = array( "", gettext("Home|Edit the home address of a person") );
+
+
+} else {
+    $deletelink = '';
+    $cancellink = "list.php?$tabsQS";
+
+    $keepAddNew = true;
+
+          $tabs['HomeAddress'] = array( "", gettext("New Person") );
+
+}
+
+/**CUSTOM_CODE|form**/
+
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->render($data, $phrases);
+    }
+}
+
+$formProps = array(
+    /**is_main_form**/
+    'delete_button'      => strlen($deletelink) > 0,
+    'cancel_link'        => $cancellink,
+    'next_screen'        => $nextScreen,
+    'form_enctype'       => $form_enctype,
+    'module_id'          => $ModuleID,
+    'render_buttons'     => $hasEditableFields,
+    'clone'              => $cloneAsNew,
+    'keep_add_new'       => $keepAddNew,
+    'single_record_name' => $singularRecordName
+);
+
+$content = renderForm2($content, $targetlink, $formProps);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+/**CUSTOM_CODE|after_form**/
+
+//display edit grids here
+foreach($grids as $gridID => $grid){
+   $content .= $grid->render('edit.php', $qsArgs);
+}
+
+
+/**CUSTOM_CODE|after_grids**/
+
+   $recordLabelField = '';
+    if(isset($data['RecordLabel'])) {
+    $recordLabelField = $data['RecordLabel'];
+    }
+?>

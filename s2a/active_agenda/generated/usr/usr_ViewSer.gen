@@ -1,0 +1,137 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $phrases[0] = array(
+   'PersonID' => gettext("Person ID|The Person ID of the associated person (users must have a matching record in the People module)."),
+   'Person' => gettext("Person|The person who is this user."),
+   'Username' => gettext("Username|The user's login name."),
+   'IsAdmin' => gettext("Is Site Administrator|Site Administrators have access to all records in all modules, plus administration features."),
+   'DefaultOrganization' => gettext("Default Organization|This field affects user data entry experience by defaulting designated organization fields throughout the application to the name of the organization selected here"),
+   'Lang' => gettext("Language|The user's preferred language"),
+   'SessionTimeout' => gettext("User Session Timeout|If the application settings allow it, the user's session timeout can be specified here (in minutes)."),
+   'GroupSessionTimeout' => gettext("Group Session Timeout|If any groups that the user is a member of have an assigned session timeout, the shortest timeout will be displayed here."),
+   'ResultingSessionTimeout' => gettext("Resulting Session Timeout|If the application settings allow it, this is the effective session timeout for the user. Any timeout assigned explicitly to the user will override any timeout value due to group membership.")
+   );
+
+
+    $sections = unserialize('a:1:{i:0;a:4:{s:6:"phrase";s:4:"User";s:3:"sql";s:1448:"SELECT 
+   `usr`.PersonID AS PersonID,
+   `ppl1`.DisplayName AS Person,
+   `usr`.Username AS Username,
+   `usr`.IsAdmin AS IsAdmin,
+   `org1`.Name AS DefaultOrganization,
+   `cod1`.Description AS Lang,
+   `usr`.SessionTimeout AS SessionTimeout,
+   `usrgm1`.GroupSessionTimeout AS GroupSessionTimeout,
+   IFNULL(`usr`.SessionTimeout, `usrgm1`.GroupSessionTimeout) AS ResultingSessionTimeout,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl1`.DisplayName AS CHAR ),\'\'),\' | \',IFNULL( CAST( `org2`.Name AS CHAR ),\'\'),\' | Domy\',\'ślnie: \',IFNULL( CAST( `org1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `cod1`.Description AS CHAR ),\'\')),\' |  | Domyślnie:  | \') AS RecordLabel,
+   `ppl1`.OrganizationID AS OrganizationID
+FROM `usr`
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`usr`.PersonID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`usr`.DefaultOrganizationID = `org1`.OrganizationID )
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`usr`.LangID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'138\')
+   LEFT OUTER JOIN (SELECT 
+MIN(`usrg1`.SessionTimeout) AS GroupSessionTimeout,
+`usrgm`.PersonID
+FROM `usrgm` 
+LEFT OUTER JOIN `usrg` AS usrg1 
+   ON (`usrgm`.UserGroupID = `usrg1`.UserGroupID )
+ WHERE `usrgm`._Deleted = 0 
+
+GROUP BY `usrgm`.PersonID 
+) AS usrgm1 
+ON (
+`usr`.PersonID = usrgm1.PersonID
+) 
+   LEFT OUTER JOIN `org` AS org2 
+   ON (`ppl1`.OrganizationID = `org2`.OrganizationID )
+WHERE usr._Deleted = 0
+   AND `usr`.PersonID = \'/**RecordID**/\'
+";s:6:"fields";a:9:{s:8:"PersonID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Person ID|The Person ID of the associated person (users must have a matching record in the People module).";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"PersonID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Person";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:35:"Person|The person who is this user.";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Person";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"Username";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:31:"Username|The user\'s login name.";s:8:"dataType";s:11:"varchar(25)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"Username";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"IsAdmin";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:114:"Is Site Administrator|Site Administrators have access to all records in all modules, plus administration features.";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"IsAdmin";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:19:"DefaultOrganization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:184:"Default Organization|This field affects user data entry experience by defaulting designated organization fields throughout the application to the name of the organization selected here";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:19:"DefaultOrganization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:4:"Lang";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:38:"Language|The user\'s preferred language";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Lang";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"SessionTimeout";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:121:"User Session Timeout|If the application settings allow it, the user\'s session timeout can be specified here (in minutes).";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"SessionTimeout";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:19:"GroupSessionTimeout";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:143:"Group Session Timeout|If any groups that the user is a member of have an assigned session timeout, the shortest timeout will be displayed here.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:19:"GroupSessionTimeout";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:23:"ResultingSessionTimeout";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:216:"Resulting Session Timeout|If the application settings allow it, this is the effective session timeout for the user. Any timeout assigned explicitly to the user will override any timeout value due to group membership.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:23:"ResultingSessionTimeout";s:10:"needsReGet";b:1;s:11:"formatField";N;}}s:5:"grids";a:3:{s:13:"viewgrid_usrp";O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:1;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:4:"usrp";s:6:"phrase";s:11:"Permissions";s:6:"number";N;s:6:"Fields";a:3:{s:12:"PermissionID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:68:"Record ID|An automatically assigned number used to track permissions";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"usrp";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"PermissionID";}s:6:"Module";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:28:"Module|The associated module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"usrp";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Module";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Permission";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:89:"Permission|A description of the permission a user has to records in the associated module";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:4:"usrp";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Permission";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:104:"SELECT 
+    count(*) 
+FROM `usrp`
+   
+WHERE usrp._Deleted = 0
+   AND `usrp`.PersonID = \'/**RecordID**/\'
+";s:7:"listSQL";s:583:"SELECT 
+   `usrp`.PermissionID AS PermissionID,
+`mod1`.Name AS Module,
+NULLIF(CONCAT(IFNULL( CAST( `cod1`.Description AS CHAR ),\'\'),\', \',IFNULL( CAST( `cod2`.Description AS CHAR ),\'\')),\', \') AS Permission
+FROM `usrp`
+LEFT OUTER JOIN `mod` AS mod1 
+   ON (`usrp`.ModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `cod` AS cod2 
+   ON (`usrp`.ViewPermission = `cod2`.CodeID 
+     AND `cod2`.CodeTypeID = \'1\')
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`usrp`.EditPermission = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'2\')
+WHERE usrp._Deleted = 0
+AND `usrp`.PersonID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:8:"PersonID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:2:{s:9:"infoTitle";b:1;s:19:"suppressRecordIcons";b:1;}s:10:"fieldTypes";a:3:{s:12:"PermissionID";s:3:"int";s:6:"Module";N;s:10:"Permission";s:4:"text";}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:3:{s:12:"PermissionID";s:5:"right";s:6:"Module";s:4:"left";s:10:"Permission";s:7:"justify";}}s:14:"viewgrid_usrpo";O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:1;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:5:"usrpo";s:6:"phrase";s:23:"Permitted Organizations";s:6:"number";N;s:6:"Fields";a:2:{s:20:"PermitOrganizationID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:68:"Record ID|An automatically assigned number used to track permissions";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrpo";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:20:"PermitOrganizationID";}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:71:"Organization|The organization that the user is assigned a permission to";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrpo";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:107:"SELECT 
+    count(*) 
+FROM `usrpo`
+   
+WHERE usrpo._Deleted = 0
+   AND `usrpo`.PersonID = \'/**RecordID**/\'
+";s:7:"listSQL";s:259:"SELECT 
+   `usrpo`.PermitOrganizationID AS PermitOrganizationID,
+`org1`.Name AS Organization
+FROM `usrpo`
+LEFT OUTER JOIN `org` AS org1 
+   ON (`usrpo`.OrganizationID = `org1`.OrganizationID )
+WHERE usrpo._Deleted = 0
+AND `usrpo`.PersonID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:8:"PersonID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:2:{s:9:"infoTitle";b:1;s:19:"suppressRecordIcons";b:1;}s:10:"fieldTypes";a:2:{s:20:"PermitOrganizationID";s:3:"int";s:12:"Organization";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:2:{s:20:"PermitOrganizationID";s:5:"right";s:12:"Organization";s:4:"left";}}s:14:"viewgrid_usrgm";O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:1;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:5:"usrgm";s:6:"phrase";s:21:"User Group Membership";s:6:"number";N;s:6:"Fields";a:2:{s:12:"MembershipID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Record ID|An automatically assigned number used to track group memberships";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"MembershipID";}s:9:"UserGroup";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:57:"Group|The user group that this permission is assigned to.";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"UserGroup";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:107:"SELECT 
+    count(*) 
+FROM `usrgm`
+   
+WHERE usrgm._Deleted = 0
+   AND `usrgm`.PersonID = \'/**RecordID**/\'
+";s:7:"listSQL";s:238:"SELECT 
+   `usrgm`.MembershipID AS MembershipID,
+`usrg1`.Name AS UserGroup
+FROM `usrgm`
+LEFT OUTER JOIN `usrg` AS usrg1 
+   ON (`usrgm`.UserGroupID = `usrg1`.UserGroupID )
+WHERE usrgm._Deleted = 0
+AND `usrgm`.PersonID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:8:"PersonID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:2:{s:9:"infoTitle";b:1;s:19:"suppressRecordIcons";b:1;}s:10:"fieldTypes";a:2:{s:12:"MembershipID";s:3:"int";s:9:"UserGroup";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:2:{s:12:"MembershipID";s:5:"right";s:9:"UserGroup";s:4:"left";}}}}}');
+
+?>

@@ -1,0 +1,195 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+    /**CUSTOM_CODE|init**/
+
+    //list of objects containing the field information
+    $fields = unserialize('a:5:{s:11:"UserGroupID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:45:"Group ID|An ID value for primary key purpose.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"UserGroupID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:4:"Name";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:22:"Name|The group\'s name.";s:8:"dataType";s:11:"varchar(25)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Name";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"Description";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Description|A description of the purpose of the group.";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Description";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"SessionTimeout";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:250:"Session Timeout|If the application settings allow it, a session timeout can be specified here (in minutes). Members of this group will get the smallest timeout of all groups they are a member of, unless an explicit timeout is set in the Users module.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"SessionTimeout";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"_ModDate";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"_ModDate";}}');
+
+
+    //list of grids
+    /**grids**/
+
+    //phrases for field names, in field order
+    $phrases = array(
+   'UserGroupID' => gettext("Group ID|An ID value for primary key purpose."),
+   'Name' => gettext("Name|The group's name."),
+   'Description' => gettext("Description|A description of the purpose of the group."),
+   'SessionTimeout' => gettext("Session Timeout|If the application settings allow it, a session timeout can be specified here (in minutes). Members of this group will get the smallest timeout of all groups they are a member of, unless an explicit timeout is set in the Users module."),
+   '_ModDate' => gettext("Modified On")
+   );
+
+
+    $ownerField = '';
+
+
+    /**disbleGlobalModules**/
+    /**useBestPractices**/
+
+    //retrieve record
+    $data = array();
+
+    /**SQL|GET_BEGIN**/
+    $SQL = "SELECT 
+   `usrg`.UserGroupID AS UserGroupID,
+   `usrg`.Name AS Name,
+   `usrg`.Description AS Description,
+   `usrg`.SessionTimeout AS SessionTimeout,
+   DATE_FORMAT(`usrg`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS _ModDate,
+   NULLIF(CONCAT(IFNULL( CAST( `usrg`.Name AS CHAR ),'')),'') AS RecordLabel
+FROM `usrg`
+   
+WHERE usrg._Deleted = 0
+   AND `usrg`.UserGroupID = '/**RecordID**/'
+";
+
+    $SQL = TranslateLocalDateSQLFormats($SQL);
+
+    /**CUSTOM_CODE|before_get**/
+
+    //get data
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $SQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+
+    /**SQL|GET_END**/
+    switch (count($r)){
+    case 0:
+        trigger_error("This record does not exist, or could not be found.|Record not found.", E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error("More than one record was found.", E_USER_WARNING);
+        break;
+    }
+
+    $data = array_merge($data, $r[0]); //assign first (only) row
+
+    /**CUSTOM_CODE|get**/
+
+    //check if user has permission to view or edit record - will redirect if no permission at all
+    $allowEdit = $User->CheckViewScreenPermission();
+    //$allowEdit = true;
+
+    $tabsQSargs = $qsArgs;
+    unset($tabsQSargs['scr']);
+    $tabsQS = MakeQS($tabsQSargs);
+
+    //List tab
+    $tabs['List'] = Array("list.php?$qs", gettext("List|View the list of User Groups"));
+
+    if ($allowEdit){
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a User Group") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit a user group") );
+      $tabs['Permissions'] = array( "edit.php?scr=Permissions&amp;$tabsQS", gettext("Permissions|Edit permissions to view or edit records of a module") );
+      $tabs['Members'] = array( "edit.php?scr=Members&amp;$tabsQS", gettext("Members|Define which users that should be members of this group") );
+
+    } else {
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a User Group") );
+
+    }
+
+    $recordLabelField = $data['RecordLabel'];
+
+    $content = '';
+    foreach($fields as $key => $field){
+        if (!$field->isSubField()){
+            $content .= $field->render($data, $phrases);
+        }
+    }
+
+    $pageTitle = gettext("User Group");
+    $screenPhrase = gettext("View|View a user group");
+
+    $backlink = "list.php?$qs";
+
+    $nextScreen = "Form";
+    $editlink = "edit.php?$tabsQS&scr=$nextScreen";
+    $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
+
+    //add byline info on record modification info
+    $content .= "<div class=\"recinfo\">{$phrases['_ModDate']} {$data['_ModDate']}";
+    if ($User->IsAdmin) {
+        $content .= '&nbsp; &nbsp; <a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'">'.gettext("Audit Trail").'</a> ';
+    }
+    $content .= "</div>";
+
+    //display view grids here
+   $Grid1 = unserialize('O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:1;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:5:"usrgm";s:6:"phrase";s:18:"User Group Members";s:6:"number";i:1;s:6:"Fields";a:3:{s:12:"MembershipID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Record ID|An automatically assigned number used to track group memberships";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"MembershipID";}s:6:"Person";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:35:"Person|The person who is this user.";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Person";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:36:"Organization|The user\'s organization";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:110:"SELECT 
+    count(*) 
+FROM `usrgm`
+   
+WHERE usrgm._Deleted = 0
+   AND `usrgm`.UserGroupID = \'/**RecordID**/\'
+";s:7:"listSQL";s:353:"SELECT 
+   `usrgm`.MembershipID AS MembershipID,
+`ppl1`.DisplayName AS Person,
+`org1`.Name AS Organization
+FROM `usrgm`
+LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`usrgm`.PersonID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`ppl1`.OrganizationID = `org1`.OrganizationID )
+WHERE usrgm._Deleted = 0
+AND `usrgm`.UserGroupID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:11:"UserGroupID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:2:{s:9:"infoTitle";b:1;s:19:"suppressRecordIcons";b:1;}s:10:"fieldTypes";a:3:{s:12:"MembershipID";s:3:"int";s:6:"Person";N;s:12:"Organization";N;}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:3:{s:12:"MembershipID";s:5:"right";s:6:"Person";s:4:"left";s:12:"Organization";s:4:"left";}}');
+   $content .= $Grid1->render('view.php', $qsArgs);
+   $Grid2 = unserialize('O:8:"ViewGrid":20:{s:13:"orderByFields";a:0:{}s:6:"isInfo";b:1;s:10:"isGuidance";b:0;s:10:"isVertical";b:0;s:15:"verticalFormats";a:0:{}s:8:"moduleID";s:5:"usrgp";s:6:"phrase";s:11:"Permissions";s:6:"number";i:2;s:6:"Fields";a:3:{s:12:"PermissionID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Record ID|An automatically assigned number used to track group permissions";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgp";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"PermissionID";}s:6:"Module";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:28:"Module|The associated module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgp";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Module";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Permission";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:107:"Permission|A description of the permission that members of a group have to records in the associated module";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:5:"usrgp";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Permission";s:10:"needsReGet";b:0;s:11:"formatField";N;}}s:8:"countSQL";s:110:"SELECT 
+    count(*) 
+FROM `usrgp`
+   
+WHERE usrgp._Deleted = 0
+   AND `usrgp`.UserGroupID = \'/**RecordID**/\'
+";s:7:"listSQL";s:593:"SELECT 
+   `usrgp`.PermissionID AS PermissionID,
+`mod1`.Name AS Module,
+NULLIF(CONCAT(IFNULL( CAST( `cod1`.Description AS CHAR ),\'\'),\', \',IFNULL( CAST( `cod2`.Description AS CHAR ),\'\')),\', \') AS Permission
+FROM `usrgp`
+LEFT OUTER JOIN `mod` AS mod1 
+   ON (`usrgp`.ModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `cod` AS cod2 
+   ON (`usrgp`.ViewPermission = `cod2`.CodeID 
+     AND `cod2`.CodeTypeID = \'1\')
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`usrgp`.EditPermission = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = \'2\')
+WHERE usrgp._Deleted = 0
+AND `usrgp`.UserGroupID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:11:"UserGroupID";s:9:"parentKey";N;s:8:"PKFields";N;s:13:"formatOptions";a:2:{s:9:"infoTitle";b:1;s:19:"suppressRecordIcons";b:1;}s:10:"fieldTypes";a:3:{s:12:"PermissionID";s:3:"int";s:6:"Module";N;s:10:"Permission";s:4:"text";}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:3:{s:12:"PermissionID";s:5:"right";s:6:"Module";s:4:"left";s:10:"Permission";s:7:"justify";}}');
+   $content .= $Grid2->render('view.php', $qsArgs);
+
+
+//View Screen Sections here
+/**VIEWSCREENSECTIONS**/
+?>

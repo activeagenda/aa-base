@@ -1,0 +1,38 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $dataHandler = unserialize('O:11:"DataHandler":19:{s:8:"moduleID";s:3:"cos";s:8:"PKFields";a:1:{i:0;s:6:"CostID";}s:11:"tableFields";a:15:{s:6:"CostID";s:3:"int";s:15:"RelatedModuleID";s:10:"varchar(5)";s:15:"RelatedRecordID";s:3:"int";s:14:"OrganizationID";s:3:"int";s:19:"PersonAccountableID";s:3:"int";s:10:"CostTypeID";s:3:"int";s:8:"Incurred";s:5:"money";s:5:"Title";s:12:"varchar(128)";s:8:"CostDesc";s:4:"text";s:8:"PONumber";s:11:"varchar(50)";s:19:"BudgetConsideration";s:4:"bool";s:8:"_ModDate";s:8:"datetime";s:6:"_ModBy";s:3:"int";s:8:"_Deleted";s:4:"bool";s:14:"_TransactionID";s:6:"bigint";}s:12:"remoteFields";a:1:{s:8:"CostDate";O:11:"RemoteField":22:{s:10:"localTable";s:3:"cos";s:18:"localRecordIDField";s:6:"CostID";s:14:"remoteModuleID";s:3:"dat";s:16:"remoteTableAlias";N;s:19:"remoteModuleIDField";s:14:"SourceModuleID";s:19:"remoteRecordIDField";s:14:"SourceRecordID";s:11:"remoteField";s:11:"RelatedDate";s:21:"remoteDescriptorField";s:16:"DateDescriptorID";s:16:"remoteDescriptor";s:2:"18";s:15:"remoteFieldType";s:8:"datetime";s:13:"remotePKField";s:6:"DateID";s:8:"validate";s:16:"RequireSelection";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:17:"conditionModuleID";s:3:"cos";s:8:"reversed";N;s:4:"name";s:8:"CostDate";s:6:"phrase";s:68:"Cost Date|The date this cost amount was incurred by the organization";s:8:"moduleID";s:3:"cos";s:8:"dataType";s:4:"date";s:13:"displayFormat";N;}}s:20:"remoteFieldAliasKeys";a:1:{s:96:"cos.CostID|dat.SourceRecordID|`dat`.SourceModuleID = \'cos\'     AND `dat`.DateDescriptorID = \'18\'";a:1:{i:0;s:8:"CostDate";}}s:16:"resolvableFields";a:4:{s:12:"Organization";a:5:{s:3:"mdl";s:3:"org";s:5:"field";s:4:"Name";s:6:"lookup";s:14:"OrganizationID";s:10:"resolvesTo";s:14:"OrganizationID";s:9:"fieldType";b:0;}s:17:"PersonAccountable";a:6:{s:3:"mdl";s:3:"ppl";s:5:"field";s:11:"DisplayName";s:6:"lookup";s:8:"PersonID";s:10:"resolvesTo";s:19:"PersonAccountableID";s:9:"fieldType";b:0;s:8:"siblings";a:1:{s:26:"DisplayName_OrganizationID";a:1:{i:2;a:2:{s:11:"foreignName";s:14:"OrganizationID";s:9:"localName";s:32:"PersonAccountable:OrganizationID";}}}}s:12:"CostCategory";a:6:{s:3:"mdl";s:3:"cod";s:5:"field";s:11:"Description";s:6:"lookup";s:6:"CodeID";s:10:"resolvesTo";s:14:"CostCategoryID";s:9:"fieldType";b:0;s:8:"siblings";a:1:{s:22:"Description_CodeTypeID";a:1:{i:2;a:3:{s:11:"foreignName";s:10:"CodeTypeID";s:9:"localName";s:23:"CostCategory:CodeTypeID";s:13:"constantValue";s:3:"124";}}}}s:10:"ModifiedBy";a:6:{s:3:"mdl";s:3:"ppl";s:5:"field";s:11:"DisplayName";s:6:"lookup";s:8:"PersonID";s:10:"resolvesTo";s:12:"ModifiedByID";s:9:"fieldType";b:0;s:8:"siblings";a:1:{s:26:"DisplayName_OrganizationID";a:1:{i:2;a:2:{s:11:"foreignName";s:14:"OrganizationID";s:9:"localName";s:25:"ModifiedBy:OrganizationID";}}}}}s:17:"uniquenessIndexes";a:0:{}s:13:"autoIncrement";s:1:"1";s:19:"relatedRecordFields";a:0:{}s:16:"useRemoteIDCheck";b:0;s:19:"originatingModuleID";N;s:13:"ownerOrgField";s:14:"OrganizationID";s:8:"dbValues";a:0:{}s:13:"PKFieldValues";a:0:{}s:24:"relatedRecordFieldValues";a:0:{}s:6:"errmsg";N;s:8:"_selects";a:16:{s:6:"CostID";s:22:"`cos`.CostID AS CostID";s:15:"RelatedModuleID";s:40:"`cos`.RelatedModuleID AS RelatedModuleID";s:15:"RelatedRecordID";s:40:"`cos`.RelatedRecordID AS RelatedRecordID";s:14:"OrganizationID";s:38:"`cos`.OrganizationID AS OrganizationID";s:19:"PersonAccountableID";s:48:"`cos`.PersonAccountableID AS PersonAccountableID";s:10:"CostTypeID";s:30:"`cos`.CostTypeID AS CostTypeID";s:8:"Incurred";s:36:"ROUND(`cos`.Incurred, 2) AS Incurred";s:5:"Title";s:20:"`cos`.Title AS Title";s:8:"CostDesc";s:26:"`cos`.CostDesc AS CostDesc";s:8:"PONumber";s:26:"`cos`.PONumber AS PONumber";s:19:"BudgetConsideration";s:48:"`cos`.BudgetConsideration AS BudgetConsideration";s:8:"CostDate";s:80:"DATE_FORMAT(`dat1`.RelatedDate, GET_FORMAT(DATE,/*localDate*/\'ISO\')) AS CostDate";s:8:"_ModDate";s:84:"DATE_FORMAT(`cos`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";s:6:"_ModBy";s:22:"`cos`._ModBy AS _ModBy";s:8:"_Deleted";s:26:"`cos`._Deleted AS _Deleted";s:14:"_TransactionID";s:38:"`cos`._TransactionID AS _TransactionID";}s:6:"_joins";a:1:{s:8:"CostDate";a:1:{s:4:"dat1";s:185:"LEFT OUTER JOIN `dat` AS dat1 
+    ON (`cos`.CostID = `dat1`.SourceRecordID 
+     AND `dat1`.SourceModuleID = \'cos\'
+     AND `dat1`._Deleted = 0
+     AND `dat1`.DateDescriptorID = \'18\')";}}s:11:"isPopulated";b:0;}');
+?>

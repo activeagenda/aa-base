@@ -1,0 +1,71 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //edit screens
+    $editScreens = 's:2725:"<h2>Form Screen</h2><p><i>Edit code types</i></p><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>ViewField</td><td>name: CodeTypeID
+</td></tr><tr><td colspan="3"><i>A number used to track code records.</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Name</td><td>EditField</td><td>name: Name
+size: 50
+maxLength: 75
+</td></tr><tr><td colspan="3"><i>The name of this code type</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Description</td><td>EditField</td><td>name: Description
+size: 50
+maxLength: 128
+</td></tr><tr><td colspan="3"><i>A clarifying descrition of the code type</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+<h2>Items Screen</h2>
+<h3>Code Items Grid</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>InvisibleField</td><td>name: RecordID
+formName: cod
+</td></tr><tr><td colspan="3"><i>A unique ID for internal database purposes (primary key)</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Code ID</td><td>EditField</td><td>name: CodeID
+size: 10
+maxLength: 10
+phrase: Code ID
+formName: cod
+</td></tr><tr><td colspan="3"><i>A number used to track code records</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Code Type ID</td><td>InvisibleField</td><td>name: CodeTypeID
+formName: cod
+</td></tr><tr><td colspan="3"><i>A number used to track code records</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Description</td><td>EditField</td><td>name: Description
+size: 50
+maxLength: 128
+phrase: Description
+formName: cod
+</td></tr><tr><td colspan="3"><i>The text that should be displayed for this code. This is the standard-language text (English). Additional languages are supported by adding columns using the standard language ID as the name.</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Sort Order</td><td>EditField</td><td>name: SortOrder
+size: 10
+maxLength: 10
+phrase: Sort Order
+formName: cod
+</td></tr><tr><td colspan="3"><i>A numerical value to define the placement of this code in an ordered list, such as drop-down list.</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Value</td><td>EditField</td><td>name: Value
+size: 15
+maxLength: 25
+phrase: Value
+formName: cod
+</td></tr><tr><td colspan="3"><i>This field has special meaning for different code types. It can be used to limit a list of codes based on a matching value.</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+</table>
+";';
+
+?>

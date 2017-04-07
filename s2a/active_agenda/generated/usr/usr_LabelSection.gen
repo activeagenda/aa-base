@@ -1,0 +1,59 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //label section, serialized
+    $fields = unserialize('a:6:{s:8:"PersonID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Person ID|The Person ID of the associated person (users must have a matching record in the People module).";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"PersonID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Person";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:35:"Person|The person who is this user.";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Person";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"Username";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:31:"Username|The user\'s login name.";s:8:"dataType";s:11:"varchar(25)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"Username";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:19:"DefaultOrganization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:184:"Default Organization|This field affects user data entry experience by defaulting designated organization fields throughout the application to the name of the organization selected here";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:19:"DefaultOrganization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"IsAdmin";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:114:"Is Site Administrator|Site Administrators have access to all records in all modules, plus administration features.";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"IsAdmin";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"RecordLabel";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:11:"RecordLabel";}}');
+    $phrases = unserialize('a:5:{s:8:"PersonID";N;s:6:"Person";N;s:8:"Username";N;s:19:"DefaultOrganization";N;s:7:"IsAdmin";N;}');
+    $singularRecordName = 'User';
+    $labelSQL = "SELECT 
+   `usr`.PersonID AS PersonID,
+   `ppl1`.DisplayName AS Person,
+   `usr`.Username AS Username,
+   `org1`.Name AS DefaultOrganization,
+   `usr`.IsAdmin AS IsAdmin,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl1`.DisplayName AS CHAR ),''),' | ',IFNULL( CAST( `org2`.Name AS CHAR ),''),' | Domy','ślnie: ',IFNULL( CAST( `org1`.Name AS CHAR ),''),' | ',IFNULL( CAST( `cod1`.Description AS CHAR ),'')),' |  | Domyślnie:  | ') AS RecordLabel,
+   `ppl1`.OrganizationID AS OrganizationID
+FROM `usr`
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`usr`.PersonID = `ppl1`.PersonID )
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`usr`.DefaultOrganizationID = `org1`.OrganizationID )
+   LEFT OUTER JOIN `cod` AS cod1 
+   ON (`usr`.LangID = `cod1`.CodeID 
+     AND `cod1`.CodeTypeID = '138')
+   LEFT OUTER JOIN `org` AS org2 
+   ON (`ppl1`.OrganizationID = `org2`.OrganizationID )
+WHERE usr._Deleted = 0
+   AND `usr`.PersonID = '/**RecordID**/'
+";
+    $recordLabelField = "RecordLabel";
+?>

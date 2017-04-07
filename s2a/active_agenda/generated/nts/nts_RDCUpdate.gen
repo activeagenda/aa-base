@@ -1,0 +1,95 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $RDCinsert = unserialize('s:1417:"INSERT INTO `rdc` (ModuleID, RecordID, Value, OrganizationID, _ModDate, _ModBy, _Deleted)
+SELECT 
+   \'nts\' AS ModuleID,
+   `nts`.NoteID AS RecordID,
+   NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( DATE_FORMAT(`nts_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CHAR ),\'\'),\' | \',IFNULL( CAST( `ppl1`.DisplayName AS CHAR ),\'\')),\' |  | \') AS Value,
+`rdc1`.OrganizationID,
+    NOW() AS _ModDate,
+    0 AS _ModBy,
+    0 AS _Deletetd
+FROM 
+   `nts`
+LEFT OUTER JOIN `rdc` ON (`nts`.NoteID = `rdc`.RecordID AND `rdc`.ModuleID = \'nts\')
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`nts`.RelatedModuleID = rdc1.ModuleID AND `nts`.RelatedRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN (
+            SELECT
+                `nts_l`.NoteID,
+                `nts_l`._ModDate AS createDate,
+                `nts_l`._ModBy AS createBy
+            FROM `nts_l`
+            INNER JOIN (
+                SELECT
+                    NoteID,
+                    MIN(_RecordID) AS MinRecordID
+                FROM `nts_l`
+                GROUP BY NoteID) as `nts_min`
+            ON `nts_l`._RecordID = `nts_min`.MinRecordID
+            ) AS nts_l
+            ON (`nts`.NoteID = nts_l.NoteID)
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`nts_l`.createBy = `ppl1`.PersonID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`nts`.RelatedModuleID = `mod1`.ModuleID )
+WHERE `nts`.NoteID IN ([*insertIDs*])";');
+    $RDCupdate = unserialize('s:1253:"UPDATE `rdc`
+INNER JOIN `nts` ON (`rdc`.RecordID = `nts`.NoteID AND `rdc`.ModuleID = \'nts\')
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`nts`.RelatedModuleID = rdc1.ModuleID AND `nts`.RelatedRecordID =  rdc1.RecordID)
+   LEFT OUTER JOIN (
+            SELECT
+                `nts_l`.NoteID,
+                `nts_l`._ModDate AS createDate,
+                `nts_l`._ModBy AS createBy
+            FROM `nts_l`
+            INNER JOIN (
+                SELECT
+                    NoteID,
+                    MIN(_RecordID) AS MinRecordID
+                FROM `nts_l`
+                GROUP BY NoteID) as `nts_min`
+            ON `nts_l`._RecordID = `nts_min`.MinRecordID
+            ) AS nts_l
+            ON (`nts`.NoteID = nts_l.NoteID)
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`nts_l`.createBy = `ppl1`.PersonID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`nts`.RelatedModuleID = `mod1`.ModuleID )
+SET
+   `rdc`.Value = NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( DATE_FORMAT(`nts_l`.createDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS CHAR ),\'\'),\' | \',IFNULL( CAST( `ppl1`.DisplayName AS CHAR ),\'\')),\' |  | \'),
+rdc.OrganizationID = `rdc1`.OrganizationID,
+   `rdc`._ModDate = NOW()
+WHERE
+   `rdc`.ModuleID = \'nts\'
+";');
+?>

@@ -1,0 +1,44 @@
+<!-- defaultAction can have the following values: 
+     replaceExisting: will insert new values, replace existing ones but not remove existing data not being represented in this file
+     deleteUnmatched: will insert new values, replace existing, AND REMOVE records that aren't represented here.
+-->
+<S2aData>
+    <Records moduleID="codt">
+        <Record globalID="AA9">
+            <RecordValue fieldName="CodeTypeID" value="9"/>
+            <RecordValue fieldName="Name" value="Loss Status Category"/>
+            <RecordValue fieldName="Description" value="Categories used to group the status of claims of loss"/>
+            <RecordValue fieldName="UseValue" value="-1"/>
+            <Records moduleID="cod">
+                <Record globalID="AA9_1">
+                    <RecordValue fieldName="CodeTypeID" value="9"/>
+                    <RecordValue fieldName="CodeID" value="1"/>
+                    <RecordValue fieldName="SortOrder" value="10"/>
+                    <RecordValue fieldName="Value" value=""/>
+                    <RecordValue fieldName="Description" value="Open"/>
+                </Record>
+                <Record globalID="AA9_2">
+                    <RecordValue fieldName="CodeTypeID" value="9"/>
+                    <RecordValue fieldName="CodeID" value="2"/>
+                    <RecordValue fieldName="SortOrder" value="20"/>
+                    <RecordValue fieldName="Value" value=""/>
+                    <RecordValue fieldName="Description" value="Closed"/>
+                </Record>
+                <Record globalID="AA9_3">
+                    <RecordValue fieldName="CodeTypeID" value="9"/>
+                    <RecordValue fieldName="CodeID" value="3"/>
+                    <RecordValue fieldName="SortOrder" value="30"/>
+                    <RecordValue fieldName="Value" value=""/>
+                    <RecordValue fieldName="Description" value="Under Evaluation"/>
+                </Record>
+                <Record globalID="AA9_4">
+                    <RecordValue fieldName="CodeTypeID" value="9"/>
+                    <RecordValue fieldName="CodeID" value="4"/>
+                    <RecordValue fieldName="SortOrder" value="40"/>
+                    <RecordValue fieldName="Value" value=""/>
+                    <RecordValue fieldName="Description" value="Denied"/>
+                </Record>
+            </Records>
+        </Record>
+    </Records>
+</S2aData>

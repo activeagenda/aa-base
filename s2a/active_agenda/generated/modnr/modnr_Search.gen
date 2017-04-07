@@ -1,0 +1,195 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+
+//list of objects containing the field information
+$fields = unserialize('a:3:{s:15:"RelatedModuleID";O:10:"ComboField":31:{s:9:"listField";s:13:"RelatedModule";s:12:"foreignTable";s:3:"mod";s:10:"foreignKey";s:8:"ModuleID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:102:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+WHERE mod._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:98:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+
+WHERE `mod`.ModuleID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:5:"modnr";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:72:"Module|The name of the module associated with the notification recipient";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:15:"RelatedModuleID";}s:14:"OrganizationID";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:385:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY orgListOption, Name, ID;";s:6:"getSQL";s:372:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:5:"modnr";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:233:"Organization|Name of the organization associated with the notification requirements. Individuals from the same organization, or many different organizations, may be added to the notification list of this organization for this module.";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"OrganizationID";}s:11:"RecipientID";O:16:"PersonComboField":34:{s:8:"orgField";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:385:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY orgListOption, Name, ID;";s:6:"getSQL";s:372:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name,
+CASE WHEN `org`.Internal = 1 AND `org`.Participant = 1 THEN 0
+WHEN `org`.Internal = 1 AND `org`.Participant = 0 THEN 1
+WHEN `org`.Internal = 0 AND `org`.Participant = 1 THEN 2
+WHEN `org`.Internal = 0 AND `org`.Participant = 0 THEN 3
+ELSE 4 END AS orgListOption FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"ppl";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";s:12:"defaultorgID";s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Organization|Name of organization associated with the individual";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:15:"RecipientID_org";}s:9:"listField";N;s:12:"foreignTable";s:3:"ppl";s:10:"foreignKey";s:8:"PersonID";s:12:"foreignField";s:11:"DisplayName";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:109:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+WHERE ppl._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:105:"SELECT 
+`ppl`.PersonID AS ID, `ppl`.DisplayName AS Name FROM `ppl`
+
+WHERE `ppl`.PersonID = \'/*recordID*/\'";s:8:"validate";s:16:"RequireSelection";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:5:"modnr";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`ppl`.OrganizationID IN (%s)";s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:60:"Recipient|The name of the individual that should be notified";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"RecipientID";s:14:"conditionField";N;s:14:"conditionValue";N;}}');
+
+
+/**ownerField**/
+
+//phrases for field names, in field order (note: phrases are used in search filter)
+$phrases = array(
+   'RelatedModuleID' => gettext("Module|The name of the module associated with the notification recipient"),
+   'OrganizationID' => gettext("Organization|Name of the organization associated with the notification requirements. Individuals from the same organization, or many different organizations, may be added to the notification list of this organization for this module."),
+   'RecipientID' => gettext("Recipient|The name of the individual that should be notified")
+   );
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+
+
+$pageTitle = gettext("Module Notification Recipients");
+$screenPhrase = gettext("Search");
+global $SQLBaseModuleID;
+$SQLBaseModuleID = $ModuleID;
+
+$search = $_SESSION['Search_'.$ModuleID];
+
+if(empty($_POST['Search']) && empty($_POST['Chart'])){
+    $data = $search->postData;
+} else {
+    $data = $_POST;
+}
+
+//populate data array with posted values
+foreach($data as $fieldName=>$value){
+    if(isset($_POST[$fieldName])){
+        $data[$fieldName] = $_POST[$fieldName];
+    }
+}
+
+
+//if the form was posted
+if((!empty($_POST['Search'])) || (!empty($_POST['Chart']))){
+
+
+    //List fields (used for generating the complete SQL search statement):
+    $listFields = unserialize('a:5:{i:0;s:23:"NotificationRecipientID";i:1;s:13:"RelatedModule";i:2;s:12:"Organization";i:3;s:9:"Recipient";i:4;s:9:"WorkEmail";}');
+
+
+
+    //link fields (fields that provide a URL, and not necessarily displayed
+    //as a separate column in the list screen
+    $linkFields = array(
+
+      );
+
+
+
+    //create a Search definition object
+    $search = new Search(
+        $ModuleID,
+        $listFields,
+        $fields,
+        $_POST
+    );
+
+
+    //then post it to the Search session object.
+    $_SESSION['Search_'.$ModuleID] = $search;
+
+
+    //redirect depending on what submit buton was pressed by the user.
+    if(!empty($_POST['Search'])){
+
+        $RedirectTo = "list.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+        
+
+    } else {
+
+        //handle "Chart" (TO DO)
+        $RedirectTo = "charts.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+
+    }
+
+}
+
+//moved down from above
+$qs = MakeQS($qsArgs);
+
+//links for rendering the form
+$targetlink = "search.php?$qs";
+$cancellink = "list.php?$qs";
+
+$tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Module Notification Recipients"));
+$tabs['Search'] = Array("", gettext("Search"));
+
+ob_start();
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->searchRender($data, $phrases);
+    }
+}
+ob_end_clean();
+
+$content = renderSearchForm($content, $targetlink, null, $ModuleID);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+// $content .= debug_r($search->postData, "postData");
+
+?>

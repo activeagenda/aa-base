@@ -1,0 +1,45 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+     //XML exports
+     $exportReport = unserialize('O:6:"Report":20:{s:10:"moduleName";s:11:"Attachments";s:8:"datasets";a:0:{}s:4:"SQLs";a:1:{s:3:"att";s:299:"SELECT 
+`att`.AttachmentID AS AttachmentID,
+`att`.RelatedModuleID AS RelatedModuleID,
+`att`.RelatedRecordID AS RelatedRecordID,
+`att`.FileName AS FileName,
+`att`.Description AS Description,
+`att`.FileSize AS FileSize
+FROM 
+ `att`
+WHERE att._Deleted = 0 AND att.AttachmentID = \'/**ReportRecordID**/\'
+";}s:15:"reportLocations";a:0:{}s:10:"reportPage";N;s:13:"displayFormat";s:11:"html-linear";s:8:"isLoaded";b:0;s:4:"mode";N;s:13:"groupByFields";a:0:{}s:8:"moduleID";s:3:"att";s:4:"name";s:9:"XmlExport";s:5:"title";s:10:"XML Export";s:11:"hierarchyID";s:3:"att";s:8:"localKey";s:12:"AttachmentID";s:6:"fields";a:6:{s:12:"AttachmentID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:12:"AttachmentID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:12:"AttachmentID";s:8:"moduleID";s:3:"att";}s:15:"RelatedModuleID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:15:"RelatedModuleID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:10:"varchar(5)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:17:"Related Module ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:15:"RelatedModuleID";s:8:"moduleID";s:3:"att";}s:15:"RelatedRecordID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:15:"RelatedRecordID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:17:"Related Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:15:"RelatedRecordID";s:8:"moduleID";s:3:"att";}s:8:"FileName";O:11:"ReportField":24:{s:15:"moduleFieldName";s:8:"FileName";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:12:"varchar(128)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:4:"File";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"FileName";s:8:"moduleID";s:3:"att";}s:11:"Description";O:11:"ReportField":24:{s:15:"moduleFieldName";s:11:"Description";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:12:"varchar(128)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:11:"Description";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:11:"Description";s:8:"moduleID";s:3:"att";}s:8:"FileSize";O:11:"ReportField":24:{s:15:"moduleFieldName";s:8:"FileSize";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:5:"float";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"File Size";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"FileSize";s:8:"moduleID";s:3:"att";}}s:13:"orderByFields";a:0:{}s:10:"subReports";a:0:{}s:18:"singularRecordName";s:10:"Attachment";s:8:"distinct";b:0;s:10:"maxRecords";i:1;}');
+?>

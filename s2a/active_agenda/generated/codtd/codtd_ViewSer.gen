@@ -1,0 +1,59 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $phrases[0] = array(
+   'CodeTypeDependencyID' => gettext("Record ID|An automatically assigned number used to associate code type dependencies with dependent modules"),
+   'CodeTypeID' => gettext("Code Type ID|A number used to track code type records."),
+   'CodeType' => gettext("Code Type|A combined field used to describe this code type when associating it with other records"),
+   'Dependency' => gettext("Dependent Module|The name of the module dependent upon the code type"),
+   'DependencyID' => gettext("Module ID|The name of the module dependent upon the code type")
+   );
+
+
+    $sections = unserialize('a:1:{i:0;a:3:{s:6:"phrase";s:20:"Code Type Dependency";s:3:"sql";s:684:"SELECT 
+   `codtd`.CodeTypeDependencyID AS CodeTypeDependencyID,
+   `codtd`.CodeTypeID AS CodeTypeID,
+   `codt1`.Name AS CodeType,
+   `mod1`.Name AS Dependency,
+   CONCAT(\'internal:view.php?mdl=\',\'mod\',\'&rid=\',`codtd`.DependencyID) AS DependentModuleLink,
+   `codtd`.DependencyID AS DependencyID,
+   NULLIF(CONCAT(IFNULL( CAST( `codt1`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `mod1`.Name AS CHAR ),\'\')),\' | \') AS RecordLabel
+FROM `codtd`
+   LEFT OUTER JOIN `codt` AS codt1 
+   ON (`codtd`.CodeTypeID = `codt1`.CodeTypeID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`codtd`.DependencyID = `mod1`.ModuleID )
+WHERE codtd._Deleted = 0
+   AND `codtd`.CodeTypeDependencyID = \'/**RecordID**/\'
+";s:6:"fields";a:5:{s:20:"CodeTypeDependencyID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Record ID|An automatically assigned number used to associate code type dependencies with dependent modules";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:20:"CodeTypeDependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"CodeTypeID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Code Type ID|A number used to track code type records.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"CodeTypeID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"CodeType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Code Type|A combined field used to describe this code type when associating it with other records";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"CodeType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Dependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:68:"Dependent Module|The name of the module dependent upon the code type";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Dependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"DependencyID";O:9:"ViewField":21:{s:9:"linkField";s:19:"DependentModuleLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Module ID|The name of the module dependent upon the code type";s:8:"dataType";s:10:"varchar(5)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"DependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}}}}');
+
+?>

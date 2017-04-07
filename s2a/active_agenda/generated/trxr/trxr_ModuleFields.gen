@@ -1,0 +1,39 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //just to make sure it's included - it most likely is already included by the calling script
+    include_once(CLASSES_PATH . '/modulefields.php');
+
+    //field value array
+    $modulefields = 'a:13:{s:19:"TransactionRecordID";O:10:"TableField":10:{s:7:"dbFlags";s:18:"unsigned  not null";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:19:"TransactionRecordID";s:6:"phrase";s:86:"Transaction Record ID|An automatically assigned ID for internal purposes (primary key)";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:6:"bigint";s:13:"displayFormat";N;}s:13:"TransactionID";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:13:"TransactionID";s:6:"phrase";s:65:"Transaction ID|An automatically assigned ID for internal purposes";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:6:"bigint";s:13:"displayFormat";N;}s:15:"RelatedModuleID";O:10:"TableField":10:{s:7:"dbFlags";N;s:8:"validate";s:0:"";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:15:"RelatedModuleID";s:6:"phrase";s:75:"Related Module ID|A character ID assigned to each module of the application";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:10:"varchar(5)";s:13:"displayFormat";N;}s:15:"RelatedRecordID";O:10:"TableField":10:{s:7:"dbFlags";N;s:8:"validate";s:0:"";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:15:"RelatedRecordID";s:6:"phrase";s:79:"Related Record ID|The unique ID of the related record within the related module";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:8:"Indirect";O:10:"TableField":10:{s:7:"dbFlags";s:9:"default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"Indirect";s:6:"phrase";s:114:"Indirect|Whether this record was updated because of changes in a different module (by a remote field relationship)";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:4:"bool";s:13:"displayFormat";N;}s:12:"ActionTypeID";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";s:0:"";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:12:"ActionTypeID";s:6:"phrase";s:63:"Action Type ID|The type of action taken: Insert, Update, Delete";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:7:"tinyint";s:13:"displayFormat";N;}s:13:"RelatedModule";O:12:"ForeignField":19:{s:10:"localTable";s:4:"trxr";s:8:"localKey";s:15:"RelatedModuleID";s:12:"foreignTable";s:3:"mod";s:17:"foreignTableAlias";s:4:"mod1";s:10:"foreignKey";s:8:"ModuleID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:8:"joinType";s:4:"left";s:8:"validate";N;s:14:"orgListOptions";N;s:4:"keys";a:1:{i:0;a:2:{i:0;s:15:"RelatedModuleID";i:1;s:8:"ModuleID";}}s:4:"name";s:13:"RelatedModule";s:6:"phrase";s:82:"Related Module|The name or title of the module which is associated with the record";s:8:"moduleID";s:4:"trxr";s:8:"dataType";N;s:12:"defaultValue";N;s:13:"displayFormat";N;s:16:"triggerCondition";N;}s:24:"RelatedRecordDescription";O:19:"DynamicForeignField":12:{s:3:"key";s:15:"RelatedRecordID";s:13:"moduleIDField";s:15:"RelatedModuleID";s:12:"foreignField";s:17:"RecordDescription";s:9:"condition";N;s:8:"joinType";s:4:"left";s:10:"cacheTable";s:3:"rdc";s:4:"name";s:24:"RelatedRecordDescription";s:6:"phrase";s:133:"Record Description|A description of the related record based on a combination of field values assigned from within the related module";s:8:"moduleID";s:4:"trxr";s:8:"dataType";N;s:12:"defaultValue";N;s:13:"displayFormat";N;}s:17:"RelatedRecordLink";O:9:"LinkField":9:{s:13:"moduleIDField";s:15:"RelatedModuleID";s:13:"recordIDField";s:15:"RelatedRecordID";s:15:"foreignModuleID";N;s:4:"name";s:17:"RelatedRecordLink";s:6:"phrase";s:59:"Related Record Link|An internal link to the related record.";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:12:"varchar(128)";s:12:"defaultValue";N;s:13:"displayFormat";N;}s:8:"_ModDate";O:10:"TableField":10:{s:7:"dbFlags";s:8:"not null";s:8:"validate";s:10:"dateFormat";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"_ModDate";s:6:"phrase";s:11:"Modified On";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:8:"datetime";s:13:"displayFormat";N;}s:6:"_ModBy";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:6:"_ModBy";s:6:"phrase";s:11:"Modified By";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:8:"_Deleted";O:10:"TableField":10:{s:7:"dbFlags";s:18:"not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"_Deleted";s:6:"phrase";s:7:"Deleted";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:4:"bool";s:13:"displayFormat";N;}s:14:"_TransactionID";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:14:"_TransactionID";s:6:"phrase";s:14:"Transaction ID";s:8:"moduleID";s:4:"trxr";s:8:"dataType";s:6:"bigint";s:13:"displayFormat";N;}}';
+
+?>

@@ -1,0 +1,384 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+/**CUSTOM_CODE|classdef**/
+
+//list of objects containing the field information
+$fields = unserialize('a:6:{s:12:"AttachmentID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:89:"Record ID|Numerical ID to identify and track attachments uploaded within this application";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"AttachmentID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:26:"DisplayRelatedModuleRecord";O:9:"ViewField":21:{s:9:"linkField";s:24:"DisplayRelatedRecordLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:113:"Related Record|A combined field used to display the related module name and what record, if any, it is related to";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:26:"DisplayRelatedModuleRecord";s:10:"needsReGet";b:1;s:11:"formatField";N;}s:24:"RelatedRecordDescription";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:133:"Record Description|A description of the related record based on a combination of field values assigned from within the related module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:24:"RelatedRecordDescription";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"Description";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:52:"Description|A short description of the file contents";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Description";}s:8:"FileName";O:11:"UploadField":20:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:28:"File|The file to be attached";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"FileName";s:14:"conditionField";N;s:14:"conditionValue";N;}s:15:"FileSizeDisplay";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:39:"File Size|The size of the uploaded file";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:15:"FileSizeDisplay";s:10:"needsReGet";b:1;s:11:"formatField";N;}}');
+
+$hasEditableFields = true;
+
+
+$skipSaveFields = unserialize('a:4:{i:0;s:12:"AttachmentID";i:1;s:26:"DisplayRelatedModuleRecord";i:2;s:24:"RelatedRecordDescription";i:3;s:15:"FileSizeDisplay";}');
+
+
+$singularRecordName = gettext("Attachment");
+
+//field value array
+$data = array(
+'AttachmentID' => '',
+         'DisplayRelatedModuleRecord' => '',
+         'RelatedRecordDescription' => '',
+         'Description' => '',
+         'FileName' => '',
+         'FileSizeDisplay' => ''
+);
+
+if(empty($_POST)){
+    //pre-populate fields with URL values
+    if(0 === $recordID){
+        foreach($data as $fieldName=>$value){
+            if(isset($_GET[$fieldName])){
+                $data[$fieldName] = $_GET[$fieldName];
+            }
+        }
+    }
+} else {
+    foreach($data as $fieldName=>$value){
+        if(isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        }
+    }
+}
+
+//list of grids
+   $grids = array();
+
+
+/**guidanceGrid**/
+
+$PKField = 'AttachmentID';
+
+$ownerField = 'OwnerOrganizationID';
+
+
+/**disbleGlobalModules**/
+
+//handle any posted grid form
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+$nextScreen = "";
+$nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+$form_enctype = '';
+
+$form_enctype = 'enctype="multipart/form-data"';
+
+
+$getSQL = "SELECT 
+   `att`.AttachmentID AS AttachmentID,
+   IF(`att`.RelatedModuleID = 'mod', NULLIF(CONCAT('internal:global.php?mdl=',IFNULL( CAST( IF(`att`.RelatedModuleID = 'mod', `mod2`.ModuleID, `att`.RelatedModuleID) AS CHAR ),''),'&','rid=list','&','gmd=att'),'internal:global.php?mdl=&rid=list&gmd=att'), CONCAT('internal:view.php?mdl=',`att`.RelatedModuleID,'&rid=',`att`.RelatedRecordID)) AS DisplayRelatedRecordLink,
+   IF(`att`.RelatedModuleID = 'mod', NULLIF(CONCAT(IFNULL( CAST( `mod2`.Name AS CHAR ),''),' (general)'),' (general)'), NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),''),' (ID Rekordu: ',IFNULL( CAST( `att`.RelatedRecordID AS CHAR ),''),')'),' (ID Rekordu: )')) AS DisplayRelatedModuleRecord,
+   `rdc1`.Value AS RelatedRecordDescription,
+   `att`.Description AS Description,
+   `att`.FileName AS FileName,
+   CASE 
+        WHEN `att`.FileSize >= 1048576 THEN CONCAT(ROUND((`att`.FileSize/1048576), 1), ' megabytes')
+        WHEN `att`.FileSize >= 1024 THEN CONCAT(ROUND((`att`.FileSize/1024), 1), ' kilobytes')
+        ELSE CONCAT(`att`.FileSize, ' bytes') END AS FileSizeDisplay,
+   NULLIF(CONCAT(IFNULL( CAST( `att`.FileName AS CHAR ),''),' jest za','łącznikiem do rekordu o ID ',IFNULL( CAST( `att`.RelatedRecordID AS CHAR ),''),' z ',IFNULL( CAST( `mod1`.Name AS CHAR ),'')),' jest załącznikiem do rekordu o ID  z ') AS RecordLabel,
+   `rdc1`.OrganizationID AS OwnerOrganizationID
+FROM `att`
+   LEFT OUTER JOIN `mod` AS mod2 
+   ON (`att`.RelatedRecordID = `mod2`.RecordID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`att`.RelatedModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `rdc` AS rdc1 ON (`att`.RelatedModuleID = rdc1.ModuleID AND `att`.RelatedRecordID =  rdc1.RecordID)
+WHERE att._Deleted = 0
+   AND `att`.AttachmentID = '/**RecordID**/'
+";
+
+$getSQL = TranslateLocalDateSQLFormats($getSQL);
+
+if(!empty($_POST['CloneForm'])){
+    $recordID = 0;
+}
+
+
+$screenPhrase = gettext("Form|Edit summary information about an attachment associated with a related record");
+
+/*populates screen messages differently depending on whether the record exists in db or not*/
+if($recordID != 0) {
+    $existing = true;
+
+    $pageTitle = gettext("Attachment");
+
+    /**CUSTOM_CODE|before_get**/
+
+    //retrieve record
+    /**SQL|GET_BEGIN**/
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+    /**SQL|GET_END**/
+
+    switch (count($r)){
+    case 0:
+        trigger_error(gettext("This record does not exist, or could not be found.|Record not found."), E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error(gettext("More than one record was found."), E_USER_WARNING);
+        break;
+    }
+
+    //populate data array, combining POSTed data with DB record:
+    //POST data takes precedence
+    foreach($r[0] as $fieldName=>$dbValue){
+        //(checking for gridnum avoids interference with any posted edit grid)
+        if (empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        } else {
+            $data[$fieldName] = $dbValue;
+        }
+    }
+
+
+    /**CUSTOM_CODE|get**/
+} else {
+    //inserting a record
+    $existing = false;
+    $pageTitle = gettext("Attachments");
+    /**CUSTOM_CODE|new**/
+}
+
+//check if user has permission to edit record
+$allowEdit = $User->CheckEditScreenPermission();
+//if not, it terminates and display error msg.
+
+//phrases for field names, in field order
+$phrases = array(
+   'AttachmentID' => gettext("Record ID|Numerical ID to identify and track attachments uploaded within this application"),
+   'DisplayRelatedModuleRecord' => gettext("Related Record|A combined field used to display the related module name and what record, if any, it is related to"),
+   'RelatedRecordDescription' => gettext("Record Description|A description of the related record based on a combination of field values assigned from within the related module"),
+   'Description' => gettext("Description|A short description of the file contents"),
+   'FileName' => gettext("File|The file to be attached"),
+   'FileSizeDisplay' => gettext("File Size|The size of the uploaded file")
+   );
+
+
+//if the form was posted by clicking the Save button
+if(!empty($_POST['Save'])){
+    /**DB_SAVE_BEGIN**/
+
+    /**CUSTOM_CODE|save**/
+
+    //validate submitted data:
+    $vMsgs = "";
+    
+
+    if(0 != strlen($vMsgs)){
+        //prepend a general error message
+        $vMsgs = gettext("The record has not been saved, because:")."\n".$vMsgs;
+        $vMsgs = nl2br($vMsgs);
+
+        //return error messages
+        $messages[] = array('e', $vMsgs);
+
+    } else {
+//START   	    
+	    
+//END
+        /**CUSTOM_CODE|check_deleted_row_exists**/
+
+        $dh = GetDataHandler($ModuleID);
+//        $recordID = $dh->saveRow($data, $recordID, $skipSaveFields);
+        $dbRecordID = $dh->saveRow($_POST, $recordID, $skipSaveFields);
+
+        if(false === $dbRecordID){
+            $errmsg = gettext("The record has not been saved, because:");
+            foreach($dh->errmsg as $err => $id){
+                $errmsg .= "\n".$err;
+            }
+            $errmsg = nl2br($errmsg);
+            $messages[] = array('e', $errmsg);
+        } else {
+            $recordID = $dbRecordID;
+        }
+
+        //recreate $nextlink b/c of new record ID when inserting
+        $inserted = false;
+        if(!$existing){
+            $qsArgs['rid'] = $recordID; //pass both to tabs and other links
+            $tabsQSargs = $qsArgs;
+            unset($tabsQSargs['scr']);
+            //$tabsQSargs['rid'] = $recordID;
+            $tabsQS = MakeQS($tabsQSargs);
+            $nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+            if(empty($_POST['KeepNew'])){
+                $existing = true;
+            } else {
+                $recordID = 0;
+            }
+            $inserted = true;
+        }
+    }
+
+    /**CUSTOM_CODE|save_end**/
+    /**DB_SAVE_END**/
+
+    if(empty($_POST['KeepNew'])){
+        if(count($messages) == 0){
+            /**RE-GET_BEGIN**/
+            //only executed on screens that need it: have ViewField with Update, or Calculated/Summary fields
+            $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+            dbErrorCheck($r);
+            if(count($r) > 0) {
+                foreach($r[0] as $fieldName=>$dbValue){
+                    //(checking for gridnum avoids interference with any posted edit grid)
+                    if(empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+                        $data[$fieldName] = $_POST[$fieldName];
+                    } else {
+                        $data[$fieldName] = $dbValue;
+                    }
+                }
+            } else {
+                $messages[] = array('e', gettext("Error: Empty query result."));
+            }
+            /**RE-GET_END**/
+        }
+    } else {
+        foreach($data as $fieldName => $fieldValue){
+            $data[$fieldName] = '';
+        }
+    }
+
+    //note: assumes all messages up til this point were errors
+    if (count($messages) == 0){
+        //add success message
+        if ($inserted){
+            $messages[] = array('m', gettext("The record was added successfully."));
+        } else {
+            $messages[] = array('m', gettext("The record was updated successfully."));
+        }
+    }
+}
+/**SQL|DELETE_BEGIN**/
+if(!empty($_POST['Delete'])){
+
+    $dh = GetDataHandler($ModuleID);
+    $result = $dh->deleteRow($recordID);
+
+    $deletelink = "list.php?$tabsQS";
+
+    //redirect to list screen
+    header("Location:" . $deletelink);
+    exit;
+}
+/**SQL|DELETE_END**/
+
+/**CUSTOM_CODE|after_save**/
+
+
+if(!empty($_POST['KeepNew'])){
+    unset($qsArgs['rid']); //ensures next submit will cause a new record
+}
+
+$qs = MakeQS($qsArgs);
+
+//List tab
+$tabs['List'] = Array("list.php?$tabsQS", gettext("List|View the list of Attachments"));
+
+//target for FORMs
+$targetlink = "edit.php?$qs";
+
+$cloneAsNew = false;
+$keepAddNew = false;
+
+//formatting that depends on whether the record exists or not
+if($existing){
+    //delete button only appears on the first EditScreen.
+    $deletelink = 'view.php?$tabsQS&delete=1';
+    $cancellink = "view.php?$tabsQS";
+
+    /**clone_as_new**/
+
+          $tabs['View'] = array( "view.php?scr=View&amp;$tabsQS", gettext("View|View summary information about").' '.gettext("an Attachment") );
+      $tabs['Form'] = array( "", gettext("Form|Edit summary information about an attachment associated with a related record") );
+
+
+} else {
+    $deletelink = '';
+    $cancellink = "list.php?$tabsQS";
+
+    /**keep_add_new**/
+
+          $tabs['Form'] = array( "", gettext("New Attachment") );
+
+}
+
+/**CUSTOM_CODE|form**/
+
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->render($data, $phrases);
+    }
+}
+
+$formProps = array(
+    'is_main_form'       => true,
+    'delete_button'      => strlen($deletelink) > 0,
+    'cancel_link'        => $cancellink,
+    'next_screen'        => $nextScreen,
+    'form_enctype'       => $form_enctype,
+    'module_id'          => $ModuleID,
+    'render_buttons'     => $hasEditableFields,
+    'clone'              => $cloneAsNew,
+    'keep_add_new'       => $keepAddNew,
+    'single_record_name' => $singularRecordName
+);
+
+$content = renderForm2($content, $targetlink, $formProps);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+/**CUSTOM_CODE|after_form**/
+
+//display edit grids here
+foreach($grids as $gridID => $grid){
+   $content .= $grid->render('edit.php', $qsArgs);
+}
+
+
+/**CUSTOM_CODE|after_grids**/
+
+   $recordLabelField = '';
+    if(isset($data['RecordLabel'])) {
+    $recordLabelField = $data['RecordLabel'];
+    }
+?>

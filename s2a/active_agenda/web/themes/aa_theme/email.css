@@ -1,0 +1,191 @@
+/**
+ * CSS rules to be included with email notifications
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * copyright      2003-2009 Active Agenda Inc.
+ * license        http://www.activeagenda.net/license
+ **/
+
+div#aa_body {
+    background-color: #dddddd;
+    margin:0;
+    padding:0px;
+    color: #0c2577;
+    
+    padding: 0px 10px 10px 5px;
+}
+div#aa_content { 
+    padding: 0 6px 6px 6px;
+    background-color: #ffffff; 
+    border-left: 1px #98AAB1 solid;
+    border-right: 2px #98AAB1 solid;
+    border-bottom: 2px #98AAB1 solid;
+    margin: 0 0 10px 0;
+}
+img {
+    border:none;
+}
+/*text styles*/
+div#aa_body, p.aa, td.aa, th.aa {
+    font: normal 9pt "Verdana", "Helvetica", "Arial", sans-serif;
+}
+a.aa, a.aa:VISITED {
+    text-decoration: none;
+    color: #2461aa;
+}
+a.aa:HOVER {
+    text-decoration: underline;
+}
+h1.aa_pageTitle {
+    font: bold 12pt "Verdana", "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    color: #0c2577;
+    background-color: transparent;
+    margin: 0 0 0.3em 0;
+    padding: 0;
+    border-top: none;
+}
+h1.aa {
+    font: bold 12pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #0c2577;
+    background-color: transparent;
+    margin: 1em 0 0 0;
+    padding: 0;
+    border-top: 1px dotted #98AAB1;
+}
+
+/*form styles, simplified*/
+table.aa_fields { 
+    border-top: 1px #f6f6f6 solid; 
+    border-left: 1px #f6f6f6 solid; 
+    border-right: 1px #98AAB1 solid; 
+    border-bottom: 1px #98AAB1 solid; 
+    background-color: transparent;
+    margin: 0px;
+    border-spacing: 1px;
+}
+
+table.aa_fields tr td {
+    padding:1px 3px;
+}
+
+.flbl, .flblr {
+    background-color: #dddddd;
+    font-weight: bold;
+    color: #0c2577;
+    text-align:right;
+}
+
+.fval {
+    background-color: #f6f6f6;
+    border-bottom: 1px #f6f6f6 solid;
+    color: #000000;
+}
+
+
+/*grids*/
+table.aa_grid {
+    /*background-color: #ffffff; 
+    border: 2px #006699 solid; */
+    border-top: 1px #f6f6f6 solid; 
+    border-left: 1px #f6f6f6 solid; 
+    border-right: 1px #98AAB1 solid; 
+    border-bottom: 1px #98AAB1 solid; 
+    background-color: #ffffff;
+    margin: 0px;
+    border-spacing: 1px;
+    position: relative;
+    top: -2;
+}
+table.aa_grid tr td {
+    padding:1px 3px;
+}
+th.p, td.p {
+    background: transparent;
+    font: normal 8pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #000000;
+    border: 1px #dddddd solid;
+    padding: 1px;
+    line-height: 10pt;
+    /*height: 50px;*/
+}
+th.p img {
+    vertical-align: middle;
+}
+a.p, a.p:VISITED {
+    font: normal 7pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #2461aa;
+}
+th.aa_l {
+    background-color: #dddddd;
+    font: bold 8pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #2461aa;
+}
+a.aa_l, a.aa_l:VISITED {
+    color: #0c2577;
+}
+td.aa_l {
+    background-color: #f9fcff;
+    font: normal 8pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #000000;
+}
+a.aa_l2, a.aa_l2:VISITED {
+    color: #0c2577;
+}
+td.aa_l2 {
+    background-color: #f0f6ff;
+    font: normal 8pt "Verdana", "Helvetica", "Arial", sans-serif;
+    color: #000000;
+}
+td.n {
+    margin:0;
+    padding:0;
+}
+
+div.aa_grid {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+div.aa_gridtitle {
+    background-color : #e0e0e0;
+    
+    font-size: 9pt; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight : bold;
+    
+    border-top: 1px #f6f6f6 solid; 
+    border-left: 2px #ffffff solid; 
+    border-right: 1px #98AAB1 solid; 
+    border-bottom: 0px #98AAB1 solid; 
+    
+    line-height: 1.5em;
+    
+    
+    /*padding: .5em 1em 0 .5em;*/
+    padding: 0px 1em 3px 3px;
+    /*display: inline;*/
+
+    width: 20em;
+}
+div.aa_gridtitle img {
+    border: none;
+    margin: 0 0 -5px 0;
+}

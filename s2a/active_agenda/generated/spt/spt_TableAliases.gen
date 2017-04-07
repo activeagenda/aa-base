@@ -1,0 +1,37 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //aliases array
+    $tableAliases = unserialize('a:5:{s:26:"spt.ModuleID|mod.ModuleID|";s:4:"mod1";s:60:"spt.LocalDocumentationStatusID|cod.CodeID|CodeTypeID = \'194\'";s:4:"cod1";s:53:"spt.WikiArticleStatusID|cod.CodeID|CodeTypeID = \'194\'";s:4:"cod2";s:51:"spt.WikiGuideStatusID|cod.CodeID|CodeTypeID = \'194\'";s:4:"cod3";s:24:"spt._ModBy|ppl.PersonID|";s:4:"ppl1";}');
+    $tableAliasParents = unserialize('a:5:{s:4:"mod1";s:3:"spt";s:4:"cod1";s:3:"spt";s:4:"cod2";s:3:"spt";s:4:"cod3";s:3:"spt";s:4:"ppl1";s:3:"spt";}');
+
+?>

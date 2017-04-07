@@ -1,0 +1,42 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+     //XML exports
+     $exportReport = unserialize('O:6:"Report":20:{s:10:"moduleName";s:29:"User Permission Organizations";s:8:"datasets";a:0:{}s:4:"SQLs";a:1:{s:5:"usrpo";s:229:"SELECT 
+`usrpo`.PermitOrganizationID AS PermitOrganizationID,
+`usrpo`.PersonID AS PersonID,
+`usrpo`.OrganizationID AS OrganizationID
+FROM 
+ `usrpo`
+WHERE usrpo._Deleted = 0 AND usrpo.PermitOrganizationID = \'/**ReportRecordID**/\'
+";}s:15:"reportLocations";a:0:{}s:10:"reportPage";N;s:13:"displayFormat";s:11:"html-linear";s:8:"isLoaded";b:0;s:4:"mode";N;s:13:"groupByFields";a:0:{}s:8:"moduleID";s:5:"usrpo";s:4:"name";s:9:"XmlExport";s:5:"title";s:10:"XML Export";s:11:"hierarchyID";s:5:"usrpo";s:8:"localKey";s:20:"PermitOrganizationID";s:6:"fields";a:3:{s:20:"PermitOrganizationID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:20:"PermitOrganizationID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:20:"PermitOrganizationID";s:8:"moduleID";s:5:"usrpo";}s:8:"PersonID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:8:"PersonID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:7:"User ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"PersonID";s:8:"moduleID";s:5:"usrpo";}s:14:"OrganizationID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:14:"OrganizationID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:15:"Organization ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:14:"OrganizationID";s:8:"moduleID";s:5:"usrpo";}}s:13:"orderByFields";a:0:{}s:10:"subReports";a:0:{}s:18:"singularRecordName";s:22:"Permitted Organization";s:8:"distinct";b:0;s:10:"maxRecords";i:1;}');
+?>

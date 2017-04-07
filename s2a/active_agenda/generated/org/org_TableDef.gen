@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $tableDef = unserialize('a:4:{s:6:"fields";a:43:{s:14:"OrganizationID";a:6:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:13:"autoincrement";b:1;s:7:"notnull";b:1;s:8:"unsigned";b:1;s:7:"default";i:0;}s:20:"ParentOrganizationID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:23:"DirectionOrganizationID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:20:"PolicyOrganizationID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:4:"Name";a:2:{s:4:"type";s:4:"text";s:6:"length";s:3:"128";}s:3:"DBA";a:2:{s:4:"type";s:4:"text";s:6:"length";s:3:"128";}s:9:"ShortName";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"20";}s:11:"Description";a:1:{s:4:"type";s:4:"clob";}s:7:"Mission";a:1:{s:4:"type";s:4:"clob";}s:3:"SIC";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"20";}s:3:"URL";a:2:{s:4:"type";s:4:"text";s:6:"length";s:3:"128";}s:8:"Address1";a:1:{s:4:"type";s:4:"clob";}s:8:"Address2";a:2:{s:4:"type";s:4:"text";s:6:"length";s:3:"128";}s:9:"CountryID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:7:"StateID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:8:"CountyID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:4:"City";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"50";}s:10:"PostalCode";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"50";}s:5:"Phone";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"50";}s:3:"Fax";a:2:{s:4:"type";s:4:"text";s:6:"length";s:2:"50";}s:5:"Email";a:2:{s:4:"type";s:4:"text";s:6:"length";s:3:"128";}s:11:"Participant";a:2:{s:4:"type";s:7:"boolean";s:6:"length";i:1;}s:8:"Internal";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:6:"Public";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:8:"Customer";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:10:"Contractor";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:12:"Manufacturer";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:8:"Supplier";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:15:"InsuranceBroker";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:16:"InsuranceCarrier";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:9:"Reinsurer";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:15:"MedicalProvider";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:7:"LawFirm";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:17:"StandardsProvider";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:15:"AccreditingBody";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:9:"GovAgency";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:16:"DisposalFacility";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:16:"WasteTransporter";a:3:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"default";s:1:"0";}s:13:"AgencyLevelID";a:3:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:8:"unsigned";b:1;}s:8:"_ModDate";a:3:{s:4:"type";s:9:"timestamp";s:7:"notnull";b:1;s:7:"default";s:19:"0000-00-00 00:00:00";}s:6:"_ModBy";a:5:{s:4:"type";s:7:"integer";s:6:"length";i:4;s:7:"notnull";b:1;s:8:"unsigned";b:1;s:7:"default";s:1:"0";}s:8:"_Deleted";a:4:{s:4:"type";s:7:"boolean";s:6:"length";i:1;s:7:"notnull";b:1;s:7:"default";s:1:"0";}s:14:"_TransactionID";a:5:{s:4:"type";s:7:"integer";s:6:"length";i:8;s:7:"notnull";b:1;s:8:"unsigned";b:1;s:7:"default";s:1:"0";}}s:7:"indexes";a:0:{}s:11:"constraints";a:1:{s:7:"PRIMARY";a:3:{s:7:"primary";b:1;s:6:"unique";b:1;s:6:"fields";a:1:{s:14:"OrganizationID";a:0:{}}}}s:13:"table_options";a:4:{s:7:"comment";s:13:"Organizations";s:7:"charset";s:4:"utf8";s:7:"collate";s:15:"utf8_unicode_ci";s:4:"type";s:6:"innodb";}}');
+?>

@@ -1,0 +1,55 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $gFieldDefs['codt'] = unserialize('a:14:{s:10:"CodeTypeID";a:3:{i:0;s:17:"`codt`.CodeTypeID";i:1;s:31:"`codt`.CodeTypeID AS CodeTypeID";i:2;a:0:{}}s:4:"Name";a:3:{i:0;s:11:"`codt`.Name";i:1;s:19:"`codt`.Name AS Name";i:2;a:0:{}}s:11:"Description";a:3:{i:0;s:18:"`codt`.Description";i:1;s:33:"`codt`.Description AS Description";i:2;a:0:{}}s:8:"UseValue";a:3:{i:0;s:15:"`codt`.UseValue";i:1;s:27:"`codt`.UseValue AS UseValue";i:2;a:0:{}}s:12:"Dependencies";a:3:{i:0;s:21:"`codtd1`.Dependencies";i:1;s:37:"`codtd1`.Dependencies AS Dependencies";i:2;a:1:{s:6:"codtd1";s:220:"LEFT OUTER JOIN (SELECT 
+COUNT(`codtd`.DependencyID) AS Dependencies,
+`codtd`.CodeTypeID
+FROM `codtd` 
+ WHERE `codtd`._Deleted = 0 
+
+GROUP BY `codtd`.CodeTypeID 
+) AS codtd1 
+ON (
+`codt`.CodeTypeID = codtd1.CodeTypeID
+) ";}}s:5:"Items";a:3:{i:0;s:12:"`cod1`.Items";i:1;s:21:"`cod1`.Items AS Items";i:2;a:1:{s:4:"cod1";s:193:"LEFT OUTER JOIN (SELECT 
+COUNT(`cod`.CodeID) AS Items,
+`cod`.CodeTypeID
+FROM `cod` 
+ WHERE `cod`._Deleted = 0 
+
+GROUP BY `cod`.CodeTypeID 
+) AS cod1 
+ON (
+`codt`.CodeTypeID = cod1.CodeTypeID
+) ";}}s:11:"RecordLabel";a:3:{i:0;s:113:"NULLIF(CONCAT(IFNULL( CAST( `codt`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `codt`.CodeTypeID AS CHAR ),\'\')),\' | \')";i:1;s:128:"NULLIF(CONCAT(IFNULL( CAST( `codt`.Name AS CHAR ),\'\'),\' | \',IFNULL( CAST( `codt`.CodeTypeID AS CHAR ),\'\')),\' | \') AS RecordLabel";i:2;a:0:{}}s:8:"CodeType";a:3:{i:0;s:117:"NULLIF(CONCAT(IFNULL( CAST( `codt`.Name AS CHAR ),\'\'),\' ID: \',IFNULL( CAST( `codt`.CodeTypeID AS CHAR ),\'\')),\' ID: \')";i:1;s:129:"NULLIF(CONCAT(IFNULL( CAST( `codt`.Name AS CHAR ),\'\'),\' ID: \',IFNULL( CAST( `codt`.CodeTypeID AS CHAR ),\'\')),\' ID: \') AS CodeType";i:2;a:0:{}}s:8:"_ModDate";a:3:{i:0;s:15:"`codt`._ModDate";i:1;s:85:"DATE_FORMAT(`codt`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";i:2;a:0:{}}s:6:"_ModBy";a:3:{i:0;s:13:"`codt`._ModBy";i:1;s:23:"`codt`._ModBy AS _ModBy";i:2;a:0:{}}s:8:"_Deleted";a:3:{i:0;s:15:"`codt`._Deleted";i:1;s:27:"`codt`._Deleted AS _Deleted";i:2;a:0:{}}s:14:"_TransactionID";a:3:{i:0;s:21:"`codt`._TransactionID";i:1;s:39:"`codt`._TransactionID AS _TransactionID";i:2;a:0:{}}s:10:"_ModByName";a:3:{i:0;s:18:"`ppl1`.DisplayName";i:1;s:32:"`ppl1`.DisplayName AS _ModByName";i:2;a:1:{s:4:"ppl1";s:71:"LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`codt`._ModBy = `ppl1`.PersonID )";}}s:9:"_GlobalID";a:3:{i:0;s:16:"`codt`._GlobalID";i:1;s:29:"`codt`._GlobalID AS _GlobalID";i:2;a:0:{}}}');
+?>

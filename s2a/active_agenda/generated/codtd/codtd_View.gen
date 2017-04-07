@@ -1,0 +1,154 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+    /**CUSTOM_CODE|init**/
+
+    //list of objects containing the field information
+    $fields = unserialize('a:6:{s:20:"CodeTypeDependencyID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:106:"Record ID|An automatically assigned number used to associate code type dependencies with dependent modules";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:20:"CodeTypeDependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"CodeTypeID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Code Type ID|A number used to track code type records.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"CodeTypeID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"CodeType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:97:"Code Type|A combined field used to describe this code type when associating it with other records";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"CodeType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Dependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:68:"Dependent Module|The name of the module dependent upon the code type";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Dependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"DependencyID";O:9:"ViewField":21:{s:9:"linkField";s:19:"DependentModuleLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Module ID|The name of the module dependent upon the code type";s:8:"dataType";s:10:"varchar(5)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"DependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"_ModDate";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"_ModDate";}}');
+
+
+    //list of grids
+    /**grids**/
+
+    //phrases for field names, in field order
+    $phrases = array(
+   'CodeTypeDependencyID' => gettext("Record ID|An automatically assigned number used to associate code type dependencies with dependent modules"),
+   'CodeTypeID' => gettext("Code Type ID|A number used to track code type records."),
+   'CodeType' => gettext("Code Type|A combined field used to describe this code type when associating it with other records"),
+   'Dependency' => gettext("Dependent Module|The name of the module dependent upon the code type"),
+   'DependencyID' => gettext("Module ID|The name of the module dependent upon the code type"),
+   '_ModDate' => gettext("Modified On")
+   );
+
+
+    $ownerField = '';
+
+
+    /**disbleGlobalModules**/
+    /**useBestPractices**/
+
+    //retrieve record
+    $data = array();
+
+    /**SQL|GET_BEGIN**/
+    $SQL = "SELECT 
+   `codtd`.CodeTypeDependencyID AS CodeTypeDependencyID,
+   `codtd`.CodeTypeID AS CodeTypeID,
+   `codt1`.Name AS CodeType,
+   `mod1`.Name AS Dependency,
+   CONCAT('internal:view.php?mdl=','mod','&rid=',`codtd`.DependencyID) AS DependentModuleLink,
+   `codtd`.DependencyID AS DependencyID,
+   DATE_FORMAT(`codtd`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS _ModDate,
+   NULLIF(CONCAT(IFNULL( CAST( `codt1`.Name AS CHAR ),''),' | ',IFNULL( CAST( `mod1`.Name AS CHAR ),'')),' | ') AS RecordLabel
+FROM `codtd`
+   LEFT OUTER JOIN `codt` AS codt1 
+   ON (`codtd`.CodeTypeID = `codt1`.CodeTypeID )
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`codtd`.DependencyID = `mod1`.ModuleID )
+WHERE codtd._Deleted = 0
+   AND `codtd`.CodeTypeDependencyID = '/**RecordID**/'
+";
+
+    $SQL = TranslateLocalDateSQLFormats($SQL);
+
+    /**CUSTOM_CODE|before_get**/
+
+    //get data
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $SQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+
+    /**SQL|GET_END**/
+    switch (count($r)){
+    case 0:
+        trigger_error("This record does not exist, or could not be found.|Record not found.", E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error("More than one record was found.", E_USER_WARNING);
+        break;
+    }
+
+    $data = array_merge($data, $r[0]); //assign first (only) row
+
+    /**CUSTOM_CODE|get**/
+
+    //check if user has permission to view or edit record - will redirect if no permission at all
+    $allowEdit = $User->CheckViewScreenPermission();
+    //$allowEdit = true;
+
+    $tabsQSargs = $qsArgs;
+    unset($tabsQSargs['scr']);
+    $tabsQS = MakeQS($tabsQSargs);
+
+    //List tab
+    $tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Code Type Dependencies"));
+
+    if ($allowEdit){
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Code Type Dependency") );
+
+    } else {
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Code Type Dependency") );
+
+    }
+
+    $recordLabelField = $data['RecordLabel'];
+
+    $content = '';
+    foreach($fields as $key => $field){
+        if (!$field->isSubField()){
+            $content .= $field->render($data, $phrases);
+        }
+    }
+
+    $pageTitle = gettext("Code Type Dependency");
+    $screenPhrase = gettext("View|View summary information about a code type dependency");
+
+    $backlink = "list.php?$qs";
+
+    $nextScreen = "";
+    $editlink = "edit.php?$tabsQS&scr=$nextScreen";
+    $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
+
+    //add byline info on record modification info
+    $content .= "<div class=\"recinfo\">{$phrases['_ModDate']} {$data['_ModDate']}";
+    if ($User->IsAdmin) {
+        $content .= '&nbsp; &nbsp; <a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'">'.gettext("Audit Trail").'</a> ';
+    }
+    $content .= "</div>";
+
+    //display view grids here
+
+
+//View Screen Sections here
+/**VIEWSCREENSECTIONS**/
+?>

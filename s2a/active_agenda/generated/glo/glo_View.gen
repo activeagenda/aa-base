@@ -1,0 +1,161 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+    /**CUSTOM_CODE|init**/
+
+    //list of objects containing the field information
+    $fields = unserialize('a:9:{s:10:"GlossaryID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:132:"Glossary ID|An automatically assigned number used to track glossary items associated with the application, technology and the domain";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"GlossaryID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:141:"Organization|The name of the organization introducing the glossary term and associated definition to assist with organizational communication";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:17:"PersonAccountable";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:129:"Person Accountable|The individual assigned primary accountability for maintaining the currency and accuracy of this glossary item";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:17:"PersonAccountable";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"GlossaryItem";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:74:"Glossary Item|The term, title, or phrase to be included as a glossary item";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"GlossaryItem";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Definition";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:86:"Definition|The definition of the glossary item as it is uesd throughout the enterprise";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Definition";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"GlossaryURL";O:9:"ViewField":21:{s:9:"linkField";s:11:"GlossaryURL";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:85:"Uniform Resource Locator|The internet address of a useful glossary or definition page";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"GlossaryURL";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"Protected";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:123:"Protected|Protect these changes from being automatically overwritten while importing glossary records from another database";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"Protected";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"Display";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:66:"Display|Display this glossary item within the application glossary";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"Display";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"_ModDate";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"_ModDate";}}');
+
+
+    //list of grids
+    /**grids**/
+
+    //phrases for field names, in field order
+    $phrases = array(
+   'GlossaryID' => gettext("Glossary ID|An automatically assigned number used to track glossary items associated with the application, technology and the domain"),
+   'Organization' => gettext("Organization|The name of the organization introducing the glossary term and associated definition to assist with organizational communication"),
+   'PersonAccountable' => gettext("Person Accountable|The individual assigned primary accountability for maintaining the currency and accuracy of this glossary item"),
+   'GlossaryItem' => gettext("Glossary Item|The term, title, or phrase to be included as a glossary item"),
+   'Definition' => gettext("Definition|The definition of the glossary item as it is uesd throughout the enterprise"),
+   'GlossaryURL' => gettext("Uniform Resource Locator|The internet address of a useful glossary or definition page"),
+   'Protected' => gettext("Protected|Protect these changes from being automatically overwritten while importing glossary records from another database"),
+   'Display' => gettext("Display|Display this glossary item within the application glossary"),
+   '_ModDate' => gettext("Modified On")
+   );
+
+
+    $ownerField = 'OrganizationID';
+
+
+    /**disbleGlobalModules**/
+    /**useBestPractices**/
+
+    //retrieve record
+    $data = array();
+
+    /**SQL|GET_BEGIN**/
+    $SQL = "SELECT 
+   `glo`.GlossaryID AS GlossaryID,
+   `org1`.Name AS Organization,
+   `ppl1`.DisplayName AS PersonAccountable,
+   `glo`.GlossaryItem AS GlossaryItem,
+   `glo`.Definition AS Definition,
+   `glo`.GlossaryURL AS GlossaryURL,
+   `glo`.Protected AS Protected,
+   `glo`.Display AS Display,
+   DATE_FORMAT(`glo`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS _ModDate,
+   NULLIF(CONCAT(IFNULL( CAST( `glo`.GlossaryItem AS CHAR ),''),' | ',IFNULL( CAST( `org1`.Name AS CHAR ),'')),' | ') AS RecordLabel,
+   `glo`.OrganizationID AS OrganizationID
+FROM `glo`
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`glo`.OrganizationID = `org1`.OrganizationID )
+   LEFT OUTER JOIN `ppl` AS ppl1 
+   ON (`glo`.PersonAccountableID = `ppl1`.PersonID )
+WHERE glo._Deleted = 0
+   AND `glo`.GlossaryID = '/**RecordID**/'
+";
+
+    $SQL = TranslateLocalDateSQLFormats($SQL);
+
+    /**CUSTOM_CODE|before_get**/
+
+    //get data
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $SQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+
+    /**SQL|GET_END**/
+    switch (count($r)){
+    case 0:
+        trigger_error("This record does not exist, or could not be found.|Record not found.", E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error("More than one record was found.", E_USER_WARNING);
+        break;
+    }
+
+    $data = array_merge($data, $r[0]); //assign first (only) row
+
+    /**CUSTOM_CODE|get**/
+
+    //check if user has permission to view or edit record - will redirect if no permission at all
+    $allowEdit = $User->CheckViewScreenPermission();
+    //$allowEdit = true;
+
+    $tabsQSargs = $qsArgs;
+    unset($tabsQSargs['scr']);
+    $tabsQS = MakeQS($tabsQSargs);
+
+    //List tab
+    $tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Glossary Items"));
+
+    if ($allowEdit){
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Glossary Item") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit summary information about a glossary term used throughout the organization") );
+
+    } else {
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Glossary Item") );
+
+    }
+
+    $recordLabelField = $data['RecordLabel'];
+
+    $content = '';
+    foreach($fields as $key => $field){
+        if (!$field->isSubField()){
+            $content .= $field->render($data, $phrases);
+        }
+    }
+
+    $pageTitle = gettext("Glossary Item");
+    $screenPhrase = gettext("View|View summary information about a glossary term used throughout the organization");
+
+    $backlink = "list.php?$qs";
+
+    $nextScreen = "Form";
+    $editlink = "edit.php?$tabsQS&scr=$nextScreen";
+    $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
+
+    //add byline info on record modification info
+    $content .= "<div class=\"recinfo\">{$phrases['_ModDate']} {$data['_ModDate']}";
+    if ($User->IsAdmin) {
+        $content .= '&nbsp; &nbsp; <a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'">'.gettext("Audit Trail").'</a> ';
+    }
+    $content .= "</div>";
+
+    //display view grids here
+
+
+//View Screen Sections here
+/**VIEWSCREENSECTIONS**/
+?>

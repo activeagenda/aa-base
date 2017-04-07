@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Take the name and split from end eg XXX.7.zip
+
+if [[ $1 =~ ([[:alpha:]-]*)\.([[:digit:]]*)\.zip ]] 
+then
+    ZIP_NAME=${BASH_REMATCH[0]}
+    SCR_NAME=${BASH_REMATCH[1]} 
+    SCR_NR=${BASH_REMATCH[2]}
+else
+    exit 
+fi
+
+
+#unzip XXX.7.zip
+unzip -o $ZIP_NAME
+
+#remove XXX.6.zip
+if [ "$SCR_NR" -gt 1 ]
+then
+    PREV_SCR_NR=$((SCR_NR - 1))
+    rm $SCR_NAME.$PREV_SCR_NR.zip
+
+    #remove XXX.6 directory
+    rm -r $SCR_NAME.$PREV_SCR_NR
+fi
+
+
+#chmod 777 XXX inside of XXX.7
+chmod 777 $SCR_NAME.$SCR_NR/$SCR_NAME
+
+#run script inside
+cd $SCR_NAME.$SCR_NR
+./$SCR_NAME
+cd  ..

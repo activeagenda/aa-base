@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $dataHandler = unserialize('O:11:"DataHandler":19:{s:8:"moduleID";s:3:"org";s:8:"PKFields";a:1:{i:0;s:14:"OrganizationID";}s:11:"tableFields";a:43:{s:14:"OrganizationID";s:3:"int";s:20:"ParentOrganizationID";s:3:"int";s:23:"DirectionOrganizationID";s:3:"int";s:20:"PolicyOrganizationID";s:3:"int";s:4:"Name";s:12:"varchar(128)";s:3:"DBA";s:12:"varchar(128)";s:9:"ShortName";s:11:"varchar(20)";s:11:"Description";s:4:"text";s:7:"Mission";s:4:"text";s:3:"SIC";s:11:"varchar(20)";s:3:"URL";s:12:"varchar(128)";s:8:"Address1";s:4:"text";s:8:"Address2";s:12:"varchar(128)";s:9:"CountryID";s:3:"int";s:7:"StateID";s:3:"int";s:8:"CountyID";s:3:"int";s:4:"City";s:11:"varchar(50)";s:10:"PostalCode";s:11:"varchar(50)";s:5:"Phone";s:11:"varchar(50)";s:3:"Fax";s:11:"varchar(50)";s:5:"Email";s:12:"varchar(128)";s:11:"Participant";s:4:"bool";s:8:"Internal";s:4:"bool";s:6:"Public";s:4:"bool";s:8:"Customer";s:4:"bool";s:10:"Contractor";s:4:"bool";s:12:"Manufacturer";s:4:"bool";s:8:"Supplier";s:4:"bool";s:15:"InsuranceBroker";s:4:"bool";s:16:"InsuranceCarrier";s:4:"bool";s:9:"Reinsurer";s:4:"bool";s:15:"MedicalProvider";s:4:"bool";s:7:"LawFirm";s:4:"bool";s:17:"StandardsProvider";s:4:"bool";s:15:"AccreditingBody";s:4:"bool";s:9:"GovAgency";s:4:"bool";s:16:"DisposalFacility";s:4:"bool";s:16:"WasteTransporter";s:4:"bool";s:13:"AgencyLevelID";s:3:"int";s:8:"_ModDate";s:8:"datetime";s:6:"_ModBy";s:3:"int";s:8:"_Deleted";s:4:"bool";s:14:"_TransactionID";s:6:"bigint";}s:12:"remoteFields";a:0:{}s:20:"remoteFieldAliasKeys";a:0:{}s:16:"resolvableFields";a:4:{s:18:"ParentOrganization";a:5:{s:3:"mdl";s:3:"org";s:5:"field";s:4:"Name";s:6:"lookup";s:14:"OrganizationID";s:10:"resolvesTo";s:20:"ParentOrganizationID";s:9:"fieldType";s:10:"TableField";}s:21:"DirectionOrganization";a:5:{s:3:"mdl";s:3:"org";s:5:"field";s:4:"Name";s:6:"lookup";s:14:"OrganizationID";s:10:"resolvesTo";s:23:"DirectionOrganizationID";s:9:"fieldType";s:10:"TableField";}s:18:"PolicyOrganization";a:5:{s:3:"mdl";s:3:"org";s:5:"field";s:4:"Name";s:6:"lookup";s:14:"OrganizationID";s:10:"resolvesTo";s:20:"PolicyOrganizationID";s:9:"fieldType";s:10:"TableField";}s:11:"AgencyLevel";a:6:{s:3:"mdl";s:3:"cod";s:5:"field";s:11:"Description";s:6:"lookup";s:6:"CodeID";s:10:"resolvesTo";s:13:"AgencyLevelID";s:9:"fieldType";s:10:"TableField";s:8:"siblings";a:1:{s:22:"Description_CodeTypeID";a:1:{i:2;a:3:{s:11:"foreignName";s:10:"CodeTypeID";s:9:"localName";s:22:"AgencyLevel:CodeTypeID";s:13:"constantValue";s:1:"7";}}}}}s:17:"uniquenessIndexes";a:1:{s:4:"Name";a:1:{s:4:"Name";a:2:{s:4:"type";s:10:"tablefield";s:1:"s";s:10:"`org`.Name";}}}s:13:"autoIncrement";s:1:"1";s:19:"relatedRecordFields";a:0:{}s:16:"useRemoteIDCheck";b:0;s:19:"originatingModuleID";N;s:13:"ownerOrgField";s:14:"OrganizationID";s:8:"dbValues";a:0:{}s:13:"PKFieldValues";a:0:{}s:24:"relatedRecordFieldValues";a:0:{}s:6:"errmsg";N;s:8:"_selects";a:43:{s:14:"OrganizationID";s:38:"`org`.OrganizationID AS OrganizationID";s:20:"ParentOrganizationID";s:50:"`org`.ParentOrganizationID AS ParentOrganizationID";s:23:"DirectionOrganizationID";s:56:"`org`.DirectionOrganizationID AS DirectionOrganizationID";s:20:"PolicyOrganizationID";s:50:"`org`.PolicyOrganizationID AS PolicyOrganizationID";s:4:"Name";s:18:"`org`.Name AS Name";s:3:"DBA";s:16:"`org`.DBA AS DBA";s:9:"ShortName";s:28:"`org`.ShortName AS ShortName";s:11:"Description";s:32:"`org`.Description AS Description";s:7:"Mission";s:24:"`org`.Mission AS Mission";s:3:"SIC";s:16:"`org`.SIC AS SIC";s:3:"URL";s:16:"`org`.URL AS URL";s:8:"Address1";s:26:"`org`.Address1 AS Address1";s:8:"Address2";s:26:"`org`.Address2 AS Address2";s:9:"CountryID";s:28:"`org`.CountryID AS CountryID";s:7:"StateID";s:24:"`org`.StateID AS StateID";s:8:"CountyID";s:26:"`org`.CountyID AS CountyID";s:4:"City";s:18:"`org`.City AS City";s:10:"PostalCode";s:30:"`org`.PostalCode AS PostalCode";s:5:"Phone";s:20:"`org`.Phone AS Phone";s:3:"Fax";s:16:"`org`.Fax AS Fax";s:5:"Email";s:20:"`org`.Email AS Email";s:11:"Participant";s:32:"`org`.Participant AS Participant";s:8:"Internal";s:26:"`org`.Internal AS Internal";s:6:"Public";s:22:"`org`.Public AS Public";s:8:"Customer";s:26:"`org`.Customer AS Customer";s:10:"Contractor";s:30:"`org`.Contractor AS Contractor";s:12:"Manufacturer";s:34:"`org`.Manufacturer AS Manufacturer";s:8:"Supplier";s:26:"`org`.Supplier AS Supplier";s:15:"InsuranceBroker";s:40:"`org`.InsuranceBroker AS InsuranceBroker";s:16:"InsuranceCarrier";s:42:"`org`.InsuranceCarrier AS InsuranceCarrier";s:9:"Reinsurer";s:28:"`org`.Reinsurer AS Reinsurer";s:15:"MedicalProvider";s:40:"`org`.MedicalProvider AS MedicalProvider";s:7:"LawFirm";s:24:"`org`.LawFirm AS LawFirm";s:17:"StandardsProvider";s:44:"`org`.StandardsProvider AS StandardsProvider";s:15:"AccreditingBody";s:40:"`org`.AccreditingBody AS AccreditingBody";s:9:"GovAgency";s:28:"`org`.GovAgency AS GovAgency";s:16:"DisposalFacility";s:42:"`org`.DisposalFacility AS DisposalFacility";s:16:"WasteTransporter";s:42:"`org`.WasteTransporter AS WasteTransporter";s:13:"AgencyLevelID";s:36:"`org`.AgencyLevelID AS AgencyLevelID";s:8:"_ModDate";s:84:"DATE_FORMAT(`org`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";s:6:"_ModBy";s:22:"`org`._ModBy AS _ModBy";s:8:"_Deleted";s:26:"`org`._Deleted AS _Deleted";s:14:"_TransactionID";s:38:"`org`._TransactionID AS _TransactionID";}s:6:"_joins";a:0:{}s:11:"isPopulated";b:0;}');
+?>

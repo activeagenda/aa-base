@@ -1,0 +1,47 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //search fields, serialized
+    $searchFields = unserialize('a:3:{s:8:"ModuleID";O:10:"ComboField":31:{s:9:"listField";s:6:"Module";s:12:"foreignTable";s:3:"mod";s:10:"foreignKey";s:8:"ModuleID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:102:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+WHERE mod._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:98:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+
+WHERE `mod`.ModuleID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"rdc";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Module ID|The module ID of the cached item";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"ModuleID";}s:14:"OrganizationID";O:13:"OrgComboField":31:{s:9:"listField";s:12:"Organization";s:12:"foreignTable";s:3:"org";s:10:"foreignKey";s:14:"OrganizationID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:108:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name FROM `org`
+WHERE org._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:110:"SELECT 
+`org`.OrganizationID AS ID, `org`.Name AS Name FROM `org`
+
+WHERE `org`.OrganizationID = \'/*recordID*/\'";s:8:"validate";s:8:"notEmpty";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:3:"rdc";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";s:28:"`org`.OrganizationID IN (%s)";s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:66:"OrganizationID|The Owner Organization ID of the referenced record.";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"OrganizationID";}s:5:"Value";O:9:"EditField":18:{s:4:"size";N;s:9:"maxLength";N;s:5:"align";s:4:"left";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:18:"Record Description";s:8:"dataType";s:4:"text";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:5:"Value";}}');
+?>

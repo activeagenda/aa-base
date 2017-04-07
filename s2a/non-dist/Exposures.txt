@@ -1,0 +1,266 @@
+0 CONTACT WITH OBJECTS AND EQUIPMENT 
+00 Contact with objects and equipment, unspecified 
+01 Struck against object 
+010 Struck against object, unspecified 
+011 Stepped on object 
+012 Struck against stationary object 
+013 Struck against moving object 
+019 Struck against object, n.e.c. 
+02 Struck by object 
+020 Struck by object, unspecified 
+021 Struck by falling object 
+022 Struck by flying object 
+0220 Struck by flying object, unspecified 
+0221 Struck by dislodged flying object, particle 
+0222 Struck by discharged object or substance 
+0229 Struck by flying object, n.e.c. 
+023 Struck by swinging or slipping object 
+0230 Struck by swinging or slipping object, unspecified 
+0231 Struck by or slammed in swinging door or gate 
+0232 Struck by slipping handheld object 
+0239 Struck by swinging or slipping object, n.e.c. 
+024 Struck by rolling, sliding objects on floor or ground level 
+029 Struck by object, n.e.c. 
+03 Caught in or compressed by equipment or objects 
+030 Caught in or compressed by equipment or objects, unspecified 
+031 Caught in running equipment or machinery 
+032 Compressed or pinched by rolling, sliding, or shifting objects 
+039 Caught in or compressed by equipment or objects, n.e.c. 
+04 Caught in or crushed in collapsing materials 
+040 Caught in or crushed in collapsing materials, unspecified 
+041 Excavation or trenching cave-in 
+042 Other cave-in 
+043 Landslide 
+044 Caught in or crushed in collapsing structure 
+049 Caught in or crushed in collapsing materials, n.e.c. 
+05 Rubbed or abraded by friction or pressure 
+050 Rubbed or abraded by friction or pressure, unspecified 
+051 Rubbed or abraded by kneeling on surface 
+052 Rubbed or abraded by objects being handled 
+053 Rubbed or abraded by foreign matter in eye 
+059 Rubbed or abraded by friction or pressure, n.e.c. 
+06 Rubbed, abraded, or jarred by vibration 
+060 Rubbed, abraded, or jarred by vibration, unspecified 
+061 Rubbed, abraded, or jarred by vehicle or mobile equipment vibration 
+062 Rubbed, abraded, or jarred by other machine or equipment vibration 
+069 Rubbed, abraded, or jarred by vibration, n.e.c. 
+09 Contact with objects and equipment, n.e.c. 
+1 FALLS 
+10 Fall, unspecified 
+11 Fall to lower level 
+110 Fall to lower level, unspecified 
+111 Fall down stairs or steps 
+112 Fall from floor, dock, or ground level 
+1120 Fall from floor, dock, or ground level, unspecified 
+1121 Fall through existing floor opening 
+1122 Fall through floor surface 
+1123 Fall from loading dock 
+1124 Fall from ground level to lower level 
+1129 Fall from floor, dock, or ground level, n.e.c. 
+113 Fall from ladder 
+114 Fall from piled or stacked material 
+115 Fall from roof 
+1150 Fall from roof, unspecified 
+1151 Fall through existing roof opening 
+1152 Fall through roof surface 
+1153 Fall through skylight 
+1154 Fall from roof edge 
+1159 Fall from roof, n.e.c. 
+116 Fall from scaffold, staging 
+117 Fall from building girders or other structural steel 
+118 Fall from nonmoving vehicle 
+119 Fall to lower level, n.e.c. 
+12 Jump to lower level 
+120 Jump to lower level, unspecified 
+121 Jump from scaffold, platform, loading dock 
+122 Jump from structure, structural element, n.e.c. 
+123 Jump from nonmoving vehicle 
+129 Jump to lower level, n.e.c. 
+13 Fall on same level 
+130 Fall on same level, unspecified 
+131 Fall to floor, walkway, or other surface 
+132 Fall onto or against objects 
+139 Fall on same level, n.e.c. 
+19 Fall, n.e.c. 
+2 BODILY REACTION AND EXERTION 
+20 Bodily reaction and exertion, unspecified 
+21 Bodily reaction 
+210 Bodily reaction, unspecified 
+211 Bending, climbing, crawling, reaching, twisting 
+212 Sudden reaction when surprised, frightened, startled 
+213 Running--without other incident 
+214 Sitting 
+215 Slip, trip, loss of balance--without fall 
+216 Standing 
+217 Walking--without other incident 
+219 Bodily reaction, n.e.c. 
+22 Overexertion 
+220 Overexertion, unspecified 
+221 Overexertion in lifting 
+222 Overexertion in pulling or pushing objects 
+223 Overexertion in holding, carrying, turning, or wielding objects 
+224 Overexertion in throwing objects 
+229 Overexertion, n.e.c. 
+23 Repetitive motion 
+230 Repetitive motion, unspecified 
+231 Typing or keyentry 
+232 Repetitive use of tools 
+233 Repetitive placing, grasping, or moving objects, except tools 
+239 Repetitive motion, n.e.c. 
+24 Sustained viewing 
+25 Bodily conditions, n.e.c. 
+29 Bodily reaction and exertion, n.e.c. 
+3 EXPOSURE TO HARMFUL SUBSTANCES OR ENVIRONMENTS
+30 Exposure to harmful substances or environments, unspecified 
+31 Contact with electric current 
+310 Contact with electric current, unspecified 
+311 Contact with electric current of machine, tool, appliance, or light fixture 
+312 Contact with wiring, transformers, or other electrical components 
+313 Contact with overhead power lines 
+314 Contact with underground, buried power lines 
+315 Struck by lightning 
+319 Contact with electric current, n.e.c. 
+32 Contact with temperature extremes 
+320 Contact with temperature extremes, unspecified 
+321 Exposure to environmental heat 
+322 Exposure to environmental cold 
+323 Contact with hot objects or substances 
+324 Contact with cold objects or substances 
+33 Exposure to air pressure changes 
+330 Exposure to air pressure change, unspecified 
+331 Pressure changes underwater 
+332 Pressure changes in airplane, other aircraft 
+339 Exposure to air pressure change, n.e.c. 
+34 Exposure to caustic, noxious, or allergenic substances 
+340 Exposure to caustic, noxious, or allergenic substances, unspecified 
+341 Inhalation of substance 
+3410 Inhalation of substance, unspecified 
+3411 Inhalation in enclosed, restricted, or confined space 
+3412 Inhalation in open or nonconfined space 
+342 Contact with skin or other exposed tissue 
+343 Injections, stings, venomous bites 
+3430 Injections, stings, venomous bites, unspecified 
+3431 Needle sticks 
+3432 Bee, wasp, hornet sting 
+3433 Other stings or venomous bites 
+3439 Injections, stings, venomous bites, n.e.c. 
+344 Ingestion of substance 
+349 Exposure to caustic, noxious, or allergenic substances, n.e.c. 
+35 Exposure to noise 
+350 Exposure to noise, unspecified 
+351 Exposure to noise over time 
+352 Exposure to noise in single incident 
+36 Exposure to radiation 
+360 Exposure to radiation, unspecified 
+361 Exposure to sun 
+362 Exposure to welding light 
+363 Exposure to radioactive material 
+369 Exposure to radiation, n.e.c. 
+37 Exposure to traumatic or stressful event, n.e.c. 
+38 Oxygen deficiency, n.e.c. 
+381 Drowning, submersion 
+382 Choking on object or substance 
+383 Depletion of oxygen from cave-in or collapsed materials 
+384 Depletion of oxygen in other enclosed, restricted, or confined space 
+389 Other oxygen deficiency, n.e.c. 
+39 Exposure to harmful substances or environments, n.e.c. 
+4 TRANSPORTATION ACCIDENTS 
+40 Transportation accident, unspecified 
+41 Highway accident 
+410 Highway accident, unspecified 
+411 Collision between vehicles, mobile equipment 
+4110 Collision between vehicles, mobile equipment, unspecified 
+4111 Re-entrant collision 
+4112 Moving in same direction 
+4113 Moving in opposite directions, oncoming 
+4114 Moving in intersection 
+4115 Moving and standing vehicle, mobile equipment--in roadway 
+4116 Moving and standing vehicle, mobile equipment--side of road 
+4119 Collision between vehicles, mobile equipment, n.e.c. 
+412 Vehicle struck stationary object or equipment in roadway 
+413 Vehicle struck stationary object, equipment on side of road 
+414 Noncollision accident 
+4140 Noncollision accident, unspecified 
+4141 Jack-knifed or overturned--no collision 
+4142 Ran off highway--no collision 
+4143 Struck by shifting load 
+4144 Sudden start or stop, n.e.c. 
+4149 Noncollision accident, n.e.c. 
+419 Highway accident, n.e.c. 
+42 Nonhighway accident, except rail, air, water 
+420 Nonhighway accident, unspecified 
+421 Collision between vehicles or mobile equipment 
+422 Vehicle, mobile equipment struck stationary object 
+423 Noncollision accident 
+4230 Noncollision accident, unspecified 
+4231 Fall from moving vehicle, mobile equipment 
+4232 Fell from and struck by vehicle, mobile equipment 
+4233 Overturned 
+4234 Loss of control 
+4235 Struck by shifting load 
+4236 Sudden start or stop, n.e.c. 
+4239 Noncollision accident, n.e.c. 
+429 Nonhighway accident, n.e.c. 
+43 Pedestrian, nonpassenger struck by vehicle, mobile equipment 
+430 Pedestrian struck by vehicle, mobile equipment, unspecified 
+431 Pedestrian struck by vehicle, mobile equipment in roadway 
+432 Pedestrian struck by vehicle, mobile equipment on side of road 
+433 Pedestrian struck by vehicle, mobile equipment in parking lot or non-roadway area 
+44 Railway accident 
+440 Railway accident, unspecified 
+441 Collision between railway vehicles 
+442 Collision between railway vehicle and other vehicle 
+443 Collision between railway vehicle and other object 
+444 Fell from and struck by railway vehicle 
+445 Derailment 
+446 Explosion, fire, n.e.c. 
+447 Fall in, on, or from railway vehicle in motion, n.e.c. 
+449 Railway accident, n.e.c. 
+45 Water vehicle accident 
+450 Water vehicle accident, unspecified 
+451 Collision 
+452 Explosion, fire, n.e.c. 
+453 Fall from ship, boat, n.e.c. 
+454 Fall on ship, boat 
+455 Sinking, capsized water vehicle 
+459 Water vehicle accident, n.e.c. 
+46 Aircraft accident 
+460 Aircraft accident, unspecified 
+461 During takeoff or landing 
+469 Aircraft accident, n.e.c. 
+49 Transportation accident, n.e.c. 
+5 FIRES AND EXPLOSIONS 
+50 Fire or explosion, unspecified 
+51 Fire--unintended or uncontrolled 
+510 Fire, unspecified 
+511 Fire in residence, building, or other structure 
+512 Forest, brush, or other outdoor fire 
+513 Ignition of clothing from controlled heat source 
+519 Fire, n.e.c. 
+52 Explosion 
+520 Explosion, unspecified 
+521 Explosion of battery 
+522 Explosion of pressure vessel or piping 
+529 Explosion, n.e.c. 
+6 ASSAULTS AND VIOLENT ACTS 
+60 Assaults and violent acts, unspecified 
+61 Assaults and violent acts by person(s) 
+610 Assaults and violent acts by person(s), unspecified 
+611 Biting 
+612 Hitting, kicking, beating 
+613 Shooting 
+614 Squeezing, pinching, scratching, twisting 
+615 Stabbing 
+616 Rape 
+617 Threats or verbal assaults 
+619 Assaults and violent acts by person(s), n.e.c. 
+62 Self-inflicted injury 
+620 Self-inflicted injury, unspecified 
+621 Suicide, attempted suicide 
+622 Self-inflicted injury or fatality--intent unknown 
+63 Assaults by animals 
+630 Assaults by animals, unspecified 
+631 Nonvenomous bites 
+639 Assaults by animals, n.e.c. 
+9 OTHER EVENTS OR EXPOSURES 
+9999 Nonclassifiable 

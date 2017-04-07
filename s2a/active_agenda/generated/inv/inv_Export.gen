@@ -1,0 +1,46 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+     //XML exports
+     $exportReport = unserialize('O:6:"Report":20:{s:10:"moduleName";s:11:"Involvement";s:8:"datasets";a:0:{}s:4:"SQLs";a:1:{s:3:"inv";s:386:"SELECT 
+`inv`.InvolvementID AS InvolvementID,
+`inv`.SourceModuleID AS SourceModuleID,
+`inv`.SourceRecordID AS SourceRecordID,
+`inv`.PersonInvolvedID AS PersonInvolvedID,
+`inv`.InvolvementDescriptorID AS InvolvementDescriptorID,
+`inv`.Details AS Details,
+`inv`.InvolvementStatusID AS InvolvementStatusID
+FROM 
+ `inv`
+WHERE inv._Deleted = 0 AND inv.InvolvementID = \'/**ReportRecordID**/\'
+";}s:15:"reportLocations";a:0:{}s:10:"reportPage";N;s:13:"displayFormat";s:11:"html-linear";s:8:"isLoaded";b:0;s:4:"mode";N;s:13:"groupByFields";a:0:{}s:8:"moduleID";s:3:"inv";s:4:"name";s:9:"XmlExport";s:5:"title";s:10:"XML Export";s:11:"hierarchyID";s:3:"inv";s:8:"localKey";s:13:"InvolvementID";s:6:"fields";a:7:{s:13:"InvolvementID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:13:"InvolvementID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:9:"Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:13:"InvolvementID";s:8:"moduleID";s:3:"inv";}s:14:"SourceModuleID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:14:"SourceModuleID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:10:"varchar(5)";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:13:"Source Module";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:14:"SourceModuleID";s:8:"moduleID";s:3:"inv";}s:14:"SourceRecordID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:14:"SourceRecordID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:16:"Source Record ID";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:14:"SourceRecordID";s:8:"moduleID";s:3:"inv";}s:16:"PersonInvolvedID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:16:"PersonInvolvedID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:15:"Person Involved";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:16:"PersonInvolvedID";s:8:"moduleID";s:3:"inv";}s:23:"InvolvementDescriptorID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:23:"InvolvementDescriptorID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:20:"Specific Involvement";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:23:"InvolvementDescriptorID";s:8:"moduleID";s:3:"inv";}s:7:"Details";O:11:"ReportField":24:{s:15:"moduleFieldName";s:7:"Details";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:4:"text";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:19:"Involvement Details";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:7:"Details";s:8:"moduleID";s:3:"inv";}s:19:"InvolvementStatusID";O:11:"ReportField":24:{s:15:"moduleFieldName";s:19:"InvolvementStatusID";s:9:"summarize";N;s:9:"invisible";b:0;s:14:"transformation";N;s:8:"dataType";s:3:"int";s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:13:"displayFormat";N;s:9:"linkField";N;s:11:"parentField";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:18:"Involvement Status";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";N;s:9:"gridAlign";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:19:"InvolvementStatusID";s:8:"moduleID";s:3:"inv";}}s:13:"orderByFields";a:0:{}s:10:"subReports";a:0:{}s:18:"singularRecordName";s:11:"Involvement";s:8:"distinct";b:0;s:10:"maxRecords";i:1;}');
+?>

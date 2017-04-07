@@ -1,0 +1,39 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //just to make sure it's included - it most likely is already included by the calling script
+    include_once(CLASSES_PATH . '/modulefields.php');
+
+    //field value array
+    $modulefields = 'a:11:{s:16:"DashboardChartID";O:10:"TableField":10:{s:7:"dbFlags";s:9:" not null";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:16:"DashboardChartID";s:6:"phrase";s:49:"Dashboard Chart ID|Record ID for dashboard charts";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:6:"UserID";O:10:"TableField":10:{s:7:"dbFlags";s:8:"not null";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:6:"UserID";s:6:"phrase";s:108:"User ID|Person ID number of an associated user (special: 0 means installation default, -1 means app default)";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:8:"ModuleID";O:10:"TableField":10:{s:7:"dbFlags";s:8:"not null";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"ModuleID";s:6:"phrase";s:58:"ModuleID|The Module ID of the module the chart belongs to.";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:10:"varchar(5)";s:13:"displayFormat";N;}s:9:"ChartName";O:10:"TableField":10:{s:7:"dbFlags";s:8:"not null";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:9:"ChartName";s:6:"phrase";s:43:"Chart Name|The name of the associated chart";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:11:"varchar(10)";s:13:"displayFormat";N;}s:9:"SortOrder";O:10:"TableField":10:{s:7:"dbFlags";s:0:"";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:9:"SortOrder";s:6:"phrase";s:37:"Sort Order|Relative sort order value.";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:16:"ConditionPhrases";O:10:"TableField":10:{s:7:"dbFlags";s:0:"";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:16:"ConditionPhrases";s:6:"phrase";s:62:"Condition Phrases|User-readable description of the conditions.";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:4:"text";s:13:"displayFormat";N;}s:8:"_ModDate";O:10:"TableField":10:{s:7:"dbFlags";s:8:"not null";s:8:"validate";s:10:"dateFormat";s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"_ModDate";s:6:"phrase";s:11:"Modified On";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:8:"datetime";s:13:"displayFormat";N;}s:6:"_ModBy";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:6:"_ModBy";s:6:"phrase";s:11:"Modified By";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:3:"int";s:13:"displayFormat";N;}s:8:"_Deleted";O:10:"TableField":10:{s:7:"dbFlags";s:18:"not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:8:"_Deleted";s:6:"phrase";s:7:"Deleted";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:4:"bool";s:13:"displayFormat";N;}s:14:"_TransactionID";O:10:"TableField":10:{s:7:"dbFlags";s:27:"unsigned not null default 0";s:8:"validate";N;s:12:"defaultValue";N;s:14:"orgListOptions";N;s:14:"listConditions";a:0:{}s:4:"name";s:14:"_TransactionID";s:6:"phrase";s:14:"Transaction ID";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:6:"bigint";s:13:"displayFormat";N;}s:10:"_ModByName";O:12:"ForeignField":19:{s:10:"localTable";s:4:"dsbc";s:8:"localKey";s:6:"_ModBy";s:12:"foreignTable";s:3:"ppl";s:17:"foreignTableAlias";s:4:"ppl1";s:10:"foreignKey";s:8:"PersonID";s:12:"foreignField";s:11:"DisplayName";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:8:"joinType";s:4:"left";s:8:"validate";N;s:14:"orgListOptions";N;s:4:"keys";a:1:{i:0;a:2:{i:0;s:6:"_ModBy";i:1;s:8:"PersonID";}}s:4:"name";s:10:"_ModByName";s:6:"phrase";s:11:"Modified By";s:8:"moduleID";s:4:"dsbc";s:8:"dataType";s:4:"text";s:12:"defaultValue";N;s:13:"displayFormat";N;s:16:"triggerCondition";N;}}';
+
+?>

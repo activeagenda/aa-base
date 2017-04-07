@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $dataCollection = unserialize('a:1:{s:4:"Form";a:2:{s:6:"phrase";s:22:"Form|Edit a user group";s:6:"fields";a:3:{s:4:"Name";O:9:"EditField":18:{s:4:"size";s:2:"15";s:9:"maxLength";s:2:"25";s:5:"align";s:4:"left";s:8:"validate";s:8:"notEmpty";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:22:"Name|The group\'s name.";s:8:"dataType";s:11:"varchar(25)";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Name";}s:11:"Description";O:9:"MemoField":19:{s:4:"rows";s:1:"5";s:4:"cols";s:2:"75";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Description|A description of the purpose of the group.";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Description";s:14:"conditionField";N;s:14:"conditionValue";N;}s:14:"SessionTimeout";O:9:"EditField":18:{s:4:"size";s:2:"10";s:9:"maxLength";s:2:"15";s:5:"align";s:4:"left";s:8:"validate";s:7:"notZero";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:250:"Session Timeout|If the application settings allow it, a session timeout can be specified here (in minutes). Members of this group will get the smallest timeout of all groups they are a member of, unless an explicit timeout is set in the Users module.";s:8:"dataType";s:3:"int";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"SessionTimeout";}}}}');
+?>

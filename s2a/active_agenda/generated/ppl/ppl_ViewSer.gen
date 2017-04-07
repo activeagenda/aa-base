@@ -1,0 +1,104 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    $phrases[0] = array(
+   'PersonID' => gettext("Person ID|A unique, automatically assigned, number used to track people associated with the organization"),
+   'Organization' => gettext("Organization|Name of organization associated with the individual"),
+   'DisplayName' => gettext("Display Name|Commonly used name of an individual used to identify a person. This name may vary from a person's given name"),
+   'LastName' => gettext("Last Name|Family Name of an individual"),
+   'FirstName' => gettext("First Name|Given Name of an individual"),
+   'Username' => gettext("Username|The user's login name"),
+   'WorkAddress' => gettext("Work Address|Physical street address where the person can be located at work"),
+   'FullWorkPhone' => gettext("Work Phone|Telephone number of the individual at their place of work with a lable to identify the number"),
+   'SkypeLinkIcon' => gettext("Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com. If you have the client software, you can click on the link to start a conversation."),
+   'WorkFax' => gettext("Work Fax|Facsimile telephone number of the individual at work"),
+   'HomeAddress' => gettext("Home Address|Physical street address where the person can be located at home"),
+   'HomePhone' => gettext("Home Phone|Telephone number of the individual at home"),
+   'HomeFax' => gettext("Home Fax|Facsimile telephone number of the individual at home"),
+   'MobilePhone' => gettext("Mobile Phone|Mobile telephone number of the individual"),
+   'MobilePhoneAddress' => gettext("Mobile Phone Address|Mobile telephone address for receiving text messages"),
+   'WorkEmail' => gettext("Work Email|Email address used by the individual at work"),
+   'HomeEmail' => gettext("Home Email|Email address used by the individual at home"),
+   'PagerNumber' => gettext("Pager Number|Telephone number used to page the individual"),
+   'PagerPIN' => gettext("Pager PIN|Personal Identification Number used in association with an individual's pager"),
+   'HomeCounty' => gettext("Home County|A combined field used to associate this county with another record"),
+   'WorkCounty' => gettext("Work County|A combined field used to associate this county with another record")
+   );
+
+
+    $sections = unserialize('a:1:{i:0;a:3:{s:6:"phrase";s:6:"Person";s:3:"sql";s:3542:"SELECT 
+   `ppl`.PersonID AS PersonID,
+   `org1`.Name AS Organization,
+   `ppl`.DisplayName AS DisplayName,
+   `ppl`.LastName AS LastName,
+   `ppl`.FirstName AS FirstName,
+   IF(ISNULL(`usr1`.Username), NULLIF(CONCAT(\'internal:edit.php?mdl=usr&rid=0&PersonID=\',IFNULL( CAST( `ppl`.PersonID AS CHAR ),\'\')),\'internal:edit.php?mdl=usr&rid=0&PersonID=\'), CONCAT(\'internal:view.php?mdl=\',\'usr\',\'&rid=\',`ppl`.PersonID)) AS UserLink,
+   `usr1`.Username AS Username,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.WorkAddress1 AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( `ppl`.WorkAddress2 AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( `ppl`.WorkCity AS CHAR ),\'\'),\', \',IFNULL( CAST( NULLIF(CONCAT(IFNULL( CAST( `sta1`.StateName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `sta1`.StateAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS CHAR ),\'\'),\' \',IFNULL( CAST( `ppl`.WorkPostalCode AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( NULLIF(CONCAT(IFNULL( CAST( `ctr1`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr1`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS CHAR ),\'\')),\'<br /><br />,  <br />\') AS WorkAddress,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.WorkPhone AS CHAR ),\'\'),\', wewn. \',IFNULL( CAST( `ppl`.WorkExtension AS CHAR ),\'\')),\', wewn. \') AS FullWorkPhone,
+   NULLIF(CONCAT(\'<a href=\\"skype:\',IFNULL( CAST( `ppl`.SkypeName AS CHAR ),\'\'),\'?call\\"> \',IFNULL( CAST( `ppl`.SkypeName AS CHAR ),\'\'),\'  \',IFNULL( CAST( NULLIF(CONCAT(\'<img src=\\"http://mystatus.skype.com/smallicon/\',IFNULL( CAST( `ppl`.SkypeName AS CHAR ),\'\'),\'\\" alt=\\"Skype status icon\\"/>\'),\'<img src=\\\\\\"http://mystatus.skype.com/smallicon/\\\\\\" alt=\\\\\\"Skype status icon\\\\\\"/>\') AS CHAR ),\'\'),\'</a>\'),\'<a href=\\\\\\"skype:?call\\\\\\">   </a>\') AS SkypeLinkIcon,
+   `ppl`.WorkFax AS WorkFax,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.HomeAddress1 AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( `ppl`.HomeAddress2 AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( `ppl`.HomeCity AS CHAR ),\'\'),\', \',IFNULL( CAST( `sta2`.StateAbbreviation AS CHAR ),\'\'),\' \',IFNULL( CAST( `ppl`.HomePostalCode AS CHAR ),\'\'),\'<br />\',IFNULL( CAST( NULLIF(CONCAT(IFNULL( CAST( `ctr2`.CountryName AS CHAR ),\'\'),\' (\',IFNULL( CAST( `ctr2`.CountryAbbreviation AS CHAR ),\'\'),\')\'),\' ()\') AS CHAR ),\'\')),\'<br /><br />,  <br />\') AS HomeAddress,
+   `ppl`.HomePhone AS HomePhone,
+   `ppl`.HomeFax AS HomeFax,
+   `ppl`.MobilePhone AS MobilePhone,
+   `ppl`.MobilePhoneAddress AS MobilePhoneAddress,
+   `ppl`.WorkEmail AS WorkEmail,
+   `ppl`.HomeEmail AS HomeEmail,
+   `ppl`.PagerNumber AS PagerNumber,
+   `ppl`.PagerPIN AS PagerPIN,
+   NULLIF(CONCAT(IFNULL( CAST( `cti2`.CountyName AS CHAR ),\'\')),\'\') AS HomeCounty,
+   NULLIF(CONCAT(IFNULL( CAST( `cti1`.CountyName AS CHAR ),\'\')),\'\') AS WorkCounty,
+   NULLIF(CONCAT(IFNULL( CAST( `ppl`.DisplayName AS CHAR ),\'\'),\' | \',IFNULL( CAST( `org1`.Name AS CHAR ),\'\')),\' | \') AS RecordLabel,
+   `ppl`.OrganizationID AS OrganizationID
+FROM `ppl`
+   LEFT OUTER JOIN `org` AS org1 
+   ON (`ppl`.OrganizationID = `org1`.OrganizationID )
+   LEFT OUTER JOIN `usr` AS usr1 
+   ON (`ppl`.PersonID = `usr1`.PersonID )
+   LEFT OUTER JOIN `ctr` AS ctr1 
+   ON (`ppl`.WorkCountryID = `ctr1`.CountryID )
+   LEFT OUTER JOIN `sta` AS sta1 
+   ON (`ppl`.WorkStateID = `sta1`.StateID )
+   LEFT OUTER JOIN `ctr` AS ctr2 
+   ON (`ppl`.HomeCountryID = `ctr2`.CountryID )
+   LEFT OUTER JOIN `sta` AS sta2 
+   ON (`ppl`.HomeStateID = `sta2`.StateID )
+   LEFT OUTER JOIN `cti` AS cti2 
+   ON (`ppl`.HomeCountyID = `cti2`.CountyID )
+   LEFT OUTER JOIN `cti` AS cti1 
+   ON (`ppl`.WorkCountyID = `cti1`.CountyID )
+WHERE ppl._Deleted = 0
+   AND `ppl`.PersonID = \'/**RecordID**/\'
+";s:6:"fields";a:21:{s:8:"PersonID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Person ID|A unique, automatically assigned, number used to track people associated with the organization";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"PersonID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:12:"Organization";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:64:"Organization|Name of organization associated with the individual";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"Organization";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"DisplayName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:121:"Display Name|Commonly used name of an individual used to identify a person. This name may vary from a person\'s given name";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"DisplayName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"LastName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:38:"Last Name|Family Name of an individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"LastName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"FirstName";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:38:"First Name|Given Name of an individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"FirstName";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"Username";O:9:"ViewField":21:{s:9:"linkField";s:8:"UserLink";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:30:"Username|The user\'s login name";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"Username";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"WorkAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:76:"Work Address|Physical street address where the person can be located at work";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"WorkAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"FullWorkPhone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:104:"Work Phone|Telephone number of the individual at their place of work with a lable to identify the number";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"FullWorkPhone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:13:"SkypeLinkIcon";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:209:"Skype Name|The name used by the person to participate in free worldwide telephone services offered by skype at www.skype.com. If you have the client software, you can click on the link to start a conversation.";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:13:"SkypeLinkIcon";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"WorkFax";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Work Fax|Facsimile telephone number of the individual at work";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"WorkFax";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"HomeAddress";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:76:"Home Address|Physical street address where the person can be located at home";s:8:"dataType";s:4:"text";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"HomeAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"HomePhone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:53:"Home Phone|Telephone number of the individual at home";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"HomePhone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:7:"HomeFax";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:61:"Home Fax|Facsimile telephone number of the individual at home";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:7:"HomeFax";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"MobilePhone";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:54:"Mobile Phone|Mobile telephone number of the individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"MobilePhone";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:18:"MobilePhoneAddress";O:9:"ViewField":21:{s:9:"linkField";s:18:"MobilePhoneAddress";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:73:"Mobile Phone Address|Mobile telephone address for receiving text messages";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:18:"MobilePhoneAddress";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"WorkEmail";O:9:"ViewField":21:{s:9:"linkField";s:9:"WorkEmail";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Work Email|Email address used by the individual at work";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"WorkEmail";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:9:"HomeEmail";O:9:"ViewField":21:{s:9:"linkField";s:9:"HomeEmail";s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:55:"Home Email|Email address used by the individual at home";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"HomeEmail";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:11:"PagerNumber";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:57:"Pager Number|Telephone number used to page the individual";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"PagerNumber";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"PagerPIN";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:87:"Pager PIN|Personal Identification Number used in association with an individual\'s pager";s:8:"dataType";s:11:"varchar(50)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"PagerPIN";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"HomeCounty";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:78:"Home County|A combined field used to associate this county with another record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"HomeCounty";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"WorkCounty";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:78:"Work County|A combined field used to associate this county with another record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:7:"justify";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"WorkCounty";s:10:"needsReGet";b:0;s:11:"formatField";N;}}}}');
+
+?>

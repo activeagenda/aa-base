@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $graphModuleLabels = unserialize('a:47:{s:3:"mod";s:31:"    mod [label="Modules\\nmod"];";s:3:"acc";s:40:"    acc [label="Accountabilities\\nacc"];";s:3:"act";s:31:"    act [label="Actions\\nact"];";s:3:"att";s:35:"    att [label="Attachments\\natt"];";s:3:"ccs";s:52:"    ccs [label="Consistency Condition States\\nccs"];";s:3:"cod";s:35:"    codt [label="Code Items\\ncod"];";s:4:"codt";s:36:"    codt [label="Code Types\\ncodt"];";s:5:"codtd";s:50:"    codtd [label="Code Type Dependencies\\ncodtd"];";s:3:"cos";s:29:"    cos [label="Costs\\ncos"];";s:4:"cost";s:36:"    cost [label="Cost Types\\ncost"];";s:3:"cti";s:32:"    cti [label="Counties\\ncti"];";s:3:"ctr";s:33:"    ctr [label="Countries\\nctr"];";s:3:"dat";s:29:"    dat [label="Dates\\ndat"];";s:4:"dsbc";s:42:"    dsbc [label="Dashboard Charts\\ndsbc"];";s:5:"dsbcc";s:54:"    dsbcc [label="Dashboard Chart Conditions\\ndsbcc"];";s:3:"glo";s:32:"    glo [label="Glossary\\nglo"];";s:3:"inv";s:35:"    inv [label="Involvement\\ninv"];";s:3:"lnk";s:29:"    lnk [label="Links\\nlnk"];";s:5:"modch";s:41:"    modch [label="Module Charts\\nmodch"];";s:4:"modd";s:45:"    modd [label="Module Dependencies\\nmodd"];";s:5:"modgt";s:51:"    modgt [label="Module Generating Times\\nmodgt"];";s:5:"modnr";s:58:"    modnr [label="Module Notification Recipients\\nmodnr"];";s:5:"modrp";s:42:"    modrp [label="Module Reports\\nmodrp"];";s:3:"ntf";s:37:"    ntf [label="Notifications\\nntf"];";s:4:"ntfr";s:49:"    ntfr [label="Notification Recipients\\nntfr"];";s:3:"nts";s:29:"    nts [label="Notes\\nnts"];";s:3:"org";s:37:"    org [label="Organizations\\norg"];";s:3:"ppl";s:30:"    ppl [label="People\\nppl"];";s:3:"rdc";s:48:"    rdc [label="Record Description Cache\\nrdc"];";s:3:"smc";s:46:"    smc [label="Submodule Record Cache\\nsmc"];";s:3:"spt";s:41:"    spt [label="Support Documents\\nspt"];";s:4:"spts";s:51:"    spts [label="Support Document Sections\\nspts"];";s:3:"sta";s:30:"    sta [label="States\\nsta"];";s:3:"trx";s:36:"    trx [label="Transactions\\ntrx"];";s:4:"trxr";s:45:"    trxr [label="Transaction Records\\ntrxr"];";s:3:"upp";s:39:"    upp [label="Upgrade Patches\\nupp"];";s:3:"usr";s:29:"    usr [label="Users\\nusr"];";s:4:"usrp";s:42:"    usrp [label="User Permissions\\nusrp"];";s:5:"usrpo";s:57:"    usrpo [label="User Permission Organizations\\nusrpo"];";s:5:"usrgm";s:49:"    usrgm [label="User Group Membership\\nusrgm"];";s:5:"usrdi";s:53:"    usrdi [label="User Documentation Intros\\nusrdi"];";s:5:"usrds";s:50:"    usrds [label="User Desktop Shortcuts\\nusrds"];";s:4:"usrg";s:37:"    usrg [label="User Groups\\nusrg"];";s:5:"usrgp";s:50:"    usrgp [label="User Group Permissions\\nusrgp"];";s:4:"usrl";s:34:"    usrl [label="User Log\\nusrl"];";s:3:"ver";s:40:"    ver [label="Release Versions\\nver"];";s:3:"tut";s:33:"    tut [label="Tutorials\\ntut"];";}');
+?>

@@ -1,0 +1,89 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //edit screens
+    $editScreens = 's:6021:"<h2>Form Screen</h2><p><i>Edit summary information about a notification requirement</i></p>
+<b>Custom code: init</b><pre> include_once APP_INCLUDE_PATH . \'/ntfInitialize.php\';  $disableGlobalModules = true; </pre><b>Custom code: get</b><pre> include_once APP_INCLUDE_PATH . \'/ntfCheckStatus.php\'; </pre><b>Custom code: save</b><pre> 
+                if($ntf_sent){
+                    die("Can\'t update a record that has been sent.");
+                }
+                </pre><b>Custom code: save_end</b><pre>
+                if(intval($_GET[\'rid\']) != $recordID){ //detect that a record was just inserted
+                    include_once APP_INCLUDE_PATH . \'/ntfSQLInsert.php\';
+                }
+                </pre><b>Custom code: form</b><pre> if($ntf_sent):
+                          $info = gettext("This notification has already been sent. It can\'t be changed anymore.");
+                          $content .= "<p>$info</p>";
+                          else: </pre><b>Custom code: after_form</b><pre> endif; </pre><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>ViewField</td><td>name: NotificationID
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track notifications</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Module</td><td>ViewField</td><td>name: RelatedModule
+</td></tr><tr><td colspan="3"><i>The name of the module associated with the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Record Description</td><td>ViewField</td><td>name: RelatedRecord
+</td></tr><tr><td colspan="3"><i>A description of the record that is being sent as a notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Sender</td><td>ViewField</td><td>name: Sender
+</td></tr><tr><td colspan="3"><i>The person who sent the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Subject</td><td>EditField</td><td>name: Subject
+size: 40
+maxLength: 50
+</td></tr><tr><td colspan="3"><i>The subject line for the  notification email</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Message</td><td>MemoField</td><td>name: Message
+rows: 5
+cols: 75
+</td></tr><tr><td colspan="3"><i>An additional message in the notification email</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Sent Date</td><td>ViewField</td><td>name: SentDate
+</td></tr><tr><td colspan="3"><i>The time and date when the notification was sent</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Status</td><td>InvisibleField</td><td>name: StatusID
+</td></tr><tr><td colspan="3"><i>The current status of the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+<h2>Recipients Screen</h2><p><i>Modify the selected recipients for this notification</i></p>
+<b>Custom code: get</b><pre> include_once APP_INCLUDE_PATH . \'/ntfCheckStatus.php\';  $disableGlobalModules = true; </pre><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Organization</td><td>InvisibleField</td><td>name: OrganizationID
+</td></tr><tr><td colspan="3"><i>The name of the organization associated with the related record</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr>
+<b>Custom code: after_form</b><pre> include_once APP_INCLUDE_PATH . \'/ntfReciptentGridTweak.php\';  //if (!$ntf_sent): </pre>
+<h3>Notification Recipients Grid</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr></table>
+<h3>Notification Recipients Grid</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>InvisibleField</td><td>name: NotificationRecipientID
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track notifications</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Person ID</td><td>ViewField</td><td>name: Recipient
+sample: John Q. Public, Jr.
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>The person who is the recipient of the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Status</td><td>ViewField</td><td>name: Status
+sample: Sent
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>The current status of the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+
+<b>Custom code: after_grids</b><pre> //else:  //$content .= gettext("This message has been sent. Recipients can\'t be added or removed anymore.");  //endif; </pre></table>
+<h2>Send Screen</h2><p><i>Confim the sending of this notification</i></p>
+<b>Custom code: init</b><pre> $disableGlobalModules = true; </pre><b>Custom code: get</b><pre> include_once APP_INCLUDE_PATH . \'/ntfCheckStatus.php\'; </pre><b>Custom code: after_save</b><pre> include_once APP_INCLUDE_PATH . \'/ntfHandleSend.php\'; </pre><b>Custom code: after_form</b><pre> include_once APP_INCLUDE_PATH . \'/ntfSendForm.php\'; </pre>
+<h3>Notification Recipients Grid</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Record ID</td><td>InvisibleField</td><td>name: NotificationRecipientID
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track notifications</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Person ID</td><td>ViewField</td><td>name: Recipient
+sample: John Q. Public, Jr.
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>The person who is the recipient of the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Status</td><td>ViewField</td><td>name: Status
+sample: Sent
+formName: ntfr
+</td></tr><tr><td colspan="3"><i>The current status of the notification</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+</table>
+";';
+
+?>

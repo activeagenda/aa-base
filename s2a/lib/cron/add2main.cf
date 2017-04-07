@@ -1,0 +1,11 @@
+##### client TLS parameters for AA #####
+smtp_tls_loglevel=1
+smtp_tls_security_level=encrypt
+smtp_sasl_auth_enable=yes
+smtp_sasl_password_maps=hash:/etc/postfix/sasl/passwd
+smtp_sasl_security_options = noanonymous
+
+##### map jane@localhost to jane.doe@gmail.com #####
+smtp_generic_maps=hash:/etc/postfix/generic
+
+relayhost=[smtp.gmail.com]:587

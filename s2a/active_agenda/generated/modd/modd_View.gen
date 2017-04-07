@@ -1,0 +1,158 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+    /**CUSTOM_CODE|init**/
+
+    //list of objects containing the field information
+    $fields = unserialize('a:8:{s:18:"ModuleDependencyID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Record ID|An automatically assigned number used to associate module dependencies with dependent modules";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:18:"ModuleDependencyID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:6:"Module";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:44:"Module Name|The name of the dependent module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"Module";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:10:"Dependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:49:"Dependent Module|The name of the dependent module";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"Dependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:17:"ForeignDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:44:"Foreign|Whether this is a foreign dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:17:"ForeignDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"RemoteDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Remote|Whether this is a remote dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"RemoteDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:16:"SubModDependency";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:50:"Sub Module|Whether this is a sub-module dependency";s:8:"dataType";s:4:"bool";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"SubModDependency";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:14:"ModuleListType";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Type List|Whether this module is used to populate \'type\' lists used by other modules to define a record";s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"ModuleListType";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:8:"_ModDate";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";N;s:8:"dataType";N;s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"_ModDate";}}');
+
+
+    //list of grids
+    /**grids**/
+
+    //phrases for field names, in field order
+    $phrases = array(
+   'ModuleDependencyID' => gettext("Record ID|An automatically assigned number used to associate module dependencies with dependent modules"),
+   'Module' => gettext("Module Name|The name of the dependent module"),
+   'Dependency' => gettext("Dependent Module|The name of the dependent module"),
+   'ForeignDependency' => gettext("Foreign|Whether this is a foreign dependency"),
+   'RemoteDependency' => gettext("Remote|Whether this is a remote dependency"),
+   'SubModDependency' => gettext("Sub Module|Whether this is a sub-module dependency"),
+   'ModuleListType' => gettext("Type List|Whether this module is used to populate 'type' lists used by other modules to define a record"),
+   '_ModDate' => gettext("Modified On")
+   );
+
+
+    $ownerField = '';
+
+
+    /**disbleGlobalModules**/
+    /**useBestPractices**/
+
+    //retrieve record
+    $data = array();
+
+    /**SQL|GET_BEGIN**/
+    $SQL = "SELECT 
+   `modd`.ModuleDependencyID AS ModuleDependencyID,
+   `mod1`.Name AS Module,
+   `mod2`.Name AS Dependency,
+   `modd`.ForeignDependency AS ForeignDependency,
+   `modd`.RemoteDependency AS RemoteDependency,
+   `modd`.SubModDependency AS SubModDependency,
+   `mod1`.ModuleListType AS ModuleListType,
+   DATE_FORMAT(`modd`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/'ISO')) AS _ModDate,
+   NULLIF(CONCAT(IFNULL( CAST( `mod1`.Name AS CHAR ),''),' jest zale','żny od ',IFNULL( CAST( `mod2`.Name AS CHAR ),'')),' jest zależny od ') AS RecordLabel
+FROM `modd`
+   LEFT OUTER JOIN `mod` AS mod1 
+   ON (`modd`.ModuleID = `mod1`.ModuleID )
+   LEFT OUTER JOIN `mod` AS mod2 
+   ON (`modd`.DependencyID = `mod2`.ModuleID )
+WHERE modd._Deleted = 0
+   AND `modd`.ModuleDependencyID = '/**RecordID**/'
+";
+
+    $SQL = TranslateLocalDateSQLFormats($SQL);
+
+    /**CUSTOM_CODE|before_get**/
+
+    //get data
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $SQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+
+    /**SQL|GET_END**/
+    switch (count($r)){
+    case 0:
+        trigger_error("This record does not exist, or could not be found.|Record not found.", E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error("More than one record was found.", E_USER_WARNING);
+        break;
+    }
+
+    $data = array_merge($data, $r[0]); //assign first (only) row
+
+    /**CUSTOM_CODE|get**/
+
+    //check if user has permission to view or edit record - will redirect if no permission at all
+    $allowEdit = $User->CheckViewScreenPermission();
+    //$allowEdit = true;
+
+    $tabsQSargs = $qsArgs;
+    unset($tabsQSargs['scr']);
+    $tabsQS = MakeQS($tabsQSargs);
+
+    //List tab
+    $tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Module Dependencies"));
+
+    if ($allowEdit){
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Module Dependency") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit summary information about a module dependency") );
+
+    } else {
+              $tabs['View'] = array( "", gettext("View|View summary information about").' '.gettext("a Module Dependency") );
+
+    }
+
+    $recordLabelField = $data['RecordLabel'];
+
+    $content = '';
+    foreach($fields as $key => $field){
+        if (!$field->isSubField()){
+            $content .= $field->render($data, $phrases);
+        }
+    }
+
+    $pageTitle = gettext("Module Dependency");
+    $screenPhrase = gettext("View|View summary information about a module dependency");
+
+    $backlink = "list.php?$qs";
+
+    $nextScreen = "Form";
+    $editlink = "edit.php?$tabsQS&scr=$nextScreen";
+    $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
+
+    //add byline info on record modification info
+    $content .= "<div class=\"recinfo\">{$phrases['_ModDate']} {$data['_ModDate']}";
+    if ($User->IsAdmin) {
+        $content .= '&nbsp; &nbsp; <a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'">'.gettext("Audit Trail").'</a> ';
+    }
+    $content .= "</div>";
+
+    //display view grids here
+
+
+//View Screen Sections here
+/**VIEWSCREENSECTIONS**/
+?>

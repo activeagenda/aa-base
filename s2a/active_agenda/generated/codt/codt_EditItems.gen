@@ -1,0 +1,351 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+/**CUSTOM_CODE|classdef**/
+
+//list of objects containing the field information
+$fields = unserialize('a:2:{s:10:"CodeTypeID";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:46:"Record ID|A number used to track code records.";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:10:"CodeTypeID";s:10:"needsReGet";b:0;s:11:"formatField";N;}s:4:"Name";O:9:"ViewField":21:{s:9:"linkField";N;s:11:"parentField";N;s:15:"displayDecimals";N;s:14:"roundingMethod";N;s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:31:"Name|The name of this code type";s:8:"dataType";s:12:"varchar(128)";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:4:"Name";s:10:"needsReGet";b:0;s:11:"formatField";N;}}');
+
+$hasEditableFields = false;
+
+
+$skipSaveFields = unserialize('a:2:{i:0;s:10:"CodeTypeID";i:1;s:4:"Name";}');
+
+
+$singularRecordName = gettext("Code Type");
+
+//field value array
+$data = array(
+'CodeTypeID' => '',
+         'Name' => ''
+);
+
+if(empty($_POST)){
+    //pre-populate fields with URL values
+    if(0 === $recordID){
+        foreach($data as $fieldName=>$value){
+            if(isset($_GET[$fieldName])){
+                $data[$fieldName] = $_GET[$fieldName];
+            }
+        }
+    }
+} else {
+    foreach($data as $fieldName=>$value){
+        if(isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        }
+    }
+}
+
+//list of grids
+   $grids = array();
+   $grids[1] = unserialize('O:8:"EditGrid":33:{s:10:"getFormSQL";s:311:"SELECT 
+   `cod`.RecordID AS RecordID,
+   `cod`.CodeID AS CodeID,
+   `cod`.CodeTypeID AS CodeTypeID,
+   `cod`.Description AS Description,
+   `cod`.SortOrder AS SortOrder,
+   `cod`.Value AS Value
+FROM `cod`
+   
+WHERE cod._Deleted = 0
+   AND `cod`.CodeTypeID = \'/**RecordID**/\'
+AND `cod`.RecordID = \'/**RowID**/\'
+";s:9:"getRowSQL";s:311:"SELECT 
+   `cod`.RecordID AS RecordID,
+   `cod`.CodeID AS CodeID,
+   `cod`.CodeTypeID AS CodeTypeID,
+   `cod`.Description AS Description,
+   `cod`.SortOrder AS SortOrder,
+   `cod`.Value AS Value
+FROM `cod`
+   
+WHERE cod._Deleted = 0
+   AND `cod`.CodeTypeID = \'/**RecordID**/\'
+AND `cod`.RecordID = \'/**RowID**/\'
+";s:12:"remoteFields";N;s:11:"hasGridForm";b:0;s:10:"FormFields";a:0:{}s:10:"selectedID";N;s:7:"encType";s:0:"";s:16:"IDTranslationSQL";s:0:"";s:20:"listExtendedConditon";s:0:"";s:7:"PKField";s:8:"RecordID";s:19:"showGlobalSMRecords";b:0;s:13:"orderByFields";a:0:{}s:18:"dataCollectionForm";b:0;s:15:"parentGetFields";a:0:{}s:20:"parentSelectSQLOnNew";N;s:15:"getFormSQLOnNew";N;s:17:"getRowSQLOnDelete";N;s:14:"allowAddRecord";b:1;s:8:"moduleID";s:3:"cod";s:6:"phrase";s:10:"Code Items";s:6:"number";i:1;s:6:"Fields";a:6:{s:8:"RecordID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:66:"Record ID|A unique ID for internal database purposes (primary key)";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:8:"RecordID";}s:6:"CodeID";O:9:"EditField":18:{s:4:"size";s:2:"10";s:9:"maxLength";s:2:"10";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:43:"Code ID|A number used to track code records";s:8:"dataType";s:3:"int";s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:6:"CodeID";}s:10:"CodeTypeID";O:14:"InvisibleField":15:{s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:48:"Code Type ID|A number used to track code records";s:8:"dataType";s:3:"int";s:8:"validate";N;s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";N;s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";N;s:17:"inlinePostContent";N;s:4:"name";s:10:"CodeTypeID";}s:11:"Description";O:9:"EditField":18:{s:4:"size";s:2:"50";s:9:"maxLength";s:3:"128";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:203:"Description|The text that should be displayed for this code. This is the standard-language text (English). Additional languages are supported by adding columns using the standard language ID as the name.";s:8:"dataType";s:12:"varchar(128)";s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:11:"Description";}s:9:"SortOrder";O:9:"EditField":18:{s:4:"size";s:2:"10";s:9:"maxLength";s:2:"10";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:109:"Sort Order|A numerical value to define the placement of this code in an ordered list, such as drop-down list.";s:8:"dataType";s:3:"int";s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";s:5:"right";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:9:"SortOrder";}s:5:"Value";O:9:"EditField":18:{s:4:"size";s:2:"15";s:9:"maxLength";s:2:"25";s:5:"align";s:4:"left";s:8:"validate";s:0:"";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:129:"Value|This field has special meaning for different code types. It can be used to limit a list of codes based on a matching value.";s:8:"dataType";s:11:"varchar(25)";s:7:"invalid";N;s:8:"formName";s:3:"cod";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:5:"Value";}}s:8:"countSQL";s:103:"SELECT 
+    count(*) 
+FROM `cod`
+   
+WHERE cod._Deleted = 0
+   AND `cod`.CodeTypeID = \'/**RecordID**/\'
+";s:7:"listSQL";s:256:"SELECT 
+   `cod`.RecordID AS RecordID,
+`cod`.CodeID AS CodeID,
+`cod`.CodeTypeID AS CodeTypeID,
+`cod`.Description AS Description,
+`cod`.SortOrder AS SortOrder,
+`cod`.Value AS Value
+FROM `cod`
+
+WHERE cod._Deleted = 0
+AND `cod`.CodeTypeID = \'/**RecordID**/\'
+
+";s:12:"listExtended";b:0;s:8:"localKey";s:10:"CodeTypeID";s:9:"parentKey";s:10:"CodeTypeID";s:8:"PKFields";a:1:{i:0;s:8:"RecordID";}s:13:"formatOptions";a:0:{}s:10:"fieldTypes";a:6:{s:8:"RecordID";s:3:"int";s:6:"CodeID";s:3:"int";s:10:"CodeTypeID";s:3:"int";s:11:"Description";s:12:"varchar(128)";s:9:"SortOrder";s:3:"int";s:5:"Value";s:11:"varchar(25)";}s:12:"fieldFormats";a:0:{}s:4:"name";N;s:10:"fieldAlign";a:6:{s:8:"RecordID";s:5:"right";s:6:"CodeID";s:5:"right";s:10:"CodeTypeID";s:5:"right";s:11:"Description";s:4:"left";s:9:"SortOrder";s:5:"right";s:5:"Value";s:4:"left";}}');
+
+
+/**guidanceGrid**/
+
+$PKField = 'CodeTypeID';
+
+$ownerField = '';
+
+
+/**disbleGlobalModules**/
+
+//handle any posted grid form
+   $grids[1]->handleForm();
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+$nextScreen = "";
+$nextlink = "edit.php?$tabsQS&scr=$nextScreen";
+$form_enctype = '';
+
+/**CUSTOM_CODE|init**/
+
+$getSQL = "SELECT 
+   `codt`.CodeTypeID AS CodeTypeID,
+   `codt`.Name AS Name,
+   NULLIF(CONCAT(IFNULL( CAST( `codt`.Name AS CHAR ),''),' | ',IFNULL( CAST( `codt`.CodeTypeID AS CHAR ),'')),' | ') AS RecordLabel
+FROM `codt`
+   
+WHERE codt._Deleted = 0
+   AND `codt`.CodeTypeID = '/**RecordID**/'
+";
+
+$getSQL = TranslateLocalDateSQLFormats($getSQL);
+
+if(!empty($_POST['CloneForm'])){
+    $recordID = 0;
+}
+
+
+$screenPhrase = gettext("Items");
+
+/*populates screen messages differently depending on whether the record exists in db or not*/
+if($recordID != 0) {
+    $existing = true;
+
+    $pageTitle = gettext("Code Type");
+
+    /**CUSTOM_CODE|before_get**/
+
+    //retrieve record
+    /**SQL|GET_BEGIN**/
+    $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+    dbErrorCheck($r);
+    /**SQL|GET_END**/
+
+    switch (count($r)){
+    case 0:
+        trigger_error(gettext("This record does not exist, or could not be found.|Record not found."), E_USER_ERROR);
+        break;
+    case 1:
+        break;
+    default:
+        trigger_error(gettext("More than one record was found."), E_USER_WARNING);
+        break;
+    }
+
+    //populate data array, combining POSTed data with DB record:
+    //POST data takes precedence
+    foreach($r[0] as $fieldName=>$dbValue){
+        //(checking for gridnum avoids interference with any posted edit grid)
+        if (empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+            $data[$fieldName] = $_POST[$fieldName];
+        } else {
+            $data[$fieldName] = $dbValue;
+        }
+    }
+
+
+    /**CUSTOM_CODE|get**/
+} else {
+    //inserting a record
+    $existing = false;
+    $pageTitle = gettext("Code Types");
+    /**CUSTOM_CODE|new**/
+}
+
+//check if user has permission to edit record
+$allowEdit = $User->CheckEditScreenPermission();
+//if not, it terminates and display error msg.
+
+//phrases for field names, in field order
+$phrases = array(
+   'CodeTypeID' => gettext("Record ID|A number used to track code records."),
+   'Name' => gettext("Name|The name of this code type")
+   );
+
+
+//if the form was posted by clicking the Save button
+if(!empty($_POST['Save'])){
+    
+
+    if(empty($_POST['KeepNew'])){
+        if(count($messages) == 0){
+            /**-remove_begin-**/
+            //only executed on screens that need it: have ViewField with Update, or Calculated/Summary fields
+            $r = $dbh->getAll(str_replace('/**RecordID**/', $recordID, $getSQL), DB_FETCHMODE_ASSOC);
+            dbErrorCheck($r);
+            if(count($r) > 0) {
+                foreach($r[0] as $fieldName=>$dbValue){
+                    //(checking for gridnum avoids interference with any posted edit grid)
+                    if(empty($_POST['gridnum']) && isset($_POST[$fieldName])){
+                        $data[$fieldName] = $_POST[$fieldName];
+                    } else {
+                        $data[$fieldName] = $dbValue;
+                    }
+                }
+            } else {
+                $messages[] = array('e', gettext("Error: Empty query result."));
+            }
+            /**-remove_end-**/
+        }
+    } else {
+        foreach($data as $fieldName => $fieldValue){
+            $data[$fieldName] = '';
+        }
+    }
+
+    //note: assumes all messages up til this point were errors
+    if (count($messages) == 0){
+        //add success message
+        if ($inserted){
+            $messages[] = array('m', gettext("The record was added successfully."));
+        } else {
+            $messages[] = array('m', gettext("The record was updated successfully."));
+        }
+    }
+}
+/**SQL|DELETE_BEGIN**/
+if(!empty($_POST['Delete'])){
+
+    $dh = GetDataHandler($ModuleID);
+    $result = $dh->deleteRow($recordID);
+
+    $deletelink = "list.php?$tabsQS";
+
+    //redirect to list screen
+    header("Location:" . $deletelink);
+    exit;
+}
+/**SQL|DELETE_END**/
+
+/**CUSTOM_CODE|after_save**/
+
+
+if(!empty($_POST['KeepNew'])){
+    unset($qsArgs['rid']); //ensures next submit will cause a new record
+}
+
+$qs = MakeQS($qsArgs);
+
+//List tab
+$tabs['List'] = Array("list.php?$tabsQS", gettext("List|View the list of Code Types"));
+
+//target for FORMs
+$targetlink = "edit.php?$qs";
+
+$cloneAsNew = false;
+$keepAddNew = false;
+
+//formatting that depends on whether the record exists or not
+if($existing){
+    //delete button only appears on the first EditScreen.
+    $deletelink = '';
+    $cancellink = "view.php?$tabsQS";
+
+    $cloneAsNew = true;
+
+          $tabs['View'] = array( "view.php?scr=View&amp;$tabsQS", gettext("View|View summary information about").' '.gettext("a Code Type") );
+      $tabs['Form'] = array( "edit.php?scr=Form&amp;$tabsQS", gettext("Form|Edit code types") );
+      $tabs['Items'] = array( "", gettext("Items") );
+
+
+} else {
+    $deletelink = '';
+    $cancellink = "list.php?$tabsQS";
+
+    $keepAddNew = true;
+
+          $tabs['Items'] = array( "", gettext("New Code Type") );
+
+}
+
+/**CUSTOM_CODE|form**/
+
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->render($data, $phrases);
+    }
+}
+
+$formProps = array(
+    /**is_main_form**/
+    'delete_button'      => strlen($deletelink) > 0,
+    'cancel_link'        => $cancellink,
+    'next_screen'        => $nextScreen,
+    'form_enctype'       => $form_enctype,
+    'module_id'          => $ModuleID,
+    'render_buttons'     => $hasEditableFields,
+    'clone'              => $cloneAsNew,
+    'keep_add_new'       => $keepAddNew,
+    'single_record_name' => $singularRecordName
+);
+
+$content = renderForm2($content, $targetlink, $formProps);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+/**CUSTOM_CODE|after_form**/
+
+//display edit grids here
+foreach($grids as $gridID => $grid){
+   $content .= $grid->render('edit.php', $qsArgs);
+}
+
+
+/**CUSTOM_CODE|after_grids**/
+
+   $recordLabelField = '';
+    if(isset($data['RecordLabel'])) {
+    $recordLabelField = $data['RecordLabel'];
+    }
+?>

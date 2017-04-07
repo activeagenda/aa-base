@@ -1,0 +1,166 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1627 $
+ * @last-modified  SVN: $Date: 2009-05-11 22:22:15 +0200 (Pn, 11 maj 2009) $
+ */
+
+
+//list of objects containing the field information
+$fields = unserialize('a:6:{s:8:"ModuleID";O:10:"ComboField":31:{s:9:"listField";s:6:"Module";s:12:"foreignTable";s:3:"mod";s:10:"foreignKey";s:8:"ModuleID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:102:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+WHERE mod._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:98:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+
+WHERE `mod`.ModuleID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:4:"modd";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Module ID|The name of the dependent module";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:8:"ModuleID";}s:12:"DependencyID";O:10:"ComboField":31:{s:9:"listField";s:10:"Dependency";s:12:"foreignTable";s:3:"mod";s:10:"foreignKey";s:8:"ModuleID";s:12:"foreignField";s:4:"Name";s:13:"listCondition";N;s:14:"listConditions";a:0:{}s:3:"SQL";s:102:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+WHERE mod._Deleted = 0
+ ORDER BY Name, ID;";s:6:"getSQL";s:98:"SELECT 
+`mod`.ModuleID AS ID, `mod`.Name AS Name FROM `mod`
+
+WHERE `mod`.ModuleID = \'/*recordID*/\'";s:8:"validate";s:0:"";s:11:"parentField";N;s:21:"parentListModuleField";N;s:11:"childFields";a:0:{}s:8:"moduleID";s:4:"modd";s:8:"findMode";s:4:"text";s:16:"ownerFieldFilter";N;s:12:"defaultValue";N;s:15:"suppressItemAdd";b:0;s:13:"orderByFields";a:0:{}s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:53:"Dependent Module ID|The name of the module dependency";s:8:"dataType";N;s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:4:"left";s:13:"displayFormat";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:12:"DependencyID";}s:17:"ForeignDependency";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:44:"Foreign|Whether this is a foreign dependency";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:17:"ForeignDependency";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:4:"modd";}s:16:"RemoteDependency";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:42:"Remote|Whether this is a remote dependency";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"RemoteDependency";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:4:"modd";}s:16:"SubModDependency";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:50:"Sub Module|Whether this is a sub-module dependency";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:16:"SubModDependency";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:4:"modd";}s:14:"ModuleListType";O:13:"CheckBoxField":19:{s:11:"ShortPhrase";N;s:8:"validate";s:0:"";s:8:"dataType";s:4:"bool";s:10:"parentName";N;s:6:"Fields";a:0:{}s:6:"phrase";s:103:"Type List|Whether this module is used to populate \'type\' lists used by other modules to define a record";s:7:"invalid";N;s:8:"formName";s:8:"mainForm";s:9:"gridAlign";s:6:"center";s:13:"displayFormat";N;s:12:"defaultValue";N;s:9:"isDefault";N;s:10:"renderMode";N;s:16:"inlinePreContent";s:0:"";s:17:"inlinePostContent";s:0:"";s:4:"name";s:14:"ModuleListType";s:14:"conditionField";N;s:14:"conditionValue";N;s:8:"moduleID";s:4:"modd";}}');
+
+
+/**ownerField**/
+
+//phrases for field names, in field order (note: phrases are used in search filter)
+$phrases = array(
+   'ModuleID' => gettext("Module ID|The name of the dependent module"),
+   'DependencyID' => gettext("Dependent Module ID|The name of the module dependency"),
+   'ForeignDependency' => gettext("Foreign|Whether this is a foreign dependency"),
+   'RemoteDependency' => gettext("Remote|Whether this is a remote dependency"),
+   'SubModDependency' => gettext("Sub Module|Whether this is a sub-module dependency"),
+   'ModuleListType' => gettext("Type List|Whether this module is used to populate 'type' lists used by other modules to define a record")
+   );
+
+
+$tabsQSargs = $qsArgs;
+unset($tabsQSargs['scr']);
+unset($tabsQSargs['gid']);
+unset($tabsQSargs['grw']);
+$tabsQS = MakeQS($tabsQSargs);
+
+
+$pageTitle = gettext("Module Dependencies");
+$screenPhrase = gettext("Search");
+global $SQLBaseModuleID;
+$SQLBaseModuleID = $ModuleID;
+
+$search = $_SESSION['Search_'.$ModuleID];
+
+if(empty($_POST['Search']) && empty($_POST['Chart'])){
+    $data = $search->postData;
+} else {
+    $data = $_POST;
+}
+
+//populate data array with posted values
+foreach($data as $fieldName=>$value){
+    if(isset($_POST[$fieldName])){
+        $data[$fieldName] = $_POST[$fieldName];
+    }
+}
+
+
+//if the form was posted
+if((!empty($_POST['Search'])) || (!empty($_POST['Chart']))){
+
+
+    //List fields (used for generating the complete SQL search statement):
+    $listFields = unserialize('a:6:{i:0;s:18:"ModuleDependencyID";i:1;s:6:"Module";i:2;s:10:"Dependency";i:3;s:17:"ForeignDependency";i:4;s:16:"RemoteDependency";i:5;s:16:"SubModDependency";}');
+
+
+
+    //link fields (fields that provide a URL, and not necessarily displayed
+    //as a separate column in the list screen
+    $linkFields = array(
+
+      );
+
+
+
+    //create a Search definition object
+    $search = new Search(
+        $ModuleID,
+        $listFields,
+        $fields,
+        $_POST
+    );
+
+
+    //then post it to the Search session object.
+    $_SESSION['Search_'.$ModuleID] = $search;
+
+
+    //redirect depending on what submit buton was pressed by the user.
+    if(!empty($_POST['Search'])){
+
+        $RedirectTo = "list.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+        
+
+    } else {
+
+        //handle "Chart" (TO DO)
+        $RedirectTo = "charts.php?mdl=$ModuleID";
+        header("Location:" . $RedirectTo);
+        exit;
+
+    }
+
+}
+
+//moved down from above
+$qs = MakeQS($qsArgs);
+
+//links for rendering the form
+$targetlink = "search.php?$qs";
+$cancellink = "list.php?$qs";
+
+$tabs['List'] = Array("list.php?$qs", gettext("List|View the list of Module Dependencies"));
+$tabs['Search'] = Array("", gettext("Search"));
+
+ob_start();
+$content = '';
+foreach($fields as $key => $field){
+    if (!$field->isSubField()){
+        $content .= $field->searchRender($data, $phrases);
+    }
+}
+ob_end_clean();
+
+$content = renderSearchForm($content, $targetlink, null, $ModuleID);
+
+//insert code to enable calendar controls
+/**dateFields**/
+
+// $content .= debug_r($search->postData, "postData");
+
+?>

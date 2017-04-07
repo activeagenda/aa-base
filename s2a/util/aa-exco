@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Extract transfered file and compile it by the s2a.php utility 
+cd /var/www/s2a/util
+FILENAME=$2
+FILENAME=${FILENAME##*\\}.zip
+./aa-patch $FILENAME
+./aa-permiss
+if [ -n "$3" ]
+then
+    php ../s2a.php -m $3 -l pl_PL -rp  $1
+fi
+/etc/init.d/apache2 restart

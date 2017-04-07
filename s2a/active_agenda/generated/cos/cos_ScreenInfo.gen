@@ -1,0 +1,61 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+    //edit screens
+    $editScreens = 's:3476:"<h2>Form Screen</h2><p><i>Edit summary information about a cost of risk associated with a related record</i></p><h3>Fields:</h3><table><tr><th>Title</th><th>Type</th><th>Attributes</th></tr><tr><td class="name">Cost ID</td><td>ViewField</td><td>name: CostID
+</td></tr><tr><td colspan="3"><i>An automatically assigned number used to track costs throughout the enterprise</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Related Record</td><td>ViewField</td><td>name: DisplayRelatedModuleRecord
+link: DisplayRelatedRecordLink
+</td></tr><tr><td colspan="3"><i>A combined field used to display the related module name and what record, if any, it is related to</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Record Description</td><td>ViewField</td><td>name: RelatedRecordDescription
+</td></tr><tr><td colspan="3"><i>A description of the related record based on a combination of field values assigned from within the related module</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Cost Date</td><td>DateField</td><td>name: CostDate
+</td></tr><tr><td colspan="3"><i>The date this cost amount was incurred by the organization</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Organization</td><td>OrgComboField</td><td>name: OrganizationID
+findMode: text
+</td></tr><tr><td colspan="3"><i>The organization responsible for the cost or expense</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Person Accountable</td><td>PersonComboField</td><td>name: PersonAccountableID
+findMode: alpha
+</td></tr><tr><td colspan="3"><i>The individual assigned primary accountability for the assigned action</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Cost of Risk Category</td><td>CodeComboField</td><td>name: CostCategoryID
+findMode: text
+</td></tr><tr><td colspan="3"><i>A cost of risk categorization which enables a Total Cost of Risk analysis</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Cost Type</td><td>ComboField</td><td>name: CostTypeID
+findMode: text
+parentField: CostCategoryID
+</td></tr><tr><td colspan="3"><i>A combined field used to describe this cost type when associating it with other records</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Title</td><td>EditField</td><td>name: Title
+size: 50
+maxLength: 128
+</td></tr><tr><td colspan="3"><i>A concise title that describes the cost</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Cost Description</td><td>MemoField</td><td>name: CostDesc
+rows: 5
+cols: 75
+</td></tr><tr><td colspan="3"><i>A detailed description of the cost being tracked</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">Incurred</td><td>MoneyField</td><td>name: Incurred
+</td></tr><tr><td colspan="3"><i>The total estimated amount of the cost to be incurred, stated in the currency assigned to this installation of the software</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr><tr><td class="name">P.O. Number</td><td>EditField</td><td>name: PONumber
+size: 50
+maxLength: 128
+</td></tr><tr><td colspan="3"><i>A purchase order number assigned by an accounting department to allocate funds for a stated and approved purpose</i></td></tr><tr><td class="blank" colspan="3">&nbsp;</td></tr></table>
+";';
+
+?>

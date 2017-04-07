@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template file for generated files (alt. a generated file)
+ *
+ * PHP version 5
+ *
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * @author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * @copyright      2003-2009 Active Agenda Inc.
+ * @license        http://www.activeagenda.net/license  RPL 1.5
+ * @version        SVN: $Revision: 1406 $
+ * @last-modified  SVN: $Date: 2009-01-27 07:56:18 +0100 (Wt, 27 sty 2009) $
+ */
+
+  $gFieldDefs['ccs'] = unserialize('a:10:{s:7:"StateID";a:3:{i:0;s:13:"`ccs`.StateID";i:1;s:24:"`ccs`.StateID AS StateID";i:2;a:0:{}}s:8:"ModuleID";a:3:{i:0;s:14:"`ccs`.ModuleID";i:1;s:26:"`ccs`.ModuleID AS ModuleID";i:2;a:0:{}}s:8:"RecordID";a:3:{i:0;s:14:"`ccs`.RecordID";i:1;s:26:"`ccs`.RecordID AS RecordID";i:2;a:0:{}}s:12:"Inconsistent";a:3:{i:0;s:18:"`ccs`.Inconsistent";i:1;s:34:"`ccs`.Inconsistent AS Inconsistent";i:2;a:0:{}}s:8:"Triggers";a:3:{i:0;s:14:"`ccs`.Triggers";i:1;s:26:"`ccs`.Triggers AS Triggers";i:2;a:0:{}}s:7:"Targets";a:3:{i:0;s:13:"`ccs`.Targets";i:1;s:24:"`ccs`.Targets AS Targets";i:2;a:0:{}}s:8:"_ModDate";a:3:{i:0;s:14:"`ccs`._ModDate";i:1;s:84:"DATE_FORMAT(`ccs`._ModDate, GET_FORMAT(DATETIME,/*localDateTime*/\'ISO\')) AS _ModDate";i:2;a:0:{}}s:6:"_ModBy";a:3:{i:0;s:12:"`ccs`._ModBy";i:1;s:22:"`ccs`._ModBy AS _ModBy";i:2;a:0:{}}s:8:"_Deleted";a:3:{i:0;s:14:"`ccs`._Deleted";i:1;s:26:"`ccs`._Deleted AS _Deleted";i:2;a:0:{}}s:14:"_TransactionID";a:3:{i:0;s:20:"`ccs`._TransactionID";i:1;s:38:"`ccs`._TransactionID AS _TransactionID";i:2;a:0:{}}}');
+?>
