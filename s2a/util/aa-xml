@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Installation of new aaXML version
+# Installation of new aa-XML version needed by the framework to run
 AA_PATH=/var/www/s2a
 
 # Take the name and split from end eg XXX.7.zip
-#if [[ $1 =~ '([[:alpha:]-]*)\.([[:digit:]]*)\.zip' ]] 
 if [[ $1 =~ 'xml\.([[:digit:]]*)\.zip' ]] 
 then
     ZIP_NAME=${BASH_REMATCH[0]}
