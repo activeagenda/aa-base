@@ -1,6 +1,13 @@
+#  What is aa-base
+
+aa-base ist slightly modified internal version of https://github.com/activeagenda/0.8.2-beta and used as  starting point for the fork of the active agenda framework. 
+
+The developement of the fork happens over patching aa-base with:
+1. https://github.com/activeagenda/aa-patch/releases/latest
+1. https://github.com/activeagenda/xml/releases/latest 
+1. https://github.com/activeagenda/BOf/releases/latest 
+
 # Installation of aa-base
 
-1. Download the latest release of aa-base from https://github.com/activeagenda/aa-base/releases/latest to your home directory
-1. Unzip the downloaded file in the home directory
-1. Move the s2a folder from the home directory to the destination directory like  /var/www/ so that you have /var/www/s2a 
-1. If you have selected another destination directory that /var/www/s2a adjust the AA_PATH variable in the scripts ./s2a/util/*
+For details how to install the framework and the BOf:: look at https://github.com/activeagenda/documentation
+
