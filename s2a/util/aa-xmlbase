@@ -4,10 +4,12 @@
 AA_PATH=/var/www/s2a
 
 # Take the name and split from end eg XXX.7.zip
-if [[ $1 =~ 'xml\.([[:digit:]]*)\.zip' ]] 
+if [[ $1 =~ ([[:alpha:]-]*)\-([[:digit:]]*)\.zip ]] 
 then
     ZIP_NAME=${BASH_REMATCH[0]}
-    ZIP_NR=${BASH_REMATCH[1]}
+    SCR_NAME=${BASH_REMATCH[1]} 
+    SCR_NR=${BASH_REMATCH[2]}
+    echo ZIP_NAME
 else
     exit 
 fi
@@ -23,7 +25,7 @@ cp -r  $AA_PATH/util/mod $AA_PATH/active_agenda/generated
 rm -r $AA_PATH/active_agenda/xml
 mv $ZIP_NAME $AA_PATH/active_agenda/xml.zip
 unzip $AA_PATH/active_agenda/xml.zip -d $AA_PATH/active_agenda
-mv $AA_PATH/active_agenda/xml.$ZIP_NR $AA_PATH/active_agenda/xml
+mv $AA_PATH/active_agenda/$SCR_NAME-$SCR_NR $AA_PATH/active_agenda/xml
 rm $AA_PATH/active_agenda/Navigation.xml
 mv $AA_PATH/active_agenda/xml/Navigation.xml $AA_PATH/active_agenda/Navigation.xml 
 
