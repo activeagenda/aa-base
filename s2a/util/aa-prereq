@@ -1,4 +1,5 @@
-#!/bin/bash
+ #!/bin/bash
 
+# Tested on Ubuntu 12 LTS 
 aptitude install libapache2-mod-php5 mysql-server php5-gd php5-cli php5-mysql php-apc libsasl2-modules unzip tofrodos locales-all language-pack-pl netcat make pkg-config php-pear php5-dev php5-intl libcairo2 libcairo2-dev gettext;
 pecl install cairo channel://pecl.php.net/cairo-0.2.0
